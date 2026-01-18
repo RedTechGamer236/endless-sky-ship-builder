@@ -1,0 +1,12 @@
+{
+  "name": "endless-sky-parser",
+  "version": "1.0.0",
+  "description": "Parse Endless Sky data from GitHub repositories",
+  "main": "parser.js",
+  "scripts": {
+    "parse": "node parser.js"
+  },
+  "keywords": ["endless-sky", "parser"],
+  "author": "",
+  "license": "MIT"
+}

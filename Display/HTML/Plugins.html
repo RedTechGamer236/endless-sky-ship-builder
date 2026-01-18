@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plugins</title>
+    <link rel="stylesheet" href="../CSS/main.css">
+</head>
+<body>
+        <div class="container">
+        <header>
+            <h1>🚀 Endless Sky Data Viewer</h1>
+            <p class="subtitle">Browse ships and outfits from GitHub repositories</p>
+        </header>
+<!-- THIS HAS NO REASON NOT WORKKKKK -->
+        <div class="config-section">
+            <h2>⚙️ Configuration</h2>
+            <div class="input-group">
+                <label for="repoUrl">GitHub Repository URL (username/repository)</label>
+                <input type="text" id="repoUrl" placeholder="e.g., yourusername/endless-sky-data" value="">
+            </div>
+            <div class="button-group">
+                <button class="btn-primary" onclick="loadData()">
+                    <span>📥</span> Load Data
+                </button>
+                <button class="btn-secondary" onclick="clearData()">
+                    <span>🗑️</span> Clear
+                </button>
+            </div>
+        </div>
+
+        <div id="mainContent" style="display: none;">
+            <div class="plugin-selector" id="pluginSelector"></div>
+
+            <div class="stats" id="stats"></div>
+
+            <div class="tabs">
+                <div class="tab active" onclick="switchTab('ships')">Ships</div>
+                <div class="tab" onclick="switchTab('outfits')">Outfits</div>
+            </div>
+
+            <div class="search-section">
+                <input type="text" class="search-input" id="searchInput" placeholder="🔍 Search..." oninput="filterItems()">
+            </div>
+
+            <div class="cards-grid" id="cardsContainer"></div>
+        </div>
+
+        <div id="loadingIndicator" class="loading" style="display: none;">
+            Loading data...
+        </div>
+
+        <div id="errorContainer"></div>
+    </div>
+
+    <div class="modal" id="detailModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalTitle"></h2>
+                <button class="close-btn" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+    <script src="../JavaScript/Plugin_Script.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "plugins": [
+    {
+      "name": "official-game",
+      "repository": "https://github.com/endless-sky/endless-sky"
+    }
+  ]
+}
