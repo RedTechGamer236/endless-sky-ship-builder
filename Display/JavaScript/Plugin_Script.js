@@ -44,6 +44,7 @@ async function loadData() {
             try {
                 const shipsResponse = await fetch(`${baseUrl}/${plugin.name}/ships.json`);
                 if (shipsResponse.ok) {
+                    const rawText = await shipsResponse.text();
                     pluginData.ships = await shipsResponse.json();
                     loadedSomething = true;
                 } else {
