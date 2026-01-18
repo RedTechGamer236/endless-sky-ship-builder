@@ -5,7 +5,7 @@ let filteredData = [];
 
 async function loadData() {
     const repoUrl = document.getElementById('repoUrl').value.trim();
-    
+            
     if (!repoUrl) {
         showError('Please enter a GitHub repository URL');
         return;
@@ -20,12 +20,10 @@ async function loadData() {
     mainContent.style.display = 'none';
 
     try {
-        // Fetch the data directory structure
         const baseUrl = `https://raw.githubusercontent.com/${repoUrl}/main/data`;
-                
-        // Try to fetch plugins.json to get list of plugins
-        const pluginsResponse = await fetch(`https://raw.githubusercontent.com/${repoUrl}/main/plugins.json`);
         
+        const pluginsResponse = await fetch(`https://raw.githubusercontent.com/${repoUrl}/main/plugins.json`);
+                
         if (!pluginsResponse.ok) {
             throw new Error('Could not find plugins.json in repository');
         }
@@ -33,29 +31,29 @@ async function loadData() {
         const pluginsConfig = await pluginsResponse.json();
         allData = {};
 
-        // Load data for each plugin
         for (const plugin of pluginsConfig.plugins) {
             try {
                 const shipsResponse = await fetch(`${baseUrl}/${plugin.name}/ships.json`);
                 const outfitsResponse = await fetch(`${baseUrl}/${plugin.name}/outfits.json`);
                 const variantsResponse = await fetch(`${baseUrl}/${plugin.name}/variants.json`);
 
-                if (shipsResponse.ok && outfitsResponse.ok && variantsResponse.ok) {
-                    allData[plugin.name] = {
-                        repository: plugin.repository
-                    };
+                allData[plugin.name] = {
+                    repository: plugin.repository,
+                    ships: [],
+                    variants: [],
+                    outfits: []
+                };
 
-                    if (shipsResponse.ok) {
-                        allData[plugin.name].ships = await shipsResponse.json();
-                    }
+                if (shipsResponse.ok) {
+                    allData[plugin.name].ships = await shipsResponse.json();
+                }
 
-                    if (outfitsResponse.ok) {
-                        allData[plugin.name].outfits = await outfitsResponse.json();
-                    }
+                if (variantsResponse.ok) {
+                    allData[plugin.name].variants = await variantsResponse.json();
+                }
 
-                    if (variantsResponse.ok) {
-                        allData[plugin.name].variants = await variantsResponse.json();
-                    }
+                if (outfitsResponse.ok) {
+                    allData[plugin.name].outfits = await outfitsResponse.json();
                 }
             } catch (err) {
                 console.warn(`Could not load data for plugin: ${plugin.name}`, err);
@@ -92,7 +90,6 @@ function renderPluginSelector() {
         selector.appendChild(btn);
     });
 
-    // Select first plugin by default
     if (selector.firstChild) {
         selector.firstChild.classList.add('active');
     }
@@ -100,8 +97,7 @@ function renderPluginSelector() {
 
 function selectPlugin(pluginName) {
     currentPlugin = pluginName;
-    
-    // Update button states
+            
     document.querySelectorAll('.plugin-btn').forEach(btn => {
         btn.classList.toggle('active', btn.textContent === pluginName);
     });
@@ -116,17 +112,24 @@ function updateStats() {
     const data = allData[currentPlugin];
     const statsContainer = document.getElementById('stats');
     
+    const totalShips = (data.ships ? data.ships.length : 0) + (data.variants ? data.variants.length : 0);
+    const totalOutfits = data.outfits ? data.outfits.length : 0;
+    
     statsContainer.innerHTML = `
         <div class="stat-card">
-            <div class="stat-value">${data.ships.length + data.varients.length}</div>
-            <div class="stat-label">Ships</div>
+            <div class="stat-value">${data.ships ? data.ships.length : 0}</div>
+            <div class="stat-label">Base Ships</div>
         </div>
         <div class="stat-card">
-            <div class="stat-value">${data.outfits.length}</div>
+            <div class="stat-value">${data.variants ? data.variants.length : 0}</div>
+            <div class="stat-label">Variants</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-value">${totalOutfits}</div>
             <div class="stat-label">Outfits</div>
         </div>
         <div class="stat-card">
-            <div class="stat-value">${data.ships.length + data.varients.length + data.outfits.length}</div>
+            <div class="stat-value">${totalShips + totalOutfits}</div>
             <div class="stat-label">Total Items</div>
         </div>
     `;
@@ -134,7 +137,7 @@ function updateStats() {
 
 function switchTab(tab) {
     currentTab = tab;
-    
+            
     document.querySelectorAll('.tab').forEach(t => {
         t.classList.toggle('active', t.textContent.toLowerCase() === tab);
     });
@@ -147,10 +150,18 @@ function renderCards() {
 
     const container = document.getElementById('cardsContainer');
     const data = allData[currentPlugin];
-    const items = currentTab === 'ships' ? data.ships + data.varients : data.outfits;
+    
+    let items = [];
+    if (currentTab === 'ships') {
+        items = data.ships || [];
+    } else if (currentTab === 'variants') {
+        items = data.variants || [];
+    } else {
+        items = data.outfits || [];
+    }
 
     filteredData = items;
-    filterItems(); // Apply any active search
+    filterItems();
 }
 
 function filterItems() {
@@ -158,7 +169,7 @@ function filterItems() {
     const container = document.getElementById('cardsContainer');
 
     const filtered = filteredData.filter(item => 
-        item.name.toLowerCase().includes(searchTerm)
+        item.name && item.name.toLowerCase().includes(searchTerm)
     );
 
     container.innerHTML = '';
@@ -181,12 +192,12 @@ function createCard(item) {
 
     const title = document.createElement('div');
     title.className = 'card-title';
-    title.textContent = item.name;
+    title.textContent = item.name || 'Unknown';
 
     const details = document.createElement('div');
     details.className = 'card-details';
 
-    if (currentTab === 'ships') {
+    if (currentTab === 'ships' || currentTab === 'variants') {
         details.innerHTML = `
             <div class="detail-item">
                 <div class="detail-label">Category</div>
@@ -237,11 +248,15 @@ function showDetails(item) {
     const modalTitle = document.getElementById('modalTitle');
     const modalBody = document.getElementById('modalBody');
 
-    modalTitle.textContent = item.name;
+    modalTitle.textContent = item.name || 'Unknown';
 
     let html = '';
 
-    if (currentTab === 'ships') {
+    if (currentTab === 'ships' || currentTab === 'variants') {
+        if (currentTab === 'variants' && item.baseShip) {
+            html += `<p style="color: #93c5fd; margin-bottom: 20px;">Base Ship: ${item.baseShip}</p>`;
+        }
+        
         html += '<h3 style="color: #93c5fd; margin-top: 20px;">Attributes</h3>';
         html += '<div class="attribute-grid">';
         
@@ -257,7 +272,30 @@ function showDetails(item) {
                 }
             });
         }
-                
+        
+        html += '</div>';
+
+        // Show hardpoint counts
+        html += '<h3 style="color: #93c5fd; margin-top: 20px;">Hardpoints</h3>';
+        html += '<div class="attribute-grid">';
+        html += `
+            <div class="attribute">
+                <div class="attribute-name">Guns</div>
+                <div class="attribute-value">${item.guns ? item.guns.length : 0}</div>
+            </div>
+            <div class="attribute">
+                <div class="attribute-name">Turrets</div>
+                <div class="attribute-value">${item.turrets ? item.turrets.length : 0}</div>
+            </div>
+            <div class="attribute">
+                <div class="attribute-name">Bays</div>
+                <div class="attribute-value">${item.bays ? item.bays.length : 0}</div>
+            </div>
+            <div class="attribute">
+                <div class="attribute-name">Engines</div>
+                <div class="attribute-value">${item.engines ? item.engines.length : 0}</div>
+            </div>
+        `;
         html += '</div>';
 
         if (item.description) {
@@ -277,7 +315,7 @@ function showDetails(item) {
                 `;
             }
         });
-                
+        
         html += '</div>';
 
         if (item.description) {
@@ -319,14 +357,12 @@ function clearData() {
     currentPlugin = null;
 }
 
-// Close modal when clicking outside
 document.getElementById('detailModal').addEventListener('click', (e) => {
     if (e.target.id === 'detailModal') {
         closeModal();
     }
 });
 
-// Close modal with Escape key
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
         closeModal();
