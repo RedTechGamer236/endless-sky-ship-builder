@@ -21,7 +21,7 @@ async function loadData() {
 
     try {
         // Fetch the data directory structure
-        const baseUrl = `https://raw.githubusercontent.com/${repoUrl}/tree/main/data`;
+        const baseUrl = `https://raw.githubusercontent.com/${repoUrl}/main/data`;
                 
         // Try to fetch plugins.json to get list of plugins
         const pluginsResponse = await fetch(`https://raw.githubusercontent.com/${repoUrl}/main/plugins.json`);
