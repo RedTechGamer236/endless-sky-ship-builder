@@ -56,7 +56,8 @@ async function loadData() {
                         if (!shipsUrl) {
                             console.warn('ships.json not found');
                         } else {
-                            fsUrl = await fetch(shipsUrl);
+                            pluginData.ships = await fetch(shipsUrl);
+                            loadedSomething = true;
                         }
 
                     } else {
@@ -68,18 +69,50 @@ async function loadData() {
                     console.warn(`${plugin.name}: ships.json not found (${shipsResponse.status})`);
                 }
             
-                const variantsResponse = await fetch(`${baseUrl}/${plugin.name}/variants.json`);
+                const variantsResponse = await fetch(`${baseUrl}/${plugin.name}/ships.json`);
                 if (variantsResponse.ok) {
-                    pluginData.variants = await variantsResponse.json();
-                    loadedSomething = true;
+                    const rawText = await variantsResponse.text();
+                    if (rawText.includes("version")) {
+                        hardFindPluginFolder = await fetch(`${apiServerUrl}/repos/${repoUrl}/contents/data/${plugin.name}?ref=main`)
+                        extractHardFindPluginFolder = await hardFindPluginFolder.json();
+
+                        const variantsUrl = extractHardFindPluginFolder.find(f => f.name === 'variants.json')?.download_url;
+
+                        if (!variantsUrl) {
+                            console.warn('variants.json not found');
+                        } else {
+                            pluginData.variants = await fetch(variantsUrl);
+                            loadedSomething = true;
+                        }
+
+                    } else {
+                        pluginData.ships = await variantsResponse.json();
+                        loadedSomething = true;
+                    }
                 } else {
                     console.warn(`${plugin.name}: variants.json not found (${variantsResponse.status})`);
                 }
             
                 const outfitsResponse = await fetch(`${baseUrl}/${plugin.name}/outfits.json`);
                 if (outfitsResponse.ok) {
-                    pluginData.outfits = await outfitsResponse.json();
-                    loadedSomething = true;
+                    const rawText = await outfitsResponse.text();
+                    if (rawText.includes("version")) {
+                        hardFindPluginFolder = await fetch(`${apiServerUrl}/repos/${repoUrl}/contents/data/${plugin.name}?ref=main`)
+                        extractHardFindPluginFolder = await hardFindPluginFolder.json();
+
+                        const outfitsUrl = extractHardFindPluginFolder.find(f => f.name === 'outfits.json')?.download_url;
+
+                        if (!outfitsUrl) {
+                            console.warn('outfits.json not found');
+                        } else {
+                            pluginData.outfits = await fetch(outfitsUrl);
+                            loadedSomething = true;
+                        }
+
+                    } else {
+                        pluginData.outfits = await outfitsResponse.json();
+                        loadedSomething = true;
+                    }
                 } else {
                     console.warn(`${plugin.name}: outfits.json not found (${outfitsResponse.status})`);
                 }
