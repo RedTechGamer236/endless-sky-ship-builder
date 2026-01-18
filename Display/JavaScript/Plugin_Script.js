@@ -20,6 +20,8 @@ async function loadData() {
     mainContent.style.display = 'none';
 
     try {
+        const apiServerUrl = `https://api.github.com`
+
         const baseUrl = `https://raw.githubusercontent.com/${repoUrl}/main/data`;
         
         const pluginsResponse = await fetch(`https://raw.githubusercontent.com/${repoUrl}/main/plugins.json`);
@@ -45,6 +47,12 @@ async function loadData() {
                 const shipsResponse = await fetch(`${baseUrl}/${plugin.name}/ships.json`);
                 if (shipsResponse.ok) {
                     const rawText = await shipsResponse.text();
+                    if (rawText.includes("version")) {
+                        extractHash = rawText.match(/oid\s+(sha256:[a-f0-9]{64})/i);
+                        hash = extractHash.match[1];
+                        lfsUrl = await fetch(`${apiServerUrl}/repos/${repoUrl}/contents`);
+                        
+                    }
                     pluginData.ships = await shipsResponse.json();
                     loadedSomething = true;
                 } else {
