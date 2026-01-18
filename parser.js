@@ -571,46 +571,62 @@ class EndlessSkyParser {
   }
 
   parseShipVariant(variantInfo) {
-    const baseName = variantInfo.baseName;
-    const variantName = variantInfo.variantName;
-    const startIdx = variantInfo.startIdx;
-    const lines = variantInfo.lines;
-
+    var baseName = variantInfo.baseName;
+    var variantName = variantInfo.variantName;
+    var startIdx = variantInfo.startIdx;
+    var lines = variantInfo.lines;
+    
     // Find the base ship to clone
-    const baseShip = this.ships.find(function(s) { 
+    var baseShip = this.ships.find(function(s) { 
       return s.name === baseName; 
     });
-
+    
     if (!baseShip) {
       console.warn('Warning: Base ship "' + baseName + '" not found for variant "' + variantName + '"');
       return null;
     }
-
+    
     // Deep clone the base ship
-    const variantShip = JSON.parse(JSON.stringify(baseShip));
+    var variantShip = JSON.parse(JSON.stringify(baseShip));
     variantShip.name = baseName + ' (' + variantName + ')';
     variantShip.variant = variantName;
     variantShip.baseShip = baseName;
-
+    
+    // Track if we need to replace hardpoints
+    var replaceGuns = false;
+    var replaceTurrets = false;
+    var replaceBays = false;
+    var replaceEngines = false;
+    var replaceReverseEngines = false;
+    var replaceSteeringEngines = false;
+    
+    // Temporary arrays for replacements
+    var newGuns = [];
+    var newTurrets = [];
+    var newBays = [];
+    var newEngines = [];
+    var newReverseEngines = [];
+    var newSteeringEngines = [];
+    
     // Parse the variant's modifications
-    let i = startIdx + 1;
-    let hasSignificantChanges = false;
-
+    var i = startIdx + 1;
+    var hasSignificantChanges = false;
+    
     while (i < lines.length) {
       const currentLine = lines[i];
       if (!currentLine.trim()) {
         i++;
         continue;
       }
-
+      
       const indent = currentLine.length - currentLine.replace(/^\t+/, '').length;
-
+      
       if (indent === 0) {
         break;
       }
-
+      
       const stripped = currentLine.trim();
-
+      
       if (indent === 1) {
         // Skip outfits section - variants that only change outfits are not significant
         if (stripped === 'outfits') {
@@ -686,15 +702,16 @@ class EndlessSkyParser {
         // Handle engine additions/changes
         if (stripped.startsWith('engine ')) {
           hasSignificantChanges = true;
-          const parts = stripped.substring(7).trim().split(/\s+/);
-          const engineData = {
+          replaceEngines = true;
+          var parts = stripped.substring(7).trim().split(/\s+/);
+          var engineData = {
             x: parseFloat(parts[0]),
             y: parseFloat(parts[1])
           };
           if (parts[2]) {
             engineData.zoom = parseFloat(parts[2]);
           }
-          variantShip.engines.push(engineData);
+          newEngines.push(engineData);
           i++;
           continue;
         }
@@ -702,8 +719,9 @@ class EndlessSkyParser {
         // Handle reverse engine additions
         if (stripped.startsWith('"reverse engine"') || stripped.startsWith('reverse engine')) {
           hasSignificantChanges = true;
-          const parts = stripped.replace(/"/g, '').substring(14).trim().split(/\s+/);
-          const reverseEngineData = {
+          replaceReverseEngines = true;
+          var parts = stripped.replace(/"/g, '').substring(14).trim().split(/\s+/);
+          var reverseEngineData = {
             x: parseFloat(parts[0]),
             y: parseFloat(parts[1])
           };
@@ -712,27 +730,27 @@ class EndlessSkyParser {
           }
           
           if (i + 1 < lines.length) {
-            const nextIndent = lines[i + 1].length - lines[i + 1].replace(/^\t+/, '').length;
+            var nextIndent = lines[i + 1].length - lines[i + 1].replace(/^\t+/, '').length;
             if (nextIndent > indent) {
               i++;
               while (i < lines.length) {
-                const propLine = lines[i];
-                const propIndent = propLine.length - propLine.replace(/^\t+/, '').length;
+                var propLine = lines[i];
+                var propIndent = propLine.length - propLine.replace(/^\t+/, '').length;
                 if (propIndent <= indent) {
                   break;
                 }
-                const propStripped = propLine.trim();
+                var propStripped = propLine.trim();
                 if (propStripped) {
                   reverseEngineData.position = propStripped;
                 }
                 i++;
               }
-              variantShip.reverseEngines.push(reverseEngineData);
+              newReverseEngines.push(reverseEngineData);
               continue;
             }
           }
           
-          variantShip.reverseEngines.push(reverseEngineData);
+          newReverseEngines.push(reverseEngineData);
           i++;
           continue;
         }
@@ -740,8 +758,9 @@ class EndlessSkyParser {
         // Handle steering engine additions
         if (stripped.startsWith('"steering engine"') || stripped.startsWith('steering engine')) {
           hasSignificantChanges = true;
-          const parts = stripped.replace(/"/g, '').substring(15).trim().split(/\s+/);
-          const steeringEngineData = {
+          replaceSteeringEngines = true;
+          var parts = stripped.replace(/"/g, '').substring(15).trim().split(/\s+/);
+          var steeringEngineData = {
             x: parseFloat(parts[0]),
             y: parseFloat(parts[1])
           };
@@ -750,65 +769,68 @@ class EndlessSkyParser {
           }
           
           if (i + 1 < lines.length) {
-            const nextIndent = lines[i + 1].length - lines[i + 1].replace(/^\t+/, '').length;
+            var nextIndent = lines[i + 1].length - lines[i + 1].replace(/^\t+/, '').length;
             if (nextIndent > indent) {
               i++;
               while (i < lines.length) {
-                const propLine = lines[i];
-                const propIndent = propLine.length - propLine.replace(/^\t+/, '').length;
+                var propLine = lines[i];
+                var propIndent = propLine.length - propLine.replace(/^\t+/, '').length;
                 if (propIndent <= indent) {
                   break;
                 }
-                const propStripped = propLine.trim();
+                var propStripped = propLine.trim();
                 if (propStripped) {
                   steeringEngineData.position = propStripped;
                 }
                 i++;
               }
-              variantShip.steeringEngines.push(steeringEngineData);
+              newSteeringEngines.push(steeringEngineData);
               continue;
             }
           }
           
-          variantShip.steeringEngines.push(steeringEngineData);
+          newSteeringEngines.push(steeringEngineData);
           i++;
           continue;
         }
         
-        // Handle gun additions
+        // Handle gun additions/replacements
         if (stripped.startsWith('gun ')) {
           hasSignificantChanges = true;
-          const parts = stripped.substring(4).trim().split(/\s+/);
-          const gunData = {
+          replaceGuns = true;
+          var parts = stripped.substring(4).trim().split(/\s+/);
+          var gunData = {
             x: parseFloat(parts[0]),
             y: parseFloat(parts[1]),
             gun: ""
           };
-          variantShip.guns.push(gunData);
+          newGuns.push(gunData);
           i++;
           continue;
         }
         
-        // Handle turret additions
+        // Handle turret additions/replacements
         if (stripped.startsWith('turret ')) {
           hasSignificantChanges = true;
-          const parts = stripped.substring(7).trim().split(/\s+/);
-          const turretData = {
+          replaceTurrets = true;
+          var parts = stripped.substring(7).trim().split(/\s+/);
+          var turretData = {
             x: parseFloat(parts[0]),
             y: parseFloat(parts[1]),
             turret: ""
           };
-          variantShip.turrets.push(turretData);
+          newTurrets.push(turretData);
           i++;
           continue;
         }
         
-        // Handle bay additions
+        // Handle bay additions/replacements
         if (stripped.startsWith('bay ')) {
           hasSignificantChanges = true;
-          const bayMatch = stripped.match(/bay\s+"([^"]+)"\s+([^\s]+)\s+([^\s]+)(?:\s+(.+))?/);
+          replaceBays = true;
+          var bayMatch = stripped.match(/bay\s+"([^"]+)"\s+([^\s]+)\s+([^\s]+)(?:\s+(.+))?/);
           if (bayMatch) {
-            const bayData = {
+            var bayData = {
               type: bayMatch[1],
               x: parseFloat(bayMatch[2]),
               y: parseFloat(bayMatch[3])
@@ -818,28 +840,28 @@ class EndlessSkyParser {
             }
             
             if (i + 1 < lines.length) {
-              const nextIndent = lines[i + 1].length - lines[i + 1].replace(/^\t+/, '').length;
+              var nextIndent = lines[i + 1].length - lines[i + 1].replace(/^\t+/, '').length;
               if (nextIndent > indent) {
                 i++;
                 while (i < lines.length) {
-                  const bayLine = lines[i];
-                  const bayLineIndent = bayLine.length - bayLine.replace(/^\t+/, '').length;
+                  var bayLine = lines[i];
+                  var bayLineIndent = bayLine.length - bayLine.replace(/^\t+/, '').length;
                   if (bayLineIndent <= indent) {
                     break;
                   }
-                  const bayLineStripped = bayLine.trim();
-                  const effectMatch = bayLineStripped.match(/"([^"]+)"\s+"([^"]+)"/);
+                  var bayLineStripped = bayLine.trim();
+                  var effectMatch = bayLineStripped.match(/"([^"]+)"\s+"([^"]+)"/);
                   if (effectMatch) {
                     bayData[effectMatch[1]] = effectMatch[2];
                   }
                   i++;
                 }
-                variantShip.bays.push(bayData);
+                newBays.push(bayData);
                 continue;
               }
             }
             
-            variantShip.bays.push(bayData);
+            newBays.push(bayData);
             i++;
             continue;
           }
@@ -847,6 +869,26 @@ class EndlessSkyParser {
       }
       
       i++;
+    }
+    
+    // Apply replacements if hardpoints were specified
+    if (replaceGuns) {
+      variantShip.guns = newGuns;
+    }
+    if (replaceTurrets) {
+      variantShip.turrets = newTurrets;
+    }
+    if (replaceBays) {
+      variantShip.bays = newBays;
+    }
+    if (replaceEngines) {
+      variantShip.engines = newEngines;
+    }
+    if (replaceReverseEngines) {
+      variantShip.reverseEngines = newReverseEngines;
+    }
+    if (replaceSteeringEngines) {
+      variantShip.steeringEngines = newSteeringEngines;
     }
     
     // Only return the variant if it has significant changes
@@ -865,19 +907,19 @@ class EndlessSkyParser {
         console.log(`  Skipped variant (outfit-only): ${variantInfo.baseName} (${variantInfo.variantName})`);
       }
     }
-  } 
+  }
 
   parseOutfit(lines, startIdx) {
     var line = lines[startIdx].trim();
     var match = line.match(/^outfit\s+"([^"]+)"/);
-    
+  
     if (!match) {
       return [null, startIdx + 1];
     }
     
-    var outfitName = match[1];
-    var outfitData = { name: outfitName };
-    var descriptionLines = [];
+    const outfitName = match[1];
+    const outfitData = { name: outfitName };
+    let descriptionLines = [];
     
     let i = startIdx + 1;
     while (i < lines.length) {
@@ -1033,32 +1075,32 @@ class EndlessSkyParser {
   }
 
   parseFileContent(content) {
-    const lines = content.split('\n');
-    let i = 0;
+    var lines = content.split('\n');
+    var i = 0;
     
     while (i < lines.length) {
-      const line = lines[i].trim();
+      var line = lines[i].trim();
       
       if (line.startsWith('ship "')) {
-        const result = this.parseShip(lines, i);
-        const shipData = result[0];
-        const nextI = result[1];
+        var result = this.parseShip(lines, i);
+        var shipData = result[0];
+        var nextI = result[1];
         if (shipData) {
           // Only add ships that have at least some attributes or hardpoints
-          const hasData = shipData.attributes || 
-                         shipData.engines.length > 0 || 
-                         shipData.guns.length > 0 || 
-                         shipData.turrets.length > 0 || 
-                         shipData.bays.length > 0;
+          var hasData = shipData.attributes || 
+                       shipData.engines.length > 0 || 
+                       shipData.guns.length > 0 || 
+                       shipData.turrets.length > 0 || 
+                       shipData.bays.length > 0;
           if (hasData) {
             this.ships.push(shipData);
           }
         }
         i = nextI;
       } else if (line.startsWith('outfit "')) {
-        const result = this.parseOutfit(lines, i);
-        const outfitData = result[0];
-        const nextI = result[1];
+        var result = this.parseOutfit(lines, i);
+        var outfitData = result[0];
+        var nextI = result[1];
         if (outfitData) {
           this.outfits.push(outfitData);
         }
@@ -1068,39 +1110,42 @@ class EndlessSkyParser {
       }
     }
     
-    // Process variants after all base ships are parsed
-    this.processVariants();
+    // DO NOT process variants here - it will be done once after all files are parsed
   }
 
   async parseRepository(repoUrl) {
     this.ships = [];
     this.variants = [];
     this.outfits = [];
+    this.pendingVariants = []; // Reset pending variants
     
-    const match = repoUrl.match(/github\.com\/([^\/]+)\/([^\/]+)/);
+    var match = repoUrl.match(/github\.com\/([^\/]+)\/([^\/]+)/);
     if (!match) {
-      throw new Error(`Invalid GitHub URL: ${repoUrl}`);
+      throw new Error('Invalid GitHub URL: ' + repoUrl);
     }
     
-    const owner = match[1];
-    let repo = match[2].replace('.git', '');
+    var owner = match[1];
+    var repo = match[2].replace('.git', '');
     
-    let branch = 'master';
-    const branchMatch = repoUrl.match(/\/tree\/([^\/]+)/);
+    var branch = 'master';
+    var branchMatch = repoUrl.match(/\/tree\/([^\/]+)/);
     if (branchMatch) {
       branch = branchMatch[1];
     }
     
-    console.log(`Parsing repository: ${owner}/${repo} (branch: ${branch})`);
+    console.log('Parsing repository: ' + owner + '/' + repo + ' (branch: ' + branch + ')');
     
-    const files = await this.fetchGitHubRepo(owner, repo, branch);
+    var files = await this.fetchGitHubRepo(owner, repo, branch);
     
-    console.log(`Parsing ${files.length} files...`);
-    for (const file of files) {
-      this.parseFileContent(file.content);
+    console.log('Parsing ' + files.length + ' files...');
+    for (var i = 0; i < files.length; i++) {
+      this.parseFileContent(files[i].content);
     }
     
-    console.log(`Found ${this.ships.length} ships, ${this.variants.length} variants, and ${this.outfits.length} outfits`);
+    // Process all variants ONCE after all files are parsed
+    this.processVariants();
+    
+    console.log('Found ' + this.ships.length + ' ships, ' + this.variants.length + ' variants, and ' + this.outfits.length + ' outfits');
     
     return {
       ships: this.ships,
