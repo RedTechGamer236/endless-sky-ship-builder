@@ -52,8 +52,9 @@ async function loadData() {
 
                         extractHash = rawText.match(/oid\s+sha256:([a-f0-9]{64})/i);
                         hash = match[1];
-                        if (hardFindPluginFolder.name == ships.json)
+                        if (hardFindPluginFolder.name == ships.json) {
                             lfsUrl = await fetch(`${baseUrl}/${plugin.name}/ships.json`);
+                        }
                     }
                     pluginData.ships = await shipsResponse.json();
                     loadedSomething = true;
