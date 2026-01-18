@@ -49,7 +49,7 @@ async function loadData() {
                     const rawText = await shipsResponse.text();
                     if (rawText.includes("version")) {
                         extractHash = rawText.match(/oid\s+(sha256:[a-f0-9]{64})/i);
-                        hash = extractHash.match[1];
+                        hash = match[1];
                         lfsUrl = await fetch(`${apiServerUrl}/repos/${repoUrl}/contents`);
                         
                     }
