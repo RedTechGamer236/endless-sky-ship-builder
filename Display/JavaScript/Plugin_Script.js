@@ -49,7 +49,7 @@ async function loadData() {
                     const rawText = await shipsResponse.text();
                     if (rawText.includes("version")) {
                         hardFindPluginFolder = await fetch(`${apiServerUrl}/repos/${repoUrl}/contents/data/${plugin.name}?ref=main`)
-                        extractHardFindPluginFolder = hardFindPluginFolder.json();
+                        extractHardFindPluginFolder = await hardFindPluginFolder.json();
 
                         extractHash = rawText.match(/oid\s+sha256:([a-f0-9]{64})/i);
                         hash = match[1];
