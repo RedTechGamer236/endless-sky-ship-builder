@@ -1,4 +1,4 @@
-import { filterItems } from 'Plugin_Data.js'
+import { filterItems } from '../Display/JavaScript/Plugin_Data.js'
 
 // Function to extract unique categories from JSON data
 function extractCategories(data) {
