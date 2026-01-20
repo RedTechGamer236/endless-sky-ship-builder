@@ -256,10 +256,13 @@ function filterItems() {
         // Check if item matches search term
         const matchesSearch = item.name && item.name.toLowerCase().includes(searchTerm);
         
+        // Get category - handle both item.category and item.attributes.category
+        const itemCategory = item.category || item.attributes?.category;
+        
         // Check if item matches selected categories
         const matchesCategory = selectedCategories.length === 0 || 
-                                !item.category || 
-                                selectedCategories.includes(item.category);
+                                !itemCategory || 
+                                selectedCategories.includes(itemCategory);
         
         // Item must match both search and category
         return matchesSearch && matchesCategory;
