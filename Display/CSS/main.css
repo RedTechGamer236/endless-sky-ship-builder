@@ -395,7 +395,7 @@ button {
     background: rgba(30, 41, 59, 0.5);
     padding: 20px;
     border-radius: 8px;
-    margin-bottom: 15px;
+    margin-top: 15px;
     border: 1px solid rgba(59, 130, 246, 0.2);
 }
 
@@ -442,6 +442,10 @@ button {
     color: #cbd5e1;
     font-size: 0.95rem;
     margin-bottom: 0;
+}
+
+.filter-clear {
+    margin-top: 15px
 }
 
 .filter-clear:hover {
