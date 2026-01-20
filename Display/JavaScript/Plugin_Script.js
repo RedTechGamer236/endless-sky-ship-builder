@@ -462,3 +462,11 @@ document.addEventListener('keydown', (e) => {
         closeModal();
     }
 });
+
+// Make functions globally accessible for HTML onclick attributes
+window.loadData = loadData;
+window.clearData = clearData;
+window.switchTab = switchTab;
+window.filterItems = filterItems;
+window.closeModal = closeModal;
+window.selectPlugin = selectPlugin;
