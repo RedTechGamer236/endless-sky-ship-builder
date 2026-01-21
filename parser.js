@@ -177,31 +177,12 @@ class EndlessSkyParser {
     if (variantName) {
       this.pendingVariants.push({
         baseName: baseName,
-        displayName: "",
         variantName: variantName,
         startIdx: startIdx,
         lines: lines
       });
       
       let i = startIdx + 1;
-
-      // Check if the first indented line is a display name
-      if (i < lines.length) {
-        const firstLine = lines[i];
-        const firstIndent = firstLine.length - firstLine.replace(/^\t+/, '').length;
-        if (firstIndent === 1) {
-          const firstStripped = firstLine.trim();
-          // Key is always "display name" but value can use quotes or backticks
-          const displayMatchQuotes = firstStripped.match(/^"display name"\s+"([^"]+)"$/);
-          const displayMatchBackticks = firstStripped.match(/^"display name"\s+`(.+)`$/);
-          const displayMatch = displayMatchBackticks || displayMatchQuotes;
-          if (displayMatch) {
-            this.pendingVariants.displayName = displayMatch[1];
-            i++; // Move past the display name line
-          }
-        }
-      }
-      
       while (i < lines.length) {
         const currentLine = lines[i];
         if (!currentLine.trim()) { i++; continue; }
@@ -224,23 +205,6 @@ class EndlessSkyParser {
     
     let descriptionLines = [];
     let i = startIdx + 1;
-
-    // Check if the first indented line is a display name
-    if (i < lines.length) {
-      const firstLine = lines[i];
-      const firstIndent = firstLine.length - firstLine.replace(/^\t+/, '').length;
-      if (firstIndent === 1) {
-        const firstStripped = firstLine.trim();
-        // Key is always "display name" but value can use quotes or backticks
-        const displayMatchQuotes = firstStripped.match(/^"display name"\s+"([^"]+)"$/);
-        const displayMatchBackticks = firstStripped.match(/^"display name"\s+`(.+)`$/);
-        const displayMatch = displayMatchBackticks || displayMatchQuotes;
-        if (displayMatch) {
-          shipData.displayName = displayMatch[1];
-          i++; // Move past the display name line
-        }
-      }
-    }
     
     while (i < lines.length) {
       const currentLine = lines[i];
@@ -497,6 +461,26 @@ class EndlessSkyParser {
     
     let i = variantInfo.startIdx + 1;
     const lines = variantInfo.lines;
+    
+    // Check if the first indented line is a display name for the variant
+    if (i < lines.length) {
+      const firstLine = lines[i];
+      const firstIndent = firstLine.length - firstLine.replace(/^\t+/, '').length;
+      if (firstIndent === 1) {
+        const firstStripped = firstLine.trim();
+        // "display name" can use quotes or backticks, value can also use quotes or backticks
+        const displayMatch1 = firstStripped.match(/^"display name"\s+"([^"]+)"$/);
+        const displayMatch2 = firstStripped.match(/^"display name"\s+`(.+)`$/);
+        const displayMatch3 = firstStripped.match(/^`display name`\s+"([^"]+)"$/);
+        const displayMatch4 = firstStripped.match(/^`display name`\s+`(.+)`$/);
+        const displayMatch = displayMatch1 || displayMatch2 || displayMatch3 || displayMatch4;
+        if (displayMatch) {
+          variantShip.displayName = displayMatch[1];
+          hasSignificantChanges = true;
+          i++; // Move past the display name line
+        }
+      }
+    }
     
     while (i < lines.length) {
       const currentLine = lines[i];
@@ -756,10 +740,12 @@ class EndlessSkyParser {
       const firstIndent = firstLine.length - firstLine.replace(/^\t+/, '').length;
       if (firstIndent === 1) {
         const firstStripped = firstLine.trim();
-        // Key is always "display name" but value can use quotes or backticks
-        const displayMatchQuotes = firstStripped.match(/^"display name"\s+"([^"]+)"$/);
-        const displayMatchBackticks = firstStripped.match(/^"display name"\s+`(.+)`$/);
-        const displayMatch = displayMatchBackticks || displayMatchQuotes;
+        // "display name" can use quotes or backticks, value can also use quotes or backticks
+        const displayMatch1 = firstStripped.match(/^"display name"\s+"([^"]+)"$/);
+        const displayMatch2 = firstStripped.match(/^"display name"\s+`(.+)`$/);
+        const displayMatch3 = firstStripped.match(/^`display name`\s+"([^"]+)"$/);
+        const displayMatch4 = firstStripped.match(/^`display name`\s+`(.+)`$/);
+        const displayMatch = displayMatch1 || displayMatch2 || displayMatch3 || displayMatch4;
         if (displayMatch) {
           outfitData.displayName = displayMatch[1];
           i++; // Move past the display name line
