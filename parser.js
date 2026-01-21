@@ -177,7 +177,7 @@ class EndlessSkyParser {
     if (variantName) {
       this.pendingVariants.push({
         baseName: baseName,
-        displayName: 
+        displayName: "",
         variantName: variantName,
         startIdx: startIdx,
         lines: lines
@@ -196,7 +196,7 @@ class EndlessSkyParser {
           const displayMatchBackticks = firstStripped.match(/^"display name"\s+`(.+)`$/);
           const displayMatch = displayMatchBackticks || displayMatchQuotes;
           if (displayMatch) {
-            outfitData.displayName = displayMatch[1];
+            this.pendingVariants.displayName = displayMatch[1];
             i++; // Move past the display name line
           }
         }
@@ -214,7 +214,6 @@ class EndlessSkyParser {
     
     const shipData = { 
       name: baseName,
-      displayName: ,
       engines: [],
       reverseEngines: [],
       steeringEngines: [],
