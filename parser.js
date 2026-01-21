@@ -437,7 +437,7 @@ class EndlessSkyParser {
       shipData.description = descriptionLines.join(' ');
     }
 
-    if (shipData.description.length <= 0) {
+    if ((shipData.description).length <= 0) {
       return [null, i];
     }
     
@@ -694,7 +694,7 @@ class EndlessSkyParser {
     if (replaceReverseEngines) variantShip.reverseEngines = newReverseEngines;
     if (replaceSteeringEngines) variantShip.steeringEngines = newSteeringEngines;
     
-    if (variantShip.description.length <= 0) {
+    if ((variantShip.description).length <= 0) {
       return null;
     }
 
@@ -900,7 +900,7 @@ class EndlessSkyParser {
       outfitData.description = descriptionLines.join(' ');
     }
 
-    if (outfitData.description.length <= 0) {
+    if ((outfitData.description).length <= 0) {
       return [null, i];
     }
     
