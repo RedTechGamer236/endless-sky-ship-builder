@@ -4331,7 +4331,7 @@
         "launch effect": "basic launch"
       }
     ],
-    "displayName": "Windjammer",
+    "display name": "\"Windjammer\"",
     "uncapturable": true,
     "attributes": {
       "category": "Unclassified",
@@ -18473,7 +18473,7 @@
     ],
     "turrets": [],
     "bays": [],
-    "displayName": "K-IA \"Latte\"",
+    "display name": "`K-IA \"Latte\"`",
     "Lattes": true,
     "never disabled": true,
     "attributes": {
@@ -18570,7 +18570,7 @@
     ],
     "turrets": [],
     "bays": [],
-    "displayName": "K-IB \"Chomper\"",
+    "display name": "`K-IB \"Chomper\"`",
     "Chompers": true,
     "never disabled": true,
     "attributes": {
@@ -18642,7 +18642,7 @@
     ],
     "turrets": [],
     "bays": [],
-    "displayName": "K-IC \"Pileup\"",
+    "display name": "`K-IC \"Pileup\"`",
     "Pileups": true,
     "never disabled": true,
     "attributes": {
@@ -18724,7 +18724,7 @@
     ],
     "turrets": [],
     "bays": [],
-    "displayName": "K-IE \"Hugger\"",
+    "display name": "`K-IE \"Hugger\"`",
     "Huggers": true,
     "never disabled": true,
     "attributes": {
@@ -18815,7 +18815,7 @@
       }
     ],
     "bays": [],
-    "displayName": "K-IF \"Longfellow\"",
+    "display name": "`K-IF \"Longfellow\"`",
     "Longfellows": true,
     "never disabled": true,
     "attributes": {
@@ -18913,7 +18913,7 @@
       }
     ],
     "bays": [],
-    "displayName": "K-IG \"Dancer\"",
+    "display name": "`K-IG \"Dancer\"`",
     "Dancers": true,
     "never disabled": true,
     "attributes": {
@@ -18995,7 +18995,7 @@
     ],
     "turrets": [],
     "bays": [],
-    "displayName": "K-IIA \"Junior\"",
+    "display name": "`K-IIA \"Junior\"`",
     "Juniors": true,
     "never disabled": true,
     "attributes": {
@@ -19077,7 +19077,7 @@
     ],
     "turrets": [],
     "bays": [],
-    "displayName": "K-IIB \"Icebreaker\"",
+    "display name": "`K-IIB \"Icebreaker\"`",
     "Icebreakers": true,
     "never disabled": true,
     "attributes": {
@@ -19159,7 +19159,7 @@
     ],
     "turrets": [],
     "bays": [],
-    "displayName": "K-IIC \"Pike\"",
+    "display name": "`K-IIC \"Pike\"`",
     "Pikes": true,
     "never disabled": true,
     "attributes": {
@@ -19251,7 +19251,7 @@
     ],
     "turrets": [],
     "bays": [],
-    "displayName": "K-IID \"Mole\"",
+    "display name": "`K-IID \"Mole\"`",
     "Moles": true,
     "never disabled": true,
     "attributes": {
@@ -19323,7 +19323,7 @@
     ],
     "turrets": [],
     "bays": [],
-    "displayName": "K-IIE \"Whiskers\"",
+    "display name": "`K-IIE \"Whiskers\"`",
     "Whiskers": true,
     "never disabled": true,
     "attributes": {
@@ -19429,7 +19429,7 @@
       }
     ],
     "bays": [],
-    "displayName": "K-IIF \"Trip\"",
+    "display name": "`K-IIF \"Trip\"`",
     "Trips": true,
     "never disabled": true,
     "attributes": {
@@ -19555,7 +19555,7 @@
       }
     ],
     "bays": [],
-    "displayName": "K-IIG \"Triplet\"",
+    "display name": "`K-IIG \"Triplet\"`",
     "Triplets": true,
     "never disabled": true,
     "attributes": {
@@ -19629,7 +19629,7 @@
       }
     ],
     "bays": [],
-    "displayName": "???",
+    "display name": "\"???\"",
     "noun": "\"asteroid\"",
     "uncapturable": true,
     "attributes": {
@@ -19701,7 +19701,7 @@
       }
     ],
     "bays": [],
-    "displayName": "???",
+    "display name": "\"???\"",
     "noun": "\"asteroid\"",
     "uncapturable": true,
     "attributes": {
@@ -19774,7 +19774,7 @@
       }
     ],
     "bays": [],
-    "displayName": "???",
+    "display name": "\"???\"",
     "noun": "\"asteroid\"",
     "uncapturable": true,
     "attributes": {
@@ -19846,7 +19846,7 @@
       }
     ],
     "bays": [],
-    "displayName": "???",
+    "display name": "\"???\"",
     "noun": "\"asteroid\"",
     "uncapturable": true,
     "attributes": {
@@ -19918,7 +19918,7 @@
       }
     ],
     "bays": [],
-    "displayName": "???",
+    "display name": "\"???\"",
     "noun": "\"asteroid\"",
     "uncapturable": true,
     "attributes": {
@@ -19985,7 +19985,7 @@
       }
     ],
     "bays": [],
-    "displayName": "???",
+    "display name": "\"???\"",
     "noun": "\"asteroid\"",
     "uncapturable": true,
     "attributes": {
@@ -20052,7 +20052,7 @@
       }
     ],
     "bays": [],
-    "displayName": "???",
+    "display name": "\"???\"",
     "noun": "\"asteroid\"",
     "uncapturable": true,
     "attributes": {
@@ -20118,7 +20118,7 @@
       }
     ],
     "bays": [],
-    "displayName": "???",
+    "display name": "\"???\"",
     "noun": "\"asteroid\"",
     "uncapturable": true,
     "attributes": {
@@ -20184,7 +20184,7 @@
       }
     ],
     "bays": [],
-    "displayName": "???",
+    "display name": "\"???\"",
     "noun": "\"asteroid\"",
     "uncapturable": true,
     "attributes": {
@@ -20250,7 +20250,7 @@
       }
     ],
     "bays": [],
-    "displayName": "???",
+    "display name": "\"???\"",
     "noun": "\"asteroid\"",
     "uncapturable": true,
     "attributes": {
@@ -21893,7 +21893,7 @@
         "launch effect": "korath internal"
       }
     ],
-    "displayName": "Karek A'awoj",
+    "display name": "\"Karek A'awoj\"",
     "attributes": {
       "category": "Heavy Freighter",
       "cost": 29650000,
@@ -22054,7 +22054,7 @@
       }
     ],
     "bays": [],
-    "displayName": "Sapira A'awoj",
+    "display name": "\"Sapira A'awoj\"",
     "attributes": {
       "category": "Heavy Warship",
       "cost": 49640000,
@@ -22191,7 +22191,7 @@
         "launch effect": "korath internal"
       }
     ],
-    "displayName": "Dathnak A'awoj",
+    "display name": "\"Dathnak A'awoj\"",
     "attributes": {
       "category": "Heavy Freighter",
       "cost": 28190000,
@@ -22330,7 +22330,7 @@
         "launch effect": "korath internal"
       }
     ],
-    "displayName": "Spera A'awoj",
+    "display name": "\"Spera A'awoj\"",
     "attributes": {
       "category": "Space Liner",
       "cost": 33640000,
@@ -22525,7 +22525,7 @@
         "launch effect": "korath internal"
       }
     ],
-    "displayName": "Ikfar A'awoj",
+    "display name": "\"Ikfar A'awoj\"",
     "attributes": {
       "category": "Heavy Warship",
       "cost": 43590000,
