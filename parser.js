@@ -689,6 +689,12 @@ class EndlessSkyParser {
 
   parseOutfit(lines, startIdx) {
     const line = lines[startIdx].trim();
+    
+    // Debug: log lines that start with "outfit"
+    if (line.startsWith('outfit')) {
+      console.log('Parsing outfit line:', JSON.stringify(line));
+    }
+    
     // Match outfit names - backticks can contain any character including quotes and backticks
     // outfit `name` format - capture everything between first and last backtick
     const matchBackticks = line.match(/^outfit\s+`(.+)`\s*$/);
@@ -696,8 +702,14 @@ class EndlessSkyParser {
     const matchQuotes = line.match(/^outfit\s+"([^"]+)"\s*$/);
     const match = matchBackticks || matchQuotes;
   
-    if (!match) return [null, startIdx + 1];
+    if (!match) {
+      if (line.startsWith('outfit')) {
+        console.log('Failed to match outfit line:', JSON.stringify(line));
+      }
+      return [null, startIdx + 1];
+    }
     
+    console.log('Matched outfit:', match[1]);
     const outfitData = { name: match[1] };
     let descriptionLines = [];
     let i = startIdx + 1;
