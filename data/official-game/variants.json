@@ -11394,7 +11394,13 @@
     "engines": [],
     "reverseEngines": [],
     "steeringEngines": [],
-    "guns": [],
+    "guns": [
+      {
+        "x": null,
+        "y": 0,
+        "gun": ""
+      }
+    ],
     "turrets": [],
     "bays": [],
     "creature": true,
@@ -11425,7 +11431,6 @@
       "energy protection": 1,
       "ion protection": 1
     },
-    "gun": "0 -3",
     "leak": "\"blood\" 1 2",
     "final explode": "\"blood\"",
     "description": "These are tiny space creatures that feed on solar energy, storing it into two receptors found at the front of their bodies. They are extremely docile, and are found in large groups, almost never seen alone.",
@@ -11438,7 +11443,13 @@
     "engines": [],
     "reverseEngines": [],
     "steeringEngines": [],
-    "guns": [],
+    "guns": [
+      {
+        "x": null,
+        "y": 0,
+        "gun": ""
+      }
+    ],
     "turrets": [],
     "bays": [],
     "creature": true,
@@ -11469,7 +11480,6 @@
       "energy protection": 1,
       "ion protection": 1
     },
-    "gun": "0 -3",
     "leak": "\"blood\" 1 2",
     "final explode": "\"blood\"",
     "description": "These are tiny space creatures that feed on solar energy, storing it into two receptors found at the front of their bodies. They are extremely docile, and are found in large groups, almost never seen alone.",

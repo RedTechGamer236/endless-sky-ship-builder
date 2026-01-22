@@ -28313,7 +28313,13 @@
       "engines": [],
       "reverseEngines": [],
       "steeringEngines": [],
-      "guns": [],
+      "guns": [
+        {
+          "x": null,
+          "y": 0,
+          "gun": ""
+        }
+      ],
       "turrets": [],
       "bays": [],
       "creature": true,
@@ -28344,7 +28350,6 @@
         "energy protection": 1,
         "ion protection": 1
       },
-      "gun": "0 -3",
       "leak": "\"blood\" 1 2",
       "final explode": "\"blood\"",
       "description": "These are tiny space creatures that feed on solar energy, storing it into two receptors found at the front of their bodies. They are extremely docile, and are found in large groups, almost never seen alone."
@@ -40907,7 +40912,13 @@
       "engines": [],
       "reverseEngines": [],
       "steeringEngines": [],
-      "guns": [],
+      "guns": [
+        {
+          "x": null,
+          "y": 0,
+          "gun": ""
+        }
+      ],
       "turrets": [],
       "bays": [],
       "creature": true,
@@ -40938,7 +40949,6 @@
         "energy protection": 1,
         "ion protection": 1
       },
-      "gun": "0 -3",
       "leak": "\"blood\" 1 2",
       "final explode": "\"blood\"",
       "description": "These are tiny space creatures that feed on solar energy, storing it into two receptors found at the front of their bodies. They are extremely docile, and are found in large groups, almost never seen alone.",
@@ -40951,7 +40961,13 @@
       "engines": [],
       "reverseEngines": [],
       "steeringEngines": [],
-      "guns": [],
+      "guns": [
+        {
+          "x": null,
+          "y": 0,
+          "gun": ""
+        }
+      ],
       "turrets": [],
       "bays": [],
       "creature": true,
@@ -40982,7 +40998,6 @@
         "energy protection": 1,
         "ion protection": 1
       },
-      "gun": "0 -3",
       "leak": "\"blood\" 1 2",
       "final explode": "\"blood\"",
       "description": "These are tiny space creatures that feed on solar energy, storing it into two receptors found at the front of their bodies. They are extremely docile, and are found in large groups, almost never seen alone.",
@@ -56711,5 +56726,5 @@
       "description": "The history of the Wanderers is not without hardship and failure. Immortalized in a bronze mold, this withered branch recalls the time the Wanderers could not save a world, for skilled as they may be, they cannot stop destruction when it is actively sought after by others mightier than them. The fall of the Noble Watchwood, their cherished emblem, now stands as a solemn vow: when peace fails, they too must prepare to fight. To stand and fight with the Wanderers, this license grants access to their greatest warships."
     }
   ],
-  "parsedAt": "2026-01-22T13:40:15.677Z"
+  "parsedAt": "2026-01-22T14:01:20.373Z"
 }
