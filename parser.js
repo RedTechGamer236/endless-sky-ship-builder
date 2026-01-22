@@ -571,7 +571,7 @@ class EndlessSkyParser {
           continue;
         }
         
-        if (stripped.match(/^["'`]?engine["'`]?\s+(-?\d+)/)) {
+        if (stripped.match(/^["'`]?reverse engine["'`]?\s+(-?\d+)/)) {
           hasSignificantChanges = true;
           replaceReverseEngines = true;
           const parts = stripped.replace(/"/g, '').replace(/`/g, '').substring(14).trim().split(/\s+/);
@@ -600,7 +600,7 @@ class EndlessSkyParser {
           continue;
         }
         
-        if (stripped.match(/^["'`]?engine["'`]?\s+(-?\d+)/)) {
+        if (stripped.match(/^["'`]?steering engine["'`]?\s+(-?\d+)/)) {
           hasSignificantChanges = true;
           replaceSteeringEngines = true;
           const parts = stripped.replace(/"/g, '').replace(/`/g, '').substring(15).trim().split(/\s+/);
@@ -629,7 +629,7 @@ class EndlessSkyParser {
           continue;
         }
         
-        if (stripped.match(/^["'`]?engine["'`]?\s+(-?\d+)/)) {
+        if (stripped.match(/^["'`]?gun["'`]?\s+(-?\d+)/)) {
           hasSignificantChanges = true;
           replaceGuns = true;
           const parts = stripped.substring(4).trim().split(/\s+/);
@@ -638,7 +638,7 @@ class EndlessSkyParser {
           continue;
         }
         
-        if (stripped.match(/^["'`]?engine["'`]?\s+(-?\d+)/)) {
+        if (stripped.match(/^["'`]?turret["'`]?\s+(-?\d+)/)) {
           hasSignificantChanges = true;
           replaceTurrets = true;
           const parts = stripped.substring(7).trim().split(/\s+/);
@@ -647,9 +647,9 @@ class EndlessSkyParser {
           continue;
         }
 
-        const matchQuotes = stripped.match(/^bay\s+"([^"]+)"\s+(-?\d+\.?\d*)/);
-        const matchBackticks = stripped.match(/^bay\s+`(.+?)`\s+(-?\d+\.?\d*)/);
-        const matchUnquoted = stripped.match(/^bay\s+(\w+)\s+(-?\d+\.?\d*)/);
+        const matchQuotes = stripped.match(/^["'`]?bay["'`]?\s+"([^"]+)"\s+(-?\d+\.?\d*)/);
+        const matchBackticks = stripped.match(/^["'`]?bay["'`]?\s+`(.+?)`\s+(-?\d+\.?\d*)/);
+        const matchUnquoted = stripped.match(/^["'`]?bay["'`]?\s+(\w+)\s+(-?\d+\.?\d*)/); ///^["'`]?engine["'`]?\s+(-?\d+)/
         const match = matchBackticks || matchQuotes || matchUnquoted;
         
         if (match) {
