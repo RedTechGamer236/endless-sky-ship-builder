@@ -508,8 +508,6 @@ class EndlessSkyParser {
           continue;
         }
         
-        const matchShipSprite = baseShip.sprite.match(/sprite\s+(?:"([^"]+)"|`([^`]+)`|([^\s]+))/);
-
         if (stripped.startsWith('sprite ')) {
           const spriteMatchQuotes = stripped.match(/sprite\s+"([^"]+)"/);
           const spriteMatchBackticks = stripped.match(/sprite\s+`([^`]+)`/);
@@ -521,9 +519,7 @@ class EndlessSkyParser {
           i++;
           continue;
         }
-        
-        const matchShipThumbnail = baseShip.sprite.match(/thumbnail\s+(?:"([^"]+)"|`([^`]+)`|([^\s]+))/);
-        
+                
         if (stripped.startsWith('thumbnail ')) {
           const thumbMatchQuotes = stripped.match(/thumbnail\s+"([^"]+)"/);
           const thumbMatchBackticks = stripped.match(/thumbnail\s+`([^`]+)`/);
