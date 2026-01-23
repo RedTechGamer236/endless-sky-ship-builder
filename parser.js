@@ -77,53 +77,143 @@ class EndlessSkyParser {
       if (currentIndent === baseIndent) {
         const stripped = line.trim();
         
-        const unquotedKeyMatch = stripped.match(/^([a-z\s]+)\s+"([^"]+)"$/i);
-        if (unquotedKeyMatch) {
-          data[unquotedKeyMatch[1].trim()] = unquotedKeyMatch[2];
+        // Handle "key" "value" format (both quoted)
+        const quotedBothMatch = stripped.match(/"([^"]+)"\s+"([^"]+)"/);
+        if (quotedBothMatch) {
+          const key = quotedBothMatch[1];
+          const value = quotedBothMatch[2];
+          if (key in data) {
+            if (!Array.isArray(data[key])) data[key] = [data[key]];
+            data[key].push(value);
+          } else {
+            data[key] = value;
+          }
+          i++;
+          continue;
+        }
+
+        // Handle "key" `value` format (quoted key, backtick value)
+        const quotedKeyBacktickValueMatch = stripped.match(/"([^"]+)"\s+`([^`]+)`/);
+        if (quotedKeyBacktickValueMatch) {
+          const key = quotedKeyBacktickValueMatch[1];
+          const value = quotedKeyBacktickValueMatch[2];
+          if (key in data) {
+            if (!Array.isArray(data[key])) data[key] = [data[key]];
+            data[key].push(value);
+          } else {
+            data[key] = value;
+          }
+          i++;
+          continue;
+        }
+
+        // Handle `key` "value" format (backtick key, quoted value)
+        const backtickKeyQuotedValueMatch = stripped.match(/`([^`]+)`\s+"([^"]+)"/);
+        if (backtickKeyQuotedValueMatch) {
+          const key = backtickKeyQuotedValueMatch[1];
+          const value = backtickKeyQuotedValueMatch[2];
+          if (key in data) {
+            if (!Array.isArray(data[key])) data[key] = [data[key]];
+            data[key].push(value);
+          } else {
+            data[key] = value;
+          }
+          i++;
+          continue;
+        }
+
+        // Handle `key` `value` format (both backticks)
+        const backtickBothMatch = stripped.match(/`([^`]+)`\s+`([^`]+)`/);
+        if (backtickBothMatch) {
+          const key = backtickBothMatch[1];
+          const value = backtickBothMatch[2];
+          if (key in data) {
+            if (!Array.isArray(data[key])) data[key] = [data[key]];
+            data[key].push(value);
+          } else {
+            data[key] = value;
+          }
+          i++;
+          continue;
+        }
+
+        // Handle "key" value format (quoted key with unquoted value)
+        const quotedKeyMatch = stripped.match(/"([^"]+)"\s+([^"`\s][^"`]*)/);
+        if (quotedKeyMatch) {
+          const key = quotedKeyMatch[1];
+          const valueStr = quotedKeyMatch[2].trim();
+          const num = parseFloat(valueStr);
+          const value = isNaN(num) ? valueStr : num;
+          if (key in data) {
+            if (!Array.isArray(data[key])) data[key] = [data[key]];
+            data[key].push(value);
+          } else {
+            data[key] = value;
+          }
+          i++;
+          continue;
+        }
+
+        // Handle `key` value format (backtick key with unquoted value)
+        const backtickKeyMatch = stripped.match(/`([^`]+)`\s+([^"`\s][^"`]*)/);
+        if (backtickKeyMatch) {
+          const key = backtickKeyMatch[1];
+          const valueStr = backtickKeyMatch[2].trim();
+          const num = parseFloat(valueStr);
+          const value = isNaN(num) ? valueStr : num;
+          if (key in data) {
+            if (!Array.isArray(data[key])) data[key] = [data[key]];
+            data[key].push(value);
+          } else {
+            data[key] = value;
+          }
+          i++;
+          continue;
+        }
+
+        // Handle key "value" format (unquoted key with quoted value)
+        const unquotedKeyQuotedValueMatch = stripped.match(/^(\S+)\s+"([^"]+)"$/);
+        if (unquotedKeyQuotedValueMatch) {
+          const key = unquotedKeyQuotedValueMatch[1];
+          const value = unquotedKeyQuotedValueMatch[2];
+          if (key in data) {
+            if (!Array.isArray(data[key])) data[key] = [data[key]];
+            data[key].push(value);
+          } else {
+            data[key] = value;
+          }
+          i++;
+          continue;
+        }
+
+        // Handle key `value` format (unquoted key with backtick value)
+        const unquotedKeyBacktickValueMatch = stripped.match(/^(\S+)\s+`([^`]+)`$/);
+        if (unquotedKeyBacktickValueMatch) {
+          const key = unquotedKeyBacktickValueMatch[1];
+          const value = unquotedKeyBacktickValueMatch[2];
+          if (key in data) {
+            if (!Array.isArray(data[key])) data[key] = [data[key]];
+            data[key].push(value);
+          } else {
+            data[key] = value;
+          }
           i++;
           continue;
         }
         
-        if (stripped.includes('"')) {
-          const match = stripped.match(/"([^"]+)"(?:\s+(.*))?/);
-          if (match) {
-            const key = match[1];
-            const valueStr = (match[2] || '').trim().replace(/^["'`]|["'`]$/g, '');
-            let value = !valueStr ? true : (isNaN(parseFloat(valueStr)) ? valueStr : parseFloat(valueStr));
-            
-            if (key in data) {
-              if (!Array.isArray(data[key])) data[key] = [data[key]];
-              data[key].push(value);
-            } else {
-              data[key] = value;
-            }
-            i++;
-            continue;
-          }
-        }
-        
-        if (stripped.includes('`')) {
-          const match = stripped.match(/`([^`]+)`(?:\s+(.*))?/);
-          if (match) {
-            const key = match[1];
-            const valueStr = (match[2] || '').trim().replace(/^["'`]|["'`]$/g, '');
-            let value = !valueStr ? true : (isNaN(parseFloat(valueStr)) ? valueStr : parseFloat(valueStr));
-            
-            if (key in data) {
-              if (!Array.isArray(data[key])) data[key] = [data[key]];
-              data[key].push(value);
-            } else {
-              data[key] = value;
-            }
-            i++;
-            continue;
-          }
-        }
-        
+        // Handle key value format (both unquoted) - must come before nested block check
         const simpleMatch = stripped.match(/^(\S+)\s+(.+)$/);
         if (simpleMatch && !stripped.includes('"') && !stripped.includes('`')) {
-          const num = parseFloat(simpleMatch[2].trim());
-          data[simpleMatch[1]] = isNaN(num) ? simpleMatch[2].trim() : num;
+          const key = simpleMatch[1];
+          const valueStr = simpleMatch[2].trim();
+          const num = parseFloat(valueStr);
+          const value = isNaN(num) ? valueStr : num;
+          if (key in data) {
+            if (!Array.isArray(data[key])) data[key] = [data[key]];
+            data[key].push(value);
+          } else {
+            data[key] = value;
+          }
           i++;
           continue;
         }
@@ -1091,6 +1181,17 @@ class EndlessSkyParser {
     for (const outfit of this.outfits) {
       if (outfit.sprite) imagePaths.add(outfit.sprite);
       if (outfit.thumbnail) imagePaths.add(outfit.thumbnail);
+      if (outfit.hardpointSprite) imagePaths.add(outfit.hardpointSprite);
+      if (outfit.['hardpoint sprite']) imagePaths.add(outfit.['hardpoint sprite']);
+  
+      // Check weapon block for hardpoint sprite
+      if   (outfit.weapon && outfit.weapon['hardpoint sprite']) {
+        imagePaths.add(outfit.weapon['hardpoint sprite']);
+      }
+
+      if (outfit.weapon && outfit.weapon.sprite) {
+        imagePaths.add(outfit.weapon.sprite);
+      }
     }
     
     console.log(`Found ${imagePaths.size} unique images to download`);
