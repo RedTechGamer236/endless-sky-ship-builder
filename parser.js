@@ -1014,6 +1014,72 @@ class EndlessSkyParser {
       outfits: this.outfits
     };
   }
+
+  async downloadImages(owner, repo, branch, pluginDir) {
+    console.log('\nDownloading images...');
+    
+    const imageDir = path.join(pluginDir, 'images');
+    await fs.mkdir(imageDir, { recursive: true });
+    
+    const imagePaths = new Set();
+    
+    // Collect all sprite/thumbnail paths from ships
+    for (const ship of this.ships) {
+      if (ship.sprite) imagePaths.add(ship.sprite);
+      if (ship.thumbnail) imagePaths.add(ship.thumbnail);
+    }
+    
+    // Collect from variants
+    for (const variant of this.variants) {
+      if (variant.sprite) imagePaths.add(variant.sprite);
+      if (variant.thumbnail) imagePaths.add(variant.thumbnail);
+    }
+    
+    // Collect from outfits (if they have sprites)
+    for (const outfit of this.outfits) {
+      if (outfit.sprite) imagePaths.add(outfit.sprite);
+      if (outfit.thumbnail) imagePaths.add(outfit.thumbnail);
+    }
+    
+    console.log(`Found ${imagePaths.size} unique images to download`);
+    
+    let downloaded = 0;
+    let failed = 0;
+    
+    // Download each image
+    for (const imagePath of imagePaths) {
+      // Try common image extensions
+      let imageFound = false;
+      for (const ext of ['.png', '.jpg', '.jpeg', '.gif']) {
+        const fullPath = `${imagePath}${ext}`;
+        const rawUrl = `https://raw.githubusercontent.com/${owner}/${repo}/${branch}/${fullPath}`;
+        
+        try {
+          const imageData = await this.fetchUrl(rawUrl);
+          
+          // Save to local directory maintaining structure
+          const localPath = path.join(imageDir, fullPath);
+          await fs.mkdir(path.dirname(localPath), { recursive: true });
+          await fs.writeFile(localPath, imageData);
+          
+          console.log(`  ✓ Downloaded ${fullPath}`);
+          downloaded++;
+          imageFound = true;
+          break; // Found the image, stop trying extensions
+        } catch (error) {
+          // Image not found with this extension, try next
+          continue;
+        }
+      }
+      
+      if (!imageFound) {
+        console.log(`  ✗ Image not found: ${imagePath}`);
+        failed++;
+      }
+    }
+    
+    console.log(`\nImage download complete: ${downloaded} downloaded, ${failed} not found`);
+  }
 }
 
 async function main() {
@@ -1032,22 +1098,37 @@ async function main() {
       const parser = new EndlessSkyParser();
       const data = await parser.parseRepository(plugin.repository);
       
+      // Create plugin directories
       const pluginDir = path.join(process.cwd(), 'data', plugin.name);
-      await fs.mkdir(pluginDir, { recursive: true });
+      const dataFilesDir = path.join(pluginDir, 'dataFiles');
+      await fs.mkdir(dataFilesDir, { recursive: true });
       
-      const shipsPath = path.join(pluginDir, 'ships.json');
+      // Extract repo info for image downloading
+      const repoMatch = plugin.repository.match(/github\.com\/([^\/]+)\/([^\/]+)/);
+      if (repoMatch) {
+        const owner = repoMatch[1];
+        const repo = repoMatch[2].replace('.git', '');
+        const branchMatch = plugin.repository.match(/\/tree\/([^\/]+)/);
+        const branch = branchMatch ? branchMatch[1] : 'master';
+        
+        // Download images to pluginDir/images/
+        await parser.downloadImages(owner, repo, branch, pluginDir);
+      }
+      
+      // Save JSON files to pluginDir/dataFiles/
+      const shipsPath = path.join(dataFilesDir, 'ships.json');
       await fs.writeFile(shipsPath, JSON.stringify(data.ships, null, 2));
       console.log(`✓ Saved ${data.ships.length} ships to ${shipsPath}`);
       
-      const variantsPath = path.join(pluginDir, 'variants.json');
+      const variantsPath = path.join(dataFilesDir, 'variants.json');
       await fs.writeFile(variantsPath, JSON.stringify(data.variants, null, 2));
       console.log(`✓ Saved ${data.variants.length} variants to ${variantsPath}`);
       
-      const outfitsPath = path.join(pluginDir, 'outfits.json');
+      const outfitsPath = path.join(dataFilesDir, 'outfits.json');
       await fs.writeFile(outfitsPath, JSON.stringify(data.outfits, null, 2));
       console.log(`✓ Saved ${data.outfits.length} outfits to ${outfitsPath}`);
       
-      const combinedPath = path.join(pluginDir, 'complete.json');
+      const combinedPath = path.join(dataFilesDir, 'complete.json');
       await fs.writeFile(combinedPath, JSON.stringify({
         plugin: plugin.name,
         repository: plugin.repository,
