@@ -1198,11 +1198,59 @@ class EndlessSkyParser {
     let downloaded = 0;
     let failed = 0;
 
+    // Helper function to recursively download images from a directory
+    const downloadFromDirectory = async (dirPath) => {
+      try {
+        const dirUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${dirPath}?ref=${branch}`;
+        const dirData = await this.fetchUrl(dirUrl);
+        const dirContents = JSON.parse(dirData);
+
+        if (!Array.isArray(dirContents)) {
+          return 0;
+        }
+
+        let dirDownloaded = 0;
+
+        for (const item of dirContents) {
+          if (item.type === 'file') {
+            const fileName = item.name;
+            const fileExt = path.extname(fileName).toLowerCase();
+
+            // Only download image files
+            if (['.png', '.jpg', '.jpeg', '.gif', '.avif'].includes(fileExt)) {
+              try {
+                const fileRawUrl = `https://raw.githubusercontent.com/${owner}/${repo}/${branch}/${dirPath}/${fileName}`;
+                const fileData = await this.fetchUrl(fileRawUrl);
+
+                const localPath = path.join(imageDir, dirPath, fileName);
+                await fs.mkdir(path.dirname(localPath), { recursive: true });
+                await fs.writeFile(localPath, fileData);
+
+                console.log(`    ✓ Downloaded ${dirPath}/${fileName}`);
+                dirDownloaded++;
+              } catch (error) {
+                console.log(`    ✗ Failed to download ${dirPath}/${fileName}`);
+              }
+            }
+          } else if (item.type === 'dir') {
+            // Recursively download from subdirectory
+            const subDirPath = `${dirPath}/${item.name}`;
+            const subDirDownloaded = await downloadFromDirectory(subDirPath);
+            dirDownloaded += subDirDownloaded;
+          }
+        }
+
+        return dirDownloaded;
+      } catch (error) {
+        return 0;
+      }
+    };
+
     // Download each image
     for (const imagePath of imagePaths) {
       // First, try to download as a single image file
       let imageFound = false;
-      for (const ext of ['.png', '.jpeg', '.avif', '.jpg', '.gif']) {
+      for (const ext of ['.png', '.jpeg', '.avif']) {
         const fullPath = `${imagePath}${ext}`;
         const rawUrl = `https://raw.githubusercontent.com/${owner}/${repo}/${branch}/${fullPath}`;
 
@@ -1226,47 +1274,13 @@ class EndlessSkyParser {
 
       // If not found as a single file, check if it's a directory
       if (!imageFound) {
-        try {
-          // Try to fetch the directory tree
-          const dirUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${imagePath}?ref=${branch}`;
-          const dirData = await this.fetchUrl(dirUrl);
-          const dirContents = JSON.parse(dirData);
+        console.log(`  📁 Checking if ${imagePath} is a directory...`);
+        const dirDownloaded = await downloadFromDirectory(imagePath);
 
-          // Check if it's an array (directory listing)
-          if (Array.isArray(dirContents)) {
-            console.log(`  📁 Found directory: ${imagePath} with ${dirContents.length} files`);
-
-            // Download all image files from the directory
-            for (const file of dirContents) {
-              if (file.type === 'file') {
-                const fileName = file.name;
-                const fileExt = path.extname(fileName).toLowerCase();
-
-                // Only download image files
-                if (['.png', '.jpg', '.jpeg', '.gif', '.avif'].includes(fileExt)) {
-                  try {
-                    const fileRawUrl = `https://raw.githubusercontent.com/${owner}/${repo}/${branch}/${imagePath}/${fileName}`;
-                    const fileData = await this.fetchUrl(fileRawUrl);
-
-                    const localPath = path.join(imageDir, imagePath, fileName);
-                    await fs.mkdir(path.dirname(localPath), { recursive: true });
-                    await fs.writeFile(localPath, fileData);
-
-                    console.log(`    ✓ Downloaded ${imagePath}/${fileName}`);
-                    downloaded++;
-                  } catch (error) {
-                    console.log(`    ✗ Failed to download ${imagePath}/${fileName}`);
-                    failed++;
-                  }
-                }
-              }
-            }
-          } else {
-            console.log(`  ✗ Image not found: ${imagePath}`);
-            failed++;
-          }
-        } catch (error) {
-          // Not a directory either
+        if (dirDownloaded > 0) {
+          console.log(`  📁 Downloaded ${dirDownloaded} images from directory: ${imagePath}`);
+          downloaded += dirDownloaded;
+        } else {
           console.log(`  ✗ Image/directory not found: ${imagePath}`);
           failed++;
         }
