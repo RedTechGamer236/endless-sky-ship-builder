@@ -2,6 +2,37 @@
 const https = require('https');
 const fs = require('fs').promises;
 const path = require('path');
+const ImageConverter = require('./imageConverter');
+const { exec: execCallback } = require('child_process');
+const { promisify } = require('util');
+const exec = promisify(execCallback);
+
+async function sparseCloneImages(owner, repo, branch, targetDir) {
+  console.log(`Sparse cloning images from ${owner}/${repo}...`);
+  
+  // Clean up any existing directory
+  await fs.rm(targetDir, { recursive: true, force: true });
+  await fs.mkdir(targetDir, { recursive: true });
+
+  const repoUrl = `https://github.com/${owner}/${repo}.git`;
+
+  try {
+    // Initialize sparse checkout
+    await exec(`git clone --filter=blob:none --no-checkout --depth 1 --single-branch --branch ${branch} ${repoUrl} "${targetDir}"`);
+    
+    // Configure sparse checkout
+    await exec(`git -C "${targetDir}" sparse-checkout init --cone`);
+    await exec(`git -C "${targetDir}" sparse-checkout set images`);
+    
+    // Checkout only the images directory
+    await exec(`git -C "${targetDir}" checkout ${branch}`);
+    
+    console.log(`✓ Successfully cloned images directory`);
+  } catch (error) {
+    console.error(`Error during sparse clone: ${error.message}`);
+    throw error;
+  }
+}
 
 class EndlessSkyParser {
   constructor() {
@@ -48,6 +79,23 @@ class EndlessSkyParser {
         res.on('end', () => { resolve(Buffer.concat(chunks)); });
       }).on('error', reject);
     });
+  }
+
+    async copyDirectory(source, destination) {
+    await fs.mkdir(destination, { recursive: true });
+    
+    const entries = await fs.readdir(source, { withFileTypes: true });
+    
+    for (const entry of entries) {
+      const sourcePath = path.join(source, entry.name);
+      const destPath = path.join(destination, entry.name);
+      
+      if (entry.isDirectory()) {
+        await this.copyDirectory(sourcePath, destPath);
+      } else {
+        await fs.copyFile(sourcePath, destPath);
+      }
+    }
   }
 
   async fetchGitHubRepo(owner, repo, branch) {
@@ -1180,315 +1228,121 @@ class EndlessSkyParser {
   }
 
   async downloadImages(owner, repo, branch, pluginDir) {
-    console.log('\nDownloading images...');
+    console.log('\nDownloading images (via sparse checkout)...');
 
+    const tempRepoDir = path.join(pluginDir, '.tmp-images-repo');
     const imageDir = path.join(pluginDir, 'images');
     await fs.mkdir(imageDir, { recursive: true });
 
-    const imagePaths = new Set();
+    try {
+      // Use sparse clone to get just the images directory
+      await sparseCloneImages(owner, repo, branch, tempRepoDir);
 
-    // Collect all sprite/thumbnail paths from ships
-    for (const ship of this.ships) {
-      if (ship.sprite) {
-        const path = ship.sprite;
-        const removeLast = path.replace(/\/[^/]*$(?=.*\/)/, '')
-        imagePaths.add(removeLast);
+      const sourceImagesDir = path.join(tempRepoDir, 'images');
+
+      // Check if images directory exists
+      try {
+        await fs.access(sourceImagesDir);
+      } catch (error) {
+        console.log('No images directory found in repository');
+        return;
       }
 
-      if (ship.thumbnail) {
-        const path = ship.thumbnail;
-        const removeLast = path.replace(/\/[^/]*$(?=.*\/)/, '')
-        imagePaths.add(removeLast);
-      }
-    }
+      // Collect all sprite/thumbnail paths from ships, variants, and outfits
+      const imagePaths = new Set();
 
-    // Collect from variants
-    for (const variant of this.variants) {
-      if (variant.sprite) {
-        const path = variant.sprite;
-        const removeLast = path.replace(/\/[^/]*$(?=.*\/)/, '')
-        imagePaths.add(removeLast);
-      }
-
-      if (variant.thumbnail) {
-        const path = variant.thumbnail;
-        const removeLast = path.replace(/\/[^/]*$(?=.*\/)/, '')
-        imagePaths.add(removeLast);
-      }
-    }
-
-    // Collect from outfits (if they have sprites)
-    for (const outfit of this.outfits) {
-      if (outfit.sprite) {
-        const path = outfit.sprite;
-        const removeLast = path.replace(/\/[^/]*$(?=.*\/)/, '')
-        imagePaths.add(removeLast);
-      }
-
-      if (outfit.thumbnail) {
-        const path = outfit.thumbnail;
-        const removeLast = path.replace(/\/[^/]*$(?=.*\/)/, '')
-        imagePaths.add(removeLast);
-      }
-    
-      // Check weapon block for hardpoint sprite and sprite
-      if (outfit.weapon) {
-        if (outfit.weapon['hardpoint sprite']) {
-          const path = outfit.weapon['hardpoint sprite'];
-          const removeLast = path.replace(/\/[^/]*$(?=.*\/)/, '')
+      for (const ship of this.ships) {
+        if (ship.sprite) {
+          const path = ship.sprite;
+          const removeLast = path.replace(/\/[^/]*$(?=.*\/)/, '');
           imagePaths.add(removeLast);
         }
-        if (outfit.weapon.sprite) {
-          const path = outfit.weapon.sprite;
-          const removeLast = path.replace(/\/[^/]*$(?=.*\/)/, '')
+        if (ship.thumbnail) {
+          const path = ship.thumbnail;
+          const removeLast = path.replace(/\/[^/]*$(?=.*\/)/, '');
           imagePaths.add(removeLast);
         }
       }
-    }
 
-    console.log(`Found ${imagePaths.size} unique image paths to process`);
+      for (const variant of this.variants) {
+        if (variant.sprite) {
+          const path = variant.sprite;
+          const removeLast = path.replace(/\/[^/]*$(?=.*\/)/, '');
+          imagePaths.add(removeLast);
+        }
+        if (variant.thumbnail) {
+          const path = variant.thumbnail;
+          const removeLast = path.replace(/\/[^/]*$(?=.*\/)/, '');
+          imagePaths.add(removeLast);
+        }
+      }
 
-    let downloaded = 0;
-    let failed = 0;
+      for (const outfit of this.outfits) {
+        if (outfit.sprite) {
+          const path = outfit.sprite;
+          const removeLast = path.replace(/\/[^/]*$(?=.*\/)/, '');
+          imagePaths.add(removeLast);
+        }
+        if (outfit.thumbnail) {
+          const path = outfit.thumbnail;
+          const removeLast = path.replace(/\/[^/]*$(?=.*\/)/, '');
+          imagePaths.add(removeLast);
+        }
 
-    // Add delay helper
-    const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+        if (outfit.weapon) {
+          if (outfit.weapon['hardpoint sprite']) {
+            const path = outfit.weapon['hardpoint sprite'];
+            const removeLast = path.replace(/\/[^/]*$(?=.*\/)/, '');
+            imagePaths.add(removeLast);
+          }
+          if (outfit.weapon.sprite) {
+            const path = outfit.weapon.sprite;
+            const removeLast = path.replace(/\/[^/]*$(?=.*\/)/, '');
+            imagePaths.add(removeLast);
+          }
+        }
+      }
 
-    // Helper function to recursively download images from a directory
-    const downloadFromDirectory = async (dirPath) => {
-      // Use forward slashes for URL paths
-      let normalizedPath = dirPath.replace(/\\/g, '/');
+      console.log(`Found ${imagePaths.size} unique image paths to process`);
 
-      // Try both with and without 'images/' prefix
-      const pathsToTry = [
-        `images/${normalizedPath}`,
-        normalizedPath
-      ];
+      // Copy only the needed image paths
+      for (const imagePath of imagePaths) {
+        const normalizedPath = imagePath.replace(/\\/g, '/');
+        const sourcePath = path.join(sourceImagesDir, normalizedPath);
+        const destPath = path.join(imageDir, normalizedPath);
 
-      for (const tryPath of pathsToTry) {
         try {
-          // URL encode the path properly (encode each segment separately to preserve slashes)
-          const encodedPath = tryPath.split('/').map(segment => encodeURIComponent(segment)).join('/');
-          const dirUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${encodedPath}?ref=${branch}`;
+          // Check if source exists and is a directory
+          const stats = await fs.stat(sourcePath);
 
-          console.log(`    Fetching directory contents: ${dirUrl}`);
-          const dirData = await this.fetchUrl(dirUrl);
-          const dirContents = JSON.parse(dirData);
-
-          if (!Array.isArray(dirContents)) {
-            console.log(`    Not a directory at: ${tryPath}`);
-            continue; // Try next path
+          if (stats.isDirectory()) {
+            console.log(`  Copying directory: ${normalizedPath}`);
+            await this.copyDirectory(sourcePath, destPath);
+          } else {
+            console.log(`  Copying file: ${normalizedPath}`);
+            await fs.mkdir(path.dirname(destPath), { recursive: true });
+            await fs.copyFile(sourcePath, destPath);
           }
-
-          console.log(`    ✓ Found ${dirContents.length} items in ${tryPath}`);
-          let dirDownloaded = 0;
-
-          for (const item of dirContents) {
-            // Add small delay to avoid rate limiting
-            await delay(50);
-
-            if (item.type === 'file') {
-              const fileName = item.name;
-              const fileExt = path.extname(fileName).toLowerCase();
-
-              // Only download image files
-              if (['.png', '.jpg', '.jpeg', '.gif', '.avif', '.webp'].includes(fileExt)) {
-                try {
-                  // Use the download_url from the API response (it's already properly encoded)
-                  const fileRawUrl = item.download_url || `https://raw.githubusercontent.com/${owner}/${repo}/${branch}/${item.path}`;
-                  console.log(`      Downloading: ${fileName}`);
-                  const fileData = await this.fetchBinaryUrl(fileRawUrl);
-
-                  // Use path.join for local file system
-                  const localPath = path.join(imageDir, normalizedPath, fileName);
-                  await fs.mkdir(path.dirname(localPath), { recursive: true });
-                  await fs.writeFile(localPath, fileData);
-
-                  console.log(`      ✓ Downloaded ${normalizedPath}/${fileName}`);
-                  dirDownloaded++;
-                } catch (error) {
-                  console.log(`      ✗ Failed to download ${fileName}: ${error.message}`);
-                }
-              }
-            } else if (item.type === 'dir') {
-              // Recursively download from subdirectory
-              const subDirPath = `${normalizedPath}/${item.name}`;
-              console.log(`    📁 Entering subdirectory: ${subDirPath}`);
-              const subDirDownloaded = await downloadFromDirectory(subDirPath);
-              dirDownloaded += subDirDownloaded;
-            }
-          }
-
-          return dirDownloaded; // Successfully found and processed, return count
-
         } catch (error) {
-          console.log(`    Path not found: ${tryPath} - ${error.message}`);
-          continue; // Try next path
+          console.log(`  ✗ Path not found or error: ${normalizedPath} - ${error.message}`);
         }
       }
 
-      // If we get here, none of the paths worked
-      console.log(`    Error: Directory not found at any path for ${dirPath}`);
-      return 0;
-    };
+      console.log(`✓ Successfully copied filtered images to ${imageDir}`);
 
-    // Helper function to download files matching a pattern from a directory
-    const downloadFromDirectoryWithPattern = async (dirPath, basenamePattern) => {
-      let normalizedPath = dirPath.replace(/\\/g, '/');
+      // Clean up the temporary repo
+      await fs.rm(tempRepoDir, { recursive: true, force: true });
+      console.log(`✓ Cleaned up temporary repository`);
 
-      const pathsToTry = [
-        `images/${normalizedPath}`,
-        normalizedPath
-      ];
-
-      for (const tryPath of pathsToTry) {
-        try {
-          const encodedPath = tryPath.split('/').map(segment => encodeURIComponent(segment)).join('/');
-          const dirUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${encodedPath}?ref=${branch}`;
-
-          console.log(`    Checking directory for pattern: ${dirUrl}`);
-          const dirData = await this.fetchUrl(dirUrl);
-          const dirContents = JSON.parse(dirData);
-
-          if (!Array.isArray(dirContents)) {
-            continue;
-          }
-
-          let dirDownloaded = 0;
-
-          // Filter files that match the pattern
-          for (const item of dirContents) {
-            await delay(50);
-
-            if (item.type === 'file') {
-              const fileName = item.name;
-              const fileExt = path.extname(fileName).toLowerCase();
-              const fileBase = path.basename(fileName, fileExt);
-
-              // Escape regex special characters in the pattern
-              const escapedPattern = basenamePattern.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-
-              // Check if filename matches various patterns:
-              // 1. Exactly "basename"
-              // 2. "basename-##" (dash followed by numbers)
-              // 3. "basename*##" or "basename^##" (any single char + numbers)
-              // 4. "basename-anything##" (dash + any chars + numbers, like shipname-variant0)
-              // 5. "basenameAnything##" (any chars + numbers, like shipnamevariant0)
-              // 6. "basename+" or "basename*" (single special character, no numbers)
-              // 7. "basename-variant" (dash + any chars, no numbers required)
-              // 8. "basenamevariant" (any chars, no numbers required)
-
-              const matchesExact = fileBase === basenamePattern;
-              const matchesDashNumber = fileBase.match(new RegExp(`^${escapedPattern}-\\d+$`));
-              const matchesSingleCharNumber = fileBase.match(new RegExp(`^${escapedPattern}.\\d+$`));
-              const matchesDashAnythingNumber = fileBase.match(new RegExp(`^${escapedPattern}-.+\\d+$`));
-              const matchesAnythingNumber = fileBase.match(new RegExp(`^${escapedPattern}.+\\d+$`));
-              const matchesAnySpecialCharecter = fileBase.match(new RegExp(`^${escapedPattern}.$`))
-              const matchesDashAnything = fileBase.match(new RegExp(`^${escapedPattern}-.+$`));
-              const matchesAnything = fileBase.match(new RegExp(`^${escapedPattern}.+$`));
-
-              const matchesPattern = matchesExact || matchesDashNumber || matchesSingleCharNumber || 
-                                    matchesDashAnythingNumber || matchesAnythingNumber || matchesAnySpecialCharecter ||
-                                    matchesDashAnything || matchesAnything;
-
-              if (matchesPattern && ['.png', '.jpg', '.jpeg', '.avif'].includes(fileExt)) {
-                try {
-                  const fileRawUrl = item.download_url || `https://raw.githubusercontent.com/${owner}/${repo}/${branch}/${item.path}`;
-                  console.log(`      Downloading: ${fileName}`);
-                  const fileData = await this.fetchBinaryUrl(fileRawUrl);
-
-                  const localPath = path.join(imageDir, normalizedPath, fileName);
-                  await fs.mkdir(path.dirname(localPath), { recursive: true });
-                  await fs.writeFile(localPath, fileData);
-
-                  console.log(`      ✓ Downloaded ${normalizedPath}/${fileName}`);
-                  dirDownloaded++;
-                } catch (error) {
-                  console.log(`      ✗ Failed to download ${fileName}: ${error.message}`);
-                }
-              }
-            }
-          }
-
-          if (dirDownloaded > 0) {
-            return dirDownloaded;
-          }
-
-        } catch (error) {
-          continue;
-        }
+    } catch (error) {
+      console.error(`Error downloading images: ${error.message}`);
+      // Try to clean up on error
+      try {
+        await fs.rm(tempRepoDir, { recursive: true, force: true });
+      } catch (cleanupError) {
+        // Ignore cleanup errors
       }
-
-      return 0;
-    };
-
-    // Download each image
-    for (const imagePath of imagePaths) {
-      console.log(`\nProcessing: ${imagePath}`);
-
-      // Add delay between requests
-      await delay(100);
-
-      // First, try to download as a single image file
-      let imageFound = false;
-
-      // Try with images/ prefix and without
-      for (const prefix of ['images/', '']) {
-        if (imageFound) break;
-
-        for (const ext of ['.png', '.jpg', '.jpeg', '.gif', '.avif', '.webp']) {
-          const fullPath = `${prefix}${imagePath}${ext}`;
-          const rawUrl = `https://raw.githubusercontent.com/${owner}/${repo}/${branch}/${fullPath}`;
-
-          try {
-            console.log(`  Trying: ${fullPath}`);
-            const imageData = await this.fetchBinaryUrl(rawUrl);
-
-            // Save to local directory maintaining structure
-            const localPath = path.join(imageDir, `${imagePath}${ext}`);
-            await fs.mkdir(path.dirname(localPath), { recursive: true });
-            await fs.writeFile(localPath, imageData);
-
-            console.log(`  ✓ Downloaded ${imagePath}${ext}`);
-            downloaded++;
-            imageFound = true;
-            break; // Found the image, stop trying extensions
-          } catch (error) {
-            // Image not found with this extension, try next
-            continue;
-          }
-        }
-      }
-
-      // If not found as a single file, check if it's a directory
-      if (!imageFound) {
-        // Check if this might be a pattern like "ship/name/basename"
-        // where the actual files are "ship/name/basename-0.png", "basename-1.png", etc.
-        const pathParts = imagePath.split('/');
-        const potentialBasename = pathParts[pathParts.length - 1];
-        const parentDir = pathParts.slice(0, -1).join('/');
-
-        console.log(`  📁 Checking if ${imagePath} is a directory or has numbered variants...`);
-
-        let dirDownloaded = 0;
-
-        // First, try as a direct directory
-        dirDownloaded = await downloadFromDirectory(imagePath);
-
-        // If that didn't work, try looking in the parent directory for files matching the basename
-        if (dirDownloaded === 0 && parentDir) {
-          console.log(`  📁 Trying parent directory with basename pattern: ${parentDir}/${potentialBasename}-*`);
-          dirDownloaded = await downloadFromDirectoryWithPattern(parentDir, potentialBasename);
-        }
-
-        if (dirDownloaded > 0) {
-          console.log(`  📁 Downloaded ${dirDownloaded} images for: ${imagePath}`);
-          downloaded += dirDownloaded;
-        } else {
-          console.log(`  ✗ Image/directory not found: ${imagePath}`);
-          failed++;
-        }
-      }
+      throw error;
     }
   }
 }
@@ -1524,6 +1378,10 @@ async function main() {
         
         // Download images to pluginDir/images/
         await parser.downloadImages(owner, repo, branch, pluginDir);
+
+        // Convert image sequences to AVIF
+        const converter = new ImageConverter();
+        await converter.processAllImages(pluginDir);
       }
       
       // Save JSON files to pluginDir/dataFiles/
