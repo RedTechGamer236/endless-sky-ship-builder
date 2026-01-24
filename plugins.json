@@ -6,15 +6,15 @@
     },
     {
       "name": "lost-in-midnight",
-      "repository": "https://github.com/MidnightPlugins/Lost-in-Midnight"
+      "repository": "https://github.com/MidnightPlugins/Lost-in-Midnight/tree/main"
     },
     {
       "name": "midnight-expansion",
-      "repository": "https://github.com/MidnightPlugins/Midnight-Expansion"
+      "repository": "https://github.com/MidnightPlugins/Midnight-Expansion/tree/main"
     },
     {
       "name": "midnight-scrapyard",
-      "repository": "https://github.com/MidnightPlugins/Midnight-Scrapyard"
+      "repository": "https://github.com/MidnightPlugins/Midnight-Scrapyard/tree/main"
     }
   ]
 }
