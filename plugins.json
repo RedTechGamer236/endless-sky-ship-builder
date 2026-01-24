@@ -3,6 +3,18 @@
     {
       "name": "official-game",
       "repository": "https://github.com/endless-sky/endless-sky"
-    }
+    },
+    {
+      "name": "lost-in-midnight",
+      "repository": "https://github.com/MidnightPlugins/Lost-in-Midnight"
+    },
+    {
+      "name": "midnight-expansion",
+      "repository": "https://github.com/MidnightPlugins/Midnight-Expansion"
+    },
+    {
+      "name": "midnight-scrapyard",
+      "repository": "https://github.com/MidnightPlugins/Midnight-Scrapyard"
+    },
   ]
 }
