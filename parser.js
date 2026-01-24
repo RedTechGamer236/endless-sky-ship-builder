@@ -1371,12 +1371,17 @@ class EndlessSkyParser {
               // Check if filename matches various patterns:
               // 1. Exactly "basename"
               // 2. "basename-##" (dash followed by numbers)
-              // 3. "basename*##" or "basename^##" or any special char + numbers
+              // 3. "basename*##" or "basename^##" (any single char + numbers)
+              // 4. "basename-anything##" (dash + any chars + numbers, like shipname-variant0)
+              // 5. "basenameAnything##" (any chars + numbers, like shipnamevariant0)
               const matchesExact = fileBase === basenamePattern;
               const matchesDashNumber = fileBase.match(new RegExp(`^${escapedPattern}-\\d+$`));
-              const matchesAnyCharNumber = fileBase.match(new RegExp(`^${escapedPattern}.\\d+$`));
+              const matchesSingleCharNumber = fileBase.match(new RegExp(`^${escapedPattern}.\\d+$`));
+              const matchesDashAnythingNumber = fileBase.match(new RegExp(`^${escapedPattern}-.+\\d+$`));
+              const matchesAnythingNumber = fileBase.match(new RegExp(`^${escapedPattern}.+\\d+$`));
               
-              const matchesPattern = matchesExact || matchesDashNumber || matchesAnyCharNumber;
+              const matchesPattern = matchesExact || matchesDashNumber || matchesSingleCharNumber || 
+                                    matchesDashAnythingNumber || matchesAnythingNumber;
               
               if (matchesPattern && ['.png', '.jpg', '.jpeg', '.gif', '.avif', '.webp'].includes(fileExt)) {
                 try {
