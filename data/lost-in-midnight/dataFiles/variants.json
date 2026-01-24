@@ -1,0 +1,5834 @@
+[
+  {
+    "name": "Astero Nautilus (Elder Astero Nautilus)",
+    "engines": [],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -3.5,
+        "y": -51.5,
+        "gun": ""
+      },
+      {
+        "x": -3,
+        "y": -51.5,
+        "gun": ""
+      },
+      {
+        "x": -2.5,
+        "y": -51.5,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [],
+    "Astero Nautiluses": true,
+    "creature": true,
+    "sprite": "ship/old crusty",
+    "never disabled": true,
+    "attributes": {
+      "category": "Light Warship",
+      "cost": 50000,
+      "hull": 24000,
+      "automaton": 1,
+      "mass": 562,
+      "cargo space": 35,
+      "drag": 6.3,
+      "heat dissipation": 0.405,
+      "fuel capacity": 150,
+      "thrust": 15,
+      "turn": 1200,
+      "hull repair rate": 1,
+      "hull protection": 1,
+      "corrosion protection": 2,
+      "corrosion resistance": 1,
+      "ion protection": 3,
+      "scramble protection": 3,
+      "ion resistance": 1,
+      "scramble resistance": 1,
+      "energy capacity": 1,
+      "inscrutable": 1,
+      "gaslining": 1,
+      "hyperdrive": 1,
+      "scram drive": 0.2,
+      "jump speed": 0.2,
+      "installable": 1
+    },
+    "blood": "25",
+    "final explode": "\"blood\"",
+    "description": "The Astero Nautilus lurk amongst the asteroids of Pebble Beach. Their rock-like shells are hardened from centuries of consuming the minerals in the surrounding asteroids.",
+    "variant": "Elder Astero Nautilus",
+    "baseShip": "Astero Nautilus"
+  },
+  {
+    "name": "Modified Clipper (Modified Clipper (Zephyr))",
+    "engines": [
+      {
+        "x": -22,
+        "y": 47
+      },
+      {
+        "x": 22,
+        "y": 47
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -21.5,
+        "y": -18,
+        "gun": ""
+      },
+      {
+        "x": 21.5,
+        "y": -18,
+        "gun": ""
+      },
+      {
+        "x": -11,
+        "y": -8.5,
+        "gun": ""
+      },
+      {
+        "x": 11,
+        "y": -8.5,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [],
+    "sprite": "ship/modified clipper",
+    "thumbnail": "thumbnail/modified clipper-thumb",
+    "attributes": {
+      "category": "Light Warship",
+      "cost": 900000,
+      "shields": 3100,
+      "hull": 600,
+      "required crew": 4,
+      "bunks": 8,
+      "mass": 170,
+      "drag": 4.1,
+      "heat dissipation": 0.6,
+      "fuel capacity": 500,
+      "cargo space": 35,
+      "outfit space": 330,
+      "weapon capacity": 90,
+      "engine capacity": 80,
+      "weapon": {
+        "blast radius": 37,
+        "shield damage": 370,
+        "hull damage": 185,
+        "hit force": 550
+      }
+    },
+    "leak": "60 50",
+    "flame": "50 80",
+    "tiny explosion": "15",
+    "small explosion": "20",
+    "medium explosion": "10",
+    "final explode": "\"final explosion small\"",
+    "description": "Some captains have modified their Clippers so much that the hull seems ready to fall apart. Despite the constant need for repairs and maintenance, many believe the increased customization is worth it.",
+    "variant": "Modified Clipper (Zephyr)",
+    "baseShip": "Modified Clipper"
+  },
+  {
+    "name": "Saryd Trailblazer (Saryd Trailblazer (Pug))",
+    "engines": [
+      {
+        "x": -25,
+        "y": 175,
+        "zoom": 0.6
+      },
+      {
+        "x": -11,
+        "y": 179,
+        "zoom": 0.8
+      },
+      {
+        "x": 11,
+        "y": 179,
+        "zoom": 0.8
+      },
+      {
+        "x": 25,
+        "y": 175,
+        "zoom": 0.6
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -23,
+        "y": -106,
+        "gun": ""
+      },
+      {
+        "x": 23,
+        "y": -106,
+        "gun": ""
+      },
+      {
+        "x": -15,
+        "y": -125,
+        "gun": ""
+      },
+      {
+        "x": 15,
+        "y": -125,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": -17,
+        "y": -104,
+        "turret": ""
+      },
+      {
+        "x": 17,
+        "y": -104,
+        "turret": ""
+      },
+      {
+        "x": -1,
+        "y": -96,
+        "turret": ""
+      },
+      {
+        "x": -41,
+        "y": -6,
+        "turret": ""
+      },
+      {
+        "x": 41,
+        "y": -6,
+        "turret": ""
+      },
+      {
+        "x": -1,
+        "y": 157,
+        "turret": ""
+      }
+    ],
+    "bays": [],
+    "sprite": "ship/saryd trailblazer",
+    "thumbnail": "thumbnail/trailblazer-thumb",
+    "attributes": {
+      "category": "Heavy Warship",
+      "licenses": {
+        "description": "Coalition"
+      },
+      "cost": 22150000,
+      "shields": 26000,
+      "hull": 15400,
+      "required crew": 34,
+      "bunks": 121,
+      "mass": 1920,
+      "drag": 21.3,
+      "heat dissipation": 0.3,
+      "fuel capacity": 800,
+      "cargo space": 156,
+      "outfit space": 860,
+      "weapon capacity": 335,
+      "engine capacity": 190,
+      "weapon": {
+        "blast radius": 410,
+        "shield damage": 4100,
+        "hull damage": 2100,
+        "hit force": 6200
+      }
+    },
+    "medium explosion": "40",
+    "large explosion": "20",
+    "huge explosion": "20",
+    "small explosion": "30",
+    "final explode": "\"final explosion large\" 1",
+    "description": "The Trailblazer is the ancient warship Coalition shipyards are referring to during their sales pitch for the Sojourner. These relics of war are no longer in production. Of the few known to still exist, most are kept as display pieces in private collections. It is a rare sight to see one in actual use.",
+    "variant": "Saryd Trailblazer (Pug)",
+    "baseShip": "Saryd Trailblazer"
+  },
+  {
+    "name": "Astero Nautilus (Astero Nautilus AA)",
+    "engines": [],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -2,
+        "y": -39,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [],
+    "Astero Nautiluses": true,
+    "creature": true,
+    "sprite": "ship/asteronautilus aa",
+    "never disabled": true,
+    "attributes": {
+      "category": "Light Warship",
+      "cost": 50000,
+      "hull": 12000,
+      "automaton": 1,
+      "mass": 562,
+      "cargo space": 35,
+      "drag": 6.3,
+      "heat dissipation": 0.405,
+      "fuel capacity": 150,
+      "thrust": 15,
+      "turn": 1200,
+      "hull repair rate": 1,
+      "hull protection": 1,
+      "corrosion protection": 2,
+      "corrosion resistance": 1,
+      "ion protection": 3,
+      "scramble protection": 3,
+      "ion resistance": 1,
+      "scramble resistance": 1,
+      "energy capacity": 1,
+      "inscrutable": 1,
+      "gaslining": 1,
+      "hyperdrive": 1,
+      "scram drive": 0.2,
+      "jump speed": 0.2,
+      "installable": 1
+    },
+    "blood": "25",
+    "final explode": "\"blood\"",
+    "description": "The Astero Nautilus lurk amongst the asteroids of Pebble Beach. Their rock-like shells are hardened from centuries of consuming the minerals in the surrounding asteroids.",
+    "variant": "Astero Nautilus AA",
+    "baseShip": "Astero Nautilus"
+  },
+  {
+    "name": "Astero Nautilus (Astero Nautilus AAA)",
+    "engines": [],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -5,
+        "y": -43,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [],
+    "Astero Nautiluses": true,
+    "creature": true,
+    "sprite": "ship/asteronautilus aaa",
+    "never disabled": true,
+    "attributes": {
+      "category": "Light Warship",
+      "cost": 50000,
+      "hull": 12000,
+      "automaton": 1,
+      "mass": 562,
+      "cargo space": 35,
+      "drag": 6.3,
+      "heat dissipation": 0.405,
+      "fuel capacity": 150,
+      "thrust": 15,
+      "turn": 1200,
+      "hull repair rate": 1,
+      "hull protection": 1,
+      "corrosion protection": 2,
+      "corrosion resistance": 1,
+      "ion protection": 3,
+      "scramble protection": 3,
+      "ion resistance": 1,
+      "scramble resistance": 1,
+      "energy capacity": 1,
+      "inscrutable": 1,
+      "gaslining": 1,
+      "hyperdrive": 1,
+      "scram drive": 0.2,
+      "jump speed": 0.2,
+      "installable": 1
+    },
+    "blood": "25",
+    "final explode": "\"blood\"",
+    "description": "The Astero Nautilus lurk amongst the asteroids of Pebble Beach. Their rock-like shells are hardened from centuries of consuming the minerals in the surrounding asteroids.",
+    "variant": "Astero Nautilus AAA",
+    "baseShip": "Astero Nautilus"
+  },
+  {
+    "name": "Astero Nautilus (Astero Nautilus B)",
+    "engines": [],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -7.5,
+        "y": -47,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [],
+    "Astero Nautiluses": true,
+    "creature": true,
+    "sprite": "ship/asteronautilus b",
+    "never disabled": true,
+    "attributes": {
+      "category": "Light Warship",
+      "cost": 50000,
+      "hull": 12000,
+      "automaton": 1,
+      "mass": 599,
+      "cargo space": 35,
+      "drag": 6.3,
+      "heat dissipation": 0.405,
+      "fuel capacity": 150,
+      "thrust": 15,
+      "turn": 1200,
+      "hull repair rate": 1,
+      "hull protection": 2,
+      "corrosion protection": 0,
+      "corrosion resistance": 1,
+      "ion protection": 3,
+      "scramble protection": 3,
+      "ion resistance": 1,
+      "scramble resistance": 1,
+      "energy capacity": 1,
+      "inscrutable": 1,
+      "gaslining": 1,
+      "hyperdrive": 1,
+      "scram drive": 0.2,
+      "jump speed": 0.2,
+      "installable": 1
+    },
+    "blood": "25",
+    "final explode": "\"blood\"",
+    "description": "The Astero Nautilus lurk amongst the asteroids of Pebble Beach. Their rock-like shells are hardened from centuries of consuming the minerals in the surrounding asteroids.",
+    "variant": "Astero Nautilus B",
+    "baseShip": "Astero Nautilus"
+  },
+  {
+    "name": "Astero Nautilus (Astero Nautilus BB)",
+    "engines": [],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -4.5,
+        "y": -40,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [],
+    "Astero Nautiluses": true,
+    "creature": true,
+    "sprite": "ship/asteronautilus bb",
+    "never disabled": true,
+    "attributes": {
+      "category": "Light Warship",
+      "cost": 50000,
+      "hull": 12000,
+      "automaton": 1,
+      "mass": 599,
+      "cargo space": 35,
+      "drag": 6.3,
+      "heat dissipation": 0.405,
+      "fuel capacity": 150,
+      "thrust": 15,
+      "turn": 1200,
+      "hull repair rate": 1,
+      "hull protection": 2,
+      "corrosion protection": 0,
+      "corrosion resistance": 1,
+      "ion protection": 3,
+      "scramble protection": 3,
+      "ion resistance": 1,
+      "scramble resistance": 1,
+      "energy capacity": 1,
+      "inscrutable": 1,
+      "gaslining": 1,
+      "hyperdrive": 1,
+      "scram drive": 0.2,
+      "jump speed": 0.2,
+      "installable": 1
+    },
+    "blood": "25",
+    "final explode": "\"blood\"",
+    "description": "The Astero Nautilus lurk amongst the asteroids of Pebble Beach. Their rock-like shells are hardened from centuries of consuming the minerals in the surrounding asteroids.",
+    "variant": "Astero Nautilus BB",
+    "baseShip": "Astero Nautilus"
+  },
+  {
+    "name": "Astero Nautilus (Astero Nautilus BBB)",
+    "engines": [],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -12.5,
+        "y": -42,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [],
+    "Astero Nautiluses": true,
+    "creature": true,
+    "sprite": "ship/asteronautilus bbb",
+    "never disabled": true,
+    "attributes": {
+      "category": "Light Warship",
+      "cost": 50000,
+      "hull": 12000,
+      "automaton": 1,
+      "mass": 599,
+      "cargo space": 35,
+      "drag": 6.3,
+      "heat dissipation": 0.405,
+      "fuel capacity": 150,
+      "thrust": 15,
+      "turn": 1200,
+      "hull repair rate": 1,
+      "hull protection": 2,
+      "corrosion protection": 0,
+      "corrosion resistance": 1,
+      "ion protection": 3,
+      "scramble protection": 3,
+      "ion resistance": 1,
+      "scramble resistance": 1,
+      "energy capacity": 1,
+      "inscrutable": 1,
+      "gaslining": 1,
+      "hyperdrive": 1,
+      "scram drive": 0.2,
+      "jump speed": 0.2,
+      "installable": 1
+    },
+    "blood": "25",
+    "final explode": "\"blood\"",
+    "description": "The Astero Nautilus lurk amongst the asteroids of Pebble Beach. Their rock-like shells are hardened from centuries of consuming the minerals in the surrounding asteroids.",
+    "variant": "Astero Nautilus BBB",
+    "baseShip": "Astero Nautilus"
+  },
+  {
+    "name": "Astero Nautilus (Astero Nautilus D)",
+    "engines": [],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -2,
+        "y": -45,
+        "gun": ""
+      },
+      {
+        "x": 0,
+        "y": -45,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [],
+    "Astero Nautiluses": true,
+    "creature": true,
+    "sprite": "ship/asteronautilus d",
+    "never disabled": true,
+    "attributes": {
+      "category": "Light Warship",
+      "cost": 50000,
+      "hull": 14000,
+      "automaton": 1,
+      "mass": 637,
+      "cargo space": 35,
+      "drag": 6.8999999999999995,
+      "heat dissipation": 0.405,
+      "fuel capacity": 150,
+      "thrust": 18,
+      "turn": 1500,
+      "hull repair rate": 1,
+      "hull protection": 2,
+      "corrosion protection": 2,
+      "corrosion resistance": 1,
+      "ion protection": 3,
+      "scramble protection": 3,
+      "ion resistance": 1,
+      "scramble resistance": 1,
+      "energy capacity": 1,
+      "inscrutable": 1,
+      "gaslining": 1,
+      "hyperdrive": 1,
+      "scram drive": 0.2,
+      "jump speed": 0.2,
+      "installable": 1
+    },
+    "blood": "25",
+    "final explode": "\"blood\"",
+    "description": "The Astero Nautilus lurk amongst the asteroids of Pebble Beach. Their rock-like shells are hardened from centuries of consuming the minerals in the surrounding asteroids.",
+    "variant": "Astero Nautilus D",
+    "baseShip": "Astero Nautilus"
+  },
+  {
+    "name": "Astero Nautilus (Bulk Freighter?)",
+    "engines": [],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -4,
+        "y": -205,
+        "gun": ""
+      },
+      {
+        "x": 0,
+        "y": -205,
+        "gun": ""
+      },
+      {
+        "x": 4,
+        "y": -205,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [],
+    "Astero Nautiluses": true,
+    "creature": true,
+    "sprite": "ship/asteronautilus c",
+    "never disabled": true,
+    "attributes": {
+      "category": "Light Warship",
+      "cost": 50000,
+      "hull": 15800,
+      "automaton": 1,
+      "mass": 1324,
+      "cargo space": 35,
+      "drag": 16.8,
+      "heat dissipation": 0.405,
+      "fuel capacity": 150,
+      "thrust": 30,
+      "turn": 2400,
+      "hull repair rate": 1,
+      "hull protection": 0,
+      "corrosion protection": 0,
+      "corrosion resistance": 1,
+      "ion protection": 3,
+      "scramble protection": 3,
+      "ion resistance": 1,
+      "scramble resistance": 1,
+      "energy capacity": 1,
+      "inscrutable": 1,
+      "gaslining": 1,
+      "hyperdrive": 1,
+      "scram drive": 0.2,
+      "jump speed": 0.2,
+      "installable": 1,
+      "shields": 13500,
+      "shield generation": 0.82
+    },
+    "blood": "25",
+    "final explode": "\"blood\"",
+    "description": "The Astero Nautilus lurk amongst the asteroids of Pebble Beach. Their rock-like shells are hardened from centuries of consuming the minerals in the surrounding asteroids.",
+    "variant": "Bulk Freighter?",
+    "baseShip": "Astero Nautilus"
+  },
+  {
+    "name": "Astero Nautilus (Freighter?)",
+    "engines": [],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": 1,
+        "y": -66,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [],
+    "Astero Nautiluses": true,
+    "creature": true,
+    "sprite": "ship/asteronautilus f1",
+    "never disabled": true,
+    "attributes": {
+      "category": "Light Warship",
+      "cost": 50000,
+      "hull": 12500,
+      "automaton": 1,
+      "mass": 662,
+      "cargo space": 35,
+      "drag": 8.2,
+      "heat dissipation": 0.405,
+      "fuel capacity": 150,
+      "thrust": 18,
+      "turn": 1500,
+      "hull repair rate": 1,
+      "hull protection": 0,
+      "corrosion protection": 0,
+      "corrosion resistance": 1,
+      "ion protection": 3,
+      "scramble protection": 3,
+      "ion resistance": 1,
+      "scramble resistance": 1,
+      "energy capacity": 1,
+      "inscrutable": 1,
+      "gaslining": 1,
+      "hyperdrive": 1,
+      "scram drive": 0.2,
+      "jump speed": 0.2,
+      "installable": 1
+    },
+    "blood": "25",
+    "final explode": "\"blood\"",
+    "description": "The Astero Nautilus lurk amongst the asteroids of Pebble Beach. Their rock-like shells are hardened from centuries of consuming the minerals in the surrounding asteroids.",
+    "variant": "Freighter?",
+    "baseShip": "Astero Nautilus"
+  },
+  {
+    "name": "Astero Nautilus (Freighter??)",
+    "engines": [],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -0.5,
+        "y": -61.5,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [],
+    "Astero Nautiluses": true,
+    "creature": true,
+    "sprite": "ship/asteronautilus f2",
+    "never disabled": true,
+    "attributes": {
+      "category": "Light Warship",
+      "cost": 50000,
+      "hull": 12500,
+      "automaton": 1,
+      "mass": 662,
+      "cargo space": 35,
+      "drag": 8.2,
+      "heat dissipation": 0.405,
+      "fuel capacity": 150,
+      "thrust": 18,
+      "turn": 1500,
+      "hull repair rate": 1,
+      "hull protection": 0,
+      "corrosion protection": 0,
+      "corrosion resistance": 1,
+      "ion protection": 3,
+      "scramble protection": 3,
+      "ion resistance": 1,
+      "scramble resistance": 1,
+      "energy capacity": 1,
+      "inscrutable": 1,
+      "gaslining": 1,
+      "hyperdrive": 1,
+      "scram drive": 0.2,
+      "jump speed": 0.2,
+      "installable": 1
+    },
+    "blood": "25",
+    "final explode": "\"blood\"",
+    "description": "The Astero Nautilus lurk amongst the asteroids of Pebble Beach. Their rock-like shells are hardened from centuries of consuming the minerals in the surrounding asteroids.",
+    "variant": "Freighter??",
+    "baseShip": "Astero Nautilus"
+  },
+  {
+    "name": "Astero Nautilus (Freighter???)",
+    "engines": [],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -4,
+        "y": -46,
+        "gun": ""
+      },
+      {
+        "x": 4,
+        "y": -46,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [],
+    "Astero Nautiluses": true,
+    "creature": true,
+    "sprite": "ship/asteronautilus f3",
+    "never disabled": true,
+    "attributes": {
+      "category": "Light Warship",
+      "cost": 50000,
+      "hull": 13000,
+      "automaton": 1,
+      "mass": 767,
+      "cargo space": 35,
+      "drag": 10.1,
+      "heat dissipation": 0.405,
+      "fuel capacity": 150,
+      "thrust": 18,
+      "turn": 1500,
+      "hull repair rate": 1,
+      "hull protection": 0,
+      "corrosion protection": 0,
+      "corrosion resistance": 1,
+      "ion protection": 3,
+      "scramble protection": 3,
+      "ion resistance": 1,
+      "scramble resistance": 1,
+      "energy capacity": 1,
+      "inscrutable": 1,
+      "gaslining": 1,
+      "hyperdrive": 1,
+      "scram drive": 0.2,
+      "jump speed": 0.2,
+      "installable": 1,
+      "shields": 2000
+    },
+    "blood": "25",
+    "final explode": "\"blood\"",
+    "description": "The Astero Nautilus lurk amongst the asteroids of Pebble Beach. Their rock-like shells are hardened from centuries of consuming the minerals in the surrounding asteroids.",
+    "variant": "Freighter???",
+    "baseShip": "Astero Nautilus"
+  },
+  {
+    "name": "Astero Nautilus (Protector?)",
+    "engines": [],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -4,
+        "y": -94.5,
+        "gun": ""
+      },
+      {
+        "x": 4,
+        "y": -94.5,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [],
+    "Astero Nautiluses": true,
+    "creature": true,
+    "sprite": "ship/asteronautilus p",
+    "never disabled": true,
+    "attributes": {
+      "category": "Light Warship",
+      "cost": 50000,
+      "hull": 15900,
+      "automaton": 1,
+      "mass": 1137,
+      "cargo space": 35,
+      "drag": 14.55,
+      "heat dissipation": 0.405,
+      "fuel capacity": 150,
+      "thrust": 24,
+      "turn": 2100,
+      "hull repair rate": 1,
+      "hull protection": 0,
+      "corrosion protection": 0,
+      "corrosion resistance": 1,
+      "ion protection": 3,
+      "scramble protection": 3,
+      "ion resistance": 1,
+      "scramble resistance": 1,
+      "energy capacity": 1,
+      "inscrutable": 1,
+      "gaslining": 1,
+      "hyperdrive": 1,
+      "scram drive": 0.2,
+      "jump speed": 0.2,
+      "installable": 1,
+      "shields": 10000,
+      "shield generation": 0.51
+    },
+    "blood": "25",
+    "final explode": "\"blood\"",
+    "description": "The Astero Nautilus lurk amongst the asteroids of Pebble Beach. Their rock-like shells are hardened from centuries of consuming the minerals in the surrounding asteroids.",
+    "variant": "Protector?",
+    "baseShip": "Astero Nautilus"
+  },
+  {
+    "name": "Astero Nautilus (Splinter?)",
+    "engines": [],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": 16,
+        "y": -33.5,
+        "gun": ""
+      },
+      {
+        "x": 24,
+        "y": -33.5,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [],
+    "Astero Nautiluses": true,
+    "creature": true,
+    "sprite": "ship/asteronautilus s",
+    "never disabled": true,
+    "attributes": {
+      "category": "Light Warship",
+      "cost": 50000,
+      "hull": 12900,
+      "automaton": 1,
+      "mass": 817,
+      "cargo space": 35,
+      "drag": 9.1,
+      "heat dissipation": 0.405,
+      "fuel capacity": 150,
+      "thrust": 21,
+      "turn": 1650,
+      "hull repair rate": 1,
+      "hull protection": 0,
+      "corrosion protection": 0,
+      "corrosion resistance": 1,
+      "ion protection": 3,
+      "scramble protection": 3,
+      "ion resistance": 1,
+      "scramble resistance": 1,
+      "energy capacity": 1,
+      "inscrutable": 1,
+      "gaslining": 1,
+      "hyperdrive": 1,
+      "scram drive": 0.2,
+      "jump speed": 0.2,
+      "installable": 1,
+      "shields": 5200,
+      "shield generation": 0.51
+    },
+    "blood": "25",
+    "final explode": "\"blood\"",
+    "description": "The Astero Nautilus lurk amongst the asteroids of Pebble Beach. Their rock-like shells are hardened from centuries of consuming the minerals in the surrounding asteroids.",
+    "variant": "Splinter?",
+    "baseShip": "Astero Nautilus"
+  },
+  {
+    "name": "Astero Nautilus (Vanguard?)",
+    "engines": [],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -4,
+        "y": -64.5,
+        "gun": ""
+      },
+      {
+        "x": 4,
+        "y": -64.5,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [],
+    "Astero Nautiluses": true,
+    "creature": true,
+    "sprite": "ship/asteronautilus v",
+    "never disabled": true,
+    "attributes": {
+      "category": "Light Warship",
+      "cost": 50000,
+      "hull": 15000,
+      "automaton": 1,
+      "mass": 1077,
+      "cargo space": 35,
+      "drag": 12.3,
+      "heat dissipation": 0.405,
+      "fuel capacity": 150,
+      "thrust": 21,
+      "turn": 2000,
+      "hull repair rate": 1,
+      "hull protection": 0,
+      "corrosion protection": 0,
+      "corrosion resistance": 1,
+      "ion protection": 3,
+      "scramble protection": 3,
+      "ion resistance": 1,
+      "scramble resistance": 1,
+      "energy capacity": 1,
+      "inscrutable": 1,
+      "gaslining": 1,
+      "hyperdrive": 1,
+      "scram drive": 0.2,
+      "jump speed": 0.2,
+      "installable": 1,
+      "shields": 9800,
+      "shield generation": 0.51
+    },
+    "blood": "25",
+    "final explode": "\"blood\"",
+    "description": "The Astero Nautilus lurk amongst the asteroids of Pebble Beach. Their rock-like shells are hardened from centuries of consuming the minerals in the surrounding asteroids.",
+    "variant": "Vanguard?",
+    "baseShip": "Astero Nautilus"
+  },
+  {
+    "name": "Corpse Trickster Body (Corpse Trickster Body B)",
+    "engines": [],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": 0,
+        "y": 95,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": 0,
+        "y": 50,
+        "turret": ""
+      }
+    ],
+    "bays": [
+      {
+        "type": "Fighter",
+        "x": 0,
+        "y": 0,
+        "launch effect": "blood"
+      }
+    ],
+    "display name": "\"Subsidurial\"",
+    "creature": true,
+    "sprite": "ship/corpse trickster/corpse trickster body b",
+    "never disabled": true,
+    "attributes": {
+      "category": "Light Freighter",
+      "hull": 2000,
+      "automaton": 1,
+      "mass": 525,
+      "drag": 12.3,
+      "heat dissipation": 0.54,
+      "fuel capacity": 150,
+      "thrust": 15,
+      "thrusting fuel": 25,
+      "turn": 150,
+      "ion protection": 3,
+      "scramble protection": 3,
+      "ion resistance": 1,
+      "scramble resistance": 1,
+      "energy capacity": 1,
+      "inscrutable": 1,
+      "hyperdrive": 1,
+      "jump speed": 0.2
+    },
+    "blood": "45",
+    "final explode": "\"blood\"",
+    "description": "A dead Subsidurial. The head is missing, but the body has been infused with chemicals that keeps it somewhat functional.",
+    "variant": "Corpse Trickster Body B",
+    "baseShip": "Corpse Trickster Body",
+    "displayName": "Subsidurial"
+  },
+  {
+    "name": "Gray Eye (Gray Eyed)",
+    "engines": [],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": 0,
+        "y": -97,
+        "gun": ""
+      },
+      {
+        "x": -23,
+        "y": -95,
+        "gun": ""
+      },
+      {
+        "x": 23,
+        "y": -95,
+        "gun": ""
+      },
+      {
+        "x": 0,
+        "y": 70,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": -28,
+        "y": 0,
+        "turret": ""
+      },
+      {
+        "x": 28,
+        "y": 0,
+        "turret": ""
+      }
+    ],
+    "bays": [],
+    "creature": true,
+    "sprite": "ship/grayeye flip",
+    "thumbnail": "thumbnail/gray eye-thumb",
+    "never disabled": true,
+    "attributes": {
+      "category": "Light Warship",
+      "cost": 50000,
+      "hull": 23200,
+      "automaton": 1,
+      "mass": 1125,
+      "cargo space": 65,
+      "drag": 12.3,
+      "heat dissipation": 0.54,
+      "fuel capacity": 100,
+      "thrust": 15,
+      "turn": 1200,
+      "hull repair rate": 3,
+      "ion protection": 3,
+      "scramble protection": 3,
+      "ion resistance": 1,
+      "scramble resistance": 1,
+      "energy capacity": 1,
+      "inscrutable": 1,
+      "gaslining": 1,
+      "hyperdrive": 1,
+      "jump speed": 0.2
+    },
+    "blood": "45",
+    "final explode": "\"subsidurial death\"",
+    "description": "Gray Eyes are very old Subsidurials that have developed thicker hides. They have also learned how to make a powerful slap with their tails. While they still retain the peaceful disposition of their younger siblings, Gray Eyes are often vindictive when attacked.",
+    "variant": "Gray Eyed",
+    "baseShip": "Gray Eye"
+  },
+  {
+    "name": "Plasma Parasite (Plasma Parasite (Large))",
+    "engines": [],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": 0,
+        "y": 0,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [],
+    "creature": true,
+    "sprite": "ship/plasma parasite large/plasma parasite large",
+    "never disabled": true,
+    "attributes": {
+      "category": "Interceptor",
+      "cost": 50000,
+      "automaton": 1,
+      "hull": 100,
+      "mass": 390,
+      "drag": 6,
+      "heat dissipation": 0.6749999999999999,
+      "cargo space": 0,
+      "thrust": 18,
+      "turn": 900,
+      "ion protection": 3,
+      "scramble protection": 3,
+      "ion resistance": 1,
+      "scramble resistance": 1,
+      "energy capacity": 150,
+      "fuel capacity": 150,
+      "inscrutable": 1,
+      "gaslining": 1,
+      "hyperdrive": 1,
+      "scram drive": 0.2,
+      "ramscoop": 2,
+      "weapon": {
+        "blast radius": 200,
+        "shield damage": 12000,
+        "hull damage": 6000,
+        "heat damage": 3000,
+        "hit force": 3000
+      },
+      "blast radius": 400,
+      "shield damage": 24000,
+      "hull damage": 12000,
+      "heat damage": 6000,
+      "hit force": 6000
+    },
+    "flame": "15 25",
+    "medium explosion": "5",
+    "large explosion": "15",
+    "final explode": "\"final explosion large\"",
+    "description": "While these creatures are neither aggressive nor malicious, the Heliarchs consider them a nuisance. They are attracted to the exhaust emissions of starship engines and will swarm over a ship. Unfortunately 90% of their bodies consist of volatile plasma, causing them to explode violently when exposed to weapons fire.",
+    "variant": "Plasma Parasite (Large)",
+    "baseShip": "Plasma Parasite"
+  },
+  {
+    "name": "Plasma Parasite (Plasma Parasite (Time Bomb 1))",
+    "engines": [],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": 0,
+        "y": 0,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [],
+    "creature": true,
+    "sprite": "ship/plasma parasite/plasma parasite",
+    "never disabled": true,
+    "attributes": {
+      "category": "Interceptor",
+      "cost": 50000,
+      "automaton": 1,
+      "hull": 3,
+      "mass": 195,
+      "drag": 5.4,
+      "heat dissipation": 0.945,
+      "cargo space": 0,
+      "thrust": 36,
+      "turn": 900,
+      "ion protection": 3,
+      "scramble protection": 3,
+      "ion resistance": 1,
+      "scramble resistance": 1,
+      "energy capacity": 150,
+      "fuel capacity": 150,
+      "inscrutable": 1,
+      "gaslining": 1,
+      "hyperdrive": 1,
+      "scram drive": 0.2,
+      "ramscoop": 2,
+      "weapon": {
+        "blast radius": 200,
+        "shield damage": 12000,
+        "hull damage": 6000,
+        "heat damage": 3000,
+        "hit force": 3000
+      },
+      "hull repair rate": 0.001
+    },
+    "flame": "15 25",
+    "medium explosion": "5",
+    "large explosion": "15",
+    "final explode": "\"final explosion large\"",
+    "description": "While these creatures are neither aggressive nor malicious, the Heliarchs consider them a nuisance. They are attracted to the exhaust emissions of starship engines and will swarm over a ship. Unfortunately 90% of their bodies consist of volatile plasma, causing them to explode violently when exposed to weapons fire.",
+    "variant": "Plasma Parasite (Time Bomb 1)",
+    "baseShip": "Plasma Parasite"
+  },
+  {
+    "name": "Plasma Parasite (Plasma Parasite (Time Bomb 2))",
+    "engines": [],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": 0,
+        "y": 0,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [],
+    "creature": true,
+    "sprite": "ship/plasma parasite/plasma parasite",
+    "never disabled": true,
+    "attributes": {
+      "category": "Interceptor",
+      "cost": 50000,
+      "automaton": 1,
+      "hull": 2,
+      "mass": 195,
+      "drag": 5.4,
+      "heat dissipation": 0.945,
+      "cargo space": 0,
+      "thrust": 36,
+      "turn": 900,
+      "ion protection": 3,
+      "scramble protection": 3,
+      "ion resistance": 1,
+      "scramble resistance": 1,
+      "energy capacity": 150,
+      "fuel capacity": 150,
+      "inscrutable": 1,
+      "gaslining": 1,
+      "hyperdrive": 1,
+      "scram drive": 0.2,
+      "ramscoop": 2,
+      "weapon": {
+        "blast radius": 200,
+        "shield damage": 12000,
+        "hull damage": 6000,
+        "heat damage": 3000,
+        "hit force": 3000
+      },
+      "hull repair rate": 0.001
+    },
+    "flame": "15 25",
+    "medium explosion": "5",
+    "large explosion": "15",
+    "final explode": "\"final explosion large\"",
+    "description": "While these creatures are neither aggressive nor malicious, the Heliarchs consider them a nuisance. They are attracted to the exhaust emissions of starship engines and will swarm over a ship. Unfortunately 90% of their bodies consist of volatile plasma, causing them to explode violently when exposed to weapons fire.",
+    "variant": "Plasma Parasite (Time Bomb 2)",
+    "baseShip": "Plasma Parasite"
+  },
+  {
+    "name": "Plasma Parasite (Plasma Parasite (Time Bomb 3))",
+    "engines": [],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": 0,
+        "y": 0,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [],
+    "creature": true,
+    "sprite": "ship/plasma parasite/plasma parasite",
+    "never disabled": true,
+    "attributes": {
+      "category": "Interceptor",
+      "cost": 50000,
+      "automaton": 1,
+      "hull": 1,
+      "mass": 195,
+      "drag": 5.4,
+      "heat dissipation": 0.945,
+      "cargo space": 0,
+      "thrust": 36,
+      "turn": 900,
+      "ion protection": 3,
+      "scramble protection": 3,
+      "ion resistance": 1,
+      "scramble resistance": 1,
+      "energy capacity": 150,
+      "fuel capacity": 150,
+      "inscrutable": 1,
+      "gaslining": 1,
+      "hyperdrive": 1,
+      "scram drive": 0.2,
+      "ramscoop": 2,
+      "weapon": {
+        "blast radius": 200,
+        "shield damage": 12000,
+        "hull damage": 6000,
+        "heat damage": 3000,
+        "hit force": 3000
+      },
+      "hull repair rate": 0.001
+    },
+    "flame": "15 25",
+    "medium explosion": "5",
+    "large explosion": "15",
+    "final explode": "\"final explosion large\"",
+    "description": "While these creatures are neither aggressive nor malicious, the Heliarchs consider them a nuisance. They are attracted to the exhaust emissions of starship engines and will swarm over a ship. Unfortunately 90% of their bodies consist of volatile plasma, causing them to explode violently when exposed to weapons fire.",
+    "variant": "Plasma Parasite (Time Bomb 3)",
+    "baseShip": "Plasma Parasite"
+  },
+  {
+    "name": "Unstable Wormhole (Unstable Wormhole (?))",
+    "engines": [],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [],
+    "turrets": [
+      {
+        "x": 0,
+        "y": 0,
+        "turret": ""
+      }
+    ],
+    "bays": [
+      {
+        "type": "Drone",
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "phenomenon": true,
+    "sprite": "ship/unstable wormhole/unstable wormhole",
+    "never disabled": true,
+    "attributes": {
+      "category": "Phenomenon",
+      "hull": 1,
+      "automaton": 1,
+      "mass": 100000,
+      "drag": 100000,
+      "fuel capacity": 390,
+      "inscrutable": 1,
+      "jump drive": 1,
+      "jump speed": 0.2,
+      "jump fuel": 200,
+      "jump range": 2000,
+      "jump effect": "purple spark",
+      "jump in sound": "hyperdrive in",
+      "jump out sound": "hyperdrive in",
+      "fuel generation": 0.01
+    },
+    "explode": "\"purple spark\" 60",
+    "description": "These wormholes are too small for anything larger than a drone to fly through. The aperture is unstable and may shift locations, or collapse entirely, at any moment. The few drones that do make it through seem to have their programming scrambled, perhaps a result of the strange bolts of energy surrounding the phenomenon.",
+    "variant": "Unstable Wormhole (?)",
+    "baseShip": "Unstable Wormhole"
+  },
+  {
+    "name": "Marauder Hauler (Relentless Grudge)",
+    "engines": [
+      {
+        "x": -44,
+        "y": 113
+      },
+      {
+        "x": 45.5,
+        "y": 113
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -10.5,
+        "y": -87.5,
+        "gun": ""
+      },
+      {
+        "x": 18,
+        "y": -87.5,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": -17.5,
+        "y": -41,
+        "turret": ""
+      },
+      {
+        "x": 25.5,
+        "y": -41,
+        "turret": ""
+      },
+      {
+        "x": -16.5,
+        "y": 11.5,
+        "turret": ""
+      },
+      {
+        "x": 20.5,
+        "y": 11.5,
+        "turret": ""
+      },
+      {
+        "x": -17.5,
+        "y": 70,
+        "turret": ""
+      },
+      {
+        "x": 19,
+        "y": 70,
+        "turret": ""
+      }
+    ],
+    "bays": [],
+    "sprite": "ship/marauder hauler weapons",
+    "thumbnail": "thumbnail/marauder hauler W-thumb",
+    "attributes": {
+      "category": "Light Warship",
+      "cost": 1544920,
+      "shields": 3300,
+      "hull": 5000,
+      "required crew": 3,
+      "bunks": 10,
+      "mass": 580,
+      "drag": 9.5,
+      "heat dissipation": 0.43,
+      "fuel capacity": 400,
+      "cargo space": 5,
+      "outfit space": 415,
+      "weapon capacity": 180,
+      "engine capacity": 80,
+      "self destruct": 0.25,
+      "weapon": {
+        "blast radius": 60,
+        "shield damage": 600,
+        "hull damage": 300,
+        "hit force": 900
+      }
+    },
+    "leak": "60 50",
+    "flame": "50 80",
+    "big leak": "90 30",
+    "tiny explosion": "20",
+    "small explosion": "35",
+    "medium explosion": "20",
+    "large explosion": "5",
+    "final explode": "\"final explosion medium\"",
+    "description": "Some Haulers are modified to reduce mass and drag by replacing the standard cargo container with something smaller. The previous owner of this Hauler took the standard Southbound Shipyards cargo container and cut it down to half its size.",
+    "variant": "Relentless Grudge",
+    "baseShip": "Marauder Hauler"
+  },
+  {
+    "name": "Pirate Drone (Pirate Drone (ExplosiveSD))",
+    "engines": [
+      {
+        "x": -15,
+        "y": 30,
+        "zoom": 1
+      },
+      {
+        "x": 15,
+        "y": 30,
+        "zoom": 1
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": 6,
+        "y": -22,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [],
+    "sprite": "ship/pirate drone",
+    "attributes": {
+      "category": "Drone",
+      "cost": 50000,
+      "hull": 600,
+      "automaton": 1,
+      "mass": 30,
+      "drag": 2,
+      "heat dissipation": 1,
+      "outfit space": 57,
+      "weapon capacity": 6,
+      "engine capacity": 28,
+      "weapon": {
+        "blast radius": 5,
+        "shield damage": 50,
+        "hull damage": 25,
+        "hit force": 75
+      },
+      "self destruct": 1,
+      "blast radius": 45,
+      "shield damage": 450,
+      "hull damage": 225,
+      "hit force": 675
+    },
+    "tiny explosion": "15",
+    "small explosion": "5",
+    "description": "Locals started making these in their backyard garages to satisfy a limited demand for unofficial combat drones. From a distance, it looks like someone duct taped an energy blaster to the side of a civilian science drone. Upon closer inspection, that assessment isn't too far off. Each drone has minor differences in construction materials and how the wires are routed. Few pirates actually use these, but the ones who do tend to buy them in bulk.",
+    "variant": "Pirate Drone (ExplosiveSD)",
+    "baseShip": "Pirate Drone"
+  },
+  {
+    "name": "Pirate Drone (Pirate Drone (Explosive))",
+    "engines": [
+      {
+        "x": -15,
+        "y": 30,
+        "zoom": 1
+      },
+      {
+        "x": 15,
+        "y": 30,
+        "zoom": 1
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": 6,
+        "y": -22,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [],
+    "sprite": "ship/pirate drone",
+    "attributes": {
+      "category": "Drone",
+      "cost": 50000,
+      "hull": 600,
+      "automaton": 1,
+      "mass": 30,
+      "drag": 2,
+      "heat dissipation": 1,
+      "outfit space": 57,
+      "weapon capacity": 6,
+      "engine capacity": 28,
+      "weapon": {
+        "blast radius": 5,
+        "shield damage": 50,
+        "hull damage": 25,
+        "hit force": 75
+      },
+      "self destruct": 0.5,
+      "blast radius": 45,
+      "shield damage": 450,
+      "hull damage": 225,
+      "hit force": 675
+    },
+    "tiny explosion": "15",
+    "small explosion": "5",
+    "description": "Locals started making these in their backyard garages to satisfy a limited demand for unofficial combat drones. From a distance, it looks like someone duct taped an energy blaster to the side of a civilian science drone. Upon closer inspection, that assessment isn't too far off. Each drone has minor differences in construction materials and how the wires are routed. Few pirates actually use these, but the ones who do tend to buy them in bulk.",
+    "variant": "Pirate Drone (Explosive)",
+    "baseShip": "Pirate Drone"
+  },
+  {
+    "name": "Beacon Drone (Beacon Drone (ExplosiveSD))",
+    "engines": [
+      {
+        "x": -3,
+        "y": 29
+      },
+      {
+        "x": 3,
+        "y": 29
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": 0,
+        "y": -28,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [],
+    "sprite": "ship/beacon drone",
+    "thumbnail": "thumbnail/beacon drone-thumb",
+    "attributes": {
+      "category": "Drone",
+      "licenses": {
+        "description": "Navy"
+      },
+      "cost": 55000,
+      "hull": 300,
+      "automaton": 1,
+      "mass": 15,
+      "drag": 0.53,
+      "heat dissipation": 0.9,
+      "outfit space": 54,
+      "weapon capacity": 1,
+      "engine capacity": 28,
+      "weapon": {
+        "blast radius": 3,
+        "shield damage": 30,
+        "hull damage": 15,
+        "hit force": 45
+      },
+      "self destruct": 1,
+      "blast radius": 43,
+      "shield damage": 430,
+      "hull damage": 215,
+      "hit force": 645
+    },
+    "tiny explosion": "15",
+    "description": "Beacon Drones are designed to accommodate a powerful Spotlight for the purpose of drawing attention to hostile ships and other threats. They were specifically deployed to supplement security in the Paradise worlds, but Navy officers in frontier regions have expressed interest in adding them to their fleets. \tDrones do not come equipped with a hyperdrive. You cannot carry a drone unless you have a ship in your fleet with a drone bay.",
+    "variant": "Beacon Drone (ExplosiveSD)",
+    "baseShip": "Beacon Drone"
+  },
+  {
+    "name": "Liberator (Vindicator (Test))",
+    "engines": [
+      {
+        "x": -26,
+        "y": 176
+      },
+      {
+        "x": 26,
+        "y": 176
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": 0,
+        "y": -167,
+        "gun": ""
+      },
+      {
+        "x": -0.5,
+        "y": -167,
+        "gun": ""
+      },
+      {
+        "x": 0.5,
+        "y": -167,
+        "gun": ""
+      },
+      {
+        "x": -1,
+        "y": -167,
+        "gun": ""
+      },
+      {
+        "x": 1,
+        "y": -167,
+        "gun": ""
+      },
+      {
+        "x": -1.5,
+        "y": -167,
+        "gun": ""
+      },
+      {
+        "x": 1.5,
+        "y": -167,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": -39,
+        "y": -165,
+        "turret": ""
+      },
+      {
+        "x": 39,
+        "y": -165,
+        "turret": ""
+      },
+      {
+        "x": 0,
+        "y": 65,
+        "turret": ""
+      },
+      {
+        "x": -39,
+        "y": 118,
+        "turret": ""
+      },
+      {
+        "x": 39,
+        "y": 118,
+        "turret": ""
+      }
+    ],
+    "bays": [],
+    "sprite": "ship/liberator",
+    "thumbnail": "thumbnail/liberator-thumb",
+    "attributes": {
+      "category": "Heavy Warship",
+      "licenses": {
+        "description": "\"Militia\""
+      },
+      "cost": 13090000,
+      "shields": 19900,
+      "hull": 8100,
+      "required crew": 100,
+      "bunks": 147,
+      "mass": 2300,
+      "drag": 36.4,
+      "heat dissipation": 0.36,
+      "fuel capacity": 600,
+      "cargo space": 100,
+      "outfit space": 790,
+      "weapon capacity": 375,
+      "engine capacity": 190,
+      "cooling inefficiency": 1,
+      "weapon": {
+        "blast radius": 286,
+        "shield damage": 2860,
+        "hull damage": 1430,
+        "hit force": 4290
+      },
+      "self destruct": 1
+    },
+    "leak": "40 50",
+    "flame": "20 80",
+    "big leak": "80 30",
+    "tiny explosion": "55",
+    "small explosion": "55",
+    "medium explosion": "55",
+    "large explosion": "55",
+    "huge explosion": "22",
+    "final explode": "\"final explosion large\"",
+    "description": "The Liberator is a new warship that was originally designed by Southbound Shipyards to replace the Skein. Rumor has it that the project scope shifted focus during development when a ship of alien origin was discovered at the edges of the Rim. As a result, the planned fighter bays were scrapped in favor of the concentrated fire mount. This design crams all of the ship's gun ports into a single central location, allowing multiple smaller guns to emulate the effect of having a single larger one. This negatively impacts the ship's cooling efficiency and increases the amount of work maintenance crews have to put in for guns not mounted on the edge of the firing cluster.",
+    "variant": "Vindicator (Test)",
+    "baseShip": "Liberator",
+    "displayName": "Vindicator"
+  },
+  {
+    "name": "Liberator (Liberator (Test))",
+    "engines": [
+      {
+        "x": -26,
+        "y": 176
+      },
+      {
+        "x": 26,
+        "y": 176
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": 0,
+        "y": -167,
+        "gun": ""
+      },
+      {
+        "x": -0.5,
+        "y": -167,
+        "gun": ""
+      },
+      {
+        "x": 0.5,
+        "y": -167,
+        "gun": ""
+      },
+      {
+        "x": -1,
+        "y": -167,
+        "gun": ""
+      },
+      {
+        "x": 1,
+        "y": -167,
+        "gun": ""
+      },
+      {
+        "x": -1.5,
+        "y": -167,
+        "gun": ""
+      },
+      {
+        "x": 1.5,
+        "y": -167,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": -39,
+        "y": -165,
+        "turret": ""
+      },
+      {
+        "x": 39,
+        "y": -165,
+        "turret": ""
+      },
+      {
+        "x": 0,
+        "y": 65,
+        "turret": ""
+      },
+      {
+        "x": -39,
+        "y": 118,
+        "turret": ""
+      },
+      {
+        "x": 39,
+        "y": 118,
+        "turret": ""
+      }
+    ],
+    "bays": [],
+    "sprite": "ship/liberator",
+    "thumbnail": "thumbnail/liberator-thumb",
+    "attributes": {
+      "category": "Heavy Warship",
+      "licenses": {
+        "description": "\"Militia\""
+      },
+      "cost": 13090000,
+      "shields": 19900,
+      "hull": 8100,
+      "required crew": 100,
+      "bunks": 147,
+      "mass": 2300,
+      "drag": 36.4,
+      "heat dissipation": 0.36,
+      "fuel capacity": 600,
+      "cargo space": 100,
+      "outfit space": 790,
+      "weapon capacity": 375,
+      "engine capacity": 190,
+      "cooling inefficiency": 1,
+      "weapon": {
+        "blast radius": 286,
+        "shield damage": 2860,
+        "hull damage": 1430,
+        "hit force": 4290
+      },
+      "self destruct": 1
+    },
+    "leak": "40 50",
+    "flame": "20 80",
+    "big leak": "80 30",
+    "tiny explosion": "55",
+    "small explosion": "55",
+    "medium explosion": "55",
+    "large explosion": "55",
+    "huge explosion": "22",
+    "final explode": "\"final explosion large\"",
+    "description": "The Liberator is a new warship that was originally designed by Southbound Shipyards to replace the Skein. Rumor has it that the project scope shifted focus during development when a ship of alien origin was discovered at the edges of the Rim. As a result, the planned fighter bays were scrapped in favor of the concentrated fire mount. This design crams all of the ship's gun ports into a single central location, allowing multiple smaller guns to emulate the effect of having a single larger one. This negatively impacts the ship's cooling efficiency and increases the amount of work maintenance crews have to put in for guns not mounted on the edge of the firing cluster.",
+    "variant": "Liberator (Test)",
+    "baseShip": "Liberator"
+  },
+  {
+    "name": "Mega Freighter (Mega Freighter (Prototype))",
+    "engines": [
+      {
+        "x": -32,
+        "y": 191.5
+      },
+      {
+        "x": 32,
+        "y": 191.5
+      },
+      {
+        "x": -20,
+        "y": 195.5
+      },
+      {
+        "x": 20,
+        "y": 195.5
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -23.5,
+        "y": -182,
+        "gun": ""
+      },
+      {
+        "x": 23.5,
+        "y": -182,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": 0,
+        "y": -90.5,
+        "turret": ""
+      },
+      {
+        "x": 0,
+        "y": -40.5,
+        "turret": ""
+      },
+      {
+        "x": 0,
+        "y": 9.5,
+        "turret": ""
+      },
+      {
+        "x": 0,
+        "y": 59.5,
+        "turret": ""
+      },
+      {
+        "x": 0,
+        "y": 109,
+        "turret": ""
+      }
+    ],
+    "bays": [],
+    "sprite": "ship/mega freighter",
+    "thumbnail": "thumbnail/mega freighter-thumb",
+    "attributes": {
+      "category": "Heavy Freighter",
+      "cost": 13800000,
+      "shields": 4500,
+      "hull": 11000,
+      "required crew": 8,
+      "bunks": 0,
+      "mass": 1600,
+      "drag": 29,
+      "heat dissipation": 0.4,
+      "fuel capacity": 600,
+      "cargo space": 1100,
+      "outfit space": 412,
+      "weapon capacity": 185,
+      "engine capacity": 90,
+      "weapon": {
+        "blast radius": 120,
+        "shield damage": 1200,
+        "hull damage": 600,
+        "hit force": 1800
+      },
+      "automaton": 1,
+      "self destruct": 1
+    },
+    "leak": "40 50",
+    "flame": "30 80",
+    "big leak": "50 30",
+    "small explosion": "15",
+    "medium explosion": "25",
+    "large explosion": "35",
+    "huge explosion": "20",
+    "final explode": "\"final explosion large\"",
+    "description": "The Syndicate's Mega Freighter is being marketed as a symbol for a new era of peace and prosperity in the post-war galaxy. Despite having double the cargo capacity of a Container Transport, the empty hull isn't much heavier unless it's carrying a full cargo load. In addition to the extra cargo space, this ship offers more flexibility for installing engines, weapons, and other outfits.",
+    "variant": "Mega Freighter (Prototype)",
+    "baseShip": "Mega Freighter"
+  },
+  {
+    "name": "Sunracer (Modified Flivver)",
+    "engines": [
+      {
+        "x": -16.5,
+        "y": 26
+      },
+      {
+        "x": 16.5,
+        "y": 26
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -6,
+        "y": -35.5,
+        "gun": ""
+      },
+      {
+        "x": 6,
+        "y": -35.5,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [],
+    "sprite": "ship/modified flivver",
+    "thumbnail": "thumbnail/modified flivver-thumb",
+    "attributes": {
+      "category": "Fighter",
+      "licenses": {
+        "description": "\"Sunracer\""
+      },
+      "cost": 360000,
+      "shields": 800,
+      "hull": 150,
+      "required crew": 1,
+      "bunks": 1,
+      "mass": 37,
+      "drag": 0.97,
+      "heat dissipation": 0.9,
+      "outfit space": 110,
+      "weapon capacity": 8,
+      "engine capacity": 45,
+      "weapon": {
+        "blast radius": 12,
+        "shield damage": 120,
+        "hull damage": 60,
+        "hit force": 180
+      },
+      "sponsorship slot": -1
+    },
+    "leak": "40 30",
+    "tiny explosion": "5",
+    "small explosion": "5",
+    "description": "The ship of choice for most professional racing pilots. With a focus on maximizing speed, a Sunracer lacks space to spare for ubiquitous things like cargo, bunks, weapons, or a hyperdrive. \tThese ships serve a unique niche and are exclusively sold at inflated prices on the planet they're named after. Although it's possible to squeeze one into a fighter bay, the prohibitive cost and minimal combat capability means there isn't a compelling reason to use them in that capacity.",
+    "variant": "Modified Flivver",
+    "baseShip": "Sunracer",
+    "displayName": "Modified Flivver"
+  },
+  {
+    "name": "Liberator (Vindicator)",
+    "engines": [
+      {
+        "x": -26,
+        "y": 176
+      },
+      {
+        "x": 26,
+        "y": 176
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": 0,
+        "y": -167,
+        "gun": ""
+      },
+      {
+        "x": -0.5,
+        "y": -167,
+        "gun": ""
+      },
+      {
+        "x": 0.5,
+        "y": -167,
+        "gun": ""
+      },
+      {
+        "x": -1,
+        "y": -167,
+        "gun": ""
+      },
+      {
+        "x": 1,
+        "y": -167,
+        "gun": ""
+      },
+      {
+        "x": -1.5,
+        "y": -167,
+        "gun": ""
+      },
+      {
+        "x": 1.5,
+        "y": -167,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": -39,
+        "y": -165,
+        "turret": ""
+      },
+      {
+        "x": 39,
+        "y": -165,
+        "turret": ""
+      },
+      {
+        "x": 0,
+        "y": 65,
+        "turret": ""
+      },
+      {
+        "x": -39,
+        "y": 118,
+        "turret": ""
+      },
+      {
+        "x": 39,
+        "y": 118,
+        "turret": ""
+      }
+    ],
+    "bays": [],
+    "sprite": "ship/liberator",
+    "thumbnail": "thumbnail/liberator-thumb",
+    "attributes": {
+      "category": "Heavy Warship",
+      "licenses": {
+        "description": "\"Militia\""
+      },
+      "cost": 13090000,
+      "shields": 19900,
+      "hull": 8100,
+      "required crew": 100,
+      "bunks": 147,
+      "mass": 2300,
+      "drag": 36.4,
+      "heat dissipation": 0.36,
+      "fuel capacity": 600,
+      "cargo space": 100,
+      "outfit space": 790,
+      "weapon capacity": 375,
+      "engine capacity": 190,
+      "cooling inefficiency": 1,
+      "weapon": {
+        "blast radius": 286,
+        "shield damage": 2860,
+        "hull damage": 1430,
+        "hit force": 4290
+      }
+    },
+    "leak": "40 50",
+    "flame": "20 80",
+    "big leak": "80 30",
+    "tiny explosion": "55",
+    "small explosion": "55",
+    "medium explosion": "55",
+    "large explosion": "55",
+    "huge explosion": "22",
+    "final explode": "\"final explosion large\"",
+    "description": "The Liberator is a new warship that was originally designed by Southbound Shipyards to replace the Skein. Rumor has it that the project scope shifted focus during development when a ship of alien origin was discovered at the edges of the Rim. As a result, the planned fighter bays were scrapped in favor of the concentrated fire mount. This design crams all of the ship's gun ports into a single central location, allowing multiple smaller guns to emulate the effect of having a single larger one. This negatively impacts the ship's cooling efficiency and increases the amount of work maintenance crews have to put in for guns not mounted on the edge of the firing cluster.",
+    "variant": "Vindicator",
+    "baseShip": "Liberator",
+    "displayName": "Vindicator"
+  },
+  {
+    "name": "Marauder Behemoth (Marauder Behemoth (Weapons))",
+    "engines": [
+      {
+        "x": -34,
+        "y": 143,
+        "zoom": 0.8
+      },
+      {
+        "x": 34,
+        "y": 143,
+        "zoom": 0.8
+      },
+      {
+        "x": -56,
+        "y": 148.5,
+        "zoom": 0.6
+      },
+      {
+        "x": 56,
+        "y": 148.5,
+        "zoom": 0.6
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -47.5,
+        "y": -57.5,
+        "gun": ""
+      },
+      {
+        "x": 47.5,
+        "y": -57.5,
+        "gun": ""
+      },
+      {
+        "x": -87,
+        "y": 44,
+        "gun": ""
+      },
+      {
+        "x": 87,
+        "y": 44,
+        "gun": ""
+      },
+      {
+        "x": -93,
+        "y": 44,
+        "gun": ""
+      },
+      {
+        "x": 93,
+        "y": 44,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": -31,
+        "y": -50,
+        "turret": ""
+      },
+      {
+        "x": 31,
+        "y": -50,
+        "turret": ""
+      },
+      {
+        "x": -47.5,
+        "y": 33.5,
+        "turret": ""
+      },
+      {
+        "x": 47.5,
+        "y": 33.5,
+        "turret": ""
+      },
+      {
+        "x": -22,
+        "y": 66.5,
+        "turret": ""
+      },
+      {
+        "x": 22,
+        "y": 66.5,
+        "turret": ""
+      }
+    ],
+    "bays": [
+      {
+        "type": "Fighter",
+        "x": -90,
+        "y": 65
+      },
+      {
+        "type": "Fighter",
+        "x": 90,
+        "y": 65
+      }
+    ],
+    "sprite": "ship/marauder behemothw",
+    "thumbnail": "thumbnail/marauder behemothw-thumb",
+    "attributes": {
+      "category": "Heavy Warship",
+      "cost": 11880000,
+      "shields": 8400,
+      "hull": 7000,
+      "required crew": 14,
+      "bunks": 32,
+      "mass": 1232,
+      "drag": 15,
+      "heat dissipation": 0.26,
+      "fuel capacity": 600,
+      "cargo space": 245,
+      "outfit space": 560,
+      "weapon capacity": 310,
+      "engine capacity": 105,
+      "self destruct": 0.15,
+      "weapon": {
+        "blast radius": 150,
+        "shield damage": 1500,
+        "hull damage": 800,
+        "hit force": 2300
+      }
+    },
+    "leak": "30 50",
+    "flame": "30 80",
+    "big leak": "50 30",
+    "small explosion": "15",
+    "medium explosion": "25",
+    "large explosion": "35",
+    "huge explosion": "20",
+    "final explode": "\"final explosion large\"",
+    "description": "This Betelgeuse Shipyards Behemoth has had extensive modifications applied to its hull and cargo hold. Notable are the two fighter bays that leave no doubt that this former freighter is now a warship.",
+    "variant": "Marauder Behemoth (Weapons)",
+    "baseShip": "Marauder Behemoth"
+  },
+  {
+    "name": "Marauder Behemoth (Marauder Behemoth (Engines))",
+    "engines": [
+      {
+        "x": -90,
+        "y": 90,
+        "zoom": 0.4
+      },
+      {
+        "x": 90,
+        "y": 90,
+        "zoom": 0.4
+      },
+      {
+        "x": -34,
+        "y": 143,
+        "zoom": 0.8
+      },
+      {
+        "x": 34,
+        "y": 143,
+        "zoom": 0.8
+      },
+      {
+        "x": -56,
+        "y": 148.5,
+        "zoom": 0.6
+      },
+      {
+        "x": 56,
+        "y": 148.5,
+        "zoom": 0.6
+      }
+    ],
+    "reverseEngines": [
+      {
+        "x": -26,
+        "y": -83,
+        "zoom": 0.4
+      },
+      {
+        "x": 26,
+        "y": -83,
+        "zoom": 0.4
+      },
+      {
+        "x": -90,
+        "y": 44,
+        "zoom": 0.6
+      },
+      {
+        "x": 90,
+        "y": 44,
+        "zoom": 0.6
+      },
+      {
+        "x": -52,
+        "y": 113,
+        "zoom": 0.4
+      },
+      {
+        "x": 52,
+        "y": 113,
+        "zoom": 0.4
+      }
+    ],
+    "steeringEngines": [
+      {
+        "x": -90,
+        "y": 90,
+        "zoom": 0.4,
+        "position": "right"
+      },
+      {
+        "x": 90,
+        "y": 44,
+        "zoom": 0.4,
+        "position": "right"
+      },
+      {
+        "x": -90,
+        "y": 44,
+        "zoom": 0.4,
+        "position": "left"
+      },
+      {
+        "x": 90,
+        "y": 90,
+        "zoom": 0.4,
+        "position": "left"
+      }
+    ],
+    "guns": [
+      {
+        "x": -47.5,
+        "y": -57.5,
+        "gun": ""
+      },
+      {
+        "x": 47.5,
+        "y": -57.5,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": -31,
+        "y": -50,
+        "turret": ""
+      },
+      {
+        "x": 31,
+        "y": -50,
+        "turret": ""
+      },
+      {
+        "x": -47.5,
+        "y": 33.5,
+        "turret": ""
+      },
+      {
+        "x": 47.5,
+        "y": 33.5,
+        "turret": ""
+      },
+      {
+        "x": -22,
+        "y": 66.5,
+        "turret": ""
+      },
+      {
+        "x": 22,
+        "y": 66.5,
+        "turret": ""
+      }
+    ],
+    "bays": [
+      {
+        "type": "Fighter",
+        "x": -90,
+        "y": 65
+      },
+      {
+        "type": "Fighter",
+        "x": 90,
+        "y": 65
+      }
+    ],
+    "sprite": "ship/marauder behemothe",
+    "thumbnail": "thumbnail/marauder behemothe-thumb",
+    "attributes": {
+      "category": "Heavy Warship",
+      "cost": 11880000,
+      "shields": 8400,
+      "hull": 7000,
+      "required crew": 14,
+      "bunks": 32,
+      "mass": 1232,
+      "drag": 15,
+      "heat dissipation": 0.26,
+      "fuel capacity": 600,
+      "cargo space": 245,
+      "outfit space": 560,
+      "weapon capacity": 300,
+      "engine capacity": 125,
+      "self destruct": 0.15,
+      "weapon": {
+        "blast radius": 150,
+        "shield damage": 1500,
+        "hull damage": 800,
+        "hit force": 2300
+      }
+    },
+    "leak": "30 50",
+    "flame": "30 80",
+    "big leak": "50 30",
+    "small explosion": "15",
+    "medium explosion": "25",
+    "large explosion": "35",
+    "huge explosion": "20",
+    "final explode": "\"final explosion large\"",
+    "description": "This Betelgeuse Shipyards Behemoth has had extensive modifications applied to its hull and cargo hold. Notable are the two fighter bays that leave no doubt that this former freighter is now a warship.",
+    "variant": "Marauder Behemoth (Engines)",
+    "baseShip": "Marauder Behemoth"
+  },
+  {
+    "name": "Marauder Behemoth (Marauder Behemoth (Secret Prototype))",
+    "engines": [
+      {
+        "x": -34,
+        "y": 143,
+        "zoom": 0.8
+      },
+      {
+        "x": 34,
+        "y": 143,
+        "zoom": 0.8
+      },
+      {
+        "x": -56,
+        "y": 148.5,
+        "zoom": 0.6
+      },
+      {
+        "x": 56,
+        "y": 148.5,
+        "zoom": 0.6
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -47.5,
+        "y": -57.5,
+        "gun": ""
+      },
+      {
+        "x": 47.5,
+        "y": -57.5,
+        "gun": ""
+      },
+      {
+        "x": -87,
+        "y": 44,
+        "gun": ""
+      },
+      {
+        "x": 87,
+        "y": 44,
+        "gun": ""
+      },
+      {
+        "x": -93,
+        "y": 44,
+        "gun": ""
+      },
+      {
+        "x": 93,
+        "y": 44,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": -31,
+        "y": -50,
+        "turret": ""
+      },
+      {
+        "x": 31,
+        "y": -50,
+        "turret": ""
+      },
+      {
+        "x": -47.5,
+        "y": 33.5,
+        "turret": ""
+      },
+      {
+        "x": 47.5,
+        "y": 33.5,
+        "turret": ""
+      },
+      {
+        "x": -22,
+        "y": 66.5,
+        "turret": ""
+      },
+      {
+        "x": 22,
+        "y": 66.5,
+        "turret": ""
+      }
+    ],
+    "bays": [
+      {
+        "type": "Fighter",
+        "x": -90,
+        "y": 65
+      },
+      {
+        "type": "Fighter",
+        "x": 90,
+        "y": 65
+      }
+    ],
+    "sprite": "ship/marauder behemothw",
+    "thumbnail": "thumbnail/marauder behemothw-thumb",
+    "attributes": {
+      "category": "Heavy Warship",
+      "cost": 11880000,
+      "shields": 8400,
+      "hull": 7000,
+      "required crew": 14,
+      "bunks": 32,
+      "mass": 1232,
+      "drag": 15,
+      "heat dissipation": 0.26,
+      "fuel capacity": 600,
+      "cargo space": 245,
+      "outfit space": 560,
+      "weapon capacity": 310,
+      "engine capacity": 105,
+      "self destruct": 0.15,
+      "weapon": {
+        "blast radius": 150,
+        "shield damage": 1500,
+        "hull damage": 800,
+        "hit force": 2300
+      }
+    },
+    "leak": "30 50",
+    "flame": "30 80",
+    "big leak": "50 30",
+    "small explosion": "15",
+    "medium explosion": "25",
+    "large explosion": "35",
+    "huge explosion": "20",
+    "final explode": "\"final explosion large\"",
+    "description": "This Betelgeuse Shipyards Behemoth has had extensive modifications applied to its hull and cargo hold. Notable are the two fighter bays that leave no doubt that this former freighter is now a warship.",
+    "variant": "Marauder Behemoth (Secret Prototype)",
+    "baseShip": "Marauder Behemoth"
+  },
+  {
+    "name": "Marauder Carrier (Marauder Carrier (Weapons))",
+    "engines": [
+      {
+        "x": -35,
+        "y": 200
+      },
+      {
+        "x": 35,
+        "y": 200
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -16,
+        "y": -176,
+        "gun": ""
+      },
+      {
+        "x": 16,
+        "y": -176,
+        "gun": ""
+      },
+      {
+        "x": -16,
+        "y": -176,
+        "gun": ""
+      },
+      {
+        "x": 16,
+        "y": -176,
+        "gun": ""
+      },
+      {
+        "x": -25,
+        "y": -166,
+        "gun": ""
+      },
+      {
+        "x": 25,
+        "y": -166,
+        "gun": ""
+      },
+      {
+        "x": -25,
+        "y": -166,
+        "gun": ""
+      },
+      {
+        "x": 25,
+        "y": -166,
+        "gun": ""
+      },
+      {
+        "x": -72,
+        "y": -46,
+        "gun": ""
+      },
+      {
+        "x": 72,
+        "y": -46,
+        "gun": ""
+      },
+      {
+        "x": -101,
+        "y": 57,
+        "gun": ""
+      },
+      {
+        "x": 101,
+        "y": 57,
+        "gun": ""
+      },
+      {
+        "x": -74,
+        "y": 57,
+        "gun": ""
+      },
+      {
+        "x": 74,
+        "y": 57,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": 0,
+        "y": -114,
+        "turret": ""
+      },
+      {
+        "x": 0,
+        "y": 15,
+        "turret": ""
+      },
+      {
+        "x": 0,
+        "y": 103,
+        "turret": ""
+      },
+      {
+        "x": 0,
+        "y": 157,
+        "turret": ""
+      }
+    ],
+    "bays": [
+      {
+        "type": "Fighter",
+        "x": -37,
+        "y": -65,
+        "launch effect": "human internal"
+      },
+      {
+        "type": "Fighter",
+        "x": 37,
+        "y": -65,
+        "launch effect": "human internal"
+      },
+      {
+        "type": "Fighter",
+        "x": -46,
+        "y": 40,
+        "launch effect": "human internal"
+      },
+      {
+        "type": "Fighter",
+        "x": 46,
+        "y": 40,
+        "launch effect": "human internal"
+      }
+    ],
+    "sprite": "ship/marauder carrierw",
+    "thumbnail": "thumbnail/marauder carrierw-thumb",
+    "attributes": {
+      "category": "Heavy Warship",
+      "cost": 16720000,
+      "shields": 23500,
+      "hull": 9100,
+      "required crew": 122,
+      "bunks": 166,
+      "mass": 2770,
+      "drag": 35.7,
+      "heat dissipation": 0.21,
+      "fuel capacity": 700,
+      "cargo space": 50,
+      "outfit space": 820,
+      "weapon capacity": 380,
+      "engine capacity": 230,
+      "self destruct": 0.15,
+      "weapon": {
+        "blast radius": 330,
+        "shield damage": 3300,
+        "hull damage": 1600,
+        "hit force": 4900
+      }
+    },
+    "leak": "30 50",
+    "flame": "30 80",
+    "big leak": "30 30",
+    "tiny explosion": "20",
+    "small explosion": "45",
+    "medium explosion": "50",
+    "large explosion": "40",
+    "huge explosion": "10",
+    "final explode": "\"final explosion large\"",
+    "description": "A captured Carrier under the control of pirates is unthinkable. It is more likely that this ship was reconstructed using parts salvaged from wreckage left behind during battles between the Republic and Free Worlds.",
+    "variant": "Marauder Carrier (Weapons)",
+    "baseShip": "Marauder Carrier"
+  },
+  {
+    "name": "Marauder Cruiser (Marauder Cruiser (Weapons))",
+    "engines": [
+      {
+        "x": -29,
+        "y": 156
+      },
+      {
+        "x": 29,
+        "y": 156
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -31,
+        "y": -63,
+        "gun": ""
+      },
+      {
+        "x": 31,
+        "y": -63,
+        "gun": ""
+      },
+      {
+        "x": -41,
+        "y": -52,
+        "gun": ""
+      },
+      {
+        "x": 41,
+        "y": -52,
+        "gun": ""
+      },
+      {
+        "x": -20,
+        "y": -44,
+        "gun": ""
+      },
+      {
+        "x": 20,
+        "y": -44,
+        "gun": ""
+      },
+      {
+        "x": -25,
+        "y": 18,
+        "gun": ""
+      },
+      {
+        "x": 25,
+        "y": 18,
+        "gun": ""
+      },
+      {
+        "x": -25,
+        "y": 49,
+        "gun": ""
+      },
+      {
+        "x": 25,
+        "y": 49,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": 0,
+        "y": -40,
+        "turret": ""
+      },
+      {
+        "x": -33,
+        "y": -19,
+        "turret": ""
+      },
+      {
+        "x": 33,
+        "y": -19,
+        "turret": ""
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "turret": ""
+      }
+    ],
+    "bays": [
+      {
+        "type": "Fighter",
+        "x": -25,
+        "y": 33.5,
+        "launch effect": "human internal"
+      },
+      {
+        "type": "Fighter",
+        "x": 25,
+        "y": 33.5,
+        "launch effect": "human internal"
+      }
+    ],
+    "sprite": "ship/marauder cruiserw",
+    "thumbnail": "thumbnail/marauder cruiserw-thumb",
+    "attributes": {
+      "category": "Heavy Warship",
+      "licenses": {
+        "description": "\"Navy Cruiser\""
+      },
+      "cost": 12320000,
+      "shields": 21500,
+      "hull": 7000,
+      "required crew": 89,
+      "bunks": 122,
+      "mass": 1929,
+      "drag": 18.8,
+      "heat dissipation": 0.25,
+      "fuel capacity": 600,
+      "cargo space": 30,
+      "outfit space": 835,
+      "weapon capacity": 360,
+      "engine capacity": 185,
+      "self destruct": 0.15,
+      "weapon": {
+        "blast radius": 280,
+        "shield damage": 2800,
+        "hull damage": 1400,
+        "hit force": 4200
+      }
+    },
+    "leak": "30 50",
+    "flame": "50 80",
+    "big leak": "40 30",
+    "tiny explosion": "20",
+    "small explosion": "45",
+    "medium explosion": "50",
+    "large explosion": "40",
+    "huge explosion": "10",
+    "final explode": "\"final explosion large\"",
+    "description": "On extremely rare occasions, a Republic Cruiser will be captured by pirates. Rarer still are Cruisers held by pirates who have evaded the Navy long enough to make extensive modifications to the hull.",
+    "variant": "Marauder Cruiser (Weapons)",
+    "baseShip": "Marauder Cruiser"
+  },
+  {
+    "name": "Marauder Hauler (Marauder Hauler B)",
+    "engines": [
+      {
+        "x": -44.5,
+        "y": 103.5
+      },
+      {
+        "x": 44.5,
+        "y": 103.5
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -15,
+        "y": -75.5,
+        "gun": ""
+      },
+      {
+        "x": 14.5,
+        "y": -75.5,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": -21.5,
+        "y": -30,
+        "turret": ""
+      },
+      {
+        "x": 22,
+        "y": -30,
+        "turret": ""
+      },
+      {
+        "x": -18.5,
+        "y": 61,
+        "turret": ""
+      },
+      {
+        "x": 18.5,
+        "y": 61,
+        "turret": ""
+      }
+    ],
+    "bays": [],
+    "sprite": "ship/marauder hauler b",
+    "thumbnail": "thumbnail/marauder hauler B-thumb",
+    "attributes": {
+      "category": "Light Warship",
+      "cost": 945000,
+      "shields": 2400,
+      "hull": 3500,
+      "required crew": 3,
+      "bunks": 8,
+      "mass": 435,
+      "drag": 9.5,
+      "heat dissipation": 0.43,
+      "fuel capacity": 400,
+      "cargo space": 50,
+      "outfit space": 375,
+      "weapon capacity": 140,
+      "engine capacity": 80,
+      "self destruct": 0.25,
+      "weapon": {
+        "blast radius": 60,
+        "shield damage": 600,
+        "hull damage": 300,
+        "hit force": 900
+      }
+    },
+    "leak": "60 50",
+    "flame": "50 80",
+    "big leak": "90 30",
+    "tiny explosion": "20",
+    "small explosion": "35",
+    "medium explosion": "20",
+    "large explosion": "5",
+    "final explode": "\"final explosion medium\"",
+    "description": "Some Haulers are modified to reduce mass and drag by replacing the standard cargo container with something smaller. The previous owner of this Hauler took the standard Southbound Shipyards cargo container and cut it down to half its size.",
+    "variant": "Marauder Hauler B",
+    "baseShip": "Marauder Hauler"
+  },
+  {
+    "name": "Marauder Hauler (Marauder Hauler C)",
+    "engines": [
+      {
+        "x": -44.5,
+        "y": 103.5
+      },
+      {
+        "x": 44.5,
+        "y": 103.5
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -15,
+        "y": -75.5,
+        "gun": ""
+      },
+      {
+        "x": 14.5,
+        "y": -75.5,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": -21.5,
+        "y": -30,
+        "turret": ""
+      },
+      {
+        "x": 22,
+        "y": -30,
+        "turret": ""
+      },
+      {
+        "x": -18.5,
+        "y": 61,
+        "turret": ""
+      },
+      {
+        "x": 18.5,
+        "y": 61,
+        "turret": ""
+      }
+    ],
+    "bays": [],
+    "sprite": "ship/marauder hauler c",
+    "thumbnail": "thumbnail/marauder hauler C-thumb",
+    "attributes": {
+      "category": "Light Warship",
+      "cost": 1005000,
+      "shields": 2200,
+      "hull": 3300,
+      "required crew": 3,
+      "bunks": 8,
+      "mass": 425,
+      "drag": 8.5,
+      "heat dissipation": 0.43,
+      "fuel capacity": 400,
+      "cargo space": 80,
+      "outfit space": 375,
+      "weapon capacity": 140,
+      "engine capacity": 80,
+      "self destruct": 0.25,
+      "weapon": {
+        "blast radius": 60,
+        "shield damage": 600,
+        "hull damage": 300,
+        "hit force": 900
+      }
+    },
+    "leak": "60 50",
+    "flame": "50 80",
+    "big leak": "90 30",
+    "tiny explosion": "20",
+    "small explosion": "35",
+    "medium explosion": "20",
+    "large explosion": "5",
+    "final explode": "\"final explosion medium\"",
+    "description": "Some Haulers are modified to reduce mass and drag by replacing the standard cargo container with something smaller. The previous owner of this Hauler took the standard Southbound Shipyards cargo container and cut it down to half its size.",
+    "variant": "Marauder Hauler C",
+    "baseShip": "Marauder Hauler"
+  },
+  {
+    "name": "Marauder Hauler (Marauder Hauler (engines))",
+    "engines": [
+      {
+        "x": -45,
+        "y": 86.5
+      },
+      {
+        "x": 44,
+        "y": 86.5
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -12.5,
+        "y": -60,
+        "gun": ""
+      },
+      {
+        "x": 16,
+        "y": -60,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": -20,
+        "y": -12,
+        "turret": ""
+      },
+      {
+        "x": 23,
+        "y": -12,
+        "turret": ""
+      },
+      {
+        "x": -17.5,
+        "y": 40,
+        "turret": ""
+      },
+      {
+        "x": 19.5,
+        "y": 40,
+        "turret": ""
+      }
+    ],
+    "bays": [],
+    "sprite": "ship/marauder hauler engines",
+    "thumbnail": "thumbnail/marauder hauler E-thumb",
+    "attributes": {
+      "category": "Light Warship",
+      "cost": 1390480,
+      "shields": 2300,
+      "hull": 3200,
+      "required crew": 3,
+      "bunks": 8,
+      "mass": 355,
+      "drag": 8.5,
+      "heat dissipation": 0.43,
+      "fuel capacity": 400,
+      "cargo space": 5,
+      "outfit space": 415,
+      "weapon capacity": 140,
+      "engine capacity": 120,
+      "self destruct": 0.25,
+      "weapon": {
+        "blast radius": 60,
+        "shield damage": 600,
+        "hull damage": 300,
+        "hit force": 900
+      }
+    },
+    "leak": "60 50",
+    "flame": "50 80",
+    "big leak": "90 30",
+    "tiny explosion": "20",
+    "small explosion": "35",
+    "medium explosion": "20",
+    "large explosion": "5",
+    "final explode": "\"final explosion medium\"",
+    "description": "Some Haulers are modified to reduce mass and drag by replacing the standard cargo container with something smaller. The previous owner of this Hauler took the standard Southbound Shipyards cargo container and cut it down to half its size.",
+    "variant": "Marauder Hauler (engines)",
+    "baseShip": "Marauder Hauler"
+  },
+  {
+    "name": "Marauder Hauler (Marauder Hauler (weapons))",
+    "engines": [
+      {
+        "x": -44,
+        "y": 113
+      },
+      {
+        "x": 45.5,
+        "y": 113
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -10.5,
+        "y": -87.5,
+        "gun": ""
+      },
+      {
+        "x": 18,
+        "y": -87.5,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": -17.5,
+        "y": -41,
+        "turret": ""
+      },
+      {
+        "x": 25.5,
+        "y": -41,
+        "turret": ""
+      },
+      {
+        "x": -16.5,
+        "y": 11.5,
+        "turret": ""
+      },
+      {
+        "x": 20.5,
+        "y": 11.5,
+        "turret": ""
+      },
+      {
+        "x": -17.5,
+        "y": 70,
+        "turret": ""
+      },
+      {
+        "x": 19,
+        "y": 70,
+        "turret": ""
+      }
+    ],
+    "bays": [],
+    "sprite": "ship/marauder hauler weapons",
+    "thumbnail": "thumbnail/marauder hauler W-thumb",
+    "attributes": {
+      "category": "Light Warship",
+      "cost": 1544920,
+      "shields": 3300,
+      "hull": 5000,
+      "required crew": 3,
+      "bunks": 10,
+      "mass": 580,
+      "drag": 9.5,
+      "heat dissipation": 0.43,
+      "fuel capacity": 400,
+      "cargo space": 5,
+      "outfit space": 415,
+      "weapon capacity": 180,
+      "engine capacity": 80,
+      "self destruct": 0.25,
+      "weapon": {
+        "blast radius": 60,
+        "shield damage": 600,
+        "hull damage": 300,
+        "hit force": 900
+      }
+    },
+    "leak": "60 50",
+    "flame": "50 80",
+    "big leak": "90 30",
+    "tiny explosion": "20",
+    "small explosion": "35",
+    "medium explosion": "20",
+    "large explosion": "5",
+    "final explode": "\"final explosion medium\"",
+    "description": "Some Haulers are modified to reduce mass and drag by replacing the standard cargo container with something smaller. The previous owner of this Hauler took the standard Southbound Shipyards cargo container and cut it down to half its size.",
+    "variant": "Marauder Hauler (weapons)",
+    "baseShip": "Marauder Hauler"
+  },
+  {
+    "name": "Broadsword (Basket-hilt)",
+    "engines": [
+      {
+        "x": 0,
+        "y": 105
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -10.5,
+        "y": -105,
+        "gun": ""
+      },
+      {
+        "x": 0,
+        "y": -105,
+        "gun": ""
+      },
+      {
+        "x": 10.5,
+        "y": -105,
+        "gun": ""
+      },
+      {
+        "x": -5,
+        "y": -104,
+        "gun": ""
+      },
+      {
+        "x": 5,
+        "y": -104,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": 0,
+        "y": 27.5,
+        "turret": ""
+      }
+    ],
+    "bays": [
+      {
+        "type": "Fighter",
+        "x": 44,
+        "y": 17
+      }
+    ],
+    "sprite": "ship/basket-hilt",
+    "thumbnail": "thumbnail/basket-hilt-thumb",
+    "attributes": {
+      "category": "Utility",
+      "cost": 3300000,
+      "shields": 4600,
+      "hull": 2600,
+      "required crew": 18,
+      "bunks": 27,
+      "mass": 555,
+      "drag": 9,
+      "heat dissipation": 0.38,
+      "fuel capacity": 700,
+      "cargo space": 10,
+      "outfit space": 290,
+      "weapon capacity": 105,
+      "engine capacity": 90,
+      "weapon": {
+        "blast radius": 72,
+        "shield damage": 720,
+        "hull damage": 360,
+        "hit force": 1080
+      }
+    },
+    "leak": "60 60",
+    "flame": "40 80",
+    "big leak": "40 20",
+    "tiny explosion": "10",
+    "small explosion": "24",
+    "medium explosion": "28",
+    "large explosion": "10",
+    "final explode": "\"final explosion medium\"",
+    "description": "Long ago, a captain asked the head shipwright of Grendel Station to add an external fighter bay to the original Saber's hull. It didn't take long before the shipyard extended this modification with a second bay to create the Broadsword. This design is most commonly found in remote pirate systems on the outer rim.",
+    "variant": "Basket-hilt",
+    "baseShip": "Broadsword",
+    "displayName": "Basket-hilt"
+  },
+  {
+    "name": "Broadsword (Basket-hilt (CCOR))",
+    "engines": [
+      {
+        "x": 0,
+        "y": 105
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -10.5,
+        "y": -105,
+        "gun": ""
+      },
+      {
+        "x": 0,
+        "y": -105,
+        "gun": ""
+      },
+      {
+        "x": 10.5,
+        "y": -105,
+        "gun": ""
+      },
+      {
+        "x": -5,
+        "y": -104,
+        "gun": ""
+      },
+      {
+        "x": 5,
+        "y": -104,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": 0,
+        "y": 27.5,
+        "turret": ""
+      }
+    ],
+    "bays": [
+      {
+        "type": "Fighter",
+        "x": 44,
+        "y": 17,
+        "position": "under",
+        "launch effect": "human external"
+      }
+    ],
+    "sprite": "ship/basket-hilt",
+    "thumbnail": "thumbnail/basket-hilt-thumb",
+    "attributes": {
+      "category": "Utility",
+      "cost": 3300000,
+      "shields": 4600,
+      "hull": 2600,
+      "required crew": 18,
+      "bunks": 27,
+      "mass": 555,
+      "drag": 9,
+      "heat dissipation": 0.38,
+      "fuel capacity": 700,
+      "cargo space": 10,
+      "outfit space": 290,
+      "weapon capacity": 105,
+      "engine capacity": 90,
+      "weapon": {
+        "blast radius": 72,
+        "shield damage": 720,
+        "hull damage": 360,
+        "hit force": 1080
+      }
+    },
+    "leak": "60 60",
+    "flame": "40 80",
+    "big leak": "40 20",
+    "tiny explosion": "10",
+    "small explosion": "24",
+    "medium explosion": "28",
+    "large explosion": "10",
+    "final explode": "\"final explosion medium\"",
+    "description": "Long ago, a captain asked the head shipwright of Grendel Station to add an external fighter bay to the original Saber's hull. It didn't take long before the shipyard extended this modification with a second bay to create the Broadsword. This design is most commonly found in remote pirate systems on the outer rim.",
+    "variant": "Basket-hilt (CCOR)",
+    "baseShip": "Broadsword",
+    "displayName": "Basket-hilt"
+  },
+  {
+    "name": "Broadsword (Basket-hilt b)",
+    "engines": [
+      {
+        "x": 0,
+        "y": 105
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -10.5,
+        "y": -105,
+        "gun": ""
+      },
+      {
+        "x": 0,
+        "y": -105,
+        "gun": ""
+      },
+      {
+        "x": 10.5,
+        "y": -105,
+        "gun": ""
+      },
+      {
+        "x": -5,
+        "y": -104,
+        "gun": ""
+      },
+      {
+        "x": 5,
+        "y": -104,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": 0,
+        "y": 27.5,
+        "turret": ""
+      }
+    ],
+    "bays": [
+      {
+        "type": "Fighter",
+        "x": -44,
+        "y": 17,
+        "position": "under",
+        "launch effect": "human external"
+      }
+    ],
+    "sprite": "ship/basket-hilt b",
+    "thumbnail": "thumbnail/basket-hilt-thumb b",
+    "attributes": {
+      "category": "Utility",
+      "cost": 3300000,
+      "shields": 4600,
+      "hull": 2600,
+      "required crew": 18,
+      "bunks": 27,
+      "mass": 555,
+      "drag": 9,
+      "heat dissipation": 0.38,
+      "fuel capacity": 700,
+      "cargo space": 10,
+      "outfit space": 290,
+      "weapon capacity": 105,
+      "engine capacity": 90,
+      "weapon": {
+        "blast radius": 72,
+        "shield damage": 720,
+        "hull damage": 360,
+        "hit force": 1080
+      }
+    },
+    "leak": "60 60",
+    "flame": "40 80",
+    "big leak": "40 20",
+    "tiny explosion": "10",
+    "small explosion": "24",
+    "medium explosion": "28",
+    "large explosion": "10",
+    "final explode": "\"final explosion medium\"",
+    "description": "Long ago, a captain asked the head shipwright of Grendel Station to add an external fighter bay to the original Saber's hull. It didn't take long before the shipyard extended this modification with a second bay to create the Broadsword. This design is most commonly found in remote pirate systems on the outer rim.",
+    "variant": "Basket-hilt b",
+    "baseShip": "Broadsword",
+    "displayName": "Basket-hilt"
+  },
+  {
+    "name": "Broadsword (Basket-hilt b (CCOR))",
+    "engines": [
+      {
+        "x": 0,
+        "y": 105
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -10.5,
+        "y": -105,
+        "gun": ""
+      },
+      {
+        "x": 0,
+        "y": -105,
+        "gun": ""
+      },
+      {
+        "x": 10.5,
+        "y": -105,
+        "gun": ""
+      },
+      {
+        "x": -5,
+        "y": -104,
+        "gun": ""
+      },
+      {
+        "x": 5,
+        "y": -104,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": 0,
+        "y": 27.5,
+        "turret": ""
+      }
+    ],
+    "bays": [
+      {
+        "type": "Fighter",
+        "x": -44,
+        "y": 17,
+        "position": "under",
+        "launch effect": "human external"
+      }
+    ],
+    "sprite": "ship/basket-hilt b",
+    "thumbnail": "thumbnail/basket-hilt-thumb b",
+    "attributes": {
+      "category": "Utility",
+      "cost": 3300000,
+      "shields": 4600,
+      "hull": 2600,
+      "required crew": 18,
+      "bunks": 27,
+      "mass": 555,
+      "drag": 9,
+      "heat dissipation": 0.38,
+      "fuel capacity": 700,
+      "cargo space": 10,
+      "outfit space": 290,
+      "weapon capacity": 105,
+      "engine capacity": 90,
+      "weapon": {
+        "blast radius": 72,
+        "shield damage": 720,
+        "hull damage": 360,
+        "hit force": 1080
+      }
+    },
+    "leak": "60 60",
+    "flame": "40 80",
+    "big leak": "40 20",
+    "tiny explosion": "10",
+    "small explosion": "24",
+    "medium explosion": "28",
+    "large explosion": "10",
+    "final explode": "\"final explosion medium\"",
+    "description": "Long ago, a captain asked the head shipwright of Grendel Station to add an external fighter bay to the original Saber's hull. It didn't take long before the shipyard extended this modification with a second bay to create the Broadsword. This design is most commonly found in remote pirate systems on the outer rim.",
+    "variant": "Basket-hilt b (CCOR)",
+    "baseShip": "Broadsword",
+    "displayName": "Basket-hilt"
+  },
+  {
+    "name": "Star Explorer (Star Explorer (Korath))",
+    "engines": [
+      {
+        "x": -36,
+        "y": 151
+      },
+      {
+        "x": 36,
+        "y": 151
+      }
+    ],
+    "reverseEngines": [
+      {
+        "x": -36,
+        "y": 52
+      },
+      {
+        "x": 36,
+        "y": 52
+      }
+    ],
+    "steeringEngines": [
+      {
+        "x": -36,
+        "y": 151,
+        "position": "\"right\""
+      },
+      {
+        "x": 36,
+        "y": 52,
+        "position": "\"right\""
+      },
+      {
+        "x": 36,
+        "y": 151,
+        "position": "\"left\""
+      },
+      {
+        "x": -36,
+        "y": 52,
+        "position": "\"left\""
+      }
+    ],
+    "guns": [
+      {
+        "x": 0,
+        "y": -111,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": -20,
+        "y": -110,
+        "turret": ""
+      },
+      {
+        "x": 20,
+        "y": -110,
+        "turret": ""
+      },
+      {
+        "x": -20,
+        "y": -75,
+        "turret": ""
+      },
+      {
+        "x": 20,
+        "y": -75,
+        "turret": ""
+      },
+      {
+        "x": -20,
+        "y": -39,
+        "turret": ""
+      },
+      {
+        "x": 20,
+        "y": -39,
+        "turret": ""
+      }
+    ],
+    "bays": [
+      {
+        "type": "Fighter",
+        "x": 0,
+        "y": -86
+      },
+      {
+        "type": "Drone",
+        "x": 0,
+        "y": -15
+      }
+    ],
+    "sprite": "ship/star explorer",
+    "attributes": {
+      "category": "Utility",
+      "cost": 11000000,
+      "shields": 5600,
+      "hull": 7000,
+      "required crew": 61,
+      "bunks": 165,
+      "mass": 787,
+      "drag": 10,
+      "heat dissipation": 0.44,
+      "fuel capacity": 700,
+      "cargo space": 120,
+      "outfit space": 540,
+      "weapon capacity": 185,
+      "engine capacity": 150,
+      "atmosphere scan": 100,
+      "weapon": {
+        "blast radius": 130,
+        "shield damage": 1250,
+        "hull damage": 630,
+        "hit force": 1900
+      },
+      "self destruct": -0.15
+    },
+    "leak": "50 50",
+    "big leak": "80 30",
+    "tiny explosion": "15",
+    "small explosion": "35",
+    "medium explosion": "35",
+    "large explosion": "20",
+    "final explode": "\"final explosion large\"",
+    "description": "An ancient space exploration vessel from the early days of Hyperspace travel. Many claim the Star Explorer's design was heavily influenced by an old Earth science-fiction show as a marketing gimmick to entice young people to leave Sol and risk their lives exploring the vast unknown. Of the few that haven't been lost or destroyed, there are some still being used as actual science and exploration vessels. The rest are held in private collections by fans of antiquities.",
+    "variant": "Star Explorer (Korath)",
+    "baseShip": "Star Explorer"
+  },
+  {
+    "name": "Sunracer (Sunracer (Auto))",
+    "engines": [
+      {
+        "x": -6,
+        "y": 26
+      },
+      {
+        "x": 6,
+        "y": 26
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -12,
+        "y": -4,
+        "gun": ""
+      },
+      {
+        "x": 12,
+        "y": -4,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [],
+    "sprite": "ship/sunracer",
+    "thumbnail": "thumbnail/sunracer-thumb",
+    "attributes": {
+      "category": "Fighter",
+      "licenses": {
+        "description": "\"Sunracer\""
+      },
+      "cost": 360000,
+      "shields": 700,
+      "hull": 200,
+      "required crew": 0,
+      "bunks": 0,
+      "mass": 40,
+      "drag": 1,
+      "heat dissipation": 0.9,
+      "outfit space": 110,
+      "weapon capacity": 8,
+      "engine capacity": 45,
+      "weapon": {
+        "blast radius": 12,
+        "shield damage": 120,
+        "hull damage": 60,
+        "hit force": 180
+      },
+      "automaton": 1,
+      "self destruct": 1
+    },
+    "leak": "40 30",
+    "tiny explosion": "5",
+    "small explosion": "5",
+    "description": "The ship of choice for most professional racing pilots. With a focus on maximizing speed, a Sunracer lacks space to spare for ubiquitous things like cargo, bunks, weapons, or a hyperdrive. \tThese ships serve a unique niche and are exclusively sold at inflated prices on the planet they're named after. Although it's possible to squeeze one into a fighter bay, the prohibitive cost and minimal combat capability means there isn't a compelling reason to use them in that capacity.",
+    "variant": "Sunracer (Auto)",
+    "baseShip": "Sunracer"
+  },
+  {
+    "name": "Midnight Hauler VI (Hauler VI (prototype))",
+    "engines": [
+      {
+        "x": -43,
+        "y": 197.5
+      },
+      {
+        "x": 43,
+        "y": 197.5
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -14,
+        "y": -168,
+        "gun": ""
+      },
+      {
+        "x": 14,
+        "y": -168,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": -21,
+        "y": -124,
+        "turret": ""
+      },
+      {
+        "x": 21,
+        "y": -124,
+        "turret": ""
+      },
+      {
+        "x": -18.5,
+        "y": 154.5,
+        "turret": ""
+      },
+      {
+        "x": 18.5,
+        "y": 154.5,
+        "turret": ""
+      }
+    ],
+    "bays": [],
+    "display name": "\"Hauler VI\"",
+    "sprite": "ship/midnight hauler vi",
+    "thumbnail": "thumbnail/midnight hauler vi-thumb",
+    "attributes": {
+      "category": "Heavy Freighter",
+      "cost": 6080000,
+      "shields": 4500,
+      "hull": 11200,
+      "required crew": 3,
+      "bunks": 12,
+      "mass": 1240,
+      "drag": 12.5,
+      "heat dissipation": 0.43,
+      "fuel capacity": 400,
+      "cargo space": 780,
+      "outfit space": 350,
+      "weapon capacity": 140,
+      "engine capacity": 80,
+      "weapon": {
+        "blast radius": 160,
+        "shield damage": 1600,
+        "hull damage": 800,
+        "hit force": 2400
+      }
+    },
+    "leak": "50 50",
+    "flame": "40 80",
+    "big leak": "80 30",
+    "small explosion": "15",
+    "medium explosion": "30",
+    "large explosion": "20",
+    "huge explosion": "5",
+    "final explode": "\"final explosion large\"",
+    "description": "After a series of delays due to unfortunate events in the testing phase, the Hauler VI is finally available for purchase. There were rumors that an innovative new refrigerated storage system was being developed for it. But no such system is present in the final production model.",
+    "variant": "Hauler VI (prototype)",
+    "baseShip": "Midnight Hauler VI",
+    "displayName": "Hauler VI"
+  },
+  {
+    "name": "Marauder Hauler (Marauder Hauler (used B))",
+    "engines": [
+      {
+        "x": -44.5,
+        "y": 103.5
+      },
+      {
+        "x": 44.5,
+        "y": 103.5
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -15,
+        "y": -75.5,
+        "gun": ""
+      },
+      {
+        "x": 14.5,
+        "y": -75.5,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": -21.5,
+        "y": -30,
+        "turret": ""
+      },
+      {
+        "x": 22,
+        "y": -30,
+        "turret": ""
+      },
+      {
+        "x": -18.5,
+        "y": 61,
+        "turret": ""
+      },
+      {
+        "x": 18.5,
+        "y": 61,
+        "turret": ""
+      }
+    ],
+    "bays": [],
+    "sprite": "ship/marauder hauler b",
+    "thumbnail": "thumbnail/marauder hauler B-thumb",
+    "attributes": {
+      "category": "Light Warship",
+      "cost": 945000,
+      "shields": 2400,
+      "hull": 3500,
+      "required crew": 3,
+      "bunks": 8,
+      "mass": 435,
+      "drag": 9.5,
+      "heat dissipation": 0.43,
+      "fuel capacity": 400,
+      "cargo space": 50,
+      "outfit space": 375,
+      "weapon capacity": 140,
+      "engine capacity": 80,
+      "self destruct": 0.25,
+      "weapon": {
+        "blast radius": 60,
+        "shield damage": 600,
+        "hull damage": 300,
+        "hit force": 900
+      }
+    },
+    "leak": "60 50",
+    "flame": "50 80",
+    "big leak": "90 30",
+    "tiny explosion": "20",
+    "small explosion": "35",
+    "medium explosion": "20",
+    "large explosion": "5",
+    "final explode": "\"final explosion medium\"",
+    "description": "Some Haulers are modified to reduce mass and drag by replacing the standard cargo container with something smaller. The previous owner of this Hauler took the standard Southbound Shipyards cargo container and cut it down to half its size.",
+    "variant": "Marauder Hauler (used B)",
+    "baseShip": "Marauder Hauler"
+  },
+  {
+    "name": "Marauder Hauler (Marauder Hauler (used C))",
+    "engines": [
+      {
+        "x": -44.5,
+        "y": 103.5
+      },
+      {
+        "x": 44.5,
+        "y": 103.5
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -15,
+        "y": -75.5,
+        "gun": ""
+      },
+      {
+        "x": 14.5,
+        "y": -75.5,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": -21.5,
+        "y": -30,
+        "turret": ""
+      },
+      {
+        "x": 22,
+        "y": -30,
+        "turret": ""
+      },
+      {
+        "x": -18.5,
+        "y": 61,
+        "turret": ""
+      },
+      {
+        "x": 18.5,
+        "y": 61,
+        "turret": ""
+      }
+    ],
+    "bays": [],
+    "sprite": "ship/marauder hauler c",
+    "thumbnail": "thumbnail/marauder hauler C-thumb",
+    "attributes": {
+      "category": "Light Warship",
+      "cost": 1005000,
+      "shields": 2200,
+      "hull": 3300,
+      "required crew": 3,
+      "bunks": 8,
+      "mass": 425,
+      "drag": 8.5,
+      "heat dissipation": 0.43,
+      "fuel capacity": 400,
+      "cargo space": 80,
+      "outfit space": 375,
+      "weapon capacity": 140,
+      "engine capacity": 80,
+      "self destruct": 0.25,
+      "weapon": {
+        "blast radius": 60,
+        "shield damage": 600,
+        "hull damage": 300,
+        "hit force": 900
+      }
+    },
+    "leak": "60 50",
+    "flame": "50 80",
+    "big leak": "90 30",
+    "tiny explosion": "20",
+    "small explosion": "35",
+    "medium explosion": "20",
+    "large explosion": "5",
+    "final explode": "\"final explosion medium\"",
+    "description": "Some Haulers are modified to reduce mass and drag by replacing the standard cargo container with something smaller. The previous owner of this Hauler took the standard Southbound Shipyards cargo container and cut it down to half its size.",
+    "variant": "Marauder Hauler (used C)",
+    "baseShip": "Marauder Hauler"
+  },
+  {
+    "name": "Marauder Hauler (Marauder Hauler (used engines))",
+    "engines": [
+      {
+        "x": -45,
+        "y": 86.5
+      },
+      {
+        "x": 44,
+        "y": 86.5
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -12.5,
+        "y": -60,
+        "gun": ""
+      },
+      {
+        "x": 16,
+        "y": -60,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": -20,
+        "y": -12,
+        "turret": ""
+      },
+      {
+        "x": 23,
+        "y": -12,
+        "turret": ""
+      },
+      {
+        "x": -17.5,
+        "y": 40,
+        "turret": ""
+      },
+      {
+        "x": 19.5,
+        "y": 40,
+        "turret": ""
+      }
+    ],
+    "bays": [],
+    "sprite": "ship/marauder hauler engines",
+    "thumbnail": "thumbnail/marauder hauler E-thumb",
+    "attributes": {
+      "category": "Light Warship",
+      "cost": 1390480,
+      "shields": 2300,
+      "hull": 2868,
+      "required crew": 3,
+      "bunks": 8,
+      "mass": 403,
+      "drag": 8.5,
+      "heat dissipation": 0.43,
+      "fuel capacity": 400,
+      "cargo space": 5,
+      "outfit space": 415,
+      "weapon capacity": 140,
+      "engine capacity": 120,
+      "self destruct": 0.25,
+      "weapon": {
+        "blast radius": 60,
+        "shield damage": 600,
+        "hull damage": 300,
+        "hit force": 900
+      }
+    },
+    "leak": "60 50",
+    "flame": "50 80",
+    "big leak": "90 30",
+    "tiny explosion": "20",
+    "small explosion": "35",
+    "medium explosion": "20",
+    "large explosion": "5",
+    "final explode": "\"final explosion medium\"",
+    "description": "Some Haulers are modified to reduce mass and drag by replacing the standard cargo container with something smaller. The previous owner of this Hauler took the standard Southbound Shipyards cargo container and cut it down to half its size.",
+    "variant": "Marauder Hauler (used engines)",
+    "baseShip": "Marauder Hauler"
+  },
+  {
+    "name": "Marauder Hauler (Marauder Hauler (used weapons))",
+    "engines": [
+      {
+        "x": -44,
+        "y": 113
+      },
+      {
+        "x": 45.5,
+        "y": 113
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -10.5,
+        "y": -87.5,
+        "gun": ""
+      },
+      {
+        "x": 18,
+        "y": -87.5,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": -17.5,
+        "y": -41,
+        "turret": ""
+      },
+      {
+        "x": 25.5,
+        "y": -41,
+        "turret": ""
+      },
+      {
+        "x": -16.5,
+        "y": 11.5,
+        "turret": ""
+      },
+      {
+        "x": 20.5,
+        "y": 11.5,
+        "turret": ""
+      },
+      {
+        "x": -17.5,
+        "y": 70,
+        "turret": ""
+      },
+      {
+        "x": 19,
+        "y": 70,
+        "turret": ""
+      }
+    ],
+    "bays": [],
+    "sprite": "ship/marauder hauler weapons",
+    "thumbnail": "thumbnail/marauder hauler W-thumb",
+    "attributes": {
+      "category": "Light Warship",
+      "cost": 1544920,
+      "shields": 3332,
+      "hull": 5022,
+      "required crew": 3,
+      "bunks": 10,
+      "mass": 434,
+      "drag": 9.5,
+      "heat dissipation": 0.43,
+      "fuel capacity": 400,
+      "cargo space": 5,
+      "outfit space": 415,
+      "weapon capacity": 180,
+      "engine capacity": 80,
+      "self destruct": 0.25,
+      "weapon": {
+        "blast radius": 60,
+        "shield damage": 600,
+        "hull damage": 300,
+        "hit force": 900
+      }
+    },
+    "leak": "60 50",
+    "flame": "50 80",
+    "big leak": "90 30",
+    "tiny explosion": "20",
+    "small explosion": "35",
+    "medium explosion": "20",
+    "large explosion": "5",
+    "final explode": "\"final explosion medium\"",
+    "description": "Some Haulers are modified to reduce mass and drag by replacing the standard cargo container with something smaller. The previous owner of this Hauler took the standard Southbound Shipyards cargo container and cut it down to half its size.",
+    "variant": "Marauder Hauler (used weapons)",
+    "baseShip": "Marauder Hauler"
+  },
+  {
+    "name": "Far'itar (Far'itar B)",
+    "engines": [
+      {
+        "x": 25,
+        "y": 53
+      }
+    ],
+    "reverseEngines": [
+      {
+        "x": 25,
+        "y": -27
+      }
+    ],
+    "steeringEngines": [],
+    "guns": [],
+    "turrets": [
+      {
+        "x": -38,
+        "y": -37.5,
+        "turret": ""
+      },
+      {
+        "x": -40,
+        "y": -11,
+        "turret": ""
+      },
+      {
+        "x": -40,
+        "y": 8,
+        "turret": ""
+      },
+      {
+        "x": -38,
+        "y": 34.5,
+        "turret": ""
+      }
+    ],
+    "bays": [],
+    "sprite": "ship/faritar b",
+    "thumbnail": "thumbnail/faritar-thumb",
+    "attributes": {
+      "category": "Light Freighter",
+      "cost": 3560000,
+      "shields": 8000,
+      "hull": 4000,
+      "required crew": 37,
+      "bunks": 57,
+      "mass": 642,
+      "drag": 12.5,
+      "heat dissipation": 0.42,
+      "fuel capacity": 200,
+      "cargo space": 110,
+      "outfit space": 336,
+      "weapon capacity": 216,
+      "engine capacity": 90,
+      "self destruct": 0.5,
+      "weapon": {
+        "blast radius": 120,
+        "shield damage": 1200,
+        "hull damage": 600,
+        "hit force": 1800
+      }
+    },
+    "tiny explosion": "70",
+    "small explosion": "50",
+    "medium explosion": "15",
+    "final explode": "\"final explosion medium\"",
+    "description": "Dedicated cargo transports are no longer necessary among the Korath Exiles. Rather than being scrapped, these ships have been repurposed to serve as mobile prisons. Criminals convicted of serious crimes are given a choice between a quick death via a microbot nutrigel processor or a life long assignment working on a Far'itar mining vessel. Prisoners who fail to perform their duties are still eligible for being tossed into the nutrigel processor. \tOperating these vessels can be lucrative for its captains, but the Korath authorities require them to activate their self destruct in the event of a mutiny or other event that could result in a prisoner escape. Whether or not they have the fortitude to fulfill this duty is put to the test whenever they engage in a boarding battle.",
+    "variant": "Far'itar B",
+    "baseShip": "Far'itar"
+  },
+  {
+    "name": "Far'itar (Far'itar B (Jump))",
+    "engines": [
+      {
+        "x": 25,
+        "y": 53
+      }
+    ],
+    "reverseEngines": [
+      {
+        "x": 25,
+        "y": -27
+      }
+    ],
+    "steeringEngines": [],
+    "guns": [],
+    "turrets": [
+      {
+        "x": -38,
+        "y": -37.5,
+        "turret": ""
+      },
+      {
+        "x": -40,
+        "y": -11,
+        "turret": ""
+      },
+      {
+        "x": -40,
+        "y": 8,
+        "turret": ""
+      },
+      {
+        "x": -38,
+        "y": 34.5,
+        "turret": ""
+      }
+    ],
+    "bays": [],
+    "sprite": "ship/faritar b",
+    "thumbnail": "thumbnail/faritar-thumb",
+    "attributes": {
+      "category": "Light Freighter",
+      "cost": 3560000,
+      "shields": 8000,
+      "hull": 4000,
+      "required crew": 37,
+      "bunks": 57,
+      "mass": 642,
+      "drag": 12.5,
+      "heat dissipation": 0.42,
+      "fuel capacity": 200,
+      "cargo space": 110,
+      "outfit space": 336,
+      "weapon capacity": 216,
+      "engine capacity": 90,
+      "self destruct": 0.5,
+      "weapon": {
+        "blast radius": 120,
+        "shield damage": 1200,
+        "hull damage": 600,
+        "hit force": 1800
+      }
+    },
+    "tiny explosion": "70",
+    "small explosion": "50",
+    "medium explosion": "15",
+    "final explode": "\"final explosion medium\"",
+    "description": "Dedicated cargo transports are no longer necessary among the Korath Exiles. Rather than being scrapped, these ships have been repurposed to serve as mobile prisons. Criminals convicted of serious crimes are given a choice between a quick death via a microbot nutrigel processor or a life long assignment working on a Far'itar mining vessel. Prisoners who fail to perform their duties are still eligible for being tossed into the nutrigel processor. \tOperating these vessels can be lucrative for its captains, but the Korath authorities require them to activate their self destruct in the event of a mutiny or other event that could result in a prisoner escape. Whether or not they have the fortitude to fulfill this duty is put to the test whenever they engage in a boarding battle.",
+    "variant": "Far'itar B (Jump)",
+    "baseShip": "Far'itar"
+  },
+  {
+    "name": "Far'itar (Far'itar B (Jump, Limited))",
+    "engines": [
+      {
+        "x": 25,
+        "y": 53
+      }
+    ],
+    "reverseEngines": [
+      {
+        "x": 25,
+        "y": -27
+      }
+    ],
+    "steeringEngines": [],
+    "guns": [],
+    "turrets": [
+      {
+        "x": -38,
+        "y": -37.5,
+        "turret": ""
+      },
+      {
+        "x": -40,
+        "y": -11,
+        "turret": ""
+      },
+      {
+        "x": -40,
+        "y": 8,
+        "turret": ""
+      },
+      {
+        "x": -38,
+        "y": 34.5,
+        "turret": ""
+      }
+    ],
+    "bays": [],
+    "sprite": "ship/faritar b",
+    "thumbnail": "thumbnail/faritar-thumb",
+    "attributes": {
+      "category": "Light Freighter",
+      "cost": 3560000,
+      "shields": 8000,
+      "hull": 4000,
+      "required crew": 37,
+      "bunks": 57,
+      "mass": 642,
+      "drag": 12.5,
+      "heat dissipation": 0.42,
+      "fuel capacity": 200,
+      "cargo space": 110,
+      "outfit space": 336,
+      "weapon capacity": 216,
+      "engine capacity": 90,
+      "self destruct": 0.5,
+      "weapon": {
+        "blast radius": 120,
+        "shield damage": 1200,
+        "hull damage": 600,
+        "hit force": 1800
+      }
+    },
+    "tiny explosion": "70",
+    "small explosion": "50",
+    "medium explosion": "15",
+    "final explode": "\"final explosion medium\"",
+    "description": "Dedicated cargo transports are no longer necessary among the Korath Exiles. Rather than being scrapped, these ships have been repurposed to serve as mobile prisons. Criminals convicted of serious crimes are given a choice between a quick death via a microbot nutrigel processor or a life long assignment working on a Far'itar mining vessel. Prisoners who fail to perform their duties are still eligible for being tossed into the nutrigel processor. \tOperating these vessels can be lucrative for its captains, but the Korath authorities require them to activate their self destruct in the event of a mutiny or other event that could result in a prisoner escape. Whether or not they have the fortitude to fulfill this duty is put to the test whenever they engage in a boarding battle.",
+    "variant": "Far'itar B (Jump, Limited)",
+    "baseShip": "Far'itar"
+  },
+  {
+    "name": "Marauder Kestrel (Kestrel (Bloodwind))",
+    "engines": [
+      {
+        "x": -14,
+        "y": 177
+      },
+      {
+        "x": 0,
+        "y": 177
+      },
+      {
+        "x": 14,
+        "y": 177
+      }
+    ],
+    "reverseEngines": [
+      {
+        "x": -101,
+        "y": 64,
+        "position": "zoom .2"
+      },
+      {
+        "x": 101,
+        "y": 64,
+        "position": "zoom .2"
+      }
+    ],
+    "steeringEngines": [
+      {
+        "x": -101,
+        "y": 104,
+        "position": "right"
+      },
+      {
+        "x": 101,
+        "y": 104,
+        "position": "left"
+      }
+    ],
+    "guns": [
+      {
+        "x": -31,
+        "y": 66,
+        "gun": ""
+      },
+      {
+        "x": 31,
+        "y": 66,
+        "gun": ""
+      },
+      {
+        "x": -31,
+        "y": 66,
+        "gun": ""
+      },
+      {
+        "x": 31,
+        "y": 66,
+        "gun": ""
+      },
+      {
+        "x": -53,
+        "y": 61,
+        "gun": ""
+      },
+      {
+        "x": 53,
+        "y": 61,
+        "gun": ""
+      },
+      {
+        "x": -53,
+        "y": 61,
+        "gun": ""
+      },
+      {
+        "x": 53,
+        "y": 61,
+        "gun": ""
+      },
+      {
+        "x": -75,
+        "y": 57,
+        "gun": ""
+      },
+      {
+        "x": 75,
+        "y": 57,
+        "gun": ""
+      },
+      {
+        "x": -75,
+        "y": 57,
+        "gun": ""
+      },
+      {
+        "x": 75,
+        "y": 57,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": -7,
+        "y": -4,
+        "turret": ""
+      },
+      {
+        "x": 7,
+        "y": -4,
+        "turret": ""
+      },
+      {
+        "x": -23,
+        "y": 14,
+        "turret": ""
+      },
+      {
+        "x": 23,
+        "y": 14,
+        "turret": ""
+      }
+    ],
+    "bays": [
+      {
+        "type": "Fighter",
+        "x": -46,
+        "y": 106,
+        "position": "under"
+      },
+      {
+        "type": "Fighter",
+        "x": 46,
+        "y": 106,
+        "position": "under"
+      }
+    ],
+    "sprite": "ship/bloodwind",
+    "thumbnail": "thumbnail/bloodwind-thumb",
+    "attributes": {
+      "category": "Heavy Warship",
+      "cost": 14700000,
+      "shields": 22400,
+      "hull": 8700,
+      "required crew": 64,
+      "bunks": 128,
+      "mass": 740,
+      "drag": 10,
+      "heat dissipation": 0.66,
+      "fuel capacity": 600,
+      "cargo space": 120,
+      "outfit space": 810,
+      "weapon capacity": 430,
+      "engine capacity": 240,
+      "weapon": {
+        "blast radius": 260,
+        "shield damage": 2600,
+        "hull damage": 1300,
+        "hit force": 3900
+      }
+    },
+    "small explosion": "25",
+    "medium explosion": "35",
+    "large explosion": "45",
+    "huge explosion": "30",
+    "final explode": "\"final explosion large\"",
+    "description": "Several years ago, while visiting a sweat lodge in search of spiritual renewal, Tarazed's chief ship designer fell into a trance and journeyed to a reality separate from our own. There he saw visions of a strange and elegant starship. Returning to his work with renewed purpose, he spent the next seven years making the Kestrel a reality.",
+    "variant": "Kestrel (Bloodwind)",
+    "baseShip": "Marauder Kestrel"
+  },
+  {
+    "name": "Shrike (Shrike (Gravedigger))",
+    "engines": [
+      {
+        "x": 20,
+        "y": 94,
+        "zoom": 0.7
+      },
+      {
+        "x": -20,
+        "y": 94,
+        "zoom": 0.7
+      },
+      {
+        "x": 0,
+        "y": 104,
+        "zoom": 1.1
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": 9,
+        "y": -105,
+        "gun": ""
+      },
+      {
+        "x": -9,
+        "y": -105,
+        "gun": ""
+      },
+      {
+        "x": 14,
+        "y": -91,
+        "gun": ""
+      },
+      {
+        "x": -14,
+        "y": -91,
+        "gun": ""
+      },
+      {
+        "x": 18,
+        "y": -72,
+        "gun": ""
+      },
+      {
+        "x": -18,
+        "y": -72,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": 0,
+        "y": -4,
+        "turret": ""
+      }
+    ],
+    "bays": [],
+    "sprite": "ship/shrike",
+    "thumbnail": "thumbnail/shrike-thumb",
+    "attributes": {
+      "category": "Medium Warship",
+      "licenses": {
+        "description": "Remnant"
+      },
+      "cost": 12656000,
+      "shields": 17100,
+      "hull": 6300,
+      "required crew": 22,
+      "bunks": 37,
+      "cargo space": 62,
+      "mass": 721,
+      "drag": 7.1,
+      "heat dissipation": 0.55,
+      "fuel capacity": 700,
+      "ramscoop": 2.75,
+      "outfit space": 480,
+      "weapon capacity": 157,
+      "engine capacity": 144,
+      "shield generation": 3.5,
+      "shield energy": 3.1,
+      "hull repair rate": 1.2,
+      "hull energy": 0.95,
+      "outfit scan power": 18,
+      "outfit scan efficiency": 20,
+      "tactical scan power": 39,
+      "weapon": {
+        "blast radius": 160,
+        "shield damage": 1600,
+        "hull damage": 800,
+        "hit force": 2400
+      },
+      "self destruct": 0.25
+    },
+    "remnant leak": "20 8",
+    "remnant leak sparkle": "30 12",
+    "small explosion": "15",
+    "medium explosion": "30",
+    "large explosion": "20",
+    "huge explosion": "5",
+    "final explode": "\"final explosion large\" 1",
+    "description": "The Shrike is a nimble gunship that is usually outfitted to provide long distance fire support. Remnant captains embarking on solo missions might opt for a more aggressive outfit selection instead.",
+    "variant": "Shrike (Gravedigger)",
+    "baseShip": "Shrike"
+  },
+  {
+    "name": "Wren (Wren (Gravedigger))",
+    "engines": [
+      {
+        "x": 0,
+        "y": 91
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": 0,
+        "y": -98,
+        "gun": ""
+      },
+      {
+        "x": 12,
+        "y": -71,
+        "gun": ""
+      },
+      {
+        "x": -12,
+        "y": -71,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": 0,
+        "y": -3,
+        "turret": ""
+      }
+    ],
+    "bays": [],
+    "sprite": "ship/wren",
+    "thumbnail": "thumbnail/wren-thumb",
+    "attributes": {
+      "category": "Transport",
+      "licenses": {
+        "description": "Remnant"
+      },
+      "cost": 9150000,
+      "shields": 7600,
+      "hull": 3800,
+      "required crew": 5,
+      "bunks": 35,
+      "mass": 401,
+      "drag": 6,
+      "heat dissipation": 0.58,
+      "fuel capacity": 900,
+      "ramscoop": 1.75,
+      "cargo space": 36,
+      "outfit space": 311,
+      "weapon capacity": 83,
+      "engine capacity": 94,
+      "shield generation": 1.6,
+      "shield energy": 1.1,
+      "hull repair rate": 0.7,
+      "hull energy": 0.5,
+      "cloak": 0.02,
+      "cloaking energy": 5,
+      "cloaking fuel": 0.1,
+      "outfit scan power": 12,
+      "outfit scan efficiency": 20,
+      "tactical scan power": 26,
+      "weapon": {
+        "blast radius": 80,
+        "shield damage": 800,
+        "hull damage": 400,
+        "hit force": 1200
+      },
+      "self destruct": 0.15
+    },
+    "remnant leak": "30 4",
+    "remnant leak sparkle": "30 7",
+    "tiny explosion": "40",
+    "small explosion": "20",
+    "medium explosion": "10",
+    "final explode": "\"final explosion small\" 1",
+    "description": "Thanks to its cloaking technology, the Wren provides discreet transportation to remote Remnant research outposts. \tThe cloaking technology is built into the Wren's hull; it cannot be removed or transferred to another ship.",
+    "variant": "Wren (Gravedigger)",
+    "baseShip": "Wren"
+  },
+  {
+    "name": "Marauder Vanguard (Marauder Vanguard (Sheragi Counterfeit))",
+    "engines": [
+      {
+        "x": -15,
+        "y": 127
+      },
+      {
+        "x": 15,
+        "y": 127
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": 0,
+        "y": -129,
+        "gun": ""
+      },
+      {
+        "x": -23,
+        "y": -119,
+        "gun": ""
+      },
+      {
+        "x": 23,
+        "y": -119,
+        "gun": ""
+      },
+      {
+        "x": -31,
+        "y": -41,
+        "gun": ""
+      },
+      {
+        "x": 31,
+        "y": -41,
+        "gun": ""
+      },
+      {
+        "x": -23,
+        "y": -41,
+        "gun": ""
+      },
+      {
+        "x": 23,
+        "y": -41,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": 0,
+        "y": 42,
+        "turret": ""
+      }
+    ],
+    "bays": [],
+    "sprite": "ship/marauder vanguardw",
+    "thumbnail": "thumbnail/marauder vanguard",
+    "attributes": {
+      "category": "Heavy Warship",
+      "cost": 7920000,
+      "shields": 10800,
+      "hull": 6600,
+      "required crew": 25,
+      "bunks": 49,
+      "mass": 1133,
+      "drag": 12,
+      "heat dissipation": 0.4,
+      "fuel capacity": 400,
+      "cargo space": 40,
+      "outfit space": 580,
+      "weapon capacity": 265,
+      "engine capacity": 120,
+      "self destruct": 0.15,
+      "weapon": {
+        "blast radius": 160,
+        "shield damage": 1600,
+        "hull damage": 800,
+        "hit force": 2400
+      }
+    },
+    "leak": "60 50",
+    "flame": "30 80",
+    "tiny explosion": "18",
+    "small explosion": "36",
+    "medium explosion": "24",
+    "large explosion": "8",
+    "final explode": "\"final explosion medium\"",
+    "description": "This Syndicate Shipyards Vanguard has been customized with additional armored plating as well as upgraded shielding to accommodate the latest experimental technologies.",
+    "variant": "Marauder Vanguard (Sheragi Counterfeit)",
+    "baseShip": "Marauder Vanguard"
+  },
+  {
+    "name": "Diamondback (Diamondback (Bounty))",
+    "engines": [
+      {
+        "x": 0,
+        "y": 38
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [
+      {
+        "x": 27,
+        "y": 2,
+        "position": "left"
+      },
+      {
+        "x": -27,
+        "y": 2,
+        "position": "right"
+      }
+    ],
+    "guns": [
+      {
+        "x": 0,
+        "y": -39.5,
+        "gun": ""
+      },
+      {
+        "x": 22,
+        "y": -7.5,
+        "gun": ""
+      },
+      {
+        "x": -22,
+        "y": -7.5,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [],
+    "sprite": "ship/diamondback",
+    "attributes": {
+      "category": "Interceptor",
+      "cost": 1000000,
+      "shields": 1600,
+      "hull": 3400,
+      "required crew": 1,
+      "bunks": 2,
+      "mass": 60,
+      "drag": 0.95,
+      "heat dissipation": 0.82,
+      "fuel capacity": 200,
+      "cargo space": 15,
+      "outfit space": 132,
+      "weapon capacity": 35,
+      "engine capacity": 38,
+      "weapon": {
+        "blast radius": 24,
+        "shield damage": 240,
+        "hull damage": 120,
+        "hit force": 360
+      },
+      "self destruct": 1
+    },
+    "tiny explosion": "10",
+    "small explosion": "20",
+    "final explode": "\"final explosion small\"",
+    "description": "Diamondbacks have been in use since explorers first settled the galactic rim. They've fought in various wars throughout the centuries and few survive to this day. Those that have are so extensively customized that no two are alike. Some southern legends claim the Diamondbacks were wrecked spacecraft created by extinct aliens and salvaged by early explorers such as Han Sizer. There is no evidence to support these claims and no reputable scholar takes them seriously.",
+    "variant": "Diamondback (Bounty)",
+    "baseShip": "Diamondback"
+  },
+  {
+    "name": "Deep River Carrier (Deep River Carrier (Full))",
+    "engines": [
+      {
+        "x": 53,
+        "y": 345,
+        "zoom": 0.7
+      },
+      {
+        "x": 0,
+        "y": 345
+      },
+      {
+        "x": -53,
+        "y": 345,
+        "zoom": 0.7
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -56,
+        "y": -217,
+        "gun": ""
+      },
+      {
+        "x": 56,
+        "y": -217,
+        "gun": ""
+      },
+      {
+        "x": -40,
+        "y": -217,
+        "gun": ""
+      },
+      {
+        "x": 40,
+        "y": -217,
+        "gun": ""
+      },
+      {
+        "x": -18,
+        "y": -217,
+        "gun": ""
+      },
+      {
+        "x": 18,
+        "y": -217,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [
+      {
+        "type": "Drone",
+        "x": -29,
+        "y": -135,
+        "position": "over"
+      },
+      {
+        "type": "Drone",
+        "x": 0,
+        "y": -135,
+        "position": "under"
+      },
+      {
+        "type": "Drone",
+        "x": 29,
+        "y": -135,
+        "position": "over"
+      },
+      {
+        "type": "Drone",
+        "x": -29,
+        "y": 2,
+        "position": "over"
+      },
+      {
+        "type": "Drone",
+        "x": 0,
+        "y": 2,
+        "position": "under"
+      },
+      {
+        "type": "Drone",
+        "x": 29,
+        "y": 2,
+        "position": "over"
+      },
+      {
+        "type": "Drone",
+        "x": -29,
+        "y": 135,
+        "position": "over"
+      },
+      {
+        "type": "Drone",
+        "x": 0,
+        "y": 135,
+        "position": "under"
+      },
+      {
+        "type": "Drone",
+        "x": 29,
+        "y": 135,
+        "position": "over"
+      },
+      {
+        "type": "Drone",
+        "x": -29,
+        "y": 267,
+        "position": "under"
+      },
+      {
+        "type": "Drone",
+        "x": 0,
+        "y": 267,
+        "position": "under"
+      },
+      {
+        "type": "Drone",
+        "x": 29,
+        "y": 267,
+        "position": "under"
+      }
+    ],
+    "sprite": "ship/deep river 0",
+    "thumbnail": "thumbnail/deep river",
+    "attributes": {
+      "category": "Heavy Freighter",
+      "licenses": {
+        "description": "\"Wanderer Military\""
+      },
+      "cost": 18300000,
+      "shields": 17600,
+      "hull": 47500,
+      "required crew": 13,
+      "bunks": 22,
+      "mass": 742,
+      "drag": 11.5,
+      "heat dissipation": 0.4,
+      "fuel capacity": 500,
+      "cargo space": 0,
+      "outfit space": 363,
+      "weapon capacity": 177,
+      "engine capacity": 83,
+      "weapon": {
+        "blast radius": 280,
+        "shield damage": 2800,
+        "hull damage": 1400,
+        "hit force": 4200
+      }
+    },
+    "small explosion": "80",
+    "medium explosion": "60",
+    "large explosion": "30",
+    "huge explosion": "20",
+    "final explode": "\"final explosion large\"",
+    "description": "This is a Deep River freighter that has had some of its cargo container mounts modified to carry drones.",
+    "variant": "Deep River Carrier (Full)",
+    "baseShip": "Deep River Carrier"
+  },
+  {
+    "name": "Deep River Carrier (Deep River Carrier (Half))",
+    "engines": [
+      {
+        "x": 53,
+        "y": 345,
+        "zoom": 0.7
+      },
+      {
+        "x": 0,
+        "y": 345
+      },
+      {
+        "x": -53,
+        "y": 345,
+        "zoom": 0.7
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -56,
+        "y": -217,
+        "gun": ""
+      },
+      {
+        "x": 56,
+        "y": -217,
+        "gun": ""
+      },
+      {
+        "x": -40,
+        "y": -217,
+        "gun": ""
+      },
+      {
+        "x": 40,
+        "y": -217,
+        "gun": ""
+      },
+      {
+        "x": -18,
+        "y": -217,
+        "gun": ""
+      },
+      {
+        "x": 18,
+        "y": -217,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [
+      {
+        "type": "Drone",
+        "x": 0,
+        "y": -135,
+        "position": "under"
+      },
+      {
+        "type": "Drone",
+        "x": -29,
+        "y": 2,
+        "position": "over"
+      },
+      {
+        "type": "Drone",
+        "x": 0,
+        "y": 2,
+        "position": "under"
+      },
+      {
+        "type": "Drone",
+        "x": 29,
+        "y": 2,
+        "position": "over"
+      },
+      {
+        "type": "Drone",
+        "x": -29,
+        "y": 135,
+        "position": "over"
+      },
+      {
+        "type": "Drone",
+        "x": 0,
+        "y": 135,
+        "position": "under"
+      },
+      {
+        "type": "Drone",
+        "x": 29,
+        "y": 135,
+        "position": "over"
+      },
+      {
+        "type": "Drone",
+        "x": 0,
+        "y": 267,
+        "position": "under"
+      }
+    ],
+    "sprite": "ship/deep river carrier",
+    "thumbnail": "thumbnail/deep river",
+    "attributes": {
+      "category": "Heavy Freighter",
+      "licenses": {
+        "description": "\"Wanderer Military\""
+      },
+      "cost": 18300000,
+      "shields": 17600,
+      "hull": 47500,
+      "required crew": 13,
+      "bunks": 22,
+      "mass": 866,
+      "drag": 12.120000000000001,
+      "heat dissipation": 0.4,
+      "fuel capacity": 500,
+      "cargo space": 228,
+      "outfit space": 363,
+      "weapon capacity": 177,
+      "engine capacity": 83,
+      "weapon": {
+        "blast radius": 280,
+        "shield damage": 2800,
+        "hull damage": 1400,
+        "hit force": 4200
+      }
+    },
+    "small explosion": "80",
+    "medium explosion": "60",
+    "large explosion": "30",
+    "huge explosion": "20",
+    "final explode": "\"final explosion large\"",
+    "description": "This is a Deep River freighter that has had some of its cargo container mounts modified to carry drones.",
+    "variant": "Deep River Carrier (Half)",
+    "baseShip": "Deep River Carrier"
+  },
+  {
+    "name": "Storm Seeker (Storm Seeker Reborn)",
+    "engines": [
+      {
+        "x": -33,
+        "y": 85.5
+      },
+      {
+        "x": 30.5,
+        "y": 85.5
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -29.5,
+        "y": -37.5,
+        "gun": ""
+      },
+      {
+        "x": 29,
+        "y": -37.5,
+        "gun": ""
+      },
+      {
+        "x": -58,
+        "y": -15.5,
+        "gun": ""
+      },
+      {
+        "x": 56.5,
+        "y": -15.5,
+        "gun": ""
+      },
+      {
+        "x": -65,
+        "y": -22.5,
+        "gun": ""
+      },
+      {
+        "x": 63,
+        "y": -22.5,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": 0,
+        "y": -4,
+        "turret": ""
+      }
+    ],
+    "bays": [],
+    "sprite": "ship/storm seeker reborn",
+    "thumbnail": "thumbnail/storm seeker reborn-thumb",
+    "attributes": {
+      "category": "Medium Warship",
+      "licenses": {
+        "description": "\"Wanderer Military\""
+      },
+      "cost": 16500000,
+      "shields": 28700,
+      "hull": 20000,
+      "required crew": 18,
+      "bunks": 40,
+      "mass": 591,
+      "drag": 6.8,
+      "heat dissipation": 0.5,
+      "fuel capacity": 600,
+      "cargo space": 85,
+      "outfit space": 493,
+      "weapon capacity": 250,
+      "engine capacity": 114,
+      "outfit scan power": 25,
+      "outfit scan efficiency": 15,
+      "tactical scan power": 25,
+      "weapon": {
+        "blast radius": 200,
+        "shield damage": 2000,
+        "hull damage": 1000,
+        "hit force": 3000
+      },
+      "integrated systems": -1
+    },
+    "small explosion": "60",
+    "medium explosion": "40",
+    "large explosion": "20",
+    "final explode": "\"final explosion medium\"",
+    "description": "An old relic from a time when the Wanderers occupied what is now southern human space, the Storm Seeker is a security patrol ship with an array of information warfare technologies built directly into the hull.",
+    "variant": "Storm Seeker Reborn",
+    "baseShip": "Storm Seeker"
+  },
+  {
+    "name": "Thunder Maker (Thunder Maker B)",
+    "engines": [
+      {
+        "x": -30.5,
+        "y": 98.5
+      },
+      {
+        "x": 29.5,
+        "y": 98.5
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -137.5,
+        "y": -12,
+        "gun": ""
+      },
+      {
+        "x": -130.5,
+        "y": -12,
+        "gun": ""
+      },
+      {
+        "x": -109,
+        "y": 12,
+        "gun": ""
+      },
+      {
+        "x": -103,
+        "y": 12,
+        "gun": ""
+      },
+      {
+        "x": -46,
+        "y": 12,
+        "gun": ""
+      },
+      {
+        "x": -39.5,
+        "y": 12,
+        "gun": ""
+      },
+      {
+        "x": -14.5,
+        "y": -12,
+        "gun": ""
+      },
+      {
+        "x": -7.5,
+        "y": -12,
+        "gun": ""
+      },
+      {
+        "x": 7.5,
+        "y": -12,
+        "gun": ""
+      },
+      {
+        "x": 13,
+        "y": -12,
+        "gun": ""
+      },
+      {
+        "x": 37,
+        "y": 12,
+        "gun": ""
+      },
+      {
+        "x": 43,
+        "y": 12,
+        "gun": ""
+      },
+      {
+        "x": 100.5,
+        "y": 12,
+        "gun": ""
+      },
+      {
+        "x": 107,
+        "y": 12,
+        "gun": ""
+      },
+      {
+        "x": 129.5,
+        "y": -12,
+        "gun": ""
+      },
+      {
+        "x": 136,
+        "y": -12,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [],
+    "sprite": "ship/thunder maker",
+    "thumbnail": "thumbnail/thunder maker-thumb",
+    "attributes": {
+      "category": "Heavy Warship",
+      "licenses": {
+        "description": "\"Wanderer Military\""
+      },
+      "cost": 89100000,
+      "shields": 142000,
+      "hull": 87000,
+      "automaton": 1,
+      "crew equivalent": 150,
+      "mass": 4828,
+      "drag": 25.5,
+      "heat dissipation": 0.27,
+      "fuel capacity": 0,
+      "cargo space": 0,
+      "outfit space": 824,
+      "weapon capacity": 312,
+      "engine capacity": 112,
+      "self destruct": 0.7999999999999999,
+      "weapon": {
+        "blast radius": 800,
+        "shield damage": 8000,
+        "hull damage": 4000,
+        "hit force": 12000
+      }
+    },
+    "small explosion": "40",
+    "medium explosion": "160",
+    "large explosion": "140",
+    "huge explosion": "60",
+    "final explode": "\"final explosion large\" 1",
+    "description": "An ancient Wanderer planetary defense system.",
+    "variant": "Thunder Maker B",
+    "baseShip": "Thunder Maker"
+  },
+  {
+    "name": "Thunder Maker (Thunder Maker C)",
+    "engines": [
+      {
+        "x": -30.5,
+        "y": 98.5
+      },
+      {
+        "x": 29.5,
+        "y": 98.5
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -137.5,
+        "y": -12,
+        "gun": ""
+      },
+      {
+        "x": -130.5,
+        "y": -12,
+        "gun": ""
+      },
+      {
+        "x": -109,
+        "y": 12,
+        "gun": ""
+      },
+      {
+        "x": -103,
+        "y": 12,
+        "gun": ""
+      },
+      {
+        "x": -46,
+        "y": 12,
+        "gun": ""
+      },
+      {
+        "x": -39.5,
+        "y": 12,
+        "gun": ""
+      },
+      {
+        "x": -14.5,
+        "y": -12,
+        "gun": ""
+      },
+      {
+        "x": -7.5,
+        "y": -12,
+        "gun": ""
+      },
+      {
+        "x": 7.5,
+        "y": -12,
+        "gun": ""
+      },
+      {
+        "x": 13,
+        "y": -12,
+        "gun": ""
+      },
+      {
+        "x": 37,
+        "y": 12,
+        "gun": ""
+      },
+      {
+        "x": 43,
+        "y": 12,
+        "gun": ""
+      },
+      {
+        "x": 100.5,
+        "y": 12,
+        "gun": ""
+      },
+      {
+        "x": 107,
+        "y": 12,
+        "gun": ""
+      },
+      {
+        "x": 129.5,
+        "y": -12,
+        "gun": ""
+      },
+      {
+        "x": 136,
+        "y": -12,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [],
+    "sprite": "ship/thunder maker",
+    "thumbnail": "thumbnail/thunder maker-thumb",
+    "attributes": {
+      "category": "Heavy Warship",
+      "licenses": {
+        "description": "\"Wanderer Military\""
+      },
+      "cost": 89100000,
+      "shields": 142000,
+      "hull": 87000,
+      "automaton": 1,
+      "crew equivalent": 150,
+      "mass": 4828,
+      "drag": 25.5,
+      "heat dissipation": 0.27,
+      "fuel capacity": 0,
+      "cargo space": 0,
+      "outfit space": 824,
+      "weapon capacity": 312,
+      "engine capacity": 112,
+      "self destruct": 0.6,
+      "weapon": {
+        "blast radius": 800,
+        "shield damage": 8000,
+        "hull damage": 4000,
+        "hit force": 12000
+      }
+    },
+    "small explosion": "40",
+    "medium explosion": "160",
+    "large explosion": "140",
+    "huge explosion": "60",
+    "final explode": "\"final explosion large\" 1",
+    "description": "An ancient Wanderer planetary defense system.",
+    "variant": "Thunder Maker C",
+    "baseShip": "Thunder Maker"
+  },
+  {
+    "name": "Thunder Maker (Thunder Maker (Modern))",
+    "engines": [
+      {
+        "x": -30.5,
+        "y": 98.5
+      },
+      {
+        "x": 29.5,
+        "y": 98.5
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -137.5,
+        "y": -12,
+        "gun": ""
+      },
+      {
+        "x": -130.5,
+        "y": -12,
+        "gun": ""
+      },
+      {
+        "x": -109,
+        "y": 12,
+        "gun": ""
+      },
+      {
+        "x": -103,
+        "y": 12,
+        "gun": ""
+      },
+      {
+        "x": -46,
+        "y": 12,
+        "gun": ""
+      },
+      {
+        "x": -39.5,
+        "y": 12,
+        "gun": ""
+      },
+      {
+        "x": -14.5,
+        "y": -12,
+        "gun": ""
+      },
+      {
+        "x": -7.5,
+        "y": -12,
+        "gun": ""
+      },
+      {
+        "x": 7.5,
+        "y": -12,
+        "gun": ""
+      },
+      {
+        "x": 13,
+        "y": -12,
+        "gun": ""
+      },
+      {
+        "x": 37,
+        "y": 12,
+        "gun": ""
+      },
+      {
+        "x": 43,
+        "y": 12,
+        "gun": ""
+      },
+      {
+        "x": 100.5,
+        "y": 12,
+        "gun": ""
+      },
+      {
+        "x": 107,
+        "y": 12,
+        "gun": ""
+      },
+      {
+        "x": 129.5,
+        "y": -12,
+        "gun": ""
+      },
+      {
+        "x": 136,
+        "y": -12,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [],
+    "sprite": "ship/thunder maker modern",
+    "thumbnail": "thumbnail/thunder maker modern-thumb",
+    "attributes": {
+      "category": "Heavy Warship",
+      "licenses": {
+        "description": "\"Wanderer Military\""
+      },
+      "cost": 89100000,
+      "shields": 142000,
+      "hull": 87000,
+      "automaton": 1,
+      "crew equivalent": 150,
+      "mass": 4828,
+      "drag": 25.5,
+      "heat dissipation": 0.27,
+      "fuel capacity": 0,
+      "cargo space": 0,
+      "outfit space": 824,
+      "weapon capacity": 312,
+      "engine capacity": 112,
+      "self destruct": 1,
+      "weapon": {
+        "blast radius": 800,
+        "shield damage": 8000,
+        "hull damage": 4000,
+        "hit force": 12000
+      }
+    },
+    "small explosion": "40",
+    "medium explosion": "160",
+    "large explosion": "140",
+    "huge explosion": "60",
+    "final explode": "\"final explosion large\" 1",
+    "description": "An ancient Wanderer planetary defense system.",
+    "variant": "Thunder Maker (Modern)",
+    "baseShip": "Thunder Maker"
+  }
+]
