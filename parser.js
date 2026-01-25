@@ -136,16 +136,42 @@ class EndlessSkyParser {
     let i = startIdx;
     const baseIndent = lines[i].length - lines[i].replace(/^\t+/, '').length;
     let descriptionLines = [];
-    
+
     while (i < lines.length) {
       const line = lines[i];
       if (!line.trim()) { i++; continue; }
-      
+
       const currentIndent = line.length - line.replace(/^\t+/, '').length;
       if (currentIndent < baseIndent) break;
-      
+
       if (currentIndent === baseIndent) {
         const stripped = line.trim();
+
+        // Handle sprite with nested data
+        if (stripped.startsWith('sprite ')) {
+          const spriteMatchQuotes = stripped.match(/sprite\s+"([^"]+)"/);
+          const spriteMatchBackticks = stripped.match(/sprite\s+`([^`]+)`/);
+          const spriteMatch = spriteMatchBackticks || spriteMatchQuotes;
+
+          if (spriteMatch) {
+            data.sprite = spriteMatch[1];
+
+            // Check if sprite has nested properties
+            if (i + 1 < lines.length) {
+              const nextIndent = lines[i + 1].length - lines[i + 1].replace(/^\t+/, '').length;
+
+              if (nextIndent > currentIndent) {
+                // Collect sprite properties like "frame rate", "no repeat"
+                const result = this.parseIndentedBlock(lines, i + 1);
+                data.spriteData = result[0];
+                i = result[1];
+                continue;
+              }
+            }
+          }
+          i++;
+          continue;
+        }
         
         // Handle "key" "value" format (both quoted)
         const quotedBothMatch = stripped.match(/"([^"]+)"\s+"([^"]+)"/);
@@ -561,12 +587,25 @@ class EndlessSkyParser {
         }
 
         // Handle sprite
-        if (stripped.startsWith('sprite ')) {
+        if (stripped.includes('sprite')) {
           const spriteMatchQuotes = stripped.match(/sprite\s+"([^"]+)"/);
           const spriteMatchBackticks = stripped.match(/sprite\s+`([^`]+)`/);
           const spriteMatch = spriteMatchBackticks || spriteMatchQuotes;
           if (spriteMatch) {
             shipData.sprite = spriteMatch[1];
+
+            // Check if there's nested data below sprite
+            if (i + 1 < lines.length) {
+              const nextIndent = lines[i + 1].length - lines[i + 1].replace(/^\t+/, '').length;
+
+              if (nextIndent > indent) {
+                // Collect nested sprite data
+                const result = this.parseIndentedBlock(lines, i + 1);
+                shipData.spriteData = result[0];
+                i = result[1];
+                continue;
+              }
+            }
           }
           i++;
           continue;
@@ -689,14 +728,27 @@ class EndlessSkyParser {
           }
           continue;
         }
-        
-        if (stripped.startsWith('sprite ')) {
+                      
+        if (stripped.includes('sprite')) {
           const spriteMatchQuotes = stripped.match(/sprite\s+"([^"]+)"/);
           const spriteMatchBackticks = stripped.match(/sprite\s+`([^`]+)`/);
           const spriteMatch = spriteMatchBackticks || spriteMatchQuotes;
           if (spriteMatch && spriteMatch[1] !== baseShip.sprite) {
             variantShip.sprite = spriteMatch[1];
             hasSignificantChanges = true;
+
+            // Check if there's nested data below sprite
+            if (i + 1 < lines.length) {
+              const nextIndent = lines[i + 1].length - lines[i + 1].replace(/^\t+/, '').length;
+
+              if (nextIndent > indent) {
+                // Collect nested sprite data
+                const result = this.parseIndentedBlock(lines, i + 1);
+                variantShip.spriteData = result[0];
+                i = result[1];
+                continue;
+              }
+            }
           }
           i++;
           continue;
@@ -959,6 +1011,31 @@ class EndlessSkyParser {
       if (indent === 1) {
         const stripped = currentLine.trim();
         
+          // Handle sprite
+          if (stripped.startsWith('sprite ')) {
+            const spriteMatchQuotes = stripped.match(/sprite\s+"([^"]+)"/);
+            const spriteMatchBackticks = stripped.match(/sprite\s+`([^`]+)`/);
+            const spriteMatch = spriteMatchBackticks || spriteMatchQuotes;
+            if (spriteMatch) {
+              outfitData.sprite = spriteMatch[1];
+              
+              // Check if there's nested data below sprite
+              if (i + 1 < lines.length) {
+                const nextIndent = lines[i + 1].length - lines[i + 1].replace(/^\t+/, '').length;
+                
+                if (nextIndent > indent) {
+                  // Collect nested sprite data
+                  const result = this.parseIndentedBlock(lines, i + 1);
+                  outfitData.spriteData = result[0];
+                  i = result[1];
+                  continue;
+                }
+              }
+            }
+            i++;
+            continue;
+          }
+
         // Handle "key" "value" format (both quoted)
         const quotedBothMatch = stripped.match(/"([^"]+)"\s+"([^"]+)"/);
         if (quotedBothMatch) {
@@ -1305,26 +1382,81 @@ class EndlessSkyParser {
 
       console.log(`Found ${imagePaths.size} unique image paths to process`);
 
-      // Copy only the needed image paths
+      // Copy only the needed image paths and their variants
       for (const imagePath of imagePaths) {
         const normalizedPath = imagePath.replace(/\\/g, '/');
-        const sourcePath = path.join(sourceImagesDir, normalizedPath);
-        const destPath = path.join(imageDir, normalizedPath);
 
-        try {
-          // Check if source exists and is a directory
-          const stats = await fs.stat(sourcePath);
+        // Get the directory and basename
+        const pathParts = normalizedPath.split('/');
+        const basenamePattern = pathParts[pathParts.length - 1];
+        const parentDir = pathParts.slice(0, -1).join('/');
 
-          if (stats.isDirectory()) {
-            console.log(`  Copying directory: ${normalizedPath}`);
-            await this.copyDirectory(sourcePath, destPath);
-          } else {
-            console.log(`  Copying file: ${normalizedPath}`);
-            await fs.mkdir(path.dirname(destPath), { recursive: true });
-            await fs.copyFile(sourcePath, destPath);
+        // Try both the parent directory AND a subdirectory with the basename
+        const searchPaths = [
+          { dir: path.join(sourceImagesDir, parentDir), relative: parentDir },
+          { dir: path.join(sourceImagesDir, normalizedPath), relative: normalizedPath }
+        ];
+      
+        let foundFiles = false;
+      
+        for (const searchPath of searchPaths) {
+          try {
+            // Check if directory exists
+            const stats = await fs.stat(searchPath.dir);
+            if (!stats.isDirectory()) continue;
+
+            // Read all files in the directory
+            const files = await fs.readdir(searchPath.dir);
+
+            // Filter files that match the basename pattern
+            const matchingFiles = files.filter(fileName => {
+              const fileExt = path.extname(fileName).toLowerCase();
+              const fileBase = path.basename(fileName, fileExt);
+
+              // Escape regex special characters in the pattern
+              const escapedPattern = basenamePattern.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+              // Check if filename matches various patterns
+              const matchesExact = fileBase === basenamePattern;
+              const matchesDashNumber = fileBase.match(new RegExp(`^${escapedPattern}-\\d+$`));
+              const matchesSingleCharNumber = fileBase.match(new RegExp(`^${escapedPattern}.\\d+$`));
+              const matchesDashAnythingNumber = fileBase.match(new RegExp(`^${escapedPattern}-.+\\d+$`));
+              const matchesAnythingNumber = fileBase.match(new RegExp(`^${escapedPattern}.+\\d+$`));
+              const matchesAnySpecialCharacter = fileBase.match(new RegExp(`^${escapedPattern}.$`));
+              const matchesDashAnything = fileBase.match(new RegExp(`^${escapedPattern}-.+$`));
+              const matchesAnything = fileBase.match(new RegExp(`^${escapedPattern}.+$`));
+
+              const matchesPattern = matchesExact || matchesDashNumber || matchesSingleCharNumber || 
+                                    matchesDashAnythingNumber || matchesAnythingNumber || matchesAnySpecialCharacter ||
+                                    matchesDashAnything || matchesAnything;
+
+              return matchesPattern && ['.png', '.jpg', '.jpeg', '.gif', '.avif', '.webp'].includes(fileExt);
+            });
+
+            if (matchingFiles.length > 0) {
+              const destDir = path.join(imageDir, searchPath.relative);
+              await fs.mkdir(destDir, { recursive: true });
+
+              for (const fileName of matchingFiles) {
+                const sourceFile = path.join(searchPath.dir, fileName);
+                const destFile = path.join(destDir, fileName);
+
+                await fs.copyFile(sourceFile, destFile);
+                console.log(`  ✓ Copied: ${searchPath.relative}/${fileName}`);
+              }
+
+              foundFiles = true;
+              break; // Found files, no need to check other paths
+            }
+
+          } catch (error) {
+            // Directory doesn't exist or can't be read, try next path
+            continue;
           }
-        } catch (error) {
-          console.log(`  ✗ Path not found or error: ${normalizedPath} - ${error.message}`);
+        }
+
+        if (!foundFiles) {
+          console.log(`  ✗ No matching files found for: ${normalizedPath}`);
         }
       }
 
@@ -1361,7 +1493,7 @@ async function main() {
       console.log(`${'='.repeat(60)}`);
       
       const parser = new EndlessSkyParser();
-      const data = await parser.parseRepository(plugin.repository);
+      const data = await parser.parseRepository(plugin.repository); 
       
       // Create plugin directories
       const pluginDir = path.join(process.cwd(), 'data', plugin.name);
@@ -1381,7 +1513,13 @@ async function main() {
 
         // Convert image sequences to AVIF
         const converter = new ImageConverter();
-        await converter.processAllImages(pluginDir);
+        await converter.processAllImages(pluginDir, data, {
+          fps: 10,           // Default FPS if not in spriteData
+          crf: 15,           // Quality (lower = better, 0-63)
+          speed: 4,          // Encoding speed (0-8, higher = faster)
+          transition: 'smooth',  // Transition type
+          transitionFrames: 0         // Interpolated frames (future feature)
+        });
       }
       
       // Save JSON files to pluginDir/dataFiles/
