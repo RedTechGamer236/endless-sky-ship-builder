@@ -15,6 +15,10 @@
     {
       "name": "midnight-scrapyard",
       "repository": "https://github.com/MidnightPlugins/Midnight-Scrapyard/tree/main"
+    },
+    {
+      "name": "rumskib",
+      "repository": "https://github.com/TheGiraffe3/rumskib/tree/main"
     }
   ]
 }
