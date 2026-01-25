@@ -1,0 +1,1162 @@
+[
+  {
+    "name": "Grakerat 572 (Grakerat 572 (Infested))",
+    "engines": [
+      {
+        "x": -38,
+        "y": 208
+      },
+      {
+        "x": 38,
+        "y": 208
+      },
+      {
+        "x": 0,
+        "y": 208
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [],
+    "turrets": [
+      {
+        "x": -15,
+        "y": -100,
+        "turret": ""
+      },
+      {
+        "x": 0,
+        "y": -50,
+        "turret": ""
+      },
+      {
+        "x": 0,
+        "y": 50,
+        "turret": ""
+      },
+      {
+        "x": 15,
+        "y": 100,
+        "turret": ""
+      }
+    ],
+    "bays": [
+      {
+        "type": "Fighter",
+        "x": -10,
+        "y": -100
+      },
+      {
+        "type": "Fighter",
+        "x": 10,
+        "y": -100
+      },
+      {
+        "type": "Fighter",
+        "x": -10,
+        "y": -100
+      },
+      {
+        "type": "Fighter",
+        "x": 10,
+        "y": -100
+      },
+      {
+        "type": "Fighter",
+        "x": -20,
+        "y": -50
+      },
+      {
+        "type": "Fighter",
+        "x": 20,
+        "y": -50
+      },
+      {
+        "type": "Fighter",
+        "x": -20,
+        "y": -50
+      },
+      {
+        "type": "Fighter",
+        "x": 20,
+        "y": -50
+      },
+      {
+        "type": "Fighter",
+        "x": -20,
+        "y": -20
+      },
+      {
+        "type": "Fighter",
+        "x": 20,
+        "y": -20
+      },
+      {
+        "type": "Fighter",
+        "x": -20,
+        "y": -20
+      },
+      {
+        "type": "Fighter",
+        "x": 20,
+        "y": -20
+      },
+      {
+        "type": "Fighter",
+        "x": -20,
+        "y": 20
+      },
+      {
+        "type": "Fighter",
+        "x": 20,
+        "y": 20
+      },
+      {
+        "type": "Fighter",
+        "x": -20,
+        "y": 20
+      },
+      {
+        "type": "Fighter",
+        "x": 20,
+        "y": 20
+      },
+      {
+        "type": "Fighter",
+        "x": -20,
+        "y": 50
+      },
+      {
+        "type": "Fighter",
+        "x": 20,
+        "y": 50
+      },
+      {
+        "type": "Fighter",
+        "x": -20,
+        "y": 50
+      },
+      {
+        "type": "Fighter",
+        "x": 20,
+        "y": 50
+      },
+      {
+        "type": "Fighter",
+        "x": -10,
+        "y": 100
+      },
+      {
+        "type": "Fighter",
+        "x": 10,
+        "y": 100
+      },
+      {
+        "type": "Fighter",
+        "x": -10,
+        "y": 100
+      },
+      {
+        "type": "Fighter",
+        "x": 10,
+        "y": 100
+      }
+    ],
+    "sprite": "ship/grakerat 572",
+    "thumbnail": "thumbnail/grakerat 572-thumb",
+    "attributes": {
+      "category": "Heavy Freighter",
+      "cost": 21480000,
+      "shields": 52700,
+      "hull": 54600,
+      "automaton": 1,
+      "mass": 3333,
+      "drag": 25.2,
+      "heat dissipation": 0.25,
+      "fuel capacity": 1000,
+      "cargo space": 264,
+      "outfit space": 710,
+      "weapon capacity": 0,
+      "engine capacity": 165,
+      "ramscoop": 1,
+      "atmosphere scan": 100,
+      "weapon": {
+        "blast radius": 400,
+        "shield damage": 8000,
+        "hull damage": 4000,
+        "hit force": 12000
+      }
+    },
+    "tiny explosion": "120",
+    "small explosion": "60",
+    "medium explosion": "70",
+    "large explosion": "50",
+    "huge explosion": "15",
+    "final explode": "\"final explosion large\"",
+    "description": "The Sestor deployed these expeditionary vessels centuries ago to extend their reach beyond Korath space. If one were to find a suitable planet to establish a base of operations on, the Sestor could rise again.",
+    "variant": "Grakerat 572 (Infested)",
+    "baseShip": "Grakerat 572"
+  },
+  {
+    "name": "Korath Devourer (Korath Devourer (Infested))",
+    "engines": [
+      {
+        "x": -31,
+        "y": 286
+      },
+      {
+        "x": 31,
+        "y": 286
+      },
+      {
+        "x": 0,
+        "y": 298
+      }
+    ],
+    "reverseEngines": [
+      {
+        "x": -91,
+        "y": -85
+      },
+      {
+        "x": 91,
+        "y": -85
+      },
+      {
+        "x": -91,
+        "y": 69
+      },
+      {
+        "x": 91,
+        "y": 69
+      },
+      {
+        "x": -80,
+        "y": 212,
+        "position": "over"
+      },
+      {
+        "x": 80,
+        "y": 212,
+        "position": "over"
+      }
+    ],
+    "steeringEngines": [
+      {
+        "x": -58.5,
+        "y": -143.5,
+        "position": "right"
+      },
+      {
+        "x": 58.5,
+        "y": -143.5,
+        "position": "left"
+      },
+      {
+        "x": -44,
+        "y": 209,
+        "position": "left"
+      },
+      {
+        "x": 44,
+        "y": 209,
+        "position": "right"
+      }
+    ],
+    "guns": [
+      {
+        "x": 0,
+        "y": -198,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": 0,
+        "y": -181,
+        "turret": ""
+      },
+      {
+        "x": -61,
+        "y": -175,
+        "turret": ""
+      },
+      {
+        "x": 61,
+        "y": -175,
+        "turret": ""
+      },
+      {
+        "x": 0,
+        "y": -79,
+        "turret": ""
+      },
+      {
+        "x": -42,
+        "y": -55,
+        "turret": ""
+      },
+      {
+        "x": 42,
+        "y": -55,
+        "turret": ""
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "turret": ""
+      },
+      {
+        "x": -42,
+        "y": 100,
+        "turret": ""
+      },
+      {
+        "x": 42,
+        "y": 100,
+        "turret": ""
+      },
+      {
+        "x": 0,
+        "y": 247,
+        "turret": ""
+      },
+      {
+        "x": -88,
+        "y": -45,
+        "turret": ""
+      },
+      {
+        "x": 88,
+        "y": -45,
+        "turret": ""
+      },
+      {
+        "x": -88,
+        "y": 108,
+        "turret": ""
+      },
+      {
+        "x": 88,
+        "y": 108,
+        "turret": ""
+      },
+      {
+        "x": -82,
+        "y": 260,
+        "turret": ""
+      },
+      {
+        "x": 82,
+        "y": 260,
+        "turret": ""
+      }
+    ],
+    "bays": [
+      {
+        "type": "Fighter",
+        "x": -88,
+        "y": -45
+      },
+      {
+        "type": "Fighter",
+        "x": -88,
+        "y": -45
+      },
+      {
+        "type": "Fighter",
+        "x": 88,
+        "y": -45
+      },
+      {
+        "type": "Fighter",
+        "x": 88,
+        "y": -45
+      },
+      {
+        "type": "Fighter",
+        "x": -88,
+        "y": 108
+      },
+      {
+        "type": "Fighter",
+        "x": -88,
+        "y": 108
+      },
+      {
+        "type": "Fighter",
+        "x": 88,
+        "y": 108
+      },
+      {
+        "type": "Fighter",
+        "x": 88,
+        "y": 108
+      },
+      {
+        "type": "Fighter",
+        "x": -82,
+        "y": 260
+      },
+      {
+        "type": "Fighter",
+        "x": -82,
+        "y": 260
+      },
+      {
+        "type": "Fighter",
+        "x": 82,
+        "y": 260
+      },
+      {
+        "type": "Fighter",
+        "x": 82,
+        "y": 260
+      }
+    ],
+    "display name": "\"Devar'ur\"",
+    "sprite": "ship/korath devourer/korath devourer",
+    "thumbnail": "thumbnail/korath devourer-thumb",
+    "attributes": {
+      "category": "Utility",
+      "cost": 39062100,
+      "shields": 0,
+      "hull": 22000,
+      "required crew": 0,
+      "bunks": 0,
+      "mass": 4710,
+      "drag": 43.2,
+      "heat dissipation": 0.29,
+      "fuel capacity": 300,
+      "cargo space": 804,
+      "outfit space": 1099,
+      "weapon capacity": 395,
+      "engine capacity": 240,
+      "integrated systems": -1,
+      "weapon": {
+        "blast radius": 731,
+        "shield damage": 7315,
+        "hull damage": 3657,
+        "hit force": 10972
+      },
+      "automaton": 1,
+      "threshold percentage": 0.5,
+      "inscrutable": 1
+    },
+    "tiny explosion": "160",
+    "small explosion": "80",
+    "medium explosion": "90",
+    "large explosion": "70",
+    "huge explosion": "20",
+    "final explode": "\"final explosion large\"",
+    "description": "Some Korath scrappers are more interested in harvesting raw materials rather than technology. The Devar'ur is their attempt to streamline the collection process. The Korath Incinerator is integrated into the ship and cannot be removed.",
+    "variant": "Korath Devourer (Infested)",
+    "baseShip": "Korath Devourer"
+  },
+  {
+    "name": "Grakerat 572 (Grakerat 572 (Scar))",
+    "engines": [
+      {
+        "x": -38,
+        "y": 208
+      },
+      {
+        "x": 38,
+        "y": 208
+      },
+      {
+        "x": 0,
+        "y": 208
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [],
+    "turrets": [],
+    "bays": [],
+    "sprite": "ship/grakerat scar",
+    "thumbnail": "thumbnail/grakerat 572-thumb",
+    "attributes": {
+      "category": "Heavy Freighter",
+      "cost": 21480000,
+      "shields": 52000,
+      "hull": 56000,
+      "automaton": 1,
+      "mass": 3333,
+      "drag": 25.3,
+      "heat dissipation": 0.25,
+      "fuel capacity": 1000,
+      "cargo space": 264,
+      "outfit space": 710,
+      "weapon capacity": 0,
+      "engine capacity": 165,
+      "ramscoop": 1,
+      "atmosphere scan": 100,
+      "weapon": {
+        "blast radius": 400,
+        "shield damage": 8000,
+        "hull damage": 4000,
+        "hit force": 12000
+      }
+    },
+    "tiny explosion": "120",
+    "small explosion": "60",
+    "medium explosion": "70",
+    "large explosion": "50",
+    "huge explosion": "15",
+    "final explode": "\"final explosion large\"",
+    "description": "The Sestor deployed these expeditionary vessels centuries ago to extend their reach beyond Korath space. If one were to find a suitable planet to establish a base of operations on, the Sestor could rise again.",
+    "variant": "Grakerat 572 (Scar)",
+    "baseShip": "Grakerat 572"
+  },
+  {
+    "name": "Palavret Tek (Korath Scrapper (shields))",
+    "engines": [
+      {
+        "x": -20,
+        "y": 127
+      },
+      {
+        "x": 20,
+        "y": 127
+      }
+    ],
+    "reverseEngines": [
+      {
+        "x": -9,
+        "y": -154,
+        "position": "zoom 0.7"
+      },
+      {
+        "x": 9,
+        "y": -154,
+        "position": "zoom 0.7"
+      }
+    ],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": 32.5,
+        "y": -1,
+        "gun": ""
+      },
+      {
+        "x": -32.5,
+        "y": -1,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": -10,
+        "y": -143,
+        "turret": ""
+      },
+      {
+        "x": 10,
+        "y": -143,
+        "turret": ""
+      },
+      {
+        "x": -36,
+        "y": -141,
+        "turret": ""
+      },
+      {
+        "x": 36,
+        "y": -141,
+        "turret": ""
+      },
+      {
+        "x": 0,
+        "y": 41,
+        "turret": ""
+      },
+      {
+        "x": 0,
+        "y": 94,
+        "turret": ""
+      }
+    ],
+    "bays": [
+      {
+        "type": "Fighter",
+        "x": -80,
+        "y": 151,
+        "position": "back"
+      },
+      {
+        "type": "Fighter",
+        "x": 80,
+        "y": 151,
+        "position": "back"
+      }
+    ],
+    "sprite": "ship/kor scrapper s",
+    "thumbnail": "thumbnail/kor scrapper s-thumb",
+    "attributes": {
+      "category": "Heavy Warship",
+      "cost": 16570000,
+      "shields": 27000,
+      "hull": 9000,
+      "required crew": 134,
+      "bunks": 250,
+      "mass": 1770,
+      "drag": 20.4,
+      "heat dissipation": 0.3,
+      "fuel capacity": 600,
+      "cargo space": 175,
+      "outfit space": 777,
+      "weapon capacity": 339,
+      "engine capacity": 159,
+      "self destruct": 0.3,
+      "weapon": {
+        "blast radius": 250,
+        "shield damage": 3600,
+        "hull damage": 1800,
+        "hit force": 5400
+      }
+    },
+    "tiny explosion": "20",
+    "small explosion": "45",
+    "medium explosion": "50",
+    "large explosion": "40",
+    "huge explosion": "10",
+    "final explode": "\"final explosion large\"",
+    "description": "Korath Scrappers who scavenge in the Scrapyard are using the technology they find to customize their ships.",
+    "variant": "Korath Scrapper (shields)",
+    "baseShip": "Palavret Tek"
+  },
+  {
+    "name": "Palavret Tek (Korath Scrapper (weapons))",
+    "engines": [
+      {
+        "x": -20,
+        "y": 127
+      },
+      {
+        "x": 20,
+        "y": 127
+      }
+    ],
+    "reverseEngines": [
+      {
+        "x": -9,
+        "y": -143,
+        "position": "zoom 0.7"
+      },
+      {
+        "x": 9,
+        "y": -143,
+        "position": "zoom 0.7"
+      }
+    ],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -8,
+        "y": -171,
+        "gun": ""
+      },
+      {
+        "x": 8,
+        "y": -171,
+        "gun": ""
+      },
+      {
+        "x": 32.5,
+        "y": -1,
+        "gun": ""
+      },
+      {
+        "x": -32.5,
+        "y": -1,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": -10,
+        "y": -143,
+        "turret": ""
+      },
+      {
+        "x": 10,
+        "y": -143,
+        "turret": ""
+      },
+      {
+        "x": -36,
+        "y": -141,
+        "turret": ""
+      },
+      {
+        "x": 36,
+        "y": -141,
+        "turret": ""
+      },
+      {
+        "x": 0,
+        "y": 41,
+        "turret": ""
+      },
+      {
+        "x": 0,
+        "y": 94,
+        "turret": ""
+      }
+    ],
+    "bays": [
+      {
+        "type": "Fighter",
+        "x": -80,
+        "y": 151,
+        "position": "back"
+      },
+      {
+        "type": "Fighter",
+        "x": 80,
+        "y": 151,
+        "position": "back"
+      }
+    ],
+    "sprite": "ship/kor scrapper w",
+    "thumbnail": "thumbnail/kor scrapper w-thumb",
+    "attributes": {
+      "category": "Heavy Warship",
+      "cost": 16570000,
+      "shields": 27000,
+      "hull": 9000,
+      "required crew": 134,
+      "bunks": 250,
+      "mass": 1770,
+      "drag": 20.4,
+      "heat dissipation": 0.3,
+      "fuel capacity": 600,
+      "cargo space": 175,
+      "outfit space": 777,
+      "weapon capacity": 339,
+      "engine capacity": 159,
+      "self destruct": 0.3,
+      "weapon": {
+        "blast radius": 250,
+        "shield damage": 3600,
+        "hull damage": 1800,
+        "hit force": 5400
+      }
+    },
+    "tiny explosion": "20",
+    "small explosion": "45",
+    "medium explosion": "50",
+    "large explosion": "40",
+    "huge explosion": "10",
+    "final explode": "\"final explosion large\"",
+    "description": "Korath Scrappers who scavenge in the Scrapyard are using the technology they find to customize their ships.",
+    "variant": "Korath Scrapper (weapons)",
+    "baseShip": "Palavret Tek"
+  },
+  {
+    "name": "Palavret Tek (Korath Scrapper (engines))",
+    "engines": [
+      {
+        "x": -26,
+        "y": 156
+      },
+      {
+        "x": 26,
+        "y": 156
+      }
+    ],
+    "reverseEngines": [
+      {
+        "x": -9,
+        "y": -154,
+        "position": "zoom 0.7"
+      },
+      {
+        "x": 9,
+        "y": -154,
+        "position": "zoom 0.7"
+      }
+    ],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": 32.5,
+        "y": -1,
+        "gun": ""
+      },
+      {
+        "x": -32.5,
+        "y": -1,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": -10,
+        "y": -143,
+        "turret": ""
+      },
+      {
+        "x": 10,
+        "y": -143,
+        "turret": ""
+      },
+      {
+        "x": -36,
+        "y": -141,
+        "turret": ""
+      },
+      {
+        "x": 36,
+        "y": -141,
+        "turret": ""
+      },
+      {
+        "x": 0,
+        "y": 41,
+        "turret": ""
+      },
+      {
+        "x": 0,
+        "y": 94,
+        "turret": ""
+      }
+    ],
+    "bays": [
+      {
+        "type": "Fighter",
+        "x": -80,
+        "y": 151,
+        "position": "back"
+      },
+      {
+        "type": "Fighter",
+        "x": 80,
+        "y": 151,
+        "position": "back"
+      }
+    ],
+    "sprite": "ship/kor scrapper e",
+    "thumbnail": "thumbnail/kor scrapper e-thumb",
+    "attributes": {
+      "category": "Heavy Warship",
+      "cost": 16570000,
+      "shields": 27000,
+      "hull": 9000,
+      "required crew": 134,
+      "bunks": 250,
+      "mass": 1770,
+      "drag": 20.4,
+      "heat dissipation": 0.3,
+      "fuel capacity": 600,
+      "cargo space": 175,
+      "outfit space": 777,
+      "weapon capacity": 339,
+      "engine capacity": 159,
+      "self destruct": 0.3,
+      "weapon": {
+        "blast radius": 250,
+        "shield damage": 3600,
+        "hull damage": 1800,
+        "hit force": 5400
+      }
+    },
+    "tiny explosion": "20",
+    "small explosion": "45",
+    "medium explosion": "50",
+    "large explosion": "40",
+    "huge explosion": "10",
+    "final explode": "\"final explosion large\"",
+    "description": "Korath Scrappers who scavenge in the Scrapyard are using the technology they find to customize their ships.",
+    "variant": "Korath Scrapper (engines)",
+    "baseShip": "Palavret Tek"
+  },
+  {
+    "name": "Palavret Tek (Korath Scrapper (carrier))",
+    "engines": [
+      {
+        "x": -20,
+        "y": 127
+      },
+      {
+        "x": 20,
+        "y": 127
+      }
+    ],
+    "reverseEngines": [
+      {
+        "x": -9,
+        "y": -154,
+        "position": "zoom 0.7"
+      },
+      {
+        "x": 9,
+        "y": -154,
+        "position": "zoom 0.7"
+      }
+    ],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": 32.5,
+        "y": -1,
+        "gun": ""
+      },
+      {
+        "x": -32.5,
+        "y": -1,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": -10,
+        "y": -143,
+        "turret": ""
+      },
+      {
+        "x": 10,
+        "y": -143,
+        "turret": ""
+      },
+      {
+        "x": -36,
+        "y": -141,
+        "turret": ""
+      },
+      {
+        "x": 36,
+        "y": -141,
+        "turret": ""
+      },
+      {
+        "x": 0,
+        "y": 41,
+        "turret": ""
+      },
+      {
+        "x": 0,
+        "y": 94,
+        "turret": ""
+      }
+    ],
+    "bays": [
+      {
+        "type": "Fighter",
+        "x": -88,
+        "y": -130
+      },
+      {
+        "type": "Drone",
+        "x": 92,
+        "y": -123
+      },
+      {
+        "type": "Fighter",
+        "x": -80,
+        "y": 151,
+        "position": "back"
+      },
+      {
+        "type": "Fighter",
+        "x": 80,
+        "y": 151,
+        "position": "back"
+      }
+    ],
+    "sprite": "ship/kor scrapper c",
+    "thumbnail": "thumbnail/kor scrapper c-thumb",
+    "attributes": {
+      "category": "Heavy Warship",
+      "cost": 16570000,
+      "shields": 27000,
+      "hull": 9000,
+      "required crew": 134,
+      "bunks": 250,
+      "mass": 1770,
+      "drag": 20.4,
+      "heat dissipation": 0.3,
+      "fuel capacity": 600,
+      "cargo space": 175,
+      "outfit space": 777,
+      "weapon capacity": 339,
+      "engine capacity": 159,
+      "self destruct": 0.3,
+      "weapon": {
+        "blast radius": 250,
+        "shield damage": 3600,
+        "hull damage": 1800,
+        "hit force": 5400
+      }
+    },
+    "tiny explosion": "20",
+    "small explosion": "45",
+    "medium explosion": "50",
+    "large explosion": "40",
+    "huge explosion": "10",
+    "final explode": "\"final explosion large\"",
+    "description": "Korath Scrappers who scavenge in the Scrapyard are using the technology they find to customize their ships.",
+    "variant": "Korath Scrapper (carrier)",
+    "baseShip": "Palavret Tek"
+  },
+  {
+    "name": "Mechanized Mine (Mechanized Mine (SD))",
+    "engines": [
+      {
+        "x": 0,
+        "y": 30
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": 0,
+        "y": 0,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [],
+    "sprite": "ship/mechanized mine",
+    "thumbnail": "outfit/korath mine",
+    "never disabled": true,
+    "swizzle": "0",
+    "attributes": {
+      "category": "Fighter",
+      "cost": 837000,
+      "shields": 2400,
+      "hull": 3000,
+      "automaton": 1,
+      "mass": 80,
+      "drag": 2.1,
+      "heat dissipation": 1,
+      "outfit space": 135,
+      "weapon capacity": 57,
+      "engine capacity": 24,
+      "integrated systems": -1,
+      "weapon": {
+        "blast radius": 700,
+        "shield damage": 7000,
+        "hull damage": 5600,
+        "hit force": 4000
+      },
+      "self destruct": 0.79
+    },
+    "large explosion": "1",
+    "final explode": "\"final explosion large\"",
+    "description": "An automated mine designed to create more mines. The Mereti developed this for deployment in distant systems controlled by hostile forces.",
+    "variant": "Mechanized Mine (SD)",
+    "baseShip": "Mechanized Mine"
+  },
+  {
+    "name": "Stakoshtar 187 (Stakoshtar 187(SD))",
+    "engines": [
+      {
+        "x": 0,
+        "y": 224
+      },
+      {
+        "x": -37,
+        "y": 224
+      },
+      {
+        "x": 37,
+        "y": 224
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": 0,
+        "y": -219,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": -34.5,
+        "y": -121,
+        "turret": ""
+      },
+      {
+        "x": 39.5,
+        "y": -121,
+        "turret": ""
+      },
+      {
+        "x": -36,
+        "y": -98,
+        "turret": ""
+      },
+      {
+        "x": 41,
+        "y": -98,
+        "turret": ""
+      },
+      {
+        "x": -37.5,
+        "y": -74,
+        "turret": ""
+      },
+      {
+        "x": 43,
+        "y": -74,
+        "turret": ""
+      },
+      {
+        "x": -39,
+        "y": -51,
+        "turret": ""
+      },
+      {
+        "x": 44.5,
+        "y": -51,
+        "turret": ""
+      }
+    ],
+    "bays": [],
+    "sprite": "ship/stakoshtar 187/stakoshtar",
+    "spriteData": {
+      "frame rate": 8,
+      "description": "\"rewind\""
+    },
+    "attributes": {
+      "category": "Heavy Warship",
+      "cost": 51260000,
+      "shields": 55200,
+      "hull": 68200,
+      "automaton": 1,
+      "mass": 3789,
+      "drag": 40.3,
+      "heat dissipation": 0.25,
+      "fuel capacity": 800,
+      "cargo space": 0,
+      "outfit space": 1200,
+      "weapon capacity": 544,
+      "engine capacity": 234,
+      "ramscoop": 1,
+      "spinal mount": 1,
+      "weapon": {
+        "blast radius": 12340,
+        "shield damage": 1234,
+        "hull damage": 6170,
+        "hit force": 18510
+      },
+      "self destruct": 1
+    },
+    "tiny explosion": "60",
+    "small explosion": "26",
+    "medium explosion": "47",
+    "large explosion": "39",
+    "huge explosion": "42",
+    "nuke explosion": "2",
+    "final explode": "\"nuke residue fast\" 50",
+    "description": "During their civil war, the Korath used this weapon against planetary targets. Scars from such battles still cover the surface of many of their worlds.",
+    "variant": "Stakoshtar 187(SD)",
+    "baseShip": "Stakoshtar 187"
+  }
+]

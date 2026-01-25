@@ -1,0 +1,2469 @@
+{
+  "plugin": "rumskib",
+  "repository": "https://github.com/TheGiraffe3/rumskib/tree/main",
+  "ships": [
+    {
+      "name": "Buttle",
+      "engines": [
+        {
+          "x": -19,
+          "y": 35.5
+        },
+        {
+          "x": 19,
+          "y": 35.5
+        }
+      ],
+      "reverseEngines": [],
+      "steeringEngines": [],
+      "guns": [
+        {
+          "x": 0,
+          "y": -36.5,
+          "gun": ""
+        },
+        {
+          "x": -19,
+          "y": -19,
+          "gun": ""
+        },
+        {
+          "x": 19,
+          "y": -19,
+          "gun": ""
+        }
+      ],
+      "turrets": [],
+      "bays": [],
+      "sprite": "ship/buttle",
+      "thumbnail": "thumbnail/buttle",
+      "attributes": {
+        "category": "Interceptor",
+        "cost": 460500,
+        "shields": 2300,
+        "hull": 550,
+        "required crew": 2,
+        "bunks": 9,
+        "mass": 190,
+        "drag": 2.1,
+        "heat dissipation": 0.698,
+        "fuel capacity": 500,
+        "cargo space": 25,
+        "outfit space": 167,
+        "weapon capacity": 30,
+        "engine capacity": 65,
+        "weapon": {
+          "blast radius": 30,
+          "shield damage": 300,
+          "hull damage": 150,
+          "hit force": 450
+        }
+      },
+      "leak": "60 50",
+      "tiny explosion": "10",
+      "small explosion": "5",
+      "final explode": "\"final explosion small\"",
+      "description": "A diabolical conglomeration, the Buttle maintains the shipping and transport potential of the Shuttle while obtaining the weapons and speed of the Berserker, the two ships it's created from."
+    },
+    {
+      "name": "Cleaver",
+      "engines": [
+        {
+          "x": -21,
+          "y": 91.5
+        },
+        {
+          "x": 21,
+          "y": 91.5
+        }
+      ],
+      "reverseEngines": [],
+      "steeringEngines": [],
+      "guns": [
+        {
+          "x": -25.5,
+          "y": -90,
+          "gun": ""
+        },
+        {
+          "x": -10,
+          "y": -89.5,
+          "gun": ""
+        },
+        {
+          "x": -10,
+          "y": -89.5,
+          "gun": ""
+        },
+        {
+          "x": 10,
+          "y": -89.5,
+          "gun": ""
+        },
+        {
+          "x": 10,
+          "y": -89.5,
+          "gun": ""
+        },
+        {
+          "x": 25.5,
+          "y": -90,
+          "gun": ""
+        }
+      ],
+      "turrets": [
+        {
+          "x": 0,
+          "y": -11,
+          "turret": ""
+        }
+      ],
+      "bays": [],
+      "sprite": "ship/cleaver",
+      "thumbnail": "thumbnail/cleaver",
+      "attributes": {
+        "category": "Utility",
+        "cost": 6890000,
+        "shields": 3400,
+        "hull": 1600,
+        "required crew": 9,
+        "bunks": 13,
+        "mass": 480,
+        "drag": 6.3,
+        "heat dissipation": 0.34,
+        "fuel capacity": 700,
+        "cargo space": 145,
+        "outfit space": 289,
+        "weapon capacity": 146,
+        "engine capacity": 80,
+        "weapon": {
+          "blast radius": 72,
+          "shield damage": 720,
+          "hull damage": 360,
+          "hit force": 1080
+        }
+      },
+      "bay Fighter 55.5 -64.5": {
+        "description": "under"
+      },
+      "bay Fighter -55.5 -64.5": {
+        "description": "under"
+      },
+      "bay Drone 4 -92": {
+        "description": "under"
+      },
+      "bay Drone -4 -92": {
+        "description": "under"
+      },
+      "leak": "50 50",
+      "flame": "80 80",
+      "tiny explosion": "10",
+      "small explosion": "20",
+      "medium explosion": "15",
+      "final explode": "\"final explosion small\"",
+      "description": "The Cleaver is essentially a more powerful version of the Sunder, made by a small company on Shroud and distributed to a few other select planets. The designers of ALR Manufacturing had great plans to show who the Cleaver belonged to, but the builders ended up deciding to use parts from the original Sunder, and the ship did not look nearly as colorful as the original concept dictated. As the shipyards use imported products such as the Tractor Beam, the Cleaver has a rather high price tag. \tFollowing the tradition, the Cleaver has a roomy cargo bay; enough to make anyone flying it rich. \tAccording to some, it also carries special tools that allow it to harvest resources from the surface of mineral-rich planets or moons."
+    },
+    {
+      "name": "Cutlass",
+      "engines": [
+        {
+          "x": -12,
+          "y": 57.5,
+          "zoom": 0.7
+        },
+        {
+          "x": 12,
+          "y": 57.5,
+          "zoom": 0.7
+        }
+      ],
+      "reverseEngines": [],
+      "steeringEngines": [],
+      "guns": [
+        {
+          "x": -16,
+          "y": -38,
+          "gun": ""
+        },
+        {
+          "x": 16,
+          "y": -38,
+          "gun": ""
+        },
+        {
+          "x": -28.5,
+          "y": -27.5,
+          "gun": ""
+        },
+        {
+          "x": 28.5,
+          "y": -27.5,
+          "gun": ""
+        }
+      ],
+      "turrets": [
+        {
+          "x": 0,
+          "y": -1,
+          "turret": ""
+        }
+      ],
+      "bays": [],
+      "Cutlasses": true,
+      "sprite": "ship/pirate cutlass",
+      "thumbnail": "thumbnail/pirate cutlass",
+      "attributes": {
+        "category": "Light Warship",
+        "cost": 3500000,
+        "shields": 5800,
+        "hull": 1800,
+        "required crew": 8,
+        "bunks": 12,
+        "mass": 230,
+        "drag": 3.9,
+        "heat dissipation": 0.58,
+        "fuel capacity": 600,
+        "cargo space": 56,
+        "outfit space": 297,
+        "weapon capacity": 141,
+        "engine capacity": 90,
+        "weapon": {
+          "blast radius": 72,
+          "shield damage": 720,
+          "hull damage": 360,
+          "hit force": 1080
+        }
+      },
+      "leak": "50 50",
+      "flame": "80 80",
+      "tiny explosion": "10",
+      "small explosion": "20",
+      "medium explosion": "15",
+      "final explode": "\"final explosion small\"",
+      "description": "This ship is a modified version of a captured Navy Gunboat. Although there is little most pirates can do to improve the already advanced shielding, they can still weld on a few extra hull reinforcements and an extra pair of guns. This gives them a tough and reasonably fast gun platform to quickly attack, plunder, and escape."
+    },
+    {
+      "name": "Dragonfly",
+      "engines": [
+        {
+          "x": -8,
+          "y": 56
+        },
+        {
+          "x": 8,
+          "y": 56
+        }
+      ],
+      "reverseEngines": [],
+      "steeringEngines": [],
+      "guns": [
+        {
+          "x": -18,
+          "y": -23.5,
+          "gun": ""
+        },
+        {
+          "x": -13,
+          "y": -31.5,
+          "gun": ""
+        },
+        {
+          "x": 12,
+          "y": -31.5,
+          "gun": ""
+        },
+        {
+          "x": 18,
+          "y": -23.5,
+          "gun": ""
+        }
+      ],
+      "turrets": [
+        {
+          "x": 0,
+          "y": 17.5,
+          "turret": ""
+        }
+      ],
+      "bays": [],
+      "sprite": "ship/dragonfly",
+      "thumbnail": "thumbnail/dragonfly",
+      "attributes": {
+        "category": "Interceptor",
+        "cost": 1200000,
+        "shields": 2500,
+        "hull": 560,
+        "required crew": 3,
+        "bunks": 9,
+        "mass": 210,
+        "drag": 2.5,
+        "heat dissipation": 0.71,
+        "fuel capacity": 800,
+        "cargo space": 6,
+        "outfit space": 181,
+        "weapon capacity": 50,
+        "engine capacity": 75,
+        "weapon": {
+          "blast radius": 24,
+          "shield damage": 240,
+          "hull damage": 120,
+          "hit force": 360
+        }
+      },
+      "leak": "80 50",
+      "tiny explosion": "12",
+      "small explosion": "18",
+      "medium explosion": "6",
+      "final explode": "\"final explosion small\"",
+      "description": "The Dragonfly was a light transport, designed for bringing a small number of very rich passengers - Syndicate CEOs, for example - from one planet to another with speed and style. It makes up for its light armament by being able to outrun nearly every other ship in the sky. \tThat is, it was a light transport until a scheming Megaparsec engineer came up with a combination of the Arrow and the Wasp, at which point it became something much deadlier. While still not strong enough for close combat, the Dragonfly can easily defeat much larger enemies by simply staying away and bombarding them with missiles."
+    },
+    {
+      "name": "Hailmaker",
+      "engines": [
+        {
+          "x": -36,
+          "y": 47
+        },
+        {
+          "x": 36,
+          "y": 47
+        },
+        {
+          "x": -12,
+          "y": 47
+        },
+        {
+          "x": 12,
+          "y": 47
+        }
+      ],
+      "reverseEngines": [],
+      "steeringEngines": [],
+      "guns": [
+        {
+          "x": -24,
+          "y": -24,
+          "gun": ""
+        },
+        {
+          "x": 24,
+          "y": -24,
+          "gun": ""
+        },
+        {
+          "x": -7,
+          "y": -36,
+          "gun": ""
+        },
+        {
+          "x": 7,
+          "y": -36,
+          "gun": ""
+        },
+        {
+          "x": -36,
+          "y": 14,
+          "gun": ""
+        },
+        {
+          "x": 36,
+          "y": 14,
+          "gun": ""
+        }
+      ],
+      "turrets": [],
+      "bays": [],
+      "sprite": "ship/hailmaker",
+      "thumbnail": "thumbnail/hailmaker",
+      "attributes": {
+        "category": "Light Warship",
+        "licenses": {
+          "description": "Navy"
+        },
+        "cost": 1580000,
+        "shields": 4500,
+        "hull": 1800,
+        "required crew": 6,
+        "bunks": 11,
+        "mass": 320,
+        "drag": 5.1,
+        "heat dissipation": 0.43,
+        "fuel capacity": 600,
+        "cargo space": 30,
+        "outfit space": 330,
+        "weapon capacity": 165,
+        "engine capacity": 60,
+        "weapon": {
+          "blast radius": 40,
+          "shield damage": 450,
+          "hull damage": 180,
+          "hit force": 600
+        }
+      },
+      "leak": "50 50",
+      "tiny explosion": "10",
+      "small explosion": "20",
+      "medium explosion": "15",
+      "final explode": "\"final explosion small\"",
+      "description": "The Navy developed the Hailmaker as a replacement for the Rainmaker around the time that the Typhoon was produced. It uses much more powerful explosives, but its mobility has not increased."
+    },
+    {
+      "name": "Marauder Boxwing",
+      "engines": [
+        {
+          "x": 23,
+          "y": -1
+        },
+        {
+          "x": -23,
+          "y": -1
+        },
+        {
+          "x": 19,
+          "y": 29
+        },
+        {
+          "x": -19,
+          "y": 29
+        }
+      ],
+      "reverseEngines": [],
+      "steeringEngines": [],
+      "guns": [
+        {
+          "x": 18.5,
+          "y": -44.5,
+          "gun": ""
+        }
+      ],
+      "turrets": [],
+      "bays": [],
+      "sprite": "ship/marauder boxwing",
+      "thumbnail": "thumbnail/marauder boxwing",
+      "attributes": {
+        "category": "Fighter",
+        "cost": 369000,
+        "shields": 400,
+        "hull": 800,
+        "required crew": 1,
+        "bunks": 1,
+        "mass": 89,
+        "drag": 0.84,
+        "heat dissipation": 0.38,
+        "outfit space": 76,
+        "weapon capacity": 31,
+        "engine capacity": 28,
+        "cargo space": 8,
+        "weapon": {
+          "blast radius": 12,
+          "shield damage": 120,
+          "hull damage": 60,
+          "hit force": 180
+        }
+      },
+      "leak": "70 50",
+      "flame": "50 80",
+      "tiny explosion": "15",
+      "small explosion": "5",
+      "description": "After introducing the \"Type F\" cargo pod for the Hauler, it became apparent to merchant captains that the new carriers could offer more flexibility within their fleet if there were a cargo box they could attach to the fighter arms. Enter the \"F6-C: Boxwing,\" the Fighter that doesn't fight, but carries cargo instead. Cargo preservation equipment gives the Boxwing much more mass and very poor heat dissipation characteristics compared to other fighters. That it cannot carry any weapons is only part of the reason jocks call it \"Flying Coffin\" amongst themselves; besides the ship resembling one and being very sluggish, the pilot \"seat\" doubles as a bunk, and is cramped beyond the comfort level of most. The interactive panoramic window H.U.D. is the only thing that keeps claustrophobic episodes from becoming a major problem. \tWell, the Boxwing wasn't supposed to fight. This maraudified version has a single gun port, equipped with a deadly weapon - the Quad Beam Laser. \tFighters do not come equipped with a hyperdrive. You cannot carry a fighter unless you have a ship in your fleet with a fighter bay."
+    },
+    {
+      "name": "Marauder Combat Drone",
+      "engines": [
+        {
+          "x": -8.5,
+          "y": 28.5,
+          "zoom": 0.9
+        },
+        {
+          "x": 8.5,
+          "y": 28.5,
+          "zoom": 0.9
+        }
+      ],
+      "reverseEngines": [],
+      "steeringEngines": [],
+      "guns": [
+        {
+          "x": 0,
+          "y": -29,
+          "gun": ""
+        }
+      ],
+      "turrets": [],
+      "bays": [],
+      "sprite": "ship/marauder combat drone",
+      "thumbnail": "thumbnail/marauder combat drone",
+      "attributes": {
+        "category": "Drone",
+        "cost": 94000,
+        "hull": 900,
+        "automaton": 1,
+        "mass": 39,
+        "drag": 0.61,
+        "heat dissipation": 0.9,
+        "outfit space": 74,
+        "weapon capacity": 16,
+        "engine capacity": 28,
+        "weapon": {
+          "blast radius": 5,
+          "shield damage": 50,
+          "hull damage": 25,
+          "hit force": 75
+        }
+      },
+      "tiny explosion": "15",
+      "description": "Combat drones are pilotless attack ships used primarily by the Republic Navy. Although very weak and easy to destroy, they can be very effective in large numbers. Because drones do not need a cockpit, they can be filled entirely with equipment and solid metal, which makes their hulls stronger than other small ships. \tThis Combat Drone has been captured from the Navy and Maraudified. It now has space for a Heavy Laser and has a thicker hull - though this comes at the cost of almost doubled mass and a slightly lower top speed. \tDrones do not come equipped with a hyperdrive. You cannot carry a drone unless you have a ship in your fleet with a drone bay."
+    },
+    {
+      "name": "Mining Barge",
+      "engines": [
+        {
+          "x": -32,
+          "y": 204
+        },
+        {
+          "x": 32,
+          "y": 204
+        },
+        {
+          "x": 0,
+          "y": 206
+        }
+      ],
+      "reverseEngines": [],
+      "steeringEngines": [],
+      "guns": [
+        {
+          "x": -20,
+          "y": -182,
+          "gun": ""
+        },
+        {
+          "x": -20,
+          "y": -182,
+          "gun": ""
+        },
+        {
+          "x": 20,
+          "y": -182,
+          "gun": ""
+        },
+        {
+          "x": 20,
+          "y": -182,
+          "gun": ""
+        }
+      ],
+      "turrets": [
+        {
+          "x": -51.5,
+          "y": -65,
+          "turret": ""
+        },
+        {
+          "x": 51.5,
+          "y": -65,
+          "turret": ""
+        },
+        {
+          "x": -61.5,
+          "y": 51,
+          "turret": ""
+        },
+        {
+          "x": 61.5,
+          "y": 51,
+          "turret": ""
+        },
+        {
+          "x": 0,
+          "y": 105.5,
+          "turret": ""
+        }
+      ],
+      "bays": [
+        {
+          "type": "Drone",
+          "x": 88,
+          "y": 66,
+          "launch effect": "human internal"
+        },
+        {
+          "type": "Drone",
+          "x": 88,
+          "y": 66,
+          "launch effect": "human internal"
+        },
+        {
+          "type": "Drone",
+          "x": -88,
+          "y": 66,
+          "launch effect": "human internal"
+        },
+        {
+          "type": "Drone",
+          "x": -88,
+          "y": 66,
+          "launch effect": "human internal"
+        }
+      ],
+      "sprite": "ship/mining barge",
+      "thumbnail": "thumbnail/mining barge",
+      "attributes": {
+        "category": "Utility",
+        "cost": 13400000,
+        "shields": 6000,
+        "hull": 11600,
+        "required crew": 47,
+        "bunks": 82,
+        "mass": 3670,
+        "drag": 35.3,
+        "heat dissipation": 0.2,
+        "fuel capacity": 400,
+        "cargo space": 760,
+        "outfit space": 490,
+        "weapon capacity": 240,
+        "engine capacity": 140,
+        "weapon": {
+          "blast radius": 176,
+          "shield damage": 1760,
+          "hull damage": 880,
+          "hit force": 2640
+        }
+      },
+      "leak": "30 50",
+      "flame": "30 80",
+      "big leak": "50 30",
+      "small explosion": "20",
+      "medium explosion": "30",
+      "large explosion": "40",
+      "huge explosion": "25",
+      "final explode": "\"final explosion large\"",
+      "description": "The Mining Barge is an ancient creation, predating the Sunder by many hundreds of years. Only one is left in existence, and since it lacks a hyperdrive, it won't be going anywhere soon. \tThe pirates of the Core Mining Concern use this ship in the Nashira system to extract valuable ores from asteroids."
+    },
+    {
+      "name": "Recruiter",
+      "engines": [],
+      "reverseEngines": [],
+      "steeringEngines": [],
+      "guns": [
+        {
+          "x": -30.5,
+          "y": -7,
+          "gun": ""
+        },
+        {
+          "x": -20.5,
+          "y": -9.5,
+          "gun": ""
+        },
+        {
+          "x": 20.5,
+          "y": -9.5,
+          "gun": ""
+        },
+        {
+          "x": 30.5,
+          "y": -7,
+          "gun": ""
+        }
+      ],
+      "turrets": [],
+      "bays": [],
+      "sprite": "ship/recruiter",
+      "thumbnail": "thumbnail/recruiter",
+      "attributes": {
+        "category": "Light Warship",
+        "cost": 4560000,
+        "shields": 2900,
+        "hull": 1800,
+        "required crew": 5,
+        "bunks": 11,
+        "mass": 160,
+        "drag": 2.87,
+        "heat dissipation": 0.64,
+        "fuel capacity": 500,
+        "cargo space": 50,
+        "outfit space": 194,
+        "weapon capacity": 70,
+        "engine capacity": 60,
+        "weapon": {
+          "blast radius": 44,
+          "shield damage": 440,
+          "hull damage": 220,
+          "hit force": 660
+        }
+      },
+      "leak": "20 30",
+      "flame": "30 69",
+      "tiny explosion": "70",
+      "small explosion": "40",
+      "medium explosion": "20",
+      "large explosion": "5",
+      "final explode": "\"final explosion medium\"",
+      "description": "When the Headhunter saw a huge success in sales, the feedback polls that Lionheart sent out only found one problem - the hull was too fragile. Their newer iteration, called the Recruiter, remedies the hull issues, although it had to lose a turret mount to do so, and the shield matrices are much less advanced."
+    },
+    {
+      "name": "Rumskib Destroyer",
+      "engines": [
+        {
+          "x": -41.5,
+          "y": 111.5
+        },
+        {
+          "x": 41.5,
+          "y": 111.5
+        }
+      ],
+      "reverseEngines": [],
+      "steeringEngines": [],
+      "guns": [
+        {
+          "x": -12,
+          "y": -105.5,
+          "gun": ""
+        },
+        {
+          "x": 12,
+          "y": -105.5,
+          "gun": ""
+        },
+        {
+          "x": -40,
+          "y": -22.5,
+          "gun": ""
+        },
+        {
+          "x": -29.5,
+          "y": -26,
+          "gun": ""
+        },
+        {
+          "x": 29.5,
+          "y": -26,
+          "gun": ""
+        },
+        {
+          "x": 40,
+          "y": -22.5,
+          "gun": ""
+        }
+      ],
+      "turrets": [
+        {
+          "x": -48,
+          "y": 24,
+          "turret": ""
+        },
+        {
+          "x": -38,
+          "y": 7.5,
+          "turret": ""
+        },
+        {
+          "x": 38,
+          "y": 7.5,
+          "turret": ""
+        },
+        {
+          "x": 48,
+          "y": 24,
+          "turret": ""
+        }
+      ],
+      "bays": [],
+      "sprite": "ship/rumskibdestroyer",
+      "thumbnail": "thumbnail/rumskibdestroyer",
+      "display name": "\"Destroyer\"",
+      "attributes": {
+        "category": "Medium Warship",
+        "licenses": {
+          "description": "\"Navy Frigate\""
+        },
+        "cost": 9000000,
+        "shields": 17200,
+        "hull": 5900,
+        "required crew": 64,
+        "bunks": 97,
+        "mass": 2060,
+        "drag": 15.6,
+        "heat dissipation": 0.29,
+        "fuel capacity": 700,
+        "outfit space": 692,
+        "cargo space": 30,
+        "weapon capacity": 280,
+        "engine capacity": 230,
+        "weapon": {
+          "blast radius": 200,
+          "shield damage": 2000,
+          "hull damage": 1000,
+          "hit force": 3000
+        }
+      },
+      "leak": "30 40",
+      "flame": "40 90",
+      "big leak": "50 20",
+      "tiny explosion": "30",
+      "small explosion": "50",
+      "medium explosion": "45",
+      "large explosion": "35",
+      "huge explosion": "10",
+      "final explode": "\"final explosion large\"",
+      "description": "The Republic Destroyer is the newest Navy design, a smaller version of the Cruiser designed to fight toe-to-toe with even the largest pirates. Although it can reach higher top speeds than any of the other large Navy ships, it takes longer to get there - unless it uses its afterburner."
+    },
+    {
+      "name": "Rumskib Marauder Behemoth",
+      "engines": [
+        {
+          "x": -34,
+          "y": 143,
+          "zoom": 0.8
+        },
+        {
+          "x": 34,
+          "y": 143,
+          "zoom": 0.8
+        },
+        {
+          "x": -56,
+          "y": 148.5,
+          "zoom": 0.6
+        },
+        {
+          "x": 56,
+          "y": 148.5,
+          "zoom": 0.6
+        }
+      ],
+      "reverseEngines": [],
+      "steeringEngines": [],
+      "guns": [
+        {
+          "x": -47.5,
+          "y": -57.5,
+          "gun": ""
+        },
+        {
+          "x": 47.5,
+          "y": -57.5,
+          "gun": ""
+        }
+      ],
+      "turrets": [
+        {
+          "x": -31,
+          "y": -50,
+          "turret": ""
+        },
+        {
+          "x": 31,
+          "y": -50,
+          "turret": ""
+        },
+        {
+          "x": -47.5,
+          "y": 33.5,
+          "turret": ""
+        },
+        {
+          "x": 47.5,
+          "y": 33.5,
+          "turret": ""
+        },
+        {
+          "x": -22,
+          "y": 66.5,
+          "turret": ""
+        },
+        {
+          "x": 22,
+          "y": 66.5,
+          "turret": ""
+        }
+      ],
+      "bays": [],
+      "sprite": "ship/mbehemoth",
+      "thumbnail": "thumbnail/mbehemoth",
+      "display name": "\"Marauder Behemoth\"",
+      "attributes": {
+        "category": "Heavy Warship",
+        "cost": 10800000,
+        "shields": 7600,
+        "hull": 7300,
+        "required crew": 12,
+        "bunks": 30,
+        "mass": 1120,
+        "drag": 14.9,
+        "heat dissipation": 0.26,
+        "fuel capacity": 600,
+        "cargo space": 490,
+        "outfit space": 510,
+        "weapon capacity": 280,
+        "engine capacity": 90,
+        "weapon": {
+          "blast radius": 140,
+          "shield damage": 1400,
+          "hull damage": 700,
+          "hit force": 2100
+        }
+      },
+      "leak": "30 50",
+      "flame": "30 80",
+      "big leak": "50 30",
+      "small explosion": "15",
+      "medium explosion": "25",
+      "large explosion": "35",
+      "huge explosion": "20",
+      "final explode": "\"final explosion large\"",
+      "description": "The Behemoth is a recent ship design from Betelgeuse Shipyards, designed as an alternative to the Syndicate Bulk Freighter. Although its cargo capacity is somewhat lower, it is also more maneuverable, and packs a heavier armament by default. \tThis Marauder version has been heavily modified and is slower with a greater hull strength."
+    },
+    {
+      "name": "Tanager",
+      "engines": [
+        {
+          "x": -5,
+          "y": 46.5
+        },
+        {
+          "x": 5,
+          "y": 46.5
+        }
+      ],
+      "reverseEngines": [],
+      "steeringEngines": [],
+      "guns": [
+        {
+          "x": -14,
+          "y": -47.5,
+          "gun": ""
+        },
+        {
+          "x": 14,
+          "y": -47.5,
+          "gun": ""
+        }
+      ],
+      "turrets": [],
+      "bays": [],
+      "sprite": "ship/tanager",
+      "thumbnail": "thumbnail/tanager",
+      "attributes": {
+        "category": "Transport",
+        "cost": 625000,
+        "shields": 900,
+        "hull": 1200,
+        "required crew": 1,
+        "bunks": 7,
+        "mass": 113,
+        "drag": 3,
+        "heat dissipation": 0.56,
+        "fuel capacity": 600,
+        "cargo space": 45,
+        "outfit space": 210,
+        "weapon capacity": 38,
+        "engine capacity": 65,
+        "weapon": {
+          "blast radius": 21,
+          "shield damage": 210,
+          "hull damage": 155,
+          "hit force": 315
+        }
+      },
+      "tiny explosion": "10",
+      "small explosion": "20",
+      "medium explosion": "15",
+      "leak": "50 50",
+      "flame": "60 80",
+      "description": "The Tanager is a new model of transport ship from Tarazed Shipyards. More nimble compared to models of shuttlecraft from Betelgeuse, it is also supplemented with a greater capacity for defensive armaments; a necessity in the region of space that surrounds Tarazed. \tThe Tanager also comes with a decent amount of free space, allowing for a much greater level of customization."
+    },
+    {
+      "name": "Hailstone",
+      "engines": [
+        {
+          "x": 12.5,
+          "y": 35.5
+        },
+        {
+          "x": -12.5,
+          "y": 35.5
+        }
+      ],
+      "reverseEngines": [],
+      "steeringEngines": [],
+      "guns": [
+        {
+          "x": 14,
+          "y": -4.5,
+          "gun": ""
+        },
+        {
+          "x": -14,
+          "y": -4.5,
+          "gun": ""
+        }
+      ],
+      "turrets": [],
+      "bays": [],
+      "sprite": "ship/hailstone",
+      "thumbnail": "thumbnail/hailstone",
+      "attributes": {
+        "category": "Fighter",
+        "licenses": {
+          "description": "\"Wanderer Military\""
+        },
+        "cost": 990000,
+        "hull": 1200,
+        "shields": 3400,
+        "mass": 100,
+        "drag": 0.87,
+        "heat dissipation": 0.75,
+        "automaton": 1,
+        "outfit space": 113,
+        "weapon capacity": 38,
+        "engine capacity": 24,
+        "weapon": {
+          "blast radius": 23,
+          "shield damage": 230,
+          "hull damage": 115,
+          "hit force": 345
+        }
+      },
+      "tiny explosion": "10",
+      "small explosion": "40",
+      "description": "The first in a new line of experimental technology, the Hailstone proudly stands as the first Wanderer fighter ever. \tFighters do not come equipped with a hyperdrive. You cannot carry a fighter unless you have a ship in your fleet with a fighter bay."
+    },
+    {
+      "name": "Squall",
+      "engines": [
+        {
+          "x": 38.5,
+          "y": 133.5
+        },
+        {
+          "x": -38.5,
+          "y": 133.5
+        }
+      ],
+      "reverseEngines": [],
+      "steeringEngines": [],
+      "guns": [
+        {
+          "x": 21.5,
+          "y": -105.5,
+          "gun": ""
+        },
+        {
+          "x": -21.5,
+          "y": -105.5,
+          "gun": ""
+        }
+      ],
+      "turrets": [
+        {
+          "x": 0,
+          "y": -68,
+          "turret": ""
+        },
+        {
+          "x": -20.5,
+          "y": 30,
+          "turret": ""
+        },
+        {
+          "x": 20.5,
+          "y": 30,
+          "turret": ""
+        },
+        {
+          "x": 0,
+          "y": 86.5,
+          "turret": ""
+        }
+      ],
+      "bays": [],
+      "sprite": "ship/squall",
+      "thumbnail": "thumbnail/squall",
+      "attributes": {
+        "category": "Medium Warship",
+        "licenses": {
+          "description": "\"Wanderer Military\""
+        },
+        "cost": 22300000,
+        "shields": 40200,
+        "hull": 25100,
+        "required crew": 39,
+        "bunks": 55,
+        "mass": 1050,
+        "drag": 10.3,
+        "heat dissipation": 0.31,
+        "fuel capacity": 700,
+        "cargo space": 57,
+        "outfit space": 640,
+        "weapon capacity": 236,
+        "engine capacity": 156,
+        "weapon": {
+          "blast radius": 300,
+          "shield damage": 3000,
+          "hull damage": 1500,
+          "hit force": 4500
+        }
+      },
+      "bay Drone -75.5 18.5": {
+        "angle": 340,
+        "description": "under"
+      },
+      "bay Drone 75.5 18.5": {
+        "angle": 20,
+        "description": "under"
+      },
+      "bay Drone -67 100": {
+        "angle": 320,
+        "description": "under"
+      },
+      "bay Drone 67 100": {
+        "angle": 40,
+        "description": "under"
+      },
+      "small explosion": "70",
+      "medium explosion": "70",
+      "large explosion": "20",
+      "final explode": "\"final explosion medium\" 1",
+      "description": "The first carrier that the Wanderers have built for millennia, the Squall was made to push back Unfettered invasions and attack new enemies in old Korath space."
+    },
+    {
+      "name": "Swan (Rumskib)",
+      "engines": [
+        {
+          "x": 0,
+          "y": 189
+        },
+        {
+          "x": -26,
+          "y": 183
+        },
+        {
+          "x": 26,
+          "y": 183
+        },
+        {
+          "x": -109,
+          "y": 115
+        },
+        {
+          "x": 109,
+          "y": 115
+        }
+      ],
+      "reverseEngines": [],
+      "steeringEngines": [],
+      "guns": [
+        {
+          "x": 0,
+          "y": -191.5,
+          "gun": ""
+        },
+        {
+          "x": -12,
+          "y": -175.5,
+          "gun": ""
+        },
+        {
+          "x": 12,
+          "y": -177.5,
+          "gun": ""
+        },
+        {
+          "x": -23,
+          "y": 23,
+          "gun": ""
+        },
+        {
+          "x": 21,
+          "y": 21,
+          "gun": ""
+        },
+        {
+          "x": -182.5,
+          "y": 105,
+          "gun": ""
+        },
+        {
+          "x": 181,
+          "y": 103,
+          "gun": ""
+        }
+      ],
+      "turrets": [
+        {
+          "x": 0,
+          "y": -164.5,
+          "turret": ""
+        },
+        {
+          "x": 0,
+          "y": -99,
+          "turret": ""
+        },
+        {
+          "x": -117,
+          "y": 62.5,
+          "turret": ""
+        },
+        {
+          "x": 117,
+          "y": 62.5,
+          "turret": ""
+        },
+        {
+          "x": -109,
+          "y": 72.5,
+          "turret": ""
+        },
+        {
+          "x": 109,
+          "y": 72.5,
+          "turret": ""
+        }
+      ],
+      "bays": [
+        {
+          "type": "Fighter",
+          "x": -23,
+          "y": -25,
+          "launch effect": "remnant external"
+        },
+        {
+          "type": "Fighter",
+          "x": 23,
+          "y": -25,
+          "launch effect": "remnant external"
+        },
+        {
+          "type": "Fighter",
+          "x": -48,
+          "y": 75,
+          "launch effect": "remnant external"
+        },
+        {
+          "type": "Fighter",
+          "x": 48,
+          "y": 75,
+          "launch effect": "remnant external"
+        },
+        {
+          "type": "Drone",
+          "x": -23,
+          "y": -25,
+          "launch effect": "remnant external"
+        },
+        {
+          "type": "Drone",
+          "x": 23,
+          "y": -25,
+          "launch effect": "remnant external"
+        },
+        {
+          "type": "Drone",
+          "x": -23,
+          "y": -25,
+          "launch effect": "remnant external"
+        },
+        {
+          "type": "Drone",
+          "x": 23,
+          "y": -25,
+          "launch effect": "remnant external"
+        },
+        {
+          "type": "Drone",
+          "x": -48,
+          "y": 75,
+          "launch effect": "remnant external"
+        },
+        {
+          "type": "Drone",
+          "x": 48,
+          "y": 75,
+          "launch effect": "remnant external"
+        },
+        {
+          "type": "Drone",
+          "x": -48,
+          "y": 75,
+          "launch effect": "remnant external"
+        },
+        {
+          "type": "Drone",
+          "x": 48,
+          "y": 75,
+          "launch effect": "remnant external"
+        }
+      ],
+      "Swans": true,
+      "sprite": "ship/swan/swan",
+      "spriteData": {
+        "description": "\"rewind\""
+      },
+      "thumbnail": "thumbnail/swan",
+      "display name": "\"Swan\"",
+      "attributes": {
+        "category": "Utility",
+        "licenses": {
+          "description": "\"Remnant Capital\""
+        },
+        "cost": 23720000,
+        "shields": 39200,
+        "hull": 12800,
+        "required crew": 37,
+        "bunks": 153,
+        "mass": 7380,
+        "drag": 13.1,
+        "heat dissipation": 0.4,
+        "fuel capacity": 2500,
+        "ramscoop": 8.75,
+        "cargo space": 275,
+        "outfit space": 772,
+        "weapon capacity": 180,
+        "engine capacity": 252,
+        "solar collection": 5,
+        "shield generation": 6.1,
+        "shield energy": 4.5,
+        "hull repair rate": 1.7,
+        "hull energy": 1.1,
+        "cloak": 0.02,
+        "cloaking energy": 3.1,
+        "cloaking fuel": 0.2,
+        "cloaked communication": 1,
+        "cloaked scanning": 1,
+        "gaslining": 1,
+        "outfit scan power": 23,
+        "outfit scan efficiency": 28,
+        "tactical scan": 48,
+        "weapon": {
+          "blast radius": 400,
+          "shield damage": 4800,
+          "hull damage": 2000,
+          "hit force": 7200
+        }
+      },
+      "leak": "30 50",
+      "flame": "30 80",
+      "big leak": "30 30",
+      "tiny explosion": "20",
+      "small explosion": "45",
+      "medium explosion": "50",
+      "large explosion": "40",
+      "huge explosion": "10",
+      "final explode": "\"final explosion large\"",
+      "description": "Historically, the Remnant have not needed to support remote fleet operations. It had, however, been anticipated as a part of their contingency plans to support large scale evacuations. The first Remnant survived by running, modern Remnant prosper through mobility, and it is expected that the Remnant of the future shall thrive by those same means. \tThe Swan, thus, was designed first and foremost to be a refueler. Not only carrying a prodigous amount of fuel as well as massive arrays to collect more, but also ferrying a number of fighters and drones that can be used to deliver fuel to other ships in the fleet. It can also carry a significant amount of cargo. \tThe cloaking technology is built into the Swan's hull; it cannot be removed or transferred to another ship. The Remnant engineers note that, due to its size, the Swan's cloak is both slower and consumes significantly more energy and fuel than other present-day designs."
+    },
+    {
+      "name": "Za'lek Sting",
+      "engines": [
+        {
+          "x": -39,
+          "y": 151
+        }
+      ],
+      "reverseEngines": [],
+      "steeringEngines": [],
+      "guns": [
+        {
+          "x": -32,
+          "y": -103,
+          "gun": ""
+        },
+        {
+          "x": -42,
+          "y": -143.5,
+          "gun": ""
+        },
+        {
+          "x": -84.5,
+          "y": -94.5,
+          "gun": ""
+        }
+      ],
+      "turrets": [
+        {
+          "x": 3.5,
+          "y": -0.5,
+          "turret": ""
+        }
+      ],
+      "bays": [
+        {
+          "type": "Fighter",
+          "x": 7,
+          "y": 70.5
+        },
+        {
+          "type": "Fighter",
+          "x": -54.5,
+          "y": 55
+        },
+        {
+          "type": "Fighter",
+          "x": 7,
+          "y": 70.5
+        }
+      ],
+      "sprite": "ship/za'lek sting",
+      "attributes": {
+        "category": "Medium Warship",
+        "cost": 2100000,
+        "shields": 38000,
+        "hull": 25000,
+        "required crew": 12,
+        "bunks": 19,
+        "mass": 150,
+        "drag": 3.6,
+        "heat dissipation": 0.54,
+        "fuel capacity": 1000,
+        "outfit space": 75,
+        "weapon capacity": 75,
+        "cargo space": 25,
+        "thrust": 500,
+        "turn": 3000,
+        "flare sprite": "effect/atomic flare/large",
+        "flare sound": "atomic large",
+        "energy generation": 50,
+        "cooling": 90,
+        "shield generation": 50,
+        "hull repair": 24,
+        "radar jamming": 10,
+        "optical jamming": 10,
+        "weapon": {
+          "blast radius": 250,
+          "shield damage": 4000,
+          "hull damage": 1000,
+          "hit force": 5000
+        }
+      },
+      "description": "The Za'lek Sting is a ship from the game Naev. Unfortunately, the 3D animation can't be ported to Endless Sky."
+    },
+    {
+      "name": "Mining Drone (Rumskib Start)",
+      "engines": [
+        {
+          "x": 0,
+          "y": 22,
+          "zoom": 0.9
+        }
+      ],
+      "reverseEngines": [],
+      "steeringEngines": [],
+      "guns": [
+        {
+          "x": 0,
+          "y": -22,
+          "gun": ""
+        }
+      ],
+      "turrets": [],
+      "bays": [],
+      "sprite": "ship/mining drone",
+      "thumbnail": "thumbnail/mining drone",
+      "display name": "\"Mining Drone\"",
+      "attributes": {
+        "category": "Fighter",
+        "cost": 89000,
+        "hull": 300,
+        "required crew": 1,
+        "bunks": 1,
+        "mass": 12,
+        "drag": 0.55,
+        "heat dissipation": 0.8,
+        "cargo space": 19,
+        "outfit space": 36,
+        "weapon capacity": 12,
+        "engine capacity": 0,
+        "thrust": 15,
+        "turn": 290,
+        "flare sprite": "effect/ion flare/tiny",
+        "flare sound": "ion tiny",
+        "weapon": {
+          "blast radius": 3,
+          "shield damage": 30,
+          "hull damage": 15,
+          "hit force": 45
+        }
+      },
+      "tiny explosion": "10",
+      "description": "The semi-autonomous Mining Drone is used by the Syndicate alongside the Sunder mining vessel in a supportive role. Not being much more than a Mining Laser with an engine stuck to the rear of it, these drones do not last long in combat with other ships due to how fragile they are. \tModifications on Luna made to this particular drone give it integrated steering and thrust, in addition to a built-in bunk. These changes have also required it to hold one crew member."
+    }
+  ],
+  "variants": [
+    {
+      "name": "Buttle (Buttle (Derelict))",
+      "engines": [
+        {
+          "x": -19,
+          "y": 35.5
+        },
+        {
+          "x": 19,
+          "y": 35.5
+        }
+      ],
+      "reverseEngines": [],
+      "steeringEngines": [],
+      "guns": [
+        {
+          "x": 0,
+          "y": -36.5,
+          "gun": ""
+        },
+        {
+          "x": -19,
+          "y": -19,
+          "gun": ""
+        },
+        {
+          "x": 19,
+          "y": -19,
+          "gun": ""
+        }
+      ],
+      "turrets": [],
+      "bays": [],
+      "sprite": "ship/buttle",
+      "thumbnail": "thumbnail/buttle",
+      "attributes": {
+        "category": "Interceptor",
+        "cost": 460500,
+        "shields": 2300,
+        "hull": 550,
+        "required crew": 0,
+        "bunks": 0,
+        "mass": 190,
+        "drag": 2.1,
+        "heat dissipation": 0.698,
+        "fuel capacity": 500,
+        "cargo space": 25,
+        "outfit space": 167,
+        "weapon capacity": 30,
+        "engine capacity": 65,
+        "weapon": {
+          "blast radius": 30,
+          "shield damage": 300,
+          "hull damage": 150,
+          "hit force": 450
+        },
+        "automaton": 1
+      },
+      "leak": "60 50",
+      "tiny explosion": "10",
+      "small explosion": "5",
+      "final explode": "\"final explosion small\"",
+      "description": "A diabolical conglomeration, the Buttle maintains the shipping and transport potential of the Shuttle while obtaining the weapons and speed of the Berserker, the two ships it's created from.",
+      "variant": "Buttle (Derelict)",
+      "baseShip": "Buttle"
+    },
+    {
+      "name": "Cleaver (Cleaver (Derelict))",
+      "engines": [
+        {
+          "x": -21,
+          "y": 91.5
+        },
+        {
+          "x": 21,
+          "y": 91.5
+        }
+      ],
+      "reverseEngines": [],
+      "steeringEngines": [],
+      "guns": [
+        {
+          "x": -25.5,
+          "y": -90,
+          "gun": ""
+        },
+        {
+          "x": -10,
+          "y": -89.5,
+          "gun": ""
+        },
+        {
+          "x": -10,
+          "y": -89.5,
+          "gun": ""
+        },
+        {
+          "x": 10,
+          "y": -89.5,
+          "gun": ""
+        },
+        {
+          "x": 10,
+          "y": -89.5,
+          "gun": ""
+        },
+        {
+          "x": 25.5,
+          "y": -90,
+          "gun": ""
+        }
+      ],
+      "turrets": [
+        {
+          "x": 0,
+          "y": -11,
+          "turret": ""
+        }
+      ],
+      "bays": [],
+      "sprite": "ship/cleaver",
+      "thumbnail": "thumbnail/cleaver",
+      "attributes": {
+        "category": "Utility",
+        "cost": 6890000,
+        "shields": 3400,
+        "hull": 1600,
+        "required crew": 0,
+        "bunks": 0,
+        "mass": 480,
+        "drag": 6.3,
+        "heat dissipation": 0.34,
+        "fuel capacity": 700,
+        "cargo space": 145,
+        "outfit space": 289,
+        "weapon capacity": 146,
+        "engine capacity": 80,
+        "weapon": {
+          "blast radius": 72,
+          "shield damage": 720,
+          "hull damage": 360,
+          "hit force": 1080
+        },
+        "automaton": 1
+      },
+      "bay Fighter 55.5 -64.5": {
+        "description": "under"
+      },
+      "bay Fighter -55.5 -64.5": {
+        "description": "under"
+      },
+      "bay Drone 4 -92": {
+        "description": "under"
+      },
+      "bay Drone -4 -92": {
+        "description": "under"
+      },
+      "leak": "50 50",
+      "flame": "80 80",
+      "tiny explosion": "10",
+      "small explosion": "20",
+      "medium explosion": "15",
+      "final explode": "\"final explosion small\"",
+      "description": "The Cleaver is essentially a more powerful version of the Sunder, made by a small company on Shroud and distributed to a few other select planets. The designers of ALR Manufacturing had great plans to show who the Cleaver belonged to, but the builders ended up deciding to use parts from the original Sunder, and the ship did not look nearly as colorful as the original concept dictated. As the shipyards use imported products such as the Tractor Beam, the Cleaver has a rather high price tag. \tFollowing the tradition, the Cleaver has a roomy cargo bay; enough to make anyone flying it rich. \tAccording to some, it also carries special tools that allow it to harvest resources from the surface of mineral-rich planets or moons.",
+      "variant": "Cleaver (Derelict)",
+      "baseShip": "Cleaver"
+    },
+    {
+      "name": "Cutlass (Cutlass (Derelict))",
+      "engines": [
+        {
+          "x": -12,
+          "y": 57.5,
+          "zoom": 0.7
+        },
+        {
+          "x": 12,
+          "y": 57.5,
+          "zoom": 0.7
+        }
+      ],
+      "reverseEngines": [],
+      "steeringEngines": [],
+      "guns": [
+        {
+          "x": -16,
+          "y": -38,
+          "gun": ""
+        },
+        {
+          "x": 16,
+          "y": -38,
+          "gun": ""
+        },
+        {
+          "x": -28.5,
+          "y": -27.5,
+          "gun": ""
+        },
+        {
+          "x": 28.5,
+          "y": -27.5,
+          "gun": ""
+        }
+      ],
+      "turrets": [
+        {
+          "x": 0,
+          "y": -1,
+          "turret": ""
+        }
+      ],
+      "bays": [],
+      "Cutlasses": true,
+      "sprite": "ship/pirate cutlass",
+      "thumbnail": "thumbnail/pirate cutlass",
+      "attributes": {
+        "category": "Light Warship",
+        "cost": 3500000,
+        "shields": 5800,
+        "hull": 1800,
+        "required crew": 0,
+        "bunks": 0,
+        "mass": 230,
+        "drag": 3.9,
+        "heat dissipation": 0.58,
+        "fuel capacity": 600,
+        "cargo space": 56,
+        "outfit space": 297,
+        "weapon capacity": 141,
+        "engine capacity": 90,
+        "weapon": {
+          "blast radius": 72,
+          "shield damage": 720,
+          "hull damage": 360,
+          "hit force": 1080
+        },
+        "automaton": 1
+      },
+      "leak": "50 50",
+      "flame": "80 80",
+      "tiny explosion": "10",
+      "small explosion": "20",
+      "medium explosion": "15",
+      "final explode": "\"final explosion small\"",
+      "description": "This ship is a modified version of a captured Navy Gunboat. Although there is little most pirates can do to improve the already advanced shielding, they can still weld on a few extra hull reinforcements and an extra pair of guns. This gives them a tough and reasonably fast gun platform to quickly attack, plunder, and escape.",
+      "variant": "Cutlass (Derelict)",
+      "baseShip": "Cutlass"
+    },
+    {
+      "name": "Dragonfly (Dragonfly (Derelict))",
+      "engines": [
+        {
+          "x": -8,
+          "y": 56
+        },
+        {
+          "x": 8,
+          "y": 56
+        }
+      ],
+      "reverseEngines": [],
+      "steeringEngines": [],
+      "guns": [
+        {
+          "x": -18,
+          "y": -23.5,
+          "gun": ""
+        },
+        {
+          "x": -13,
+          "y": -31.5,
+          "gun": ""
+        },
+        {
+          "x": 12,
+          "y": -31.5,
+          "gun": ""
+        },
+        {
+          "x": 18,
+          "y": -23.5,
+          "gun": ""
+        }
+      ],
+      "turrets": [
+        {
+          "x": 0,
+          "y": 17.5,
+          "turret": ""
+        }
+      ],
+      "bays": [],
+      "sprite": "ship/dragonfly",
+      "thumbnail": "thumbnail/dragonfly",
+      "attributes": {
+        "category": "Interceptor",
+        "cost": 1200000,
+        "shields": 2500,
+        "hull": 560,
+        "required crew": 0,
+        "bunks": 0,
+        "mass": 210,
+        "drag": 2.5,
+        "heat dissipation": 0.71,
+        "fuel capacity": 800,
+        "cargo space": 6,
+        "outfit space": 181,
+        "weapon capacity": 50,
+        "engine capacity": 75,
+        "weapon": {
+          "blast radius": 24,
+          "shield damage": 240,
+          "hull damage": 120,
+          "hit force": 360
+        },
+        "automaton": 1
+      },
+      "leak": "80 50",
+      "tiny explosion": "12",
+      "small explosion": "18",
+      "medium explosion": "6",
+      "final explode": "\"final explosion small\"",
+      "description": "The Dragonfly was a light transport, designed for bringing a small number of very rich passengers - Syndicate CEOs, for example - from one planet to another with speed and style. It makes up for its light armament by being able to outrun nearly every other ship in the sky. \tThat is, it was a light transport until a scheming Megaparsec engineer came up with a combination of the Arrow and the Wasp, at which point it became something much deadlier. While still not strong enough for close combat, the Dragonfly can easily defeat much larger enemies by simply staying away and bombarding them with missiles.",
+      "variant": "Dragonfly (Derelict)",
+      "baseShip": "Dragonfly"
+    },
+    {
+      "name": "Recruiter (Recruiter (Derelict))",
+      "engines": [],
+      "reverseEngines": [],
+      "steeringEngines": [],
+      "guns": [
+        {
+          "x": -30.5,
+          "y": -7,
+          "gun": ""
+        },
+        {
+          "x": -20.5,
+          "y": -9.5,
+          "gun": ""
+        },
+        {
+          "x": 20.5,
+          "y": -9.5,
+          "gun": ""
+        },
+        {
+          "x": 30.5,
+          "y": -7,
+          "gun": ""
+        }
+      ],
+      "turrets": [],
+      "bays": [],
+      "sprite": "ship/recruiter",
+      "thumbnail": "thumbnail/recruiter",
+      "attributes": {
+        "category": "Light Warship",
+        "cost": 4560000,
+        "shields": 2900,
+        "hull": 1800,
+        "required crew": 0,
+        "bunks": 0,
+        "mass": 160,
+        "drag": 2.87,
+        "heat dissipation": 0.64,
+        "fuel capacity": 500,
+        "cargo space": 50,
+        "outfit space": 194,
+        "weapon capacity": 70,
+        "engine capacity": 60,
+        "weapon": {
+          "blast radius": 44,
+          "shield damage": 440,
+          "hull damage": 220,
+          "hit force": 660
+        },
+        "automaton": 1
+      },
+      "leak": "20 30",
+      "flame": "30 69",
+      "tiny explosion": "70",
+      "small explosion": "40",
+      "medium explosion": "20",
+      "large explosion": "5",
+      "final explode": "\"final explosion medium\"",
+      "description": "When the Headhunter saw a huge success in sales, the feedback polls that Lionheart sent out only found one problem - the hull was too fragile. Their newer iteration, called the Recruiter, remedies the hull issues, although it had to lose a turret mount to do so, and the shield matrices are much less advanced.",
+      "variant": "Recruiter (Derelict)",
+      "baseShip": "Recruiter"
+    },
+    {
+      "name": "Rumskib Marauder Behemoth (Rumskib Marauder Behemoth (Derelict))",
+      "engines": [
+        {
+          "x": -34,
+          "y": 143,
+          "zoom": 0.8
+        },
+        {
+          "x": 34,
+          "y": 143,
+          "zoom": 0.8
+        },
+        {
+          "x": -56,
+          "y": 148.5,
+          "zoom": 0.6
+        },
+        {
+          "x": 56,
+          "y": 148.5,
+          "zoom": 0.6
+        }
+      ],
+      "reverseEngines": [],
+      "steeringEngines": [],
+      "guns": [
+        {
+          "x": -47.5,
+          "y": -57.5,
+          "gun": ""
+        },
+        {
+          "x": 47.5,
+          "y": -57.5,
+          "gun": ""
+        }
+      ],
+      "turrets": [
+        {
+          "x": -31,
+          "y": -50,
+          "turret": ""
+        },
+        {
+          "x": 31,
+          "y": -50,
+          "turret": ""
+        },
+        {
+          "x": -47.5,
+          "y": 33.5,
+          "turret": ""
+        },
+        {
+          "x": 47.5,
+          "y": 33.5,
+          "turret": ""
+        },
+        {
+          "x": -22,
+          "y": 66.5,
+          "turret": ""
+        },
+        {
+          "x": 22,
+          "y": 66.5,
+          "turret": ""
+        }
+      ],
+      "bays": [],
+      "sprite": "ship/mbehemoth",
+      "thumbnail": "thumbnail/mbehemoth",
+      "display name": "\"Marauder Behemoth\"",
+      "attributes": {
+        "category": "Heavy Warship",
+        "cost": 10800000,
+        "shields": 7600,
+        "hull": 7300,
+        "required crew": 0,
+        "bunks": 0,
+        "mass": 1120,
+        "drag": 14.9,
+        "heat dissipation": 0.26,
+        "fuel capacity": 600,
+        "cargo space": 490,
+        "outfit space": 510,
+        "weapon capacity": 280,
+        "engine capacity": 90,
+        "weapon": {
+          "blast radius": 140,
+          "shield damage": 1400,
+          "hull damage": 700,
+          "hit force": 2100
+        },
+        "automaton": 1
+      },
+      "leak": "30 50",
+      "flame": "30 80",
+      "big leak": "50 30",
+      "small explosion": "15",
+      "medium explosion": "25",
+      "large explosion": "35",
+      "huge explosion": "20",
+      "final explode": "\"final explosion large\"",
+      "description": "The Behemoth is a recent ship design from Betelgeuse Shipyards, designed as an alternative to the Syndicate Bulk Freighter. Although its cargo capacity is somewhat lower, it is also more maneuverable, and packs a heavier armament by default. \tThis Marauder version has been heavily modified and is slower with a greater hull strength.",
+      "variant": "Rumskib Marauder Behemoth (Derelict)",
+      "baseShip": "Rumskib Marauder Behemoth"
+    },
+    {
+      "name": "Tanager (Tanager (Derelict))",
+      "engines": [
+        {
+          "x": -5,
+          "y": 46.5
+        },
+        {
+          "x": 5,
+          "y": 46.5
+        }
+      ],
+      "reverseEngines": [],
+      "steeringEngines": [],
+      "guns": [
+        {
+          "x": -14,
+          "y": -47.5,
+          "gun": ""
+        },
+        {
+          "x": 14,
+          "y": -47.5,
+          "gun": ""
+        }
+      ],
+      "turrets": [],
+      "bays": [],
+      "sprite": "ship/tanager",
+      "thumbnail": "thumbnail/tanager",
+      "attributes": {
+        "category": "Transport",
+        "cost": 625000,
+        "shields": 900,
+        "hull": 1200,
+        "required crew": 0,
+        "bunks": 0,
+        "mass": 113,
+        "drag": 3,
+        "heat dissipation": 0.56,
+        "fuel capacity": 600,
+        "cargo space": 45,
+        "outfit space": 210,
+        "weapon capacity": 38,
+        "engine capacity": 65,
+        "weapon": {
+          "blast radius": 21,
+          "shield damage": 210,
+          "hull damage": 155,
+          "hit force": 315
+        },
+        "automaton": 1
+      },
+      "tiny explosion": "10",
+      "small explosion": "20",
+      "medium explosion": "15",
+      "leak": "50 50",
+      "flame": "60 80",
+      "description": "The Tanager is a new model of transport ship from Tarazed Shipyards. More nimble compared to models of shuttlecraft from Betelgeuse, it is also supplemented with a greater capacity for defensive armaments; a necessity in the region of space that surrounds Tarazed. \tThe Tanager also comes with a decent amount of free space, allowing for a much greater level of customization.",
+      "variant": "Tanager (Derelict)",
+      "baseShip": "Tanager"
+    },
+    {
+      "name": "Rumskib Destroyer (Rumskib Destroyer (Kitteh))",
+      "engines": [
+        {
+          "x": -41.5,
+          "y": 111.5
+        },
+        {
+          "x": 41.5,
+          "y": 111.5
+        }
+      ],
+      "reverseEngines": [],
+      "steeringEngines": [],
+      "guns": [
+        {
+          "x": -12,
+          "y": -105.5,
+          "gun": ""
+        },
+        {
+          "x": 12,
+          "y": -105.5,
+          "gun": ""
+        },
+        {
+          "x": -40,
+          "y": -22.5,
+          "gun": ""
+        },
+        {
+          "x": -29.5,
+          "y": -26,
+          "gun": ""
+        },
+        {
+          "x": 29.5,
+          "y": -26,
+          "gun": ""
+        },
+        {
+          "x": 40,
+          "y": -22.5,
+          "gun": ""
+        }
+      ],
+      "turrets": [
+        {
+          "x": -48,
+          "y": 24,
+          "turret": ""
+        },
+        {
+          "x": -38,
+          "y": 7.5,
+          "turret": ""
+        },
+        {
+          "x": 38,
+          "y": 7.5,
+          "turret": ""
+        },
+        {
+          "x": 48,
+          "y": 24,
+          "turret": ""
+        }
+      ],
+      "bays": [],
+      "sprite": "ship/rumskibdestroyer",
+      "thumbnail": "thumbnail/rumskibdestroyer",
+      "display name": "\"Destroyer\"",
+      "attributes": {
+        "category": "Medium Warship",
+        "licenses": {
+          "description": "\"Navy Frigate\""
+        },
+        "cost": 9000000,
+        "shields": 17200,
+        "hull": 5900,
+        "required crew": 64,
+        "bunks": 97,
+        "mass": 2060,
+        "drag": 15.6,
+        "heat dissipation": 0.29,
+        "fuel capacity": 700,
+        "outfit space": 692,
+        "cargo space": 30,
+        "weapon capacity": 285,
+        "engine capacity": 230,
+        "weapon": {
+          "blast radius": 200,
+          "shield damage": 2000,
+          "hull damage": 1000,
+          "hit force": 3000
+        }
+      },
+      "leak": "30 40",
+      "flame": "40 90",
+      "big leak": "50 20",
+      "tiny explosion": "30",
+      "small explosion": "50",
+      "medium explosion": "45",
+      "large explosion": "35",
+      "huge explosion": "10",
+      "final explode": "\"final explosion large\"",
+      "description": "The Republic Destroyer is the newest Navy design, a smaller version of the Cruiser designed to fight toe-to-toe with even the largest pirates. Although it can reach higher top speeds than any of the other large Navy ships, it takes longer to get there - unless it uses its afterburner.",
+      "variant": "Rumskib Destroyer (Kitteh)",
+      "baseShip": "Rumskib Destroyer"
+    }
+  ],
+  "outfits": [
+    {
+      "name": "Quad Beam Laser",
+      "category": "Guns",
+      "series": "Guns",
+      "index": 1051,
+      "cost": 200000,
+      "thumbnail": "outfit/laser quad",
+      "mass": 30,
+      "outfit space": -30,
+      "weapon capacity": -30,
+      "gun ports": -1,
+      "weapon": {
+        "sprite": "projectile/laser",
+        "spriteData": {
+          "frame rate": 1
+        },
+        "sound": "laser",
+        "hit effect": "beam laser impact",
+        "inaccuracy": 0.7,
+        "velocity": 300,
+        "lifetime": 1,
+        "reload": 1,
+        "firing energy": 3.1,
+        "firing heat": 8.7,
+        "shield damage": 4.05,
+        "hull damage": 5.15
+      },
+      "description": "\tThe Quadruple Beam Laser is a modified version of the regular Beam Laser. The designers crammed together four beams for better space usage, but at the cost of less accuracy, more heat and less energy efficiency."
+    },
+    {
+      "name": "Quad Laser Turret",
+      "category": "Turrets",
+      "series": "Turrets",
+      "index": 1041,
+      "cost": 322000,
+      "thumbnail": "outfit/laser turret quad",
+      "mass": 38,
+      "outfit space": -38,
+      "weapon capacity": -38,
+      "turret mounts": -1,
+      "required crew": 1,
+      "weapon": {
+        "sprite": "projectile/2x laser",
+        "spriteData": {
+          "frame rate": 1
+        },
+        "hardpoint sprite": "hardpoint/laser turret quad",
+        "hardpoint offset": -0.5,
+        "sound": "laser",
+        "hit effect": "beam laser impact",
+        "inaccuracy": 0.5,
+        "turret turn": 2.75,
+        "velocity": 300,
+        "lifetime": 1,
+        "reload": 1,
+        "firing energy": 2.67,
+        "firing heat": 6.4,
+        "shield damage": 4.05,
+        "hull damage": 5.15
+      },
+      "description": "\tAlthough it would make more sense to mount a Quad Beam Laser on a turret, Deep Sky instead decided to double the lasers held by the normal laser turret as a cheaper way to increase the damage output."
+    },
+    {
+      "name": "Single Plasma Turret",
+      "category": "Turrets",
+      "series": "Turrets",
+      "index": 1089,
+      "cost": 216000,
+      "thumbnail": "outfit/plasma turret single",
+      "mass": 34,
+      "outfit space": -34,
+      "weapon capacity": -34,
+      "turret mounts": -1,
+      "required crew": 1,
+      "weapon": {
+        "sprite": "projectile/plasma",
+        "spriteData": {
+          "frame rate": 3
+        },
+        "hardpoint sprite": "hardpoint/plasma turret single",
+        "hardpoint offset": 14,
+        "sound": "plasma",
+        "hit effect": "plasma explosion",
+        "inaccuracy": 2,
+        "turret turn": 2.3,
+        "velocity": 12,
+        "lifetime": 40,
+        "reload": 18,
+        "firing energy": 30,
+        "firing heat": 180,
+        "hit force": 45,
+        "shield damage": 63,
+        "hull damage": 25,
+        "heat damage": 340
+      },
+      "description": "The Single Plasma Turret is one plasma cannon mounted on a turret to fire in any direction. While not as powerful as the dual Plasma Turret, it is able to fit on much smaller ships."
+    },
+    {
+      "name": "Quad Plasma Turret",
+      "category": "Turrets",
+      "series": "Turrets",
+      "index": 1091,
+      "cost": 1196000,
+      "thumbnail": "outfit/plasma turret quad",
+      "mass": 111,
+      "outfit space": -111,
+      "weapon capacity": -111,
+      "turret mounts": -1,
+      "required crew": 1,
+      "weapon": {
+        "sprite": "projectile/plasma",
+        "spriteData": {
+          "frame rate": 3
+        },
+        "hardpoint sprite": "hardpoint/plasma turret",
+        "hardpoint offset": 15,
+        "sound": "plasma",
+        "hit effect": "plasma explosion",
+        "inaccuracy": 2,
+        "turret turn": 1.1,
+        "velocity": 12,
+        "lifetime": 40,
+        "reload": 4.5,
+        "firing energy": 30,
+        "firing heat": 180,
+        "hit force": 45,
+        "shield damage": 63,
+        "hull damage": 25,
+        "heat damage": 340
+      },
+      "description": "\tSo, how about one?"
+    },
+    {
+      "name": "Rumskib Triple Gatling Gun",
+      "category": "Secondary Weapons",
+      "series": "Secondary Weapons",
+      "index": 1143,
+      "cost": 55000,
+      "display name": "Triple Gatling Gun",
+      "thumbnail": "outfit/trigat",
+      "mass": 5,
+      "outfit space": -23,
+      "weapon capacity": -23,
+      "gun ports": -1,
+      "gatling round capacity": 9000,
+      "weapon": {
+        "sprite": "projectile/tinyflare",
+        "spriteData": {
+          "description": "\"random start frame\""
+        },
+        "sound": "gatling",
+        "Gatling Gun Ammo": 3,
+        "icon": "icon/gat",
+        "inaccuracy": 4,
+        "velocity": 16,
+        "lifetime": 1,
+        "reload": 3.1,
+        "burst count": 200,
+        "burst reload": 1.2,
+        "firing energy": 0.1,
+        "firing heat": 7,
+        "submunition": [
+          "gbullet",
+          "gbullet",
+          "gbullet"
+        ],
+        "hit effect": "bullet impact",
+        "description": "\"cluster\""
+      },
+      "description": "\tAmmunition for this weapon can be restocked at any outfitter."
+    },
+    {
+      "name": "Rumskib Quad Gatling Turret",
+      "category": "Secondary Weapons",
+      "series": "Secondary Weapons",
+      "index": 1152,
+      "cost": 180000,
+      "thumbnail": "outfit/gat turret quad",
+      "display name": "Quad Gatling Turret",
+      "mass": 17,
+      "outfit space": -41,
+      "weapon capacity": -41,
+      "turret mounts": -1,
+      "required crew": 1,
+      "gatling round capacity": 12000,
+      "weapon": {
+        "sound": "gatling",
+        "sprite": "projectile/2x tinyflare",
+        "spriteData": {
+          "description": "\"random start frame\""
+        },
+        "hardpoint sprite": "hardpoint/gat turret hardpoint",
+        "submunition": [
+          "gbullet",
+          "gbullet",
+          "gbullet",
+          "gbullet"
+        ],
+        "Gatling Gun Ammo": 4,
+        "icon": "icon/gat turret",
+        "inaccuracy": 4,
+        "turret turn": 2.7,
+        "velocity": 16,
+        "lifetime": 1,
+        "reload": 3,
+        "burst count": 180,
+        "burst reload": 1,
+        "firing energy": 0.12,
+        "firing heat": 10,
+        "hit effect": "bullet impact",
+        "description": "\"cluster\""
+      },
+      "description": "\tAmmunition for this weapon can be restocked at any outfitter."
+    },
+    {
+      "name": "Rumskib Triple Gatling Turret",
+      "category": "Secondary Weapons",
+      "series": "Secondary Weapons",
+      "index": 1151,
+      "cost": 150000,
+      "thumbnail": "outfit/gat turret triple",
+      "display name": "Triple Gatling Turret",
+      "mass": 14,
+      "outfit space": -32,
+      "weapon capacity": -32,
+      "turret mounts": -1,
+      "required crew": 1,
+      "gatling round capacity": 9000,
+      "weapon": {
+        "sound": "gatling",
+        "sprite": "projectile/2x tinyflare",
+        "spriteData": {
+          "description": "\"random start frame\""
+        },
+        "hardpoint sprite": "hardpoint/gat turret triple",
+        "submunition": [
+          "gbullet",
+          "gbullet",
+          "gbullet"
+        ],
+        "Gatling Gun Ammo": 3,
+        "icon": "icon/gat turret",
+        "inaccuracy": 3,
+        "turret turn": 3.1,
+        "velocity": 16,
+        "lifetime": 1,
+        "reload": 3,
+        "burst count": 180,
+        "burst reload": 1,
+        "firing energy": 0.09,
+        "firing heat": 7.5,
+        "hit effect": "bullet impact",
+        "description": "\"cluster\""
+      },
+      "description": "\tAmmunition for this weapon can be restocked at any outfitter."
+    },
+    {
+      "name": "Rumskib Single Gatling Turret",
+      "category": "Secondary Weapons",
+      "series": "Secondary Weapons",
+      "index": 1149,
+      "cost": 90000,
+      "thumbnail": "outfit/gat turret single",
+      "display name": "Single Gatling Turret",
+      "mass": 9,
+      "outfit space": -15,
+      "weapon capacity": -15,
+      "turret mounts": -1,
+      "required crew": 1,
+      "gatling round capacity": 3000,
+      "weapon": {
+        "sound": "gatling",
+        "sprite": "projectile/tinyflare",
+        "spriteData": {
+          "description": "\"random start frame\""
+        },
+        "hardpoint sprite": "hardpoint/gat turret single",
+        "submunition": "gbullet",
+        "ammo": "Gatling Gun Ammo",
+        "icon": "icon/gat turret",
+        "inaccuracy": 2,
+        "turret turn": 4.8,
+        "velocity": 16,
+        "lifetime": 1,
+        "reload": 3,
+        "burst count": 180,
+        "burst reload": 1,
+        "firing energy": 0.03,
+        "firing heat": 2.5,
+        "hit effect": "bullet impact",
+        "description": "\"cluster\""
+      },
+      "description": "\tAmmunition for this weapon can be restocked at any outfitter."
+    }
+  ],
+  "parsedAt": "2026-01-25T19:10:28.480Z"
+}
