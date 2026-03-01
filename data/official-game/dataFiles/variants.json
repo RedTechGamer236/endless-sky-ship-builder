@@ -9301,11 +9301,11 @@
     "name": "'olofez ('olofez (World-Ship))",
     "engines": [
       {
-        "x": -7,
+        "x": -13,
         "y": 23
       },
       {
-        "x": 7,
+        "x": 13,
         "y": 23
       }
     ],

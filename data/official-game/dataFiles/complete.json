@@ -20324,11 +20324,11 @@
       "name": "'olofez",
       "engines": [
         {
-          "x": -7,
+          "x": -13,
           "y": 23
         },
         {
-          "x": 7,
+          "x": 13,
           "y": 23
         }
       ],
@@ -27499,8 +27499,12 @@
         "engine capacity": 120,
         "multimodal armor": 1,
         "hull repair rate": 2.75,
-        "hull energy": 4,
-        "hull heat": 4,
+        "#": [
+          0.0005,
+          1.1
+        ],
+        "hull energy": 3.025,
+        "hull heat": 3.025,
         "weapon": {
           "blast radius": 100,
           "shield damage": 1000,
@@ -27733,9 +27737,9 @@
         "weapon capacity": 280,
         "engine capacity": 110,
         "multimodal armor": 1,
-        "hull repair rate": 2.25,
-        "hull energy": 3.26,
-        "hull heat": 3.26,
+        "hull repair rate": 2.225,
+        "hull energy": 2.4475,
+        "hull heat": 2.4475,
         "weapon": {
           "blast radius": 100,
           "shield damage": 1000,
@@ -28137,8 +28141,8 @@
         "corrosion resistance": 0.6,
         "slowing resistance": 0.6,
         "hull repair rate": 0.1,
-        "hull heat": 0.25,
-        "hull energy": 0.2,
+        "hull heat": 0.11,
+        "hull energy": 0.11,
         "weapon": {
           "blast radius": 100,
           "shield damage": 1000,
@@ -28454,9 +28458,9 @@
         "weapon capacity": 90,
         "engine capacity": 110,
         "multimodal armor": 1,
-        "hull repair rate": 1.2,
-        "hull energy": 1.74,
-        "hull heat": 1.74,
+        "hull repair rate": 0.95,
+        "hull energy": 1.045,
+        "hull heat": 1.045,
         "weapon": {
           "blast radius": 100,
           "shield damage": 1000,
@@ -28561,8 +28565,8 @@
         "engine capacity": 80,
         "multimodal armor": 1,
         "hull repair rate": 0.3,
-        "hull energy": 0.4,
-        "hull heat": 0.4,
+        "hull energy": 0.33,
+        "hull heat": 0.33,
         "weapon": {
           "blast radius": 100,
           "shield damage": 1000,
@@ -28692,8 +28696,8 @@
         "engine capacity": 120,
         "multimodal armor": 1,
         "hull repair rate": 1.45,
-        "hull energy": 2.1,
-        "hull heat": 2.1,
+        "hull energy": 1.595,
+        "hull heat": 1.595,
         "weapon": {
           "blast radius": 100,
           "shield damage": 1000,
@@ -28804,8 +28808,8 @@
         "exclusive: Vujlet": 1,
         "multimodal armor": 1,
         "hull repair rate": 0.875,
-        "hull energy": 1.27,
-        "hull heat": 1.27,
+        "hull energy": 0.9625,
+        "hull heat": 0.9625,
         "weapon": {
           "blast radius": 100,
           "shield damage": 1000,
@@ -39318,11 +39322,11 @@
       "name": "'olofez ('olofez (World-Ship))",
       "engines": [
         {
-          "x": -7,
+          "x": -13,
           "y": 23
         },
         {
-          "x": 7,
+          "x": 13,
           "y": 23
         }
       ],
@@ -42472,7 +42476,7 @@
       "anchor point": -1,
       "scan interference": 6,
       "radar jamming": 12,
-      "optical jamming": 12,
+      "optical jamming": 1.2,
       "solar heat": 6,
       "description": "\tLaminae take advantage of special external hardpoints built into most Avgi ships, allowing them to be mounted without taking up any outfit space. However, they also tend to increase the amount of heat absorbed from the local star."
     },
@@ -43110,7 +43114,7 @@
       "outfit space": -6,
       "weapon capacity": -6,
       "turret mounts": -1,
-      "optical jamming": 6,
+      "optical jamming": 0.6,
       "lasing power": -1,
       "weapon": {
         "hardpoint sprite": "hardpoint/green optical laser",
@@ -46570,7 +46574,7 @@
       "thumbnail": "outfit/hai jammer",
       "mass": 10,
       "outfit space": -7,
-      "optical jamming": 15,
+      "optical jamming": 1.5,
       "energy consumption": 0.8,
       "description": "When the Hai first started fighting each other, the need for a counter to Trackers quickly became apparent. The Cuttlefish Jammer can noticeably disturb a Tracker's lock to the ship by presenting it with a seemingly better, albeit illusory, target. This jammer is most effective on larger ships that cannot field enough anti-missiles to effectively counter missiles from all directions."
     },
@@ -46583,7 +46587,7 @@
       "thumbnail": "outfit/hai jammer overclocked",
       "mass": 10,
       "outfit space": -7,
-      "optical jamming": 20,
+      "optical jamming": 2,
       "energy consumption": 1.2,
       "description": "The Octopus Jammer is a more aggressive adaptation of the Cuttlefish Jammer, intended for short raids by the Unfettered. With several safety circuits bypassed, it is able to more effectively deceive incoming Trackers, but the much higher associated energy cost makes any ship carrying this even more vulnerable to ion weaponry."
     },
@@ -50112,7 +50116,8 @@
         "shield damage": 790,
         "hull damage": 670,
         "hit force": 900,
-        "missile strength": 16
+        "missile strength": 24,
+        "description": "stream"
       },
       "description": "\tAmmunition for this weapon can be restocked at any outfitter."
     },
@@ -50153,7 +50158,7 @@
         "shield damage": 790,
         "hull damage": 670,
         "hit force": 900,
-        "missile strength": 16
+        "missile strength": 24
       },
       "description": "\tAmmunition for this weapon can be restocked at any outfitter."
     },
@@ -50204,7 +50209,7 @@
         "hull damage": 7000,
         "hit force": 6000,
         "missile strength": 200,
-        "description": "stream"
+        "description": "stream \"triggers nuke alert\""
       },
       "description": "\t[Nuclear missiles are a one-shot weapon: each missile occupies a gun slot, and after it is fired, the slot it was in is left empty.]"
     },
@@ -55507,7 +55512,7 @@
       "outfit space": -13,
       "shield generation": 1.9,
       "shield protection": -0.33,
-      "shield energy": 2.92,
+      "shield energy": 2.53,
       "shield connection point": 1,
       "description": "At their peak, the Predecessors were feared not by how quickly they could overpower their enemies, but by how effectively they could outlast them. Many generations later, this philosophy is still reflected in modern Successor shield cortices, which are exceptionally powerful for their size but weaken the shield's resistance to incoming fire. This allows Successor ships to recover quickly from sustained damage, even if they are slightly more vulnerable to it."
     },
@@ -55525,7 +55530,7 @@
       "outfit space": -21,
       "shield generation": 3,
       "shield protection": -0.33,
-      "shield energy": 4.7,
+      "shield energy": 4,
       "shield connection point": 1,
       "description": "Because their bimodal engines draw power from a ship's shield matrix, even non-combat Successor craft can justify equipping powerful shield generators to afford them greater mobility. This is the largest unit the High Houses permit for sale to the general public; even so, it offers substantially faster regeneration than even the largest human shield generators."
     },
@@ -55543,7 +55548,7 @@
       "outfit space": -30,
       "shield generation": 4.8,
       "shield protection": -0.33,
-      "shield energy": 7.4,
+      "shield energy": 6.4,
       "shield connection point": 1,
       "description": "The technology of their Predecessors was not nearly as modular as the modern Successor equivalents, which must be built with more limited resources and comparatively primitive manufacturing techniques. Nonetheless, this medium-sized shield cortex is powerful enough to shrug off the combined damage output of several lesser attackers, and consequently is reserved by the High Houses for use in their private navies."
     },
@@ -55561,7 +55566,7 @@
       "outfit space": -55,
       "shield generation": 10.5,
       "shield protection": -0.33,
-      "shield energy": 16.1,
+      "shield energy": 14,
       "shield connection point": 1,
       "description": "Bristling with regeneration nodes, this large Successor shield cortex requires a power budget greater than most human warships in their entirety. Many more traditional members of the High Houses disapprove of its design, arguing that such a powerful piece of their technology deserves a more artful form, but there has ultimately been little desire to invest time and money into a redesign for purely aesthetic reasons."
     },
@@ -55578,9 +55583,8 @@
       "mass": 3,
       "outfit space": -3,
       "shield protection": 0.33,
-      "shield generation multiplier": -0.05,
       "shield connection point": -2,
-      "description": "This compact tract of electrical fibers connects two Successor shield cortices to function as a single unit, preventing the shield-softening effect of one of the generators from unduly reducing the durability of the ship's shields at the cost of slightly reducing efficiency. The effect scales poorly past two connected generators."
+      "description": "This compact tract of electrical fibers connects two Successor shield cortices to function as a single unit, preventing the shield-softening effect of one of the generators from unduly reducing the durability of the ship's shields. The effect scales poorly past two connected generators."
     },
     {
       "name": "1-\"Uurau\" Betavoltaic Cell",
@@ -56141,6 +56145,7 @@
         "reload": 30,
         "firing energy": 80,
         "firing heat": 120,
+        "firing force": 25,
         "#": [
           "Because parent projectiles inherit the damage of their submunitions, we must subtract the total damage of all submunitions from the parent projectile to get the desired behavior (different damage profiles over different ranges).",
           50,
@@ -56148,10 +56153,10 @@
           "far: 144 shield damage",
           135,
           "close: 135 hull damage",
-          "far: 60 hull damage"
+          "far: 42 hull damage"
         ],
         "shield damage": -94,
-        "hull damage": 75,
+        "hull damage": 93,
         "hit force": 120,
         "submunition": "Bimodal Switch",
         "description": "\"cluster\""
@@ -56197,7 +56202,7 @@
         "firing heat": 120,
         "firing force": 25,
         "shield damage": -94,
-        "hull damage": 75,
+        "hull damage": 93,
         "hit force": 120,
         "submunition": "Bimodal Switch",
         "description": "\"cluster\""
@@ -56429,7 +56434,7 @@
         "firing energy": 1900,
         "firing ion": 3,
         "firing heat": 4000,
-        "shield damage": 1336,
+        "shield damage": 1069,
         "hull damage": 1920,
         "piercing": 0.15,
         "hit force": 800,
@@ -57107,5 +57112,5 @@
       "description": "The history of the Wanderers is not without hardship and failure. Immortalized in a bronze mold, this withered branch recalls the time the Wanderers could not save a world, for skilled as they may be, they cannot stop destruction when it is actively sought after by others mightier than them. The fall of the Noble Watchwood, their cherished emblem, now stands as a solemn vow: when peace fails, they too must prepare to fight. To stand and fight with the Wanderers, this license grants access to their greatest warships."
     }
   ],
-  "parsedAt": "2026-02-01T01:34:14.214Z"
+  "parsedAt": "2026-03-01T01:32:15.596Z"
 }
