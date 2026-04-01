@@ -24930,9 +24930,9 @@
         "hit force": 2250
       }
     },
-    "small explosion": "35",
-    "medium explosion": "50",
-    "large explosion": "20",
+    "quarg small explosion": "35",
+    "quarg medium explosion": "50",
+    "quarg large explosion": "20",
     "final explode": "\"final explosion medium\"",
     "description": "The Quarg use the Lindwyrm as a heavy freighter, transporting in its ample cargo bays items both mundane and fantastical. In the days before the advent of modern cargo scanners revealed some measure of their contents, \"the inside of a Quarg cargo hold\" was slang used to describe any thing or place thought to be unknowable."
   },
@@ -24994,10 +24994,10 @@
         "hit force": 4500
       }
     },
-    "small explosion": "40",
-    "medium explosion": "60",
-    "large explosion": "45",
-    "huge explosion": "20",
+    "quarg small explosion": "40",
+    "quarg medium explosion": "60",
+    "quarg large explosion": "45",
+    "quarg huge explosion": "20",
     "final explode": "\"final explosion large\"",
     "description": "The Quarg employ these unusual craft as one of their primary tools for building and maintaining their ringworlds, each one operating continuously for hundreds or thousands of years on its planet-scale tasks. Each Guivre is equipped with a graviton slipstream projector, similar in usage to human-built tractor beams, but capable of shifting much, much larger objects with uncanny elegance and precision."
   },
@@ -25063,10 +25063,10 @@
         "hit force": 1800
       }
     },
-    "tiny explosion": "10",
-    "small explosion": "15",
-    "medium explosion": "20",
-    "large explosion": "10",
+    "quarg tiny explosion": "10",
+    "quarg small explosion": "15",
+    "quarg medium explosion": "20",
+    "quarg large explosion": "10",
     "final explode": "\"final explosion small\"",
     "description": "The Drake is an older ship used by the Quarg for reconnaissance and initial contact with emerging spacefaring species. A popular legend states that a Drake surveyed Sol while humans began to discover spaceflight."
   },
@@ -25132,10 +25132,10 @@
         "hit force": 2025
       }
     },
-    "tiny explosion": "5",
-    "small explosion": "20",
-    "medium explosion": "25",
-    "large explosion": "15",
+    "quarg tiny explosion": "5",
+    "quarg small explosion": "20",
+    "quarg medium explosion": "25",
+    "quarg large explosion": "15",
     "final explode": "\"final explosion medium\"",
     "description": "The Wardragon is used by the Quarg as a light warship. It is an older design within the Quarg's fleets, supposedly less intimidating compared to their larger warships and thus more suitable for dealings with particularly nascent species."
   },
@@ -25207,9 +25207,9 @@
         "hit force": 3000
       }
     },
-    "small explosion": "15",
-    "medium explosion": "30",
-    "large explosion": "25",
+    "quarg small explosion": "15",
+    "quarg medium explosion": "30",
+    "quarg large explosion": "25",
     "final explode": "\"final explosion medium\"",
     "description": "When humans first encountered Quarg vessels, with their bizarre, scaly-looking hulls and alien forms, the comparisons to dragons of different sorts rapidly proliferated. The Wyvern is a midsize warship of the Quarg, though the distinction between the Quarg warship classes is insignificant to all but the most powerful forces in the galaxy."
   },
@@ -25296,10 +25296,10 @@
         "hit force": 5850
       }
     },
-    "small explosion": "15",
-    "medium explosion": "30",
-    "large explosion": "20",
-    "huge explosion": "10",
+    "quarg small explosion": "15",
+    "quarg medium explosion": "30",
+    "quarg large explosion": "20",
+    "quarg huge explosion": "10",
     "final explode": "\"final explosion large\"",
     "description": "The many-headed mythological Hydra was supposedly venomous enough to kill mortals with nothing but the scent of its breath or a single drop of its blood. Any captain foolish enough to arouse the fury of the Quarg's heavy warships will no doubt quickly come to understand the exact significance of this part of the Hydra's legend."
   },

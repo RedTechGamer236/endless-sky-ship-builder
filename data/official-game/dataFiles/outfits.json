@@ -700,6 +700,7 @@
   },
   {
     "name": "Z-3600 \"Beam\" Amat Torch",
+    "Beam": "Amat Torches",
     "category": "Engines",
     "series": "Engines",
     "index": 7080,
@@ -1052,6 +1053,7 @@
   },
   {
     "name": "Z-333 \"Spark\" Fusion Torch",
+    "Spark": "Fusion Torches",
     "category": "Engines",
     "series": "Engines",
     "index": 7050,
@@ -1076,6 +1078,7 @@
   },
   {
     "name": "Z-666 \"Zap\" Fusion Torch",
+    "Zap": "Fusion Torches",
     "category": "Engines",
     "series": "Engines",
     "index": 7060,
@@ -1100,6 +1103,7 @@
   },
   {
     "name": "Z-999 \"Arc\" Fusion Torch",
+    "Arc": "Fusion Torches",
     "category": "Engines",
     "series": "Engines",
     "index": 7070,
@@ -1542,7 +1546,7 @@
     "licenses": {
       "description": "\"Twilight Guard\""
     },
-    "cost": 36000,
+    "cost": 54000,
     "thumbnail": "outfit/tiny vls",
     "mass": 3,
     "outfit space": -9,
@@ -4261,6 +4265,7 @@
   },
   {
     "name": "Ion Torch",
+    "plural": "Ion Torches",
     "category": "Guns",
     "series": "Guns",
     "index": 6080,
@@ -13776,6 +13781,7 @@
   },
   {
     "name": "\"Byiaa\" Shield Cortex",
+    "Byiaa": "Shield Cortices",
     "category": "Systems",
     "series": "Shields",
     "index": 11010,
@@ -13794,6 +13800,7 @@
   },
   {
     "name": "\"Ej\" Shield Cortex",
+    "Ej": "Shield Cortices",
     "category": "Systems",
     "series": "Shields",
     "index": 11020,
@@ -13812,6 +13819,7 @@
   },
   {
     "name": "\"Jaase\" Shield Cortex",
+    "Jaase": "Shield Cortices",
     "category": "Systems",
     "series": "Shields",
     "index": 11030,
@@ -13830,6 +13838,7 @@
   },
   {
     "name": "\"Jorv\" Shield Cortex",
+    "Jorv": "Shield Cortices",
     "category": "Systems",
     "series": "Shields",
     "index": 11040,
