@@ -8760,6 +8760,394 @@
     "baseShip": "Fetri'sei"
   },
   {
+    "name": "Fetri'sei (Fetri'sei (Patir 18))",
+    "engines": [
+      {
+        "x": -20,
+        "y": 46.5
+      },
+      {
+        "x": 20,
+        "y": 46.5
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -13,
+        "y": -36,
+        "gun": ""
+      },
+      {
+        "x": 13,
+        "y": -36,
+        "gun": ""
+      },
+      {
+        "x": 0,
+        "y": -36,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [],
+    "Fetri'seia": true,
+    "sprite": "ship/fetri'sei",
+    "thumbnail": "thumbnail/fetri'sei",
+    "never disabled": true,
+    "attributes": {
+      "category": "Interceptor",
+      "cost": 5700000,
+      "shields": 2400,
+      "hull": 7200,
+      "required crew": 1,
+      "bunks": 1,
+      "mass": 330,
+      "drag": 3.5,
+      "heat dissipation": 0.42,
+      "fuel capacity": 250,
+      "ramscoop": 0.13,
+      "cargo space": 62,
+      "outfit space": 173,
+      "weapon capacity": 67,
+      "engine capacity": 46,
+      "energy capacity": 6000,
+      "energy generation": 16.6,
+      "heat generation": 24,
+      "shield heat": 3.4,
+      "hull repair rate": 0.3,
+      "ka'sei": 1,
+      "overheat damage threshold": 0,
+      "overheat damage rate": 501,
+      "weapon": {
+        "blast radius": 120,
+        "shield damage": 540,
+        "hull damage": 280,
+        "hit force": 780
+      },
+      "asteroid mount jd": 1,
+      "fuel heat": 150,
+      "threshold percentage": 0.9
+    },
+    "tiny explosion": "6",
+    "small explosion": "10",
+    "medium explosion": "18",
+    "large explosion": "10",
+    "final explode": "\"final explosion small\"",
+    "description": "The Fetri is a self replicating probe, built to harvest iridium away from the Graveyard and transport it back to the Builders.",
+    "variant": "Fetri'sei (Patir 18)",
+    "baseShip": "Fetri'sei"
+  },
+  {
+    "name": "Petrel (Petrel (Lifeboat))",
+    "engines": [
+      {
+        "x": 0,
+        "y": 41.5
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": 0,
+        "y": -38.5,
+        "gun": ""
+      },
+      {
+        "x": -10.5,
+        "y": -24,
+        "gun": ""
+      },
+      {
+        "x": 10.5,
+        "y": -24,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": 0,
+        "y": 2.5,
+        "turret": ""
+      }
+    ],
+    "bays": [],
+    "sprite": "ship/petrel",
+    "thumbnail": "thumbnail/petrel",
+    "attributes": {
+      "category": "Fighter",
+      "licenses": {
+        "description": "Remnant"
+      },
+      "cost": 1141000,
+      "shields": 1000,
+      "hull": 2500,
+      "cargo space": 15,
+      "fuel capacity": 100,
+      "ramscoop": 1.25,
+      "required crew": 2,
+      "bunks": 3,
+      "mass": 68,
+      "drag": 1.7,
+      "heat dissipation": 0.73,
+      "outfit space": 133,
+      "weapon capacity": 33,
+      "engine capacity": 34,
+      "shield generation": 0.36,
+      "shield energy": 0.24,
+      "hull repair rate": 0.82,
+      "hull energy": 0.54,
+      "gaslining": 1,
+      "outfit scan power": 0,
+      "outfit scan efficiency": 0,
+      "tactical scan power": 0,
+      "asteroid scan power": 0,
+      "weapon": {
+        "blast radius": 15,
+        "shield damage": 150,
+        "hull damage": 200,
+        "hit force": 350
+      }
+    },
+    "remnant leak sparkle": "20 3",
+    "tiny explosion": "30",
+    "small explosion": "20",
+    "description": "The Petrel is a multi-role mining/wing leader fightercraft designed to provide support for flights of lighter Terns in high-risk environments. The ship's design originated as an urban mobile gun platform that flitted around structures and natural terrain, but proved easy to adapt into a spacecraft. \tThe Remnant are loath to sacrifice pilots and crew from the comparatively small pool they are drawn from. As such, their fighters are equipped with medium-range weaponry designed to strike enemies from afar. \tFighters do not come equipped with a hyperdrive. You cannot carry a fighter unless you have a ship in your fleet with a fighter bay.",
+    "variant": "Petrel (Lifeboat)",
+    "baseShip": "Petrel"
+  },
+  {
+    "name": "'olofez ('olofez (Crew Destroyed))",
+    "engines": [
+      {
+        "x": -13,
+        "y": 23
+      },
+      {
+        "x": 13,
+        "y": 23
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": 0,
+        "y": -28,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [],
+    "'olofezes": true,
+    "sprite": "ship/chaser",
+    "thumbnail": "thumbnail/chaser",
+    "attributes": {
+      "category": "Fighter",
+      "cost": 671000,
+      "shields": 2300,
+      "hull": 900,
+      "required crew": 1,
+      "bunks": 0,
+      "mass": 40,
+      "drag": 0.9,
+      "heat dissipation": 0.9,
+      "outfit space": 92,
+      "weapon capacity": 25,
+      "engine capacity": 30,
+      "weapon": {
+        "blast radius": 48,
+        "shield damage": 320,
+        "hull damage": 160,
+        "hit force": 480
+      }
+    },
+    "tiny explosion": "20",
+    "description": "The 'olofez-Class Carried Chaser, named for a renowned artist who painted their visions of ancient hunts, is a fighter carried by most Exile capital ships. \tFighters do not come equipped with a hyperdrive. You cannot carry a fighter unless you have a ship in your fleet with a fighter bay.",
+    "variant": "'olofez (Crew Destroyed)",
+    "baseShip": "'olofez"
+  },
+  {
+    "name": "Tubfalet (Tubfalet (Crew Destroyed))",
+    "engines": [
+      {
+        "x": -20,
+        "y": 132
+      },
+      {
+        "x": 20,
+        "y": 132
+      },
+      {
+        "x": 0,
+        "y": 142
+      }
+    ],
+    "reverseEngines": [
+      {
+        "x": -9,
+        "y": -154,
+        "position": "zoom 0.7"
+      },
+      {
+        "x": 9,
+        "y": -154,
+        "position": "zoom 0.7"
+      }
+    ],
+    "steeringEngines": [
+      {
+        "x": -89,
+        "y": 33.5,
+        "position": "left"
+      },
+      {
+        "x": 89,
+        "y": 33.5,
+        "position": "right"
+      },
+      {
+        "x": -82.5,
+        "y": 30,
+        "position": "left"
+      },
+      {
+        "x": 82.5,
+        "y": 30,
+        "position": "right"
+      },
+      {
+        "x": -69.5,
+        "y": -103.5,
+        "position": "right"
+      },
+      {
+        "x": 69.5,
+        "y": -103.5,
+        "position": "left"
+      },
+      {
+        "x": -76,
+        "y": -106,
+        "position": "right"
+      },
+      {
+        "x": 76,
+        "y": -106,
+        "position": "left"
+      }
+    ],
+    "guns": [
+      {
+        "x": -45,
+        "y": -150,
+        "gun": ""
+      },
+      {
+        "x": 32.5,
+        "y": -1,
+        "gun": ""
+      },
+      {
+        "x": -32.5,
+        "y": -1,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": -10,
+        "y": -143,
+        "turret": ""
+      },
+      {
+        "x": 10,
+        "y": -143,
+        "turret": ""
+      },
+      {
+        "x": -36,
+        "y": -141,
+        "turret": ""
+      },
+      {
+        "x": 36,
+        "y": -141,
+        "turret": ""
+      },
+      {
+        "x": 0,
+        "y": 41,
+        "turret": ""
+      },
+      {
+        "x": 0,
+        "y": 94,
+        "turret": ""
+      }
+    ],
+    "bays": [
+      {
+        "type": "Fighter",
+        "x": -80,
+        "y": 151,
+        "position": "back",
+        "launch effect": "korath internal"
+      },
+      {
+        "type": "Fighter",
+        "x": 80,
+        "y": 151,
+        "position": "back",
+        "launch effect": "korath internal"
+      },
+      {
+        "type": "Fighter",
+        "x": 28.5,
+        "y": 145,
+        "position": "back",
+        "launch effect": "korath internal"
+      }
+    ],
+    "sprite": "ship/tubfalet",
+    "thumbnail": "thumbnail/tubfalet",
+    "attributes": {
+      "category": "Utility",
+      "cost": 22895000,
+      "shields": 29500,
+      "hull": 11000,
+      "required crew": 157,
+      "bunks": 130,
+      "mass": 2228,
+      "drag": 25.5,
+      "heat dissipation": 0.36,
+      "heat protection": 0.1,
+      "hull protection": 0.1,
+      "fuel capacity": 700,
+      "cargo space": 163,
+      "outfit space": 871,
+      "weapon capacity": 377,
+      "engine capacity": 212,
+      "weapon": {
+        "blast radius": 250,
+        "shield damage": 3700,
+        "hull damage": 1900,
+        "hit force": 5500
+      }
+    },
+    "tiny explosion": "20",
+    "small explosion": "45",
+    "medium explosion": "50",
+    "large explosion": "40",
+    "huge explosion": "10",
+    "final explode": "\"final explosion large\"",
+    "description": "The venerable Palavret has been a mainstay of the Korath raiding fleet, elements of its design dating back from before the era of shortages and desperation caused by a life in exile. Over forty generations of raiders have terrorized neighboring systems over the centuries. \tConstant warfare against surrounding aliens has been building pressure on Korath shipyards to recover some of their ancient prowess. Now, with a fresh industrial network to draw upon, the Korath have created a new raider to deal with modern targets, and the Tubfalet-Class Raiding Ship is named for an admiral who dealt with such enemies. Despite extensive injuries, he remained on his flag bridge during a Remnant attack, leading his squadron to victory.",
+    "variant": "Tubfalet (Crew Destroyed)",
+    "baseShip": "Tubfalet"
+  },
+  {
     "name": "Charm-Shallop (Charm-Shallop (Distressed))",
     "engines": [
       {

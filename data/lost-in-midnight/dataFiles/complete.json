@@ -25648,7 +25648,7 @@
       "flotsam chance": 1,
       "installable": -1,
       "minable": 1,
-      "description": "Deuterium is normally harvested from the cloudy atmostpheres of gas giants. However, it can also be found frozen in the icy cores of wandering comets."
+      "description": "Deuterium is normally harvested from the cloudy atmospheres of gas giants. However, it can also be found frozen in the icy cores of wandering comets."
     },
     {
       "name": "Fossil",
@@ -36072,5 +36072,5 @@
       "description": "\tThe Wanderers view their weapons of war as [shameful, a necessary evil]. They are averse to allowing the secrets of crafting them to [proliferate, propagate] across the galaxy."
     }
   ],
-  "parsedAt": "2026-04-01T01:58:51.593Z"
+  "parsedAt": "2026-05-01T02:19:36.573Z"
 }

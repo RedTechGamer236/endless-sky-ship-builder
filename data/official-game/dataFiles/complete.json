@@ -25996,8 +25996,8 @@
         "fuel capacity": 2500,
         "ramscoop": 10.75,
         "cargo space": 1110,
-        "outfit space": 2150,
-        "weapon capacity": 470,
+        "outfit space": 2200,
+        "weapon capacity": 560,
         "engine capacity": 800,
         "shield generation": 15,
         "shield energy": 1.8,
@@ -26930,6 +26930,151 @@
       "description": "One of the strangest and most useful things that the Remnant have discovered in the abandoned worlds of the Ember Waste is alien cloaking technology. They have designed their scout ships to cloak when needed in order to explore alien territory without being seen... or to escape in a hurry after stealing something particularly valuable from those aliens. \tThe cloaking technology is built into the Starling's hull; it cannot be removed or transferred to another ship."
     },
     {
+      "name": "Swan",
+      "engines": [
+        {
+          "x": 0,
+          "y": 190,
+          "zoom": 1
+        },
+        {
+          "x": -27,
+          "y": 181.5,
+          "zoom": 0.7
+        },
+        {
+          "x": 27,
+          "y": 181.5,
+          "zoom": 0.7
+        }
+      ],
+      "reverseEngines": [],
+      "steeringEngines": [],
+      "guns": [
+        {
+          "x": 0,
+          "y": -195,
+          "gun": ""
+        },
+        {
+          "x": -12,
+          "y": -178,
+          "gun": ""
+        },
+        {
+          "x": 12,
+          "y": -178,
+          "gun": ""
+        }
+      ],
+      "turrets": [
+        {
+          "x": 0,
+          "y": -27.5,
+          "turret": ""
+        },
+        {
+          "x": 0,
+          "y": 158.5,
+          "turret": ""
+        },
+        {
+          "x": 0,
+          "y": -74.5,
+          "turret": ""
+        },
+        {
+          "x": -116,
+          "y": 70.5,
+          "turret": ""
+        },
+        {
+          "x": 116,
+          "y": 70.5,
+          "turret": ""
+        }
+      ],
+      "bays": [
+        {
+          "type": "Drone",
+          "x": -66.5,
+          "y": 71.5,
+          "position": "under",
+          "launch effect": "remnant external"
+        },
+        {
+          "type": "Drone",
+          "x": 66.5,
+          "y": 71.5,
+          "position": "under",
+          "launch effect": "remnant external"
+        },
+        {
+          "type": "Drone",
+          "x": -106.5,
+          "y": 63.5,
+          "position": "under",
+          "launch effect": "remnant external"
+        },
+        {
+          "type": "Drone",
+          "x": 106.5,
+          "y": 63.5,
+          "position": "under",
+          "launch effect": "remnant external"
+        }
+      ],
+      "sprite": "ship/swan/swan",
+      "spriteData": {
+        "frame rate": 3,
+        "description": "\"rewind\""
+      },
+      "thumbnail": "thumbnail/swan",
+      "attributes": {
+        "category": "Utility",
+        "licenses": {
+          "description": "\"Remnant Capital\""
+        },
+        "cost": 29660000,
+        "shields": 30700,
+        "hull": 13100,
+        "required crew": 38,
+        "bunks": 68,
+        "cargo space": 106,
+        "mass": 1813,
+        "drag": 15.1,
+        "heat dissipation": 0.32,
+        "fuel capacity": 6400,
+        "ramscoop": 6.5,
+        "outfit space": 678,
+        "weapon capacity": 242,
+        "engine capacity": 157,
+        "shield generation": 4.8,
+        "shield energy": 3.9,
+        "hull repair rate": 1.3,
+        "hull energy": 0.8,
+        "outfit scan power": 15,
+        "outfit scan efficiency": 16,
+        "tactical scan power": 32,
+        "ion resistance": 0.15,
+        "scrambling resistance": 0.15,
+        "weapon": {
+          "blast radius": 430,
+          "shield damage": 4300,
+          "hull damage": 2150,
+          "hit force": 6450
+        }
+      },
+      "remnant leak": "40 10",
+      "remnant leak sparkle": "60 20",
+      "small explosion": "20",
+      "medium explosion": "50",
+      "large explosion": "50",
+      "huge explosion": "15",
+      "final explode": "\"final explosion large\" 1",
+      "description": "With the advent of more powerful ramscoops, the need for extensive propellant logistics networks all but disappeared. The Swan had the misfortune of being born as a tanker; as such, it had to survive as nothing more than a set of detailed drawings inside some dusty folders. Eventually, decades after its conception, the need for such a vehicle became apparent and production could finally begin. \tOn top of its fuel-storage capabilities, the Swan makes for an interesting warship in its own right. Four drone bays have been added below its fuel-bearing wings, each a fair bit larger than the Terns they tend to carry. On top of this, despite not being nearly as well-shielded, its weapons complement nears that of the Albatross: in essence, the largest support ship the Remnant have built."
+    },
+    {
       "name": "Tern",
       "engines": [
         {
@@ -27493,7 +27638,7 @@
         "drag": 8.75,
         "heat dissipation": 0.49,
         "fuel capacity": 600,
-        "cargo space": 15,
+        "cargo space": 25,
         "outfit space": 550,
         "weapon capacity": 240,
         "engine capacity": 120,
@@ -27732,7 +27877,7 @@
         "drag": 13.6,
         "heat dissipation": 0.5,
         "fuel capacity": 600,
-        "cargo space": 140,
+        "cargo space": 240,
         "outfit space": 570,
         "weapon capacity": 280,
         "engine capacity": 110,
@@ -38781,6 +38926,394 @@
       "baseShip": "Fetri'sei"
     },
     {
+      "name": "Fetri'sei (Fetri'sei (Patir 18))",
+      "engines": [
+        {
+          "x": -20,
+          "y": 46.5
+        },
+        {
+          "x": 20,
+          "y": 46.5
+        }
+      ],
+      "reverseEngines": [],
+      "steeringEngines": [],
+      "guns": [
+        {
+          "x": -13,
+          "y": -36,
+          "gun": ""
+        },
+        {
+          "x": 13,
+          "y": -36,
+          "gun": ""
+        },
+        {
+          "x": 0,
+          "y": -36,
+          "gun": ""
+        }
+      ],
+      "turrets": [],
+      "bays": [],
+      "Fetri'seia": true,
+      "sprite": "ship/fetri'sei",
+      "thumbnail": "thumbnail/fetri'sei",
+      "never disabled": true,
+      "attributes": {
+        "category": "Interceptor",
+        "cost": 5700000,
+        "shields": 2400,
+        "hull": 7200,
+        "required crew": 1,
+        "bunks": 1,
+        "mass": 330,
+        "drag": 3.5,
+        "heat dissipation": 0.42,
+        "fuel capacity": 250,
+        "ramscoop": 0.13,
+        "cargo space": 62,
+        "outfit space": 173,
+        "weapon capacity": 67,
+        "engine capacity": 46,
+        "energy capacity": 6000,
+        "energy generation": 16.6,
+        "heat generation": 24,
+        "shield heat": 3.4,
+        "hull repair rate": 0.3,
+        "ka'sei": 1,
+        "overheat damage threshold": 0,
+        "overheat damage rate": 501,
+        "weapon": {
+          "blast radius": 120,
+          "shield damage": 540,
+          "hull damage": 280,
+          "hit force": 780
+        },
+        "asteroid mount jd": 1,
+        "fuel heat": 150,
+        "threshold percentage": 0.9
+      },
+      "tiny explosion": "6",
+      "small explosion": "10",
+      "medium explosion": "18",
+      "large explosion": "10",
+      "final explode": "\"final explosion small\"",
+      "description": "The Fetri is a self replicating probe, built to harvest iridium away from the Graveyard and transport it back to the Builders.",
+      "variant": "Fetri'sei (Patir 18)",
+      "baseShip": "Fetri'sei"
+    },
+    {
+      "name": "Petrel (Petrel (Lifeboat))",
+      "engines": [
+        {
+          "x": 0,
+          "y": 41.5
+        }
+      ],
+      "reverseEngines": [],
+      "steeringEngines": [],
+      "guns": [
+        {
+          "x": 0,
+          "y": -38.5,
+          "gun": ""
+        },
+        {
+          "x": -10.5,
+          "y": -24,
+          "gun": ""
+        },
+        {
+          "x": 10.5,
+          "y": -24,
+          "gun": ""
+        }
+      ],
+      "turrets": [
+        {
+          "x": 0,
+          "y": 2.5,
+          "turret": ""
+        }
+      ],
+      "bays": [],
+      "sprite": "ship/petrel",
+      "thumbnail": "thumbnail/petrel",
+      "attributes": {
+        "category": "Fighter",
+        "licenses": {
+          "description": "Remnant"
+        },
+        "cost": 1141000,
+        "shields": 1000,
+        "hull": 2500,
+        "cargo space": 15,
+        "fuel capacity": 100,
+        "ramscoop": 1.25,
+        "required crew": 2,
+        "bunks": 3,
+        "mass": 68,
+        "drag": 1.7,
+        "heat dissipation": 0.73,
+        "outfit space": 133,
+        "weapon capacity": 33,
+        "engine capacity": 34,
+        "shield generation": 0.36,
+        "shield energy": 0.24,
+        "hull repair rate": 0.82,
+        "hull energy": 0.54,
+        "gaslining": 1,
+        "outfit scan power": 0,
+        "outfit scan efficiency": 0,
+        "tactical scan power": 0,
+        "asteroid scan power": 0,
+        "weapon": {
+          "blast radius": 15,
+          "shield damage": 150,
+          "hull damage": 200,
+          "hit force": 350
+        }
+      },
+      "remnant leak sparkle": "20 3",
+      "tiny explosion": "30",
+      "small explosion": "20",
+      "description": "The Petrel is a multi-role mining/wing leader fightercraft designed to provide support for flights of lighter Terns in high-risk environments. The ship's design originated as an urban mobile gun platform that flitted around structures and natural terrain, but proved easy to adapt into a spacecraft. \tThe Remnant are loath to sacrifice pilots and crew from the comparatively small pool they are drawn from. As such, their fighters are equipped with medium-range weaponry designed to strike enemies from afar. \tFighters do not come equipped with a hyperdrive. You cannot carry a fighter unless you have a ship in your fleet with a fighter bay.",
+      "variant": "Petrel (Lifeboat)",
+      "baseShip": "Petrel"
+    },
+    {
+      "name": "'olofez ('olofez (Crew Destroyed))",
+      "engines": [
+        {
+          "x": -13,
+          "y": 23
+        },
+        {
+          "x": 13,
+          "y": 23
+        }
+      ],
+      "reverseEngines": [],
+      "steeringEngines": [],
+      "guns": [
+        {
+          "x": 0,
+          "y": -28,
+          "gun": ""
+        }
+      ],
+      "turrets": [],
+      "bays": [],
+      "'olofezes": true,
+      "sprite": "ship/chaser",
+      "thumbnail": "thumbnail/chaser",
+      "attributes": {
+        "category": "Fighter",
+        "cost": 671000,
+        "shields": 2300,
+        "hull": 900,
+        "required crew": 1,
+        "bunks": 0,
+        "mass": 40,
+        "drag": 0.9,
+        "heat dissipation": 0.9,
+        "outfit space": 92,
+        "weapon capacity": 25,
+        "engine capacity": 30,
+        "weapon": {
+          "blast radius": 48,
+          "shield damage": 320,
+          "hull damage": 160,
+          "hit force": 480
+        }
+      },
+      "tiny explosion": "20",
+      "description": "The 'olofez-Class Carried Chaser, named for a renowned artist who painted their visions of ancient hunts, is a fighter carried by most Exile capital ships. \tFighters do not come equipped with a hyperdrive. You cannot carry a fighter unless you have a ship in your fleet with a fighter bay.",
+      "variant": "'olofez (Crew Destroyed)",
+      "baseShip": "'olofez"
+    },
+    {
+      "name": "Tubfalet (Tubfalet (Crew Destroyed))",
+      "engines": [
+        {
+          "x": -20,
+          "y": 132
+        },
+        {
+          "x": 20,
+          "y": 132
+        },
+        {
+          "x": 0,
+          "y": 142
+        }
+      ],
+      "reverseEngines": [
+        {
+          "x": -9,
+          "y": -154,
+          "position": "zoom 0.7"
+        },
+        {
+          "x": 9,
+          "y": -154,
+          "position": "zoom 0.7"
+        }
+      ],
+      "steeringEngines": [
+        {
+          "x": -89,
+          "y": 33.5,
+          "position": "left"
+        },
+        {
+          "x": 89,
+          "y": 33.5,
+          "position": "right"
+        },
+        {
+          "x": -82.5,
+          "y": 30,
+          "position": "left"
+        },
+        {
+          "x": 82.5,
+          "y": 30,
+          "position": "right"
+        },
+        {
+          "x": -69.5,
+          "y": -103.5,
+          "position": "right"
+        },
+        {
+          "x": 69.5,
+          "y": -103.5,
+          "position": "left"
+        },
+        {
+          "x": -76,
+          "y": -106,
+          "position": "right"
+        },
+        {
+          "x": 76,
+          "y": -106,
+          "position": "left"
+        }
+      ],
+      "guns": [
+        {
+          "x": -45,
+          "y": -150,
+          "gun": ""
+        },
+        {
+          "x": 32.5,
+          "y": -1,
+          "gun": ""
+        },
+        {
+          "x": -32.5,
+          "y": -1,
+          "gun": ""
+        }
+      ],
+      "turrets": [
+        {
+          "x": -10,
+          "y": -143,
+          "turret": ""
+        },
+        {
+          "x": 10,
+          "y": -143,
+          "turret": ""
+        },
+        {
+          "x": -36,
+          "y": -141,
+          "turret": ""
+        },
+        {
+          "x": 36,
+          "y": -141,
+          "turret": ""
+        },
+        {
+          "x": 0,
+          "y": 41,
+          "turret": ""
+        },
+        {
+          "x": 0,
+          "y": 94,
+          "turret": ""
+        }
+      ],
+      "bays": [
+        {
+          "type": "Fighter",
+          "x": -80,
+          "y": 151,
+          "position": "back",
+          "launch effect": "korath internal"
+        },
+        {
+          "type": "Fighter",
+          "x": 80,
+          "y": 151,
+          "position": "back",
+          "launch effect": "korath internal"
+        },
+        {
+          "type": "Fighter",
+          "x": 28.5,
+          "y": 145,
+          "position": "back",
+          "launch effect": "korath internal"
+        }
+      ],
+      "sprite": "ship/tubfalet",
+      "thumbnail": "thumbnail/tubfalet",
+      "attributes": {
+        "category": "Utility",
+        "cost": 22895000,
+        "shields": 29500,
+        "hull": 11000,
+        "required crew": 157,
+        "bunks": 130,
+        "mass": 2228,
+        "drag": 25.5,
+        "heat dissipation": 0.36,
+        "heat protection": 0.1,
+        "hull protection": 0.1,
+        "fuel capacity": 700,
+        "cargo space": 163,
+        "outfit space": 871,
+        "weapon capacity": 377,
+        "engine capacity": 212,
+        "weapon": {
+          "blast radius": 250,
+          "shield damage": 3700,
+          "hull damage": 1900,
+          "hit force": 5500
+        }
+      },
+      "tiny explosion": "20",
+      "small explosion": "45",
+      "medium explosion": "50",
+      "large explosion": "40",
+      "huge explosion": "10",
+      "final explode": "\"final explosion large\"",
+      "description": "The venerable Palavret has been a mainstay of the Korath raiding fleet, elements of its design dating back from before the era of shortages and desperation caused by a life in exile. Over forty generations of raiders have terrorized neighboring systems over the centuries. \tConstant warfare against surrounding aliens has been building pressure on Korath shipyards to recover some of their ancient prowess. Now, with a fresh industrial network to draw upon, the Korath have created a new raider to deal with modern targets, and the Tubfalet-Class Raiding Ship is named for an admiral who dealt with such enemies. Despite extensive injuries, he remained on his flag bridge during a Remnant attack, leading his squadron to victory.",
+      "variant": "Tubfalet (Crew Destroyed)",
+      "baseShip": "Tubfalet"
+    },
+    {
       "name": "Charm-Shallop (Charm-Shallop (Distressed))",
       "engines": [
         {
@@ -42449,6 +42982,35 @@
       "description": "The fastest Avgi starships were propelled not just by their engines, but also by immense banks of lasers and particle beams stationed in the Anax system, pushing ships to velocities in excess of 0.2c before braking with a magsail or plasma magnet. Just before the invention of the hyperdrive, however, the Avgi perfected this beam-core antimatter drive, capable of pushing a starship with sufficient antimatter fuel to 0.4c and perhaps beyond. Requiring immense quantities of antimatter, the amat farms around Anax such as Antivli Station would have been strained to their limits had this design entered mass production, but the surprise invention of the hyperdrive rendered it laughably obsolete overnight."
     },
     {
+      "name": "Teciimach Canister",
+      "category": "Ammunition",
+      "series": "Ammunition",
+      "index": 3020,
+      "cost": 35500,
+      "thumbnail": "outfit/emp torpedo",
+      "mass": 1,
+      "teciimach canister capacity": -1,
+      "description": "This canister contains everything required to assemble a Teciimach Torpedo. These weapons emit strong electromagnetic pulses which interfere with a ship's generators and neutralize a portion of their energy.",
+      "EMP Torpedoes,": "the Teciimach torpedoes actively shape their emission pattern to avoid impacting their allies."
+    },
+    {
+      "name": "Teciimach Canister Rack",
+      "category": "Ammunition",
+      "series": "Ammunition",
+      "index": 3021,
+      "licenses": {
+        "description": "Remnant"
+      },
+      "cost": 295000,
+      "thumbnail": "outfit/emp rack",
+      "mass": 5,
+      "outfit space": -9,
+      "energy capacity": 500,
+      "teciimach canister capacity": 9,
+      "ammo": "Teciimach Canister",
+      "description": "\tIn addition to its ammunition capacity, the storage bay can also contain a small amount of charge, enough to let an otherwise battery-less ship assemble Teciimach Torpedoes."
+    },
+    {
       "name": "Radiative Lamina",
       "plural": "Radiative Laminae",
       "category": "Systems",
@@ -42773,6 +43335,7 @@
       "steering flare sprite": "effect/avgi flare/rcs",
       "steering flare sound": "remnant afterburner",
       "magnetic nozzle": 18,
+      "linked": "Inductive Extractor",
       "description": "The fastest Avgi starships were propelled not just by their engines, but also by immense banks of lasers and particle beams stationed in the Anax system, pushing ships to velocities in excess of 0.2c before braking with a magsail or plasma magnet. Just before the invention of the hyperdrive, however, the Avgi perfected this beam-core antimatter drive, capable of pushing a starship with sufficient antimatter fuel to 0.4c and perhaps beyond. Requiring immense quantities of antimatter, the amat farms around Anax such as Antivli Station would have been strained to their limits had this design entered mass production, but the surprise invention of the hyperdrive rendered it laughably obsolete overnight."
     },
     {
@@ -42798,6 +43361,7 @@
       "flare sound": "fusion torch",
       "afterburner effect": "small remass injection",
       "magnetic nozzle": 3,
+      "linked": "Inductive Extractor",
       "description": "\tThe magnetic nozzle is designed to support a variety of components that can be slotted in to provide various effects, from injecting additional propellant to improve thrust to tapping energy from the expanding fusion plasma to power a ship's systems."
     },
     {
@@ -42823,6 +43387,7 @@
       "flare sound": "fusion torch",
       "afterburner effect": "medium remass injection",
       "magnetic nozzle": 6,
+      "linked": "Inductive Extractor",
       "description": "\tThe magnetic nozzle is designed to support a variety of components that can be slotted in to provide various effects, from injecting additional propellant to improve thrust to tapping energy from the expanding fusion plasma to power a ship's systems."
     },
     {
@@ -42848,6 +43413,7 @@
       "flare sound": "fusion torch",
       "afterburner effect": "large remass injection",
       "magnetic nozzle": 9,
+      "linked": "Inductive Extractor",
       "description": "\tThe magnetic nozzle is designed to support a variety of components that can be slotted in to provide various effects, from injecting additional propellant to improve thrust to tapping energy from the expanding fusion plasma to power a ship's systems."
     },
     {
@@ -43105,6 +43671,7 @@
       "mass": 30,
       "outfit space": -30,
       "lasing power": 3,
+      "linked": "Blue Optical Laser",
       "description": "\tThe wavelength of light produced in the coil can altered by swapping the diodes and fiber dopants, allowing the Optical Lasing Generator to support up to three Green Optical Lasers or a single Blue Optical Laser."
     },
     {
@@ -43543,6 +44110,36 @@
       "description": "The Shield Relay Limiter is a component that can be installed into a Bunrodean shield relay in order to modify its effectiveness. Limiters increase the energy efficiency of a relay, but at the cost of reducing the strength of its shield generation."
     },
     {
+      "name": "Small Shield Relay",
+      "category": "Systems",
+      "series": "Shields",
+      "index": 10010,
+      "cost": 172000,
+      "thumbnail": "outfit/small shield relay",
+      "mass": 21,
+      "outfit space": -21,
+      "shield generation": 0.65,
+      "shield energy": 0.6,
+      "relay upgrades": 6,
+      "linked": "Shield Relay Limiter",
+      "description": "\tShield relays are able to be upgraded by installing shield boosters or limiters, which alter the performance of the shield relay. Each relay only has a limited number of slots for these upgrades, though."
+    },
+    {
+      "name": "Large Shield Relay",
+      "category": "Systems",
+      "series": "Shields",
+      "index": 10020,
+      "cost": 593000,
+      "thumbnail": "outfit/large shield relay",
+      "mass": 56,
+      "outfit space": -56,
+      "shield generation": 2,
+      "shield energy": 1.6,
+      "relay upgrades": 16,
+      "linked": "Shield Relay Limiter",
+      "description": "\tShield relays are able to be upgraded by installing shield boosters or limiters, which alter the performance of the shield relay. Each relay only has a limited number of slots for these upgrades, though."
+    },
+    {
       "name": "Nanite Enhancer",
       "category": "Systems",
       "series": "Repair",
@@ -43569,6 +44166,51 @@
       "hull energy": -0.2,
       "nanite upgrades": -1,
       "description": "The Nanite Limiter is a component that can be installed into a Bunrodean nanite fabricator in order to modify its effectiveness. Limiters increase the energy and heat efficiency of a fabricator, but at the cost of reducing the strength of its hull repair."
+    },
+    {
+      "name": "Small Nanite Fabricator",
+      "category": "Systems",
+      "series": "Repair",
+      "index": 10010,
+      "cost": 650000,
+      "thumbnail": "outfit/small nanite fabricator",
+      "mass": 23,
+      "outfit space": -23,
+      "hull repair rate": 0.72,
+      "hull energy": 1.08,
+      "nanite upgrades": 4,
+      "linked": "Nanite Limiter",
+      "description": "\tNanite fabricators are able to be upgraded by installing nanite enhancers or limiters, which alter the performance of the fabricator. Each fabricator only has a limited number of slots for these upgrades, though."
+    },
+    {
+      "name": "Large Nanite Fabricator",
+      "category": "Systems",
+      "series": "Repair",
+      "index": 10020,
+      "cost": 1940000,
+      "thumbnail": "outfit/large nanite fabricator",
+      "mass": 58,
+      "outfit space": -58,
+      "hull repair rate": 2.12,
+      "hull energy": 3.18,
+      "nanite upgrades": 10,
+      "linked": "Nanite Limiter",
+      "description": "\tNanite fabricators are able to be upgraded by installing nanite enhancers or limiters, which alter the performance of the fabricator. Each fabricator only has a limited number of slots for these upgrades, however."
+    },
+    {
+      "name": "Solar Battery",
+      "plural": "Solar Batteries",
+      "category": "Power",
+      "series": "Batteries",
+      "index": 10010,
+      "cost": 49000,
+      "thumbnail": "outfit/solar battery",
+      "mass": 7,
+      "outfit space": -7,
+      "energy capacity": 6000,
+      "solar cell": 36,
+      "linked": "Solar Cell",
+      "description": "Bunrodean solar batteries are required for the installation of solar cells, but solar batteries are perfectly capable of going without solar cells. Many captains will install batteries to store energy gained from normal reactors without ever installing solar cells."
     },
     {
       "name": "Solar Cell",
@@ -43611,6 +44253,52 @@
       "heat generation": -6.6,
       "reactor upgrades": -2,
       "description": "The Reactor Limiter is a component that can be installed into a Bunrodea reactor in order to modify its effectiveness. Limiters increase the heat efficiency of a reactor, but at the cost of reducing the strength of its energy generation."
+    },
+    {
+      "name": "Quark Reactor",
+      "category": "Power",
+      "series": "Generators",
+      "index": 10010,
+      "cost": 3367000,
+      "thumbnail": "outfit/quark reactor",
+      "mass": 61,
+      "outfit space": -61,
+      "energy generation": 8.35,
+      "heat generation": 10.9,
+      "reactor upgrades": 6,
+      "linked": "Reactor Limiter",
+      "description": "\tBunrodean reactors are able to be upgraded by installing Reactor Overclockers or Limiters, which alter the performance of the reactor. Each reactor only has a limited number of slots for these upgrades, though."
+    },
+    {
+      "name": "Electroweak Reactor",
+      "category": "Power",
+      "series": "Generators",
+      "index": 10020,
+      "cost": 8393000,
+      "thumbnail": "outfit/electroweak reactor",
+      "mass": 106,
+      "outfit space": -106,
+      "energy generation": 17.25,
+      "heat generation": 20.5,
+      "reactor upgrades": 18,
+      "linked": "Reactor Limiter",
+      "description": "\tBunrodean reactors are able to be upgraded by installing Reactor Overclockers or Limiters, which alter the performance of the reactor. Each reactor only has a limited number of slots for these upgrades, though."
+    },
+    {
+      "name": "Dark Reactor",
+      "category": "Power",
+      "series": "Generators",
+      "index": 10030,
+      "cost": 15022000,
+      "thumbnail": "outfit/dark reactor",
+      "mass": 142,
+      "outfit space": -142,
+      "energy generation": 24.7,
+      "heat generation": 28.6,
+      "reactor upgrades": 30,
+      "linked": "Reactor Limiter",
+      "dark star": "can have different meanings, but one definition of it is a star whose core is formed around a large amount of dark matter. Such exotic stars are theorized by humanity to have possibly existed among the first generations of stars in the universe, with concentrations of dark matter acting as nucleation sites.",
+      "description": "\tBunrodean reactors are able to be upgraded by installing Reactor Overclockers or Limiters, which alter the performance of the reactor. Each reactor only has a limited number of slots for these upgrades, though."
     },
     {
       "name": "Lasher Pistol",
@@ -43902,8 +44590,8 @@
       "index": 10011,
       "cost": 24000,
       "thumbnail": "outfit/swarm storage",
-      "mass": 2,
-      "outfit space": -10,
+      "mass": 1,
+      "outfit space": -7,
       "swarm capacity": 200,
       "ammo": "Swarm Missile",
       "description": "Swarm Clips provide a sizable increase in ammo capacity for Swarm Pods, holding a respectable 200 missiles able to be swiftly loaded into a launcher after its current clip is empty."
@@ -43915,7 +44603,7 @@
       "index": 10010,
       "cost": 250,
       "thumbnail": "outfit/swarm missile",
-      "mass": 0.04,
+      "mass": 0.03,
       "swarm capacity": -1,
       "description": "Swarm missiles are small, fast moving munitions for the Swarm Pod."
     },
@@ -43926,9 +44614,9 @@
       "index": 10010,
       "cost": 363000,
       "thumbnail": "outfit/swarm pod",
-      "mass": 5,
-      "outfit space": -21,
-      "weapon capacity": -21,
+      "mass": 3,
+      "outfit space": -15,
+      "weapon capacity": -15,
       "gun ports": -1,
       "swarm capacity": 400,
       "weapon": {
@@ -43951,8 +44639,8 @@
         "acceleration": 1.3,
         "drag": 0.1,
         "turn": 5.35,
-        "radar tracking": 0.5,
-        "optical tracking": 0.5,
+        "radar tracking": 0.2,
+        "optical tracking": 0.6,
         "shield damage": 46,
         "hull damage": 24,
         "missile strength": 8,
@@ -46466,8 +47154,8 @@
       "index": 2011,
       "cost": 28000,
       "thumbnail": "outfit/hai tracker storage",
-      "mass": 4.4,
-      "outfit space": -10,
+      "mass": 2.4,
+      "outfit space": -8,
       "tracker capacity": 28,
       "ammo": "Hai Tracker",
       "description": "The Tracker Storage Pod is used to store extra ammunition for Tracker Pods."
@@ -46479,9 +47167,9 @@
       "index": 2010,
       "cost": 150000,
       "thumbnail": "outfit/hai tracker pod",
-      "mass": 8,
-      "outfit space": -19,
-      "weapon capacity": -19,
+      "mass": 5,
+      "outfit space": -16,
+      "weapon capacity": -16,
       "gun ports": -1,
       "tracker capacity": 56,
       "weapon": {
@@ -46512,7 +47200,7 @@
           "description": "\"leading\" \"throttle control\""
         },
         "optical tracking": 0.8,
-        "infrared tracking": 0.4,
+        "infrared tracking": 0.2,
         "shield damage": 200,
         "hull damage": 160,
         "hit force": 525,
@@ -51044,6 +51732,22 @@
       "description": "Whatever the mechanism that hides beneath the translucent orb may be, it functions similarly to a jump drive, bridging different parts of the universe together for the cost of merely 200 units of fuel."
     },
     {
+      "name": "Asteroid Jump Drive (Patir 18)",
+      "displayName": "???",
+      "category": "Systems",
+      "cost": 29631456,
+      "thumbnail": "outfit/asteroid weapon 7",
+      "mass": 20,
+      "outfit space": -20,
+      "jump speed": 10,
+      "jump fuel": 200,
+      "jump range": 48,
+      "jump drive": 1,
+      "asteroid mount jd": -1,
+      "jump effect": "jump drive 15",
+      "description": "Whatever the mechanism that hides beneath the translucent orb may be, it functions similarly to a jump drive, bridging different parts of the universe together for the cost of merely 200 units of fuel."
+    },
+    {
       "name": "Ka'het Nullifier",
       "category": "Guns",
       "series": "Guns",
@@ -51219,11 +51923,11 @@
       "index": 5010,
       "cost": 715000,
       "thumbnail": "outfit/ka'het emp deployer",
-      "mass": 18,
+      "mass": 10,
       "outfit space": -26,
       "weapon capacity": -26,
       "gun ports": -1,
-      "emp torpedo capacity": 16,
+      "emp torpedo capacity": 27,
       "weapon": {
         "sprite": "projectile/emp torpedo",
         "spriteData": {
@@ -51252,7 +51956,7 @@
         "homing": {
           "description": "\"throttle control\""
         },
-        "infrared tracking": 0.7,
+        "infrared tracking": 0.2,
         "radar tracking": 0.8,
         "trigger radius": 50,
         "blast radius": 200,
@@ -52696,9 +53400,9 @@
       "category": "Ammunition",
       "series": "Ammunition",
       "index": 4030,
-      "cost": 3500,
+      "cost": 830,
       "thumbnail": "outfit/piercer",
-      "mass": 0.3,
+      "mass": 0.07,
       "piercer capacity": -1,
       "description": "This missile is fired from a Piercer Missile Launcher."
     },
@@ -52709,9 +53413,9 @@
       "index": 4031,
       "cost": 56000,
       "thumbnail": "outfit/korath piercer storage",
-      "mass": 2.2,
+      "mass": 0.1,
       "outfit space": -7,
-      "piercer capacity": 16,
+      "piercer capacity": 98,
       "ammo": "Piercer Missile",
       "description": "The Piercer Missile Rack is used to store extra ammunition for Piercer Missile Launchers."
     },
@@ -52722,12 +53426,12 @@
       "index": 4030,
       "cost": 593000,
       "thumbnail": "outfit/piercer launcher",
-      "mass": 18,
-      "outfit space": -27,
-      "weapon capacity": -27,
+      "mass": 7,
+      "outfit space": -21,
+      "weapon capacity": -21,
       "energy capacity": 50,
       "gun ports": -1,
-      "piercer capacity": 31,
+      "piercer capacity": 197,
       "weapon": {
         "sprite": "projectile/piercer",
         "spriteData": {
@@ -52742,25 +53446,18 @@
           "piercer impact",
           "piercer explosion"
         ],
-        "die effect": "piercer explosion",
-        "inaccuracy": 3,
+        "die effect": "piercer death",
+        "inaccuracy": 1.5,
         "velocity": 18,
-        "lifetime": 200,
-        "reload": 72,
-        "firing energy": 29,
-        "firing heat": 144,
-        "acceleration": 0.54,
-        "drag": 0.03,
-        "turn": 1.6,
-        "homing": {
-          "description": "\"leading\" \"throttle control\""
-        },
-        "infrared tracking": 0.9,
-        "shield damage": 290,
-        "hull damage": 440,
+        "lifetime": 47,
+        "reload": 23,
+        "firing energy": 9,
+        "firing heat": 46,
+        "shield damage": 130,
+        "hull damage": 197,
         "piercing": 0.2,
-        "hit force": 450,
-        "missile strength": 73,
+        "hit force": 144,
+        "missile strength": 23,
         "description": "\"stream\""
       },
       "description": "\tAmmunition for this weapon can be restocked at any outfitter."
@@ -52812,7 +53509,7 @@
       "index": 4040,
       "cost": 3500,
       "thumbnail": "outfit/korath mine",
-      "mass": 0.7,
+      "mass": 0.4,
       "minelayer capacity": -1,
       "description": "This is ammunition for a Cluster Mine Layer. Each mine splits into eleven submunitions after it is deployed."
     },
@@ -52823,9 +53520,9 @@
       "index": 4041,
       "cost": 31500,
       "thumbnail": "outfit/korath mine storage",
-      "mass": 2.7,
+      "mass": 0.8,
       "outfit space": -9,
-      "minelayer capacity": 9,
+      "minelayer capacity": 20,
       "ammo": "Cluster Mine",
       "description": "The Cluster Mine Rack is used to store extra ammunition for Cluster Mine Layers."
     },
@@ -52836,12 +53533,12 @@
       "index": 4040,
       "cost": 1073000,
       "thumbnail": "outfit/korath minelayer",
-      "mass": 36,
-      "outfit space": -48,
-      "weapon capacity": -48,
+      "mass": 15,
+      "outfit space": -27,
+      "weapon capacity": -27,
       "energy capacity": 50,
       "gun ports": -1,
-      "minelayer capacity": 17,
+      "minelayer capacity": 41,
       "weapon": {
         "sprite": "projectile/korath minelayer",
         "spriteData": {
@@ -53092,9 +53789,9 @@
       "index": 4011,
       "cost": 27400,
       "thumbnail": "outfit/firelight rack",
-      "mass": 3,
-      "outfit space": -6,
-      "firelight missile capacity": 10,
+      "mass": 3.2,
+      "outfit space": -8,
+      "firelight missile capacity": 6,
       "ammo": "Firelight Missile",
       "description": "This rack stores additional Firelight missiles to feed into a Firelight Bank."
     },
@@ -53105,7 +53802,7 @@
       "index": 4010,
       "cost": 7600,
       "thumbnail": "outfit/firelight",
-      "mass": 0.3,
+      "mass": 0.8,
       "firelight missile capacity": -1,
       "energy generation": 0.02,
       "heat generation": 0.1,
@@ -53118,12 +53815,12 @@
       "index": 4010,
       "cost": 1937000,
       "thumbnail": "outfit/firelight bank",
-      "mass": 22,
+      "mass": 13,
       "outfit space": -28,
       "weapon capacity": -28,
       "gun ports": -1,
       "energy capacity": 700,
-      "firelight missile capacity": 20,
+      "firelight missile capacity": 18,
       "weapon": {
         "sprite": "projectile/firelight",
         "sound": "firelight",
@@ -53145,7 +53842,6 @@
         "homing": {
           "description": "\"throttle control\""
         },
-        "blast radius": 48,
         "hit force": 150,
         "missile strength": 33,
         "submunition": "Firelight Turning",
@@ -53193,7 +53889,7 @@
       "index": 4020,
       "cost": 19800,
       "thumbnail": "outfit/firestorm torpedo",
-      "mass": 1,
+      "mass": 2,
       "firestorm torpedo capacity": -1,
       "energy generation": 0.06,
       "heat generation": 0.3,
@@ -53206,9 +53902,9 @@
       "index": 4021,
       "cost": "135000",
       "thumbnail": "outfit/firestorm torpedo rack",
-      "mass": 7,
+      "mass": 8,
       "outfit space": -20,
-      "firestorm torpedo capacity": 13,
+      "firestorm torpedo capacity": 6,
       "ammo": "Firestorm Torpedo",
       "description": "This large cage-like rack is designed to be able to house several deadly Firestorm Torpedoes."
     },
@@ -53220,7 +53916,7 @@
       "index": 4020,
       "cost": 2383000,
       "thumbnail": "outfit/firestorm battery",
-      "mass": 35,
+      "mass": 22,
       "outfit space": -48,
       "weapon capacity": -48,
       "energy capacity": 1300,
@@ -53260,7 +53956,6 @@
         "hull damage": 2760,
         "heat damage": 5320,
         "burn damage": 40,
-        "corrosion damage": 5,
         "hit force": 6000,
         "missile strength": 115,
         "description": "stream"
@@ -54251,8 +54946,8 @@
       "cost": 1371000,
       "thumbnail": "outfit/inhibitor turret",
       "mass": 42,
-      "outfit space": -28,
-      "weapon capacity": -22,
+      "outfit space": -42,
+      "weapon capacity": -42,
       "required crew": 1,
       "turret mounts": -1,
       "weapon": {
@@ -54280,7 +54975,7 @@
         "slowing damage": 0.5,
         "description": "\"cluster\""
       },
-      "description": "Although these turrets are unremarkable in terms of performance, the comparatively recent perfection of a technique of installing the bulk of the weapon itself externally on the turret mount instead of under the base has resulted in a weapon that takes comparatively little outfit space. It does, however, still add quite a bit more to the mass of the ship."
+      "description": "\tAlthough these turrets are unremarkable in terms of performance, the comparatively recent refinement of the interference effect dampens the strong torques that previously made the use of a swiveling mount unfeasible, making these turrets a true engineering achievement."
     },
     {
       "name": "Thrasher Cannon",
@@ -54390,7 +55085,7 @@
       "index": 3010,
       "cost": 4400,
       "thumbnail": "outfit/emp torpedo",
-      "mass": 1,
+      "mass": 0.6,
       "emp torpedo capacity": -1,
       "description": "This torpedo can emit electromagnetic pulses, interfering with a ship's generators."
     },
@@ -54404,10 +55099,10 @@
       },
       "cost": 98000,
       "thumbnail": "outfit/emp rack",
-      "mass": 5,
+      "mass": 4.8,
       "outfit space": -12,
       "energy capacity": 400,
-      "emp torpedo capacity": 7,
+      "emp torpedo capacity": 12,
       "ammo": "EMP Torpedo",
       "description": "\tIn addition to its ammunition capacity, the storage bay can also contain a small amount of charge, enough to let an otherwise battery-less ship fire EMP Torpedoes."
     },
@@ -54425,7 +55120,7 @@
       "outfit space": -18,
       "weapon capacity": -18,
       "gun ports": -1,
-      "emp torpedo capacity": 9,
+      "emp torpedo capacity": 15,
       "weapon": {
         "sprite": "projectile/emp torpedo",
         "spriteData": {
@@ -54454,7 +55149,7 @@
         "homing": {
           "description": "\"throttle control\""
         },
-        "infrared tracking": 0.7,
+        "infrared tracking": 0.2,
         "radar tracking": 0.8,
         "trigger radius": 50,
         "blast radius": 200,
@@ -54469,35 +55164,6 @@
       "description": "\tAmmunition for this weapon can be restocked at any outfitter."
     },
     {
-      "name": "Teciimach Canister",
-      "category": "Ammunition",
-      "series": "Ammunition",
-      "index": 3020,
-      "cost": 35500,
-      "thumbnail": "outfit/emp torpedo",
-      "mass": 1,
-      "teciimach canister capacity": -1,
-      "description": "This canister contains everything required to assemble a Teciimach Torpedo. These weapons emit strong electromagnetic pulses which interfere with a ship's generators and neutralize a portion of their energy.",
-      "EMP Torpedoes,": "the Teciimach torpedoes actively shape their emission pattern to avoid impacting their allies."
-    },
-    {
-      "name": "Teciimach Canister Rack",
-      "category": "Ammunition",
-      "series": "Ammunition",
-      "index": 3021,
-      "licenses": {
-        "description": "Remnant"
-      },
-      "cost": 295000,
-      "thumbnail": "outfit/emp rack",
-      "mass": 5,
-      "outfit space": -9,
-      "energy capacity": 500,
-      "teciimach canister capacity": 9,
-      "ammo": "Teciimach Canister",
-      "description": "\tIn addition to its ammunition capacity, the storage bay can also contain a small amount of charge, enough to let an otherwise battery-less ship assemble Teciimach Torpedoes."
-    },
-    {
       "name": "Teciimach Bay",
       "category": "Secondary Weapons",
       "series": "Secondary Weapons",
@@ -54507,11 +55173,11 @@
       },
       "cost": 1525000,
       "thumbnail": "outfit/teciimach bay",
-      "mass": 9,
-      "outfit space": -13,
-      "weapon capacity": -13,
+      "mass": 6,
+      "outfit space": -18,
+      "weapon capacity": -18,
       "gun ports": -1,
-      "teciimach canister capacity": 9,
+      "emp torpedo capacity": 20,
       "weapon": {
         "sprite": "projectile/emp torpedo",
         "spriteData": {
@@ -54519,7 +55185,7 @@
           "description": "\"no repeat\""
         },
         "sound": "torpedo",
-        "ammo": "Teciimach Canister",
+        "ammo": "EMP Torpedo",
         "icon": "icon/emp",
         "fire effect": "emp torpedo fire",
         "hit effect": [
@@ -54528,33 +55194,32 @@
           "emp spark"
         ],
         "die effect": "tiny explosion",
-        "reload": 310,
+        "reload": 330,
         "firing energy": 400,
         "firing heat": 18,
         "inaccuracy": 5,
         "lifetime": 300,
-        "velocity": 8,
+        "velocity": 7,
         "acceleration": 0.7,
         "drag": 0.1,
-        "turn": 2.5,
+        "turn": 2,
         "homing": {
           "description": "\"throttle control\""
         },
-        "infrared tracking": 0.8,
-        "radar tracking": 0.9,
+        "infrared tracking": 0.2,
+        "radar tracking": 0.8,
         "trigger radius": 50,
         "blast radius": 200,
-        "shield damage": 900,
-        "hull damage": 125,
-        "disabled damage": 60,
-        "ion damage": 65,
-        "scrambling damage": 65,
-        "energy damage": 2000,
+        "shield damage": 700,
+        "hull damage": 100,
+        "ion damage": 48,
+        "scrambling damage": 48,
         "hit force": 135,
-        "missile strength": 95,
-        "description": "cluster safe"
+        "missile strength": 80,
+        "description": "stream safe"
       },
-      "description": "\tAmmunition for this weapon can be restocked at any outfitter."
+      "description": "\tAmmunition for this weapon can be restocked at any outfitter.",
+      "Teciimach,": "contains two major improvements. The first is a mechanism on the launcher that alters each torpedoes' energy to ignore allies, letting Teciimachs be deployed without risk of ionizing yourself or the rest of your fleet."
     },
     {
       "name": "Teciimach Pod",
@@ -54566,11 +55231,11 @@
       },
       "cost": 762500,
       "thumbnail": "outfit/teciimach pod",
-      "mass": 3,
+      "mass": 4,
       "outfit space": -6,
       "weapon capacity": -6,
       "gun ports": -1,
-      "teciimach canister capacity": 3,
+      "emp torpedo capacity": 3,
       "weapon": {
         "sprite": "projectile/emp torpedo",
         "spriteData": {
@@ -54578,7 +55243,7 @@
           "description": "\"no repeat\""
         },
         "sound": "torpedo",
-        "ammo": "Teciimach Canister",
+        "ammo": "EMP Torpedo",
         "icon": "icon/emp",
         "fire effect": "emp torpedo fire",
         "hit effect": [
@@ -54588,32 +55253,30 @@
         ],
         "die effect": "tiny explosion",
         "burst count": 3,
-        "burst reload": 110,
-        "reload": 620,
-        "firing energy": 350,
-        "firing heat": 16,
+        "burst reload": 330,
+        "reload": 660,
+        "firing energy": 400,
+        "firing heat": 18,
         "inaccuracy": 5,
         "lifetime": 300,
-        "velocity": 8,
+        "velocity": 7,
         "acceleration": 0.7,
         "drag": 0.1,
-        "turn": 2.5,
+        "turn": 2,
         "homing": {
           "description": "\"throttle control\""
         },
-        "infrared tracking": 0.8,
-        "radar tracking": 0.9,
+        "infrared tracking": 0.2,
+        "radar tracking": 0.8,
         "trigger radius": 50,
         "blast radius": 200,
-        "shield damage": 900,
-        "hull damage": 125,
-        "disabled damage": 60,
-        "ion damage": 60,
-        "scrambling damage": 60,
-        "energy damage": 2000,
+        "shield damage": 700,
+        "hull damage": 100,
+        "ion damage": 48,
+        "scrambling damage": 48,
         "hit force": 135,
-        "missile strength": 95,
-        "description": "cluster safe"
+        "missile strength": 80,
+        "description": "safe"
       },
       "description": "\tAmmunition for this weapon can be restocked at any outfitter."
     },
@@ -55520,6 +56183,7 @@
       "shield protection": -0.33,
       "shield energy": 2.53,
       "shield connection point": 1,
+      "linked": "Shield Cortex Interface",
       "description": "At their peak, the Predecessors were feared not by how quickly they could overpower their enemies, but by how effectively they could outlast them. Many generations later, this philosophy is still reflected in modern Successor shield cortices, which are exceptionally powerful for their size but weaken the shield's resistance to incoming fire. This allows Successor ships to recover quickly from sustained damage, even if they are slightly more vulnerable to it."
     },
     {
@@ -55539,6 +56203,7 @@
       "shield protection": -0.33,
       "shield energy": 4,
       "shield connection point": 1,
+      "linked": "Shield Cortex Interface",
       "description": "Because their bimodal engines draw power from a ship's shield matrix, even non-combat Successor craft can justify equipping powerful shield generators to afford them greater mobility. This is the largest unit the High Houses permit for sale to the general public; even so, it offers substantially faster regeneration than even the largest human shield generators."
     },
     {
@@ -55558,6 +56223,7 @@
       "shield protection": -0.33,
       "shield energy": 6.4,
       "shield connection point": 1,
+      "linked": "Shield Cortex Interface",
       "description": "The technology of their Predecessors was not nearly as modular as the modern Successor equivalents, which must be built with more limited resources and comparatively primitive manufacturing techniques. Nonetheless, this medium-sized shield cortex is powerful enough to shrug off the combined damage output of several lesser attackers, and consequently is reserved by the High Houses for use in their private navies."
     },
     {
@@ -55577,6 +56243,7 @@
       "shield protection": -0.33,
       "shield energy": 14,
       "shield connection point": 1,
+      "linked": "Shield Cortex Interface",
       "description": "Bristling with regeneration nodes, this large Successor shield cortex requires a power budget greater than most human warships in their entirety. Many more traditional members of the High Houses disapprove of its design, arguing that such a powerful piece of their technology deserves a more artful form, but there has ultimately been little desire to invest time and money into a redesign for purely aesthetic reasons."
     },
     {
@@ -56416,7 +57083,7 @@
         "description": "\"High Houses\""
       },
       "thumbnail": "outfit/sjeja kinetic lance",
-      "mass": 60,
+      "mass": 54,
       "outfit space": -60,
       "weapon capacity": -60,
       "energy capacity": 1900,
@@ -56700,11 +57367,11 @@
       },
       "cost": 450000,
       "thumbnail": "outfit/thunderhead launcher",
-      "mass": 14,
+      "mass": 11,
       "outfit space": -26,
       "weapon capacity": -26,
       "gun ports": -1,
-      "thunderhead capacity": 40,
+      "thunderhead capacity": 56,
       "weapon": {
         "sprite": "projectile/thunderhead",
         "spriteData": {
@@ -56731,8 +57398,8 @@
         "homing": {
           "description": "\"leading\" \"throttle control\""
         },
-        "infrared tracking": 0.9,
-        "radar tracking": 0.6,
+        "infrared tracking": 1,
+        "radar tracking": 0.3,
         "missile strength": 12
       },
       "description": "\tAmmunition for this weapon can be restocked at any outfitter."
@@ -56744,7 +57411,7 @@
       "index": 9010,
       "cost": 1800,
       "thumbnail": "outfit/thunderhead",
-      "mass": 0.3,
+      "mass": 0.27,
       "thunderhead capacity": -1,
       "description": "Thunderhead cluster munitions are long-range Wanderer missiles that split into five fast and agile submunitions when they are close to their target. Each launcher can hold up to 40 of these."
     },
@@ -56758,9 +57425,9 @@
       },
       "cost": 36000,
       "thumbnail": "outfit/thunderhead storage",
-      "mass": 2,
+      "mass": 0.4,
       "outfit space": -8,
-      "thunderhead capacity": 20,
+      "thunderhead capacity": 28,
       "ammo": "Thunderhead Missile",
       "description": "The Thunderhead Storage Array is used to store extra ammunition for Thunderhead Launchers."
     },
@@ -57121,5 +57788,5 @@
       "description": "The history of the Wanderers is not without hardship and failure. Immortalized in a bronze mold, this withered branch recalls the time the Wanderers could not save a world, for skilled as they may be, they cannot stop destruction when it is actively sought after by others mightier than them. The fall of the Noble Watchwood, their cherished emblem, now stands as a solemn vow: when peace fails, they too must prepare to fight. To stand and fight with the Wanderers, this license grants access to their greatest warships."
     }
   ],
-  "parsedAt": "2026-04-01T01:56:20.926Z"
+  "parsedAt": "2026-05-01T02:17:31.912Z"
 }

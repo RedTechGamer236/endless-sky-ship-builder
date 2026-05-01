@@ -1324,7 +1324,7 @@
         "ramscoop": 8.75,
         "cargo space": 275,
         "outfit space": 772,
-        "weapon capacity": 180,
+        "weapon capacity": 228,
         "engine capacity": 252,
         "solar collection": 5,
         "shield generation": 6.1,
@@ -2465,5 +2465,5 @@
       "description": "\tAmmunition for this weapon can be restocked at any outfitter."
     }
   ],
-  "parsedAt": "2026-04-01T02:03:37.504Z"
+  "parsedAt": "2026-05-01T02:24:22.484Z"
 }
