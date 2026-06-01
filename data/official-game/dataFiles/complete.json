@@ -16856,7 +16856,7 @@
         "cost": 3500000,
         "shields": 3300,
         "hull": 6700,
-        "required crew": 7,
+        "required crew": 9,
         "bunks": 18,
         "mass": 850,
         "drag": 11.6,
@@ -47167,7 +47167,7 @@
       "index": 2010,
       "cost": 150000,
       "thumbnail": "outfit/hai tracker pod",
-      "mass": 5,
+      "mass": 4.8,
       "outfit space": -16,
       "weapon capacity": -16,
       "gun ports": -1,
@@ -57788,5 +57788,5 @@
       "description": "The history of the Wanderers is not without hardship and failure. Immortalized in a bronze mold, this withered branch recalls the time the Wanderers could not save a world, for skilled as they may be, they cannot stop destruction when it is actively sought after by others mightier than them. The fall of the Noble Watchwood, their cherished emblem, now stands as a solemn vow: when peace fails, they too must prepare to fight. To stand and fight with the Wanderers, this license grants access to their greatest warships."
     }
   ],
-  "parsedAt": "2026-05-01T02:17:31.912Z"
+  "parsedAt": "2026-06-01T02:55:08.931Z"
 }
