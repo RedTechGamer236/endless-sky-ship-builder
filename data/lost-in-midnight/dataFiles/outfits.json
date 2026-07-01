@@ -12,6 +12,21 @@
     "description": "Also known as Fool's Gold, Pyrite is a common component in the manufacture of photovoltaic panels. It is also used in magnetic data storage technologies and non-rechargeable batteries."
   },
   {
+    "name": "Quantum Bloodcore",
+    "plural": "Quantumium",
+    "series": "Drives",
+    "index": 50,
+    "category": "Systems",
+    "cost": 480000,
+    "thumbnail": "outfit/bloodcore",
+    "flotsam sprite": "effect/flotsam bloodstone",
+    "mass": 1,
+    "outfit space": -2,
+    "quantum bloodstone": 1,
+    "quantum keystone": 1,
+    "description": "There is some speculation that Bloodcores only form from supernovas that resulted in the deaths of billions of sentient lifeforms. The presence of Quantumium in the system prior to the supernova may also be a prerequisite. But there is no way to test this hypothesis without actually witnessing a supernova take place in a system with those features and observing the result, which could take several millenia to crystallize."
+  },
+  {
     "name": "Quantumium",
     "plural": "Quantumium",
     "series": "Drives",
@@ -149,6 +164,7 @@
     "index": 10,
     "thumbnail": "outfit/schematics red",
     "illegal": 1000000,
+    "illegal (Justicar)": 10000000,
     "scan brightness": 1,
     "unplunderable": 1,
     "reinstall": 1,
@@ -162,6 +178,7 @@
     "index": 10,
     "thumbnail": "outfit/schematics green",
     "illegal": 1000000,
+    "illegal (Justicar)": 10000000,
     "scan brightness": 1,
     "unplunderable": 1,
     "integrated systems": 1,
@@ -177,11 +194,14 @@
     "thumbnail": "outfit/schematics purple",
     "unplunderable": 1,
     "spinal mount": -1,
+    "illegal (Justicar)": 1000000,
+    "scan brightness": 1,
     "unique": 1,
     "description": "\tThis cannot be installed onto a ship that doesn't have a spinal mount or if something is already installed in its spinal mount."
   },
   {
     "name": "Popcorn Box",
+    "plural": "Popcorn Boxes",
     "category": "Unique",
     "series": "Non-Functional Unique",
     "index": 10,
@@ -201,10 +221,22 @@
     "mass": 1,
     "outfit space": -1,
     "asteroid scan power": 1,
-    "fused circuits": 1,
-    "reinstall": -1,
+    "unique": 1,
+    "description": "This rusty old asteroid scanner may look like junk, but it still works. Unfortunately the effective range is so low you might not realize an asteroid is minable until you're practically on top of it."
+  },
+  {
+    "name": "Emergency Repair Kit",
+    "category": "Unique",
+    "series": "Special Systems",
+    "index": 1100,
+    "cost": 50000,
+    "thumbnail": "outfit/emergency repair kit",
+    "hull repair rate": 0.0001,
+    "mass": 4,
+    "outfit space": -4,
     "unplunderable": 1,
-    "description": "The circuits of this rusty old asteroid scanner are fused into your ship, but it still works. Unfortunately the effective range is so low you might not realize an asteroid is minable until you're practically on top of it."
+    "unique": 1,
+    "description": "This is a set of tools and spare material for repairing the hull. While impractical for use while engaged in combat, a ship with this installed can be repaired while landed on a planet that lacks hull repair services."
   },
   {
     "name": "Gremlin Circuits",
@@ -227,8 +259,9 @@
     "description": "This is barely edible, but it should be able to keep you going for another day."
   },
   {
-    "name": "Speck Access Temporary License",
+    "name": "Speck Access Temporary",
     "displayName": "Speck Tech",
+    "plural": "Speck Tech",
     "category": "Ammunition",
     "series": "Ammunition",
     "index": 7013,
@@ -243,6 +276,7 @@
   {
     "name": "Speck Tech License",
     "displayName": "Speck Tech",
+    "plural": "Speck Tech",
     "category": "Licenses",
     "series": "Technology",
     "index": 7013,
@@ -254,8 +288,9 @@
     "description": "\tThe Aberrant threat has loosened any restrictions the Twilight Guard would normally have on sharing this technology."
   },
   {
-    "name": "Nettle Access Temporary License",
+    "name": "Nettle Access Temporary",
     "displayName": "Nettle Tech",
+    "plural": "Nettle Tech",
     "category": "Ammunition",
     "series": "Ammunition",
     "index": 7020,
@@ -273,6 +308,7 @@
   {
     "name": "Nettle Tech License",
     "displayName": "Nettle Tech",
+    "plural": "Nettle Tech",
     "category": "Licenses",
     "series": "Technology",
     "index": 7020,
@@ -285,6 +321,39 @@
     "requires Research Data": 1,
     "requires Research Data (Chem)": 1,
     "description": "\tThe Aberrant threat has loosened any restrictions the Twilight Guard would normally have on sharing this technology."
+  },
+  {
+    "name": "Speck Access Temporary License",
+    "displayName": "Speck Tech",
+    "plural": "Speck Tech",
+    "category": "Ammunition",
+    "series": "Ammunition",
+    "index": 7013,
+    "cost": 6000,
+    "thumbnail": "outfit/tech speck round",
+    "base research rate": 0.06,
+    "requires Gatling Ammo Tech": 1,
+    "requires Speck Round": 1,
+    "requires Ammo Basics": 1,
+    "description": "\tAfter this is acquired it can be found in the Licenses area in future visits to the outfitter."
+  },
+  {
+    "name": "Nettle Access Temporary License",
+    "displayName": "Nettle Tech",
+    "plural": "Nettle Tech",
+    "category": "Ammunition",
+    "series": "Ammunition",
+    "index": 7020,
+    "cost": 450000,
+    "thumbnail": "outfit/tech nettle kkv",
+    "base research rate": 0.05,
+    "requires Meteor Tech": 1,
+    "requires Sidewinder Tech": 1,
+    "requires Nettle KKV": 1,
+    "requires Ammo Basics": 1,
+    "requires Research Data": 1,
+    "requires Research Data (Chem)": 1,
+    "description": "\tAfter this is acquired it can be found in the Licenses area in future visits to the outfitter."
   },
   {
     "name": "Voidjelly",
@@ -346,6 +415,7 @@
   },
   {
     "name": "Orange Optical Laser",
+    "plural": "Orange Optical Lasers",
     "category": "Turrets",
     "series": "Turrets",
     "index": 7010,
@@ -394,6 +464,7 @@
   },
   {
     "name": "Prismatic Optical Laser",
+    "plural": "Prismatic Optical Lasers",
     "category": "Turrets",
     "series": "Anti-Missile",
     "index": 7010,
@@ -403,7 +474,7 @@
     "outfit space": -18,
     "weapon capacity": -8,
     "turret mounts": -1,
-    "optical jamming": 9,
+    "optical jamming": 0.9,
     "weapon": {
       "hardpoint sprite": "hardpoint/prismatic optical laser/prismatic optical laser",
       "hardpoint offset": 3,
@@ -430,6 +501,7 @@
   },
   {
     "name": "Red Optical Laser",
+    "plural": "Red Optical Lasers",
     "category": "Guns",
     "series": "Guns",
     "index": 7010,
@@ -474,6 +546,7 @@
   },
   {
     "name": "Speck Magazine Depot",
+    "plural": "Speck Magazine Depots",
     "category": "Ammunition",
     "series": "Ammunition",
     "index": 7012,
@@ -506,6 +579,7 @@
   },
   {
     "name": "Harvester Scanner",
+    "plural": "Harvester Scanners",
     "category": "Systems",
     "series": "Scanners",
     "index": 7010,
@@ -523,6 +597,7 @@
   },
   {
     "name": "Harvester Spectrometer",
+    "plural": "Harvester Spectrometers",
     "category": "Systems",
     "series": "Scanners",
     "index": 7020,
@@ -540,6 +615,7 @@
   },
   {
     "name": "Avgi Harvester License",
+    "plural": "Avgi Harvester Licenses",
     "category": "Licenses",
     "series": "Licenses",
     "index": 7000,
@@ -549,13 +625,15 @@
   },
   {
     "name": "Bunrodean Artifact License",
+    "plural": "Bunrodean Artifact Licenses",
     "category": "Licenses",
     "thumbnail": "outfit/unknown",
     "description": "The outfitter occasionally shows off rare artifacts that aren't actually for sale."
   },
   {
-    "name": "Swarm Access Temporary License",
+    "name": "Swarm Access Temporary",
     "displayName": "Swarm Tech",
+    "plural": "Swarm Tech",
     "category": "Ammunition",
     "series": "Ammunition",
     "index": 10013,
@@ -575,6 +653,7 @@
   {
     "name": "Swarm Tech License",
     "displayName": "Swarm Tech",
+    "plural": "Swarm Tech",
     "category": "Licenses",
     "series": "Technology",
     "index": 10013,
@@ -591,21 +670,28 @@
     "description": "This technical manual details how to manufacture Swarm Missiles. Having this makes it possible for any outfitter to offer Swarm Missiles even if it is normally not stocked there."
   },
   {
-    "name": "Swarm Clip Depot",
+    "name": "Swarm Access Temporary License",
+    "displayName": "Swarm Tech",
+    "plural": "Swarm Tech",
     "category": "Ammunition",
     "series": "Ammunition",
-    "index": 10012,
-    "cost": 72000,
-    "thumbnail": "outfit/swarm depot",
-    "mass": 6,
-    "cargo space": -40,
-    "swarm capacity": 600,
-    "ammo": "Swarm Missile",
-    "required crew": 1,
-    "description": "The Swarm Clip Depot stages extra ammunition in your cargo bay for weapons that use Swarm Missiles. The ammunition is ready to be withdrawn for use. Storing it this way uses more cargo space than if it were packed away in sealed crates. An extra crewmember is required to maintain inventory."
+    "index": 10013,
+    "licenses": {
+      "description": "\"Bunrodean Artifact\""
+    },
+    "cost": 0,
+    "thumbnail": "outfit/tech swarm missile",
+    "base research rate": 0.05,
+    "requires Javelin Tech": 1,
+    "requires Swarm Missile": 1,
+    "requires Ammo Basics": 1,
+    "requires Research Data": 1,
+    "requires Research Data (Chem)": 1,
+    "description": "\tAfter this is acquired it can be found in the Licenses area in future visits to the outfitter."
   },
   {
     "name": "Thermal Insulator",
+    "plural": "Thermal Insulators",
     "category": "Systems",
     "series": "Sabotage",
     "index": 7,
@@ -617,6 +703,7 @@
   },
   {
     "name": "Lasher Rifle",
+    "plural": "Lasher Rifles",
     "category": "Hand to Hand",
     "series": "H2H",
     "index": 10011,
@@ -630,12 +717,14 @@
   },
   {
     "name": "Heliarch Corruption",
+    "plural": "Heliarch Corruption",
     "category": "Special",
     "thumbnail": "outfit/unknown",
     "description": "Evidence of corrupt activities involving a Heliarch official."
   },
   {
     "name": "Camouflaged Blaster",
+    "plural": "Camouflaged Blasters",
     "category": "Guns",
     "series": "Guns",
     "index": 8010,
@@ -648,7 +737,7 @@
     "scan interference": 0.5,
     "weapon": {
       "sprite": "projectile/energy cannon",
-      "sound": "torpedo-ver8",
+      "sound": "energy_cannon",
       "hit effect": "energy cannon impact",
       "inaccuracy": 4,
       "velocity": 10,
@@ -666,6 +755,7 @@
   },
   {
     "name": "Camouflaged Blaster Turret",
+    "plural": "Camouflaged Blaster Turrets",
     "category": "Turrets",
     "series": "Turrets",
     "index": 8010,
@@ -681,7 +771,7 @@
       "hardpoint sprite": "hardpoint/model turret",
       "hardpoint offset": 10,
       "sprite": "projectile/energy cannon",
-      "sound": "torpedo-ver8",
+      "sound": "energy_cannon",
       "hit effect": "energy cannon impact",
       "inaccuracy": 4,
       "turret turn": 1.2,
@@ -704,6 +794,7 @@
   },
   {
     "name": "Coalition Attractor",
+    "plural": "Coalition Attractors",
     "category": "Turrets",
     "series": "Turrets",
     "index": 8030,
@@ -743,6 +834,7 @@
   },
   {
     "name": "Coalition Repulsor",
+    "plural": "Coalition Repulsors",
     "category": "Turrets",
     "series": "Turrets",
     "index": 8040,
@@ -782,6 +874,7 @@
   },
   {
     "name": "Deflector Emitter",
+    "plural": "Deflector Emitters",
     "category": "Turrets",
     "series": "Shields",
     "index": 8045,
@@ -806,6 +899,7 @@
   },
   {
     "name": "Model Cannon",
+    "plural": "Model Cannons",
     "category": "Guns",
     "series": "Guns",
     "index": 8010,
@@ -819,6 +913,7 @@
   },
   {
     "name": "Model Turret",
+    "plural": "Model Turrets",
     "category": "Turrets",
     "series": "Turrets",
     "index": 8010,
@@ -836,6 +931,7 @@
   },
   {
     "name": "Culminator Pod",
+    "plural": "Culminator Pods",
     "category": "Secondary Weapons",
     "series": "Secondary Weapons",
     "index": 8005,
@@ -885,6 +981,7 @@
   },
   {
     "name": "Culminator Storage Tube",
+    "plural": "Culminator Storage Tubes",
     "category": "Ammunition",
     "series": "Ammunition",
     "index": 8006,
@@ -901,6 +998,7 @@
   },
   {
     "name": "Culminator Storage Depot",
+    "plural": "Culminator Storage Depots",
     "category": "Ammunition",
     "series": "Ammunition",
     "index": 8007,
@@ -933,6 +1031,7 @@
   },
   {
     "name": "Finisher Storage Depot",
+    "plural": "Finisher Storage Depots",
     "category": "Ammunition",
     "series": "Ammunition",
     "index": 8012,
@@ -948,6 +1047,7 @@
   },
   {
     "name": "Coalition Scanner",
+    "plural": "Coalition Scanners",
     "category": "Systems",
     "series": "Scanners",
     "index": 8010,
@@ -969,6 +1069,7 @@
   },
   {
     "name": "Fuel Dissipator",
+    "plural": "Fuel Dissipators",
     "category": "Systems",
     "series": "Sabotage",
     "index": 7,
@@ -983,6 +1084,7 @@
   },
   {
     "name": "Coalition Reactor Cluster",
+    "plural": "Coalition Reactor Clusters",
     "category": "Power",
     "series": "Generators",
     "index": 8040,
@@ -999,6 +1101,7 @@
   },
   {
     "name": "Riot Containment Barrier",
+    "plural": "Riot Containment Barriers",
     "category": "Hand to Hand",
     "series": "H2H",
     "index": 8010,
@@ -1015,6 +1118,7 @@
   },
   {
     "name": "Saryd Light Lance",
+    "plural": "Saryd Light Lances",
     "category": "Hand to Hand",
     "series": "H2H",
     "index": 8010,
@@ -1029,8 +1133,9 @@
     "description": "\tThe tip of this spear charges and holds an energy bolt that can be used to enhance the wielder's strikes in melee or be flung at an enemy from a distance."
   },
   {
-    "name": "Finisher Access Temporary License",
+    "name": "Finisher Access Temporary",
     "displayName": "Finisher Tech",
+    "plural": "Finisher Tech",
     "category": "Ammunition",
     "series": "Ammunition",
     "index": 8012,
@@ -1051,6 +1156,7 @@
   {
     "name": "Finisher Tech License",
     "displayName": "Finisher Tech",
+    "plural": "Finisher Tech",
     "category": "Licenses",
     "series": "Technology",
     "index": 8012,
@@ -1068,8 +1174,9 @@
     "description": "This technical manual details how to manufacture Finisher Torpedos. Having this makes it possible for any outfitter to offer Finisher Torpedos even if it is normally not stocked there."
   },
   {
-    "name": "Culminator Access Temporary License",
+    "name": "Culminator Access Temporary",
     "displayName": "Culminator Tech",
+    "plural": "Culminator Tech",
     "category": "Ammunition",
     "series": "Ammunition",
     "index": 8008,
@@ -1090,6 +1197,7 @@
   {
     "name": "Culminator Tech License",
     "displayName": "Culminator Tech",
+    "plural": "Culminator Tech",
     "category": "Licenses",
     "series": "Technology",
     "index": 8008,
@@ -1107,7 +1215,605 @@
     "description": "This technical manual details how to manufacture Culminator Torpedos. Having this makes it possible for any outfitter to offer Culminator Torpedos even if it is normally not stocked there."
   },
   {
+    "name": "Finisher Access Temporary License",
+    "displayName": "Finisher Tech",
+    "plural": "Finisher Tech",
+    "category": "Ammunition",
+    "series": "Ammunition",
+    "index": 8012,
+    "licenses": {
+      "description": "Heliarch"
+    },
+    "cost": 32000000,
+    "thumbnail": "outfit/tech finisher",
+    "base research rate": 0.03,
+    "requires Torpedo Tech": 1,
+    "requires Finisher Torpedo": 1,
+    "requires Ammo Basics": 1,
+    "requires Research Data": 1,
+    "requires Research Data (Chem)": 1,
+    "requires Research Data (Phys)": 1,
+    "description": "\tAfter this is acquired it can be found in the Licenses area in future visits to the outfitter."
+  },
+  {
+    "name": "Culminator Access Temporary License",
+    "displayName": "Culminator Tech",
+    "plural": "Culminator Tech",
+    "category": "Ammunition",
+    "series": "Ammunition",
+    "index": 8008,
+    "licenses": {
+      "description": "Heliarch"
+    },
+    "cost": 30000000,
+    "thumbnail": "outfit/tech culminator",
+    "base research rate": 0.04,
+    "requires Torpedo Tech": 1,
+    "requires Culminator Torpedo": 1,
+    "requires Ammo Basics": 1,
+    "requires Research Data": 1,
+    "requires Research Data (Chem)": 1,
+    "requires Research Data (Phys)": 1,
+    "description": "\tAfter this is acquired it can be found in the Licenses area in future visits to the outfitter."
+  },
+  {
+    "name": "Ignus-Lance",
+    "category": "Guns",
+    "cost": 766000,
+    "thumbnail": "outfit/ignus-lance",
+    "mass": 22,
+    "outfit space": -22,
+    "weapon capacity": -22,
+    "gun ports": -1,
+    "weapon": {
+      "sprite": "projectile/ignus-lance",
+      "spriteData": {
+        "frame rate": 12,
+        "description": "\"random start frame\""
+      },
+      "sound": "fire-lance",
+      "hit effect": "fire-lance impact",
+      "inaccuracy": 0.4,
+      "velocity": 350,
+      "lifetime": 1,
+      "reload": 1,
+      "firing energy": 2.5,
+      "firing heat": 1.7,
+      "shield damage": 3.5,
+      "hull damage": 1.5,
+      "heat damage": 12,
+      "burn damage": 0.15
+    },
+    "description": "The Ignus-Lance is a short-range beam weapon that inflicts intense heat damage to anything it strikes."
+  },
+  {
+    "name": "Combustion Torpedo",
+    "plural": "Combustion Torpedoes",
+    "series": "Ammunition",
+    "index": 9050,
+    "category": "Ammunition",
+    "cost": 4400,
+    "thumbnail": "outfit/combustion torpedo",
+    "mass": 0.5,
+    "heat generation": 0.1,
+    "combustion torpedo capacity": -1,
+    "description": "Combustion Torpedoes are ammunition for the Combustion Launcher. Each Combustion Launcher can hold 27 of them. You cannot install torpedoes unless you have also installed a launcher to fire them from."
+  },
+  {
+    "name": "Combustion Storage Rack",
+    "category": "Ammunition",
+    "series": "Ammunition",
+    "index": 9050,
+    "cost": 98000,
+    "thumbnail": "outfit/combustion storage",
+    "mass": 8,
+    "outfit space": -12,
+    "combustion torpedo capacity": 12,
+    "ammo": "Combustion Torpedo",
+    "description": "The Combustion Storage Rack is used to store extra ammunition for Combustion Launchers."
+  },
+  {
+    "name": "Combustion Depot",
+    "plural": "Combustion Depot",
+    "category": "Ammunition",
+    "series": "Ammunition",
+    "index": 9050,
+    "cost": 196000,
+    "thumbnail": "outfit/combustion depot",
+    "mass": 16,
+    "cargo space": -40,
+    "combustion torpedo capacity": 24,
+    "ammo": "Combustion Torpedo",
+    "required crew": 1,
+    "description": "The Combustion Depot stages extra ammunition in your cargo bay for weapons that use Combustion Torpedoes. The ammunition is ready to be withdrawn for use. Storing it this way uses more cargo space than if it were packed away in sealed crates. An extra crewmember is required to maintain inventory."
+  },
+  {
+    "name": "Combustion Launcher",
+    "category": "Secondary Weapons",
+    "series": "Secondary Weapons",
+    "index": 9110,
+    "cost": 583000,
+    "thumbnail": "outfit/combustion launcher",
+    "mass": 9,
+    "outfit space": -18,
+    "weapon capacity": -18,
+    "gun ports": -1,
+    "combustion torpedo capacity": 15,
+    "weapon": {
+      "sprite": "projectile/torpedo",
+      "spriteData": {
+        "frame rate": 2,
+        "description": "\"random start frame\""
+      },
+      "sound": "nuke",
+      "ammo": "Combustion Torpedo",
+      "icon": "icon/combustion torpedo",
+      "live effect": "hypernuke smoke",
+      "fire effect": "combustion torpedo fire",
+      "hit effect": [
+        "nuke explosion",
+        "combustion ring"
+      ],
+      "die effect": "tiny explosion",
+      "inaccuracy": 1,
+      "velocity": 9,
+      "lifetime": 600,
+      "random lifetime": 1000,
+      "range override": 5400,
+      "reload": 75,
+      "firing energy": 4,
+      "firing fuel": 2,
+      "firing heat": 90,
+      "acceleration": 0.12,
+      "drag": 0.02,
+      "turn": 1.5,
+      "homing": {
+        "description": "\"throttle control\""
+      },
+      "infrared tracking": 0.8,
+      "blast radius": 200,
+      "shield damage": 700,
+      "hull damage": 100,
+      "heat damage": 4800,
+      "burn damage": 48,
+      "hit force": 135,
+      "missile strength": 40,
+      "description": "stream"
+    },
+    "description": "Combustion Torpedoes create a small nuclear reaction that irradiates the target with residual heat after the initial impact. The infrared tracking makes it easier for subsequent torpedoes to find their target."
+  },
+  {
+    "name": "Solar Scoop",
+    "category": "Systems",
+    "series": "Ramscoops",
+    "index": 9010,
+    "cost": 40000,
+    "thumbnail": "outfit/solar scoop",
+    "mass": 6,
+    "outfit space": -6,
+    "ramscoop": 0.5,
+    "description": "These simple ramscoops provide fuel for several Ignitian outfits."
+  },
+  {
+    "name": "Blood Drive",
+    "category": "Systems",
+    "series": "Drives",
+    "index": 20,
+    "cost": 500000,
+    "thumbnail": "outfit/blood drive",
+    "mass": 20,
+    "outfit space": -20,
+    "hyperdrive fuel": 150,
+    "jump fuel": 200,
+    "jump speed": 0.3,
+    "jump drive": 1,
+    "jump range": 1,
+    "quantum keystone": 1,
+    "quantum bloodstone": 1,
+    "description": "Somehow, the technological development of the Ignitia skipped the Hyperdrive and leaped directly to a rudimentary Jump Drive. While this device is limited to travel along hyperspace lanes, it is clear that their researchers are on course to figuring out how to make true Jump Drives."
+  },
+  {
+    "name": "Bloodstone Drive",
+    "category": "Systems",
+    "series": "Drives",
+    "index": 20,
+    "cost": 4000000,
+    "thumbnail": "outfit/bloodstone drive",
+    "mass": 20,
+    "outfit space": -20,
+    "jump fuel": 200,
+    "jump speed": 0.3,
+    "jump drive": 1,
+    "quantum keystone": 1,
+    "quantum bloodstone": 1,
+    "description": "\tThis Jump Drive is manufactured with special materials that give it a quality which regular Jump Drives lack."
+  },
+  {
+    "name": "Cauldron Core",
+    "category": "Systems",
+    "series": "Shields",
+    "index": 9030,
+    "cost": 343000,
+    "thumbnail": "outfit/cauldron core",
+    "mass": 120,
+    "outfit space": -120,
+    "hull repair rate": 1.25,
+    "hull fuel": 0.03,
+    "burn resistance": 0.5,
+    "energy generation": 6.1,
+    "heat generation": 12,
+    "self destruct": 0.5,
+    "description": "The Ignitia seem to regard the Cauldron Core with a sense of mysticism. Maintaining it involves the performance of rituals which do not appear to have any relation to its generated output."
+  },
+  {
+    "name": "Crucible Core",
+    "category": "Systems",
+    "series": "Shields",
+    "index": 9020,
+    "cost": 343000,
+    "thumbnail": "outfit/crucible core",
+    "mass": 90,
+    "outfit space": -90,
+    "hull repair rate": 0.5,
+    "hull fuel": 0.02,
+    "burn resistance": 0.25,
+    "energy generation": 4.2,
+    "heat generation": 10,
+    "self destruct": 0.25,
+    "description": "The Ignitia seem to regard the Crucible Core with a sense of mysticism. Maintaining it involves the performance of rituals which do not appear to have any relation to its generated output."
+  },
+  {
+    "name": "Rubicon Capacitor",
+    "category": "Power",
+    "series": "Batteries",
+    "index": 9010,
+    "cost": 34000,
+    "thumbnail": "outfit/rubicon capacitor",
+    "mass": 12,
+    "outfit space": -12,
+    "energy capacity": 9000,
+    "energy consumption": 0.4,
+    "burn resistance": 0.005,
+    "heat capacity": 460,
+    "description": "\tThe capacitors tend to leak small amounts of energy but are well suited to absorbing heat."
+  },
+  {
+    "name": "Ignitian Engines",
+    "plural": "Ignitian Engines",
+    "category": "Engines",
+    "series": "Engines",
+    "index": 9020,
+    "cost": 276000,
+    "thumbnail": "outfit/ignition engines",
+    "mass": 38,
+    "outfit space": -38,
+    "engine capacity": -38,
+    "heat capacity": 130,
+    "thrust": 20.6,
+    "thrusting energy": 1.2,
+    "thrusting heat": 3.4,
+    "flare sprite": "effect/ignition flare/small",
+    "flare sound": "plasma small",
+    "turn": 420,
+    "turning energy": 0.7,
+    "turning heat": 2.1,
+    "steering flare sprite": "effect/ignition flare/small",
+    "steering flare sound": "plasma tiny",
+    "afterburner thrust": 20.76,
+    "afterburner energy": 1.5,
+    "afterburner heat": 6.25,
+    "afterburner fuel": 0.038,
+    "afterburner effect": "korath afterburner tiny",
+    "description": "The Ignitia incorporate afterburners into every engine design. Separating them is an alien concept that they find incomprehensible."
+  },
+  {
+    "name": "Combustion Torpedo Access Temporary",
+    "displayName": "Combustion Torpedo Tech",
+    "plural": "Combustion Techs",
+    "category": "Ammunition",
+    "series": "Ammunition",
+    "index": 9050,
+    "licenses": {
+      "description": "\"Ignitia Forgemaster\""
+    },
+    "cost": 4400000,
+    "thumbnail": "outfit/tech combustion",
+    "base research rate": 0.04,
+    "requires Heavy Rocket Tech": 1,
+    "requires Torpedo Tech": 1,
+    "requires Combustion Torpedo": 1,
+    "requires Ammo Basics": 1,
+    "requires Research Data": 1,
+    "requires Research Data (Phys)": 1,
+    "description": "\tAfter this is acquired it can be found in the Licenses area in future visits to the outfitter."
+  },
+  {
+    "name": "Combustion Torpedo Tech License",
+    "displayName": "Combustion Torpedo Tech",
+    "plural": "Combustion Torpedo Techs",
+    "category": "Licenses",
+    "series": "Technology",
+    "index": 9050,
+    "licenses": {
+      "description": "\"Ignitia Forgemaster\""
+    },
+    "thumbnail": "outfit/tech combustion",
+    "base research rate": 0.04,
+    "requires Heavy Rocket Tech": 1,
+    "requires Torpedo Tech": 1,
+    "requires Combustion Torpedo": 1,
+    "requires Ammo Basics": 1,
+    "requires Research Data": 1,
+    "requires Research Data (Phys)": 1,
+    "description": "This technical manual details how to manufacture Combustion Torpedos. Having this makes it possible for any outfitter to offer Combustion Torpedos even if it is normally not stocked there."
+  },
+  {
+    "name": "Justicar Executar License",
+    "category": "Licenses",
+    "thumbnail": "outfit/unknown",
+    "description": "\tOnly Executars appointed by the Justicar Court may purchase equipment sold at Justicar outfitters."
+  },
+  {
+    "name": "Injunction Gun",
+    "category": "Guns",
+    "licenses": {
+      "description": "\"Justicar Executar\""
+    },
+    "cost": 222000,
+    "thumbnail": "outfit/injunction gun",
+    "mass": 11,
+    "outfit space": -11,
+    "weapon capacity": -11,
+    "gun ports": -1,
+    "weapon": {
+      "sprite": "projectile/injunction cannon",
+      "sound": "torpedo-ver8",
+      "hit effect": "particle impact",
+      "inaccuracy": 9,
+      "velocity": 10,
+      "lifetime": 36,
+      "reload": 20,
+      "firing energy": 36,
+      "firing heat": 60,
+      "shield damage": 38,
+      "hull damage": 46,
+      "firing force": 7.5,
+      "hit force": 60,
+      "description": "\"cluster\""
+    },
+    "description": "Injunction Guns are the simplest weapons wielded by the Justicars."
+  },
+  {
+    "name": "Injunction Cannon",
+    "category": "Guns",
+    "licenses": {
+      "description": "\"Justicar Executar\""
+    },
+    "cost": 405000,
+    "thumbnail": "outfit/injunction cannon",
+    "mass": 23,
+    "outfit space": -23,
+    "weapon capacity": -23,
+    "gun ports": -1,
+    "weapon": {
+      "sprite": "projectile/injunction cannon",
+      "sound": "torpedo-ver8",
+      "hit effect": "particle impact",
+      "inaccuracy": 9,
+      "velocity": 10,
+      "lifetime": 36,
+      "reload": 10,
+      "burst reload": 4,
+      "burst count": 3,
+      "firing energy": 36,
+      "firing heat": 60,
+      "shield damage": 38,
+      "hull damage": 46,
+      "firing force": 7.5,
+      "hit force": 60,
+      "description": "\"cluster\""
+    },
+    "description": "Injunction Cannons generate concussive blasts that knock perpetrators away from your ship."
+  },
+  {
+    "name": "Injunction Turret",
+    "category": "Turrets",
+    "licenses": {
+      "description": "\"Justicar Executar\""
+    },
+    "cost": 381000,
+    "thumbnail": "outfit/injunction turret",
+    "mass": 29,
+    "outfit space": -29,
+    "weapon capacity": -29,
+    "turret mounts": -1,
+    "required crew": 1,
+    "weapon": {
+      "sprite": "projectile/injunction cannon",
+      "hardpoint sprite": "hardpoint/injunction turret",
+      "hardpoint offset": 14,
+      "sound": "torpedo-ver8",
+      "hit effect": "particle impact",
+      "turret turn": 2,
+      "inaccuracy": 9,
+      "velocity": 10,
+      "lifetime": 36,
+      "reload": 10,
+      "burst reload": 4,
+      "burst count": 3,
+      "firing energy": 36,
+      "firing heat": 60,
+      "shield damage": 38,
+      "hull damage": 46,
+      "firing force": 7.5,
+      "hit force": 60,
+      "description": "\"cluster\""
+    },
+    "description": "This weapon features a single Injunction Cannon mounted on a rotating turret mount."
+  },
+  {
+    "name": "Deliberation Shielding",
+    "category": "Systems",
+    "cost": 220000,
+    "thumbnail": "outfit/deliberation shielding",
+    "licenses": {
+      "description": "\"Justicar Executar\""
+    },
+    "mass": 12,
+    "outfit space": -12,
+    "delayed shield generation": 0.6,
+    "delayed shield energy": 0.6,
+    "delayed shield heat": 0.6,
+    "shield delay": 300,
+    "description": "This shield generator requires some time to activate before recharging the shields. Altering this device for continuous operation was forbidden under Justicar laws against wasteful energy use and heat pollution."
+  },
+  {
+    "name": "Reparation System",
+    "category": "Systems",
+    "cost": 800000,
+    "thumbnail": "outfit/reparation system",
+    "licenses": {
+      "description": "\"Justicar Executar\""
+    },
+    "mass": 37,
+    "outfit space": -37,
+    "delayed hull repair rate": 2.3,
+    "delayed hull energy": 2.3,
+    "delayed hull heat": 2.3,
+    "repair delay": 300,
+    "description": "This hull repair system requires some time to activate before repairing the hull. Altering this device for continuous operation was forbidden under Justicar laws against wasteful energy use and heat pollution."
+  },
+  {
+    "name": "Interrogation Scanner",
+    "category": "Systems",
+    "series": "Scanners",
+    "index": 9020,
+    "cost": 64000,
+    "thumbnail": "outfit/interrogation scanner",
+    "licenses": {
+      "description": "\"Justicar Executar\""
+    },
+    "mass": 8,
+    "outfit space": -8,
+    "cargo scan power": 50,
+    "cargo scan efficiency": 30,
+    "outfit scan power": 50,
+    "outfit scan efficiency": 30,
+    "description": "This Justicar device is one tool used to ensure that the Justicar Code of Conduct is adhered to within their territory."
+  },
+  {
+    "name": "Incarceration Cell",
+    "category": "Power",
+    "cost": 12000,
+    "thumbnail": "outfit/medium incarceration",
+    "licenses": {
+      "description": "\"Justicar Executar\""
+    },
+    "mass": 10,
+    "outfit space": -10,
+    "energy capacity": 1000,
+    "energy generation": 0.2,
+    "heat generation": 0.4,
+    "active cooling": 2,
+    "cooling energy": 0.2,
+    "atrocity": 1,
+    "description": "\tMost civilized species view this type of punishment as a form of cruel slavery."
+  },
+  {
+    "name": "Large Incarceration Cell",
+    "category": "Power",
+    "cost": 30000,
+    "thumbnail": "outfit/large incarceration",
+    "licenses": {
+      "description": "\"Justicar Executar\""
+    },
+    "mass": 20,
+    "outfit space": -20,
+    "energy capacity": 2200,
+    "energy generation": 0.4,
+    "heat generation": 0.8,
+    "active cooling": 4,
+    "cooling energy": 0.4,
+    "atrocity": 1,
+    "description": "\tMost civilized species view this type of punishment as a form of cruel slavery."
+  },
+  {
+    "name": "Jurisdiction Core",
+    "category": "Power",
+    "cost": 1650000,
+    "thumbnail": "outfit/justicar fission",
+    "licenses": {
+      "description": "\"Justicar Executar\""
+    },
+    "mass": 65,
+    "outfit space": -65,
+    "energy generation": 10.34,
+    "heat generation": 30,
+    "description": "Authority is meaningless without the power to enforce it. This fission reactor provides the Justicar with the power to wield their tools of lawfare."
+  },
+  {
+    "name": "Continuance Engine",
+    "category": "Engines",
+    "series": "Engines",
+    "index": 9021,
+    "cost": 20000,
+    "thumbnail": "outfit/tiny justicar engines",
+    "licenses": {
+      "description": "\"Justicar Executar\""
+    },
+    "mass": 48,
+    "outfit space": -48,
+    "engine capacity": -48,
+    "thrust": 15.52,
+    "thrusting energy": 0.4,
+    "thrusting heat": 0.6,
+    "turn": 329.25,
+    "turning energy": 0.5,
+    "turning heat": 1.1,
+    "flare sprite": "effect/justicar flare/medium",
+    "flare sound": "plasma tiny",
+    "steering flare sprite": "effect/justicar flare/medium",
+    "steering flare sound": "plasma tiny",
+    "reverse thrust": 15.52,
+    "reverse thrusting energy": 0.4,
+    "reverse thrusting heat": 0.6,
+    "reverse flare sprite": "effect/justicar flare/medium",
+    "reverse flare sound": "plasma tiny",
+    "description": "Justicar engines are a hybrid of ion and plasma technology. While maneuverable, their maximum potential speed is slow."
+  },
+  {
+    "name": "Movant Engine",
+    "category": "Engines",
+    "series": "Engines",
+    "index": 9021,
+    "cost": 38000,
+    "thumbnail": "outfit/medium justicar engines",
+    "licenses": {
+      "description": "\"Justicar Executar\""
+    },
+    "mass": 121,
+    "outfit space": -121,
+    "engine capacity": -121,
+    "thrust": 63.36,
+    "thrusting energy": 3.2,
+    "thrusting heat": 6.5,
+    "flare sprite": "effect/justicar flare/medium",
+    "flare sound": "plasma medium",
+    "turn": 1380.75,
+    "turning energy": 1.6,
+    "turning heat": 4.1,
+    "steering flare sprite": "effect/justicar flare/medium",
+    "steering flare sound": "plasma medium",
+    "reverse thrust": 63.36,
+    "reverse thrusting energy": 3.2,
+    "reverse thrusting heat": 6.5,
+    "reverse flare sprite": "effect/justicar flare/medium",
+    "reverse flare sound": "plasma medium",
+    "description": "Justicar engines are a hybrid of ion and plasma technology. While maneuverable, their maximum potential speed is slow."
+  },
+  {
     "name": "Graviton Channeler",
+    "plural": "Graviton Channelers",
     "category": "Turrets",
     "thumbnail": "outfit/unknown",
     "cost": 218700,
@@ -1143,6 +1849,7 @@
   },
   {
     "name": "Quantum Paradox Diffusion",
+    "plural": "Quantum Paradox Diffusions",
     "category": "Turrets",
     "thumbnail": "outfit/unknown",
     "cost": 5000000,
@@ -1169,6 +1876,7 @@
   },
   {
     "name": "Quantum Paradox Inversion",
+    "plural": "Quantum Paradox Inversions",
     "category": "System",
     "thumbnail": "outfit/unknown",
     "cost": 10530000,
@@ -1183,6 +1891,7 @@
   },
   {
     "name": "Quantum Paradox Propulsion",
+    "plural": "Quantum Paradox Propulsions",
     "category": "Engines",
     "thumbnail": "outfit/unknown",
     "cost": 8015000,
@@ -1208,6 +1917,7 @@
   },
   {
     "name": "Imaginary Number Fusion Matrix",
+    "plural": "Imaginary Number Fusion Matrices",
     "category": "Power",
     "thumbnail": "outfit/unknown",
     "cost": 141500000,
@@ -1224,6 +1934,7 @@
   },
   {
     "name": "Omni-Directional Photonic Emitter",
+    "plural": "Omni-Directional Photonic Emitters",
     "category": "Turrets",
     "thumbnail": "outfit/unknown",
     "cost": 36000000,
@@ -1256,6 +1967,7 @@
   },
   {
     "name": "Space Differential Stabilizer",
+    "plural": "Space Differential Stabilizers",
     "category": "Turrets",
     "thumbnail": "outfit/unknown",
     "mass": 45,
@@ -1280,6 +1992,7 @@
   },
   {
     "name": "Zero Division Core",
+    "plural": "Zero Division Cores",
     "category": "Power",
     "thumbnail": "outfit/unknown",
     "cost": 7150000,
@@ -1309,6 +2022,7 @@
   },
   {
     "name": "Murkmold Bay",
+    "plural": "Murkmold Bays",
     "category": "Systems",
     "series": "Expansions",
     "index": 10,
@@ -1336,6 +2050,7 @@
   },
   {
     "name": "Murkmold",
+    "plural": "Murkmold",
     "category": "Special",
     "series": "Sabotage",
     "index": 7,
@@ -1351,6 +2066,7 @@
   },
   {
     "name": "Rock Scavenger Meat",
+    "plural": "Rock Scavenger Meat",
     "category": "Special",
     "cost": 1200000,
     "thumbnail": "outfit/rock scavenger meat",
@@ -1372,8 +2088,8 @@
   },
   {
     "name": "Murkspores?",
+    "displayName": "Spores?",
     "plural": "Spores?",
-    "display name": "Spores?",
     "category": "Special",
     "series": "Sabotage",
     "index": 7,
@@ -1396,6 +2112,7 @@
   },
   {
     "name": "Liquid Metal Specimen",
+    "plural": "Liquid Metal Specimens",
     "category": "Special",
     "series": "Specimens",
     "index": 1000,
@@ -1406,6 +2123,7 @@
   },
   {
     "name": "Gray Eye Specimen",
+    "plural": "Gray Eye Specimens",
     "category": "Special",
     "series": "Specimens",
     "index": 1010,
@@ -1416,6 +2134,7 @@
   },
   {
     "name": "Luminazoa Specimen",
+    "plural": "Luminazoa Specimens",
     "category": "Special",
     "series": "Specimens",
     "index": 1010,
@@ -1426,6 +2145,7 @@
   },
   {
     "name": "Leech Specimen",
+    "plural": "Leech Specimens",
     "category": "Special",
     "series": "Specimens",
     "index": 1010,
@@ -1436,6 +2156,7 @@
   },
   {
     "name": "Nautilus Specimen",
+    "plural": "Nautilus Specimens",
     "category": "Special",
     "series": "Specimens",
     "index": 1010,
@@ -1446,6 +2167,7 @@
   },
   {
     "name": "Plasma Specimen",
+    "plural": "Plasma Specimens",
     "category": "Special",
     "series": "Specimens",
     "index": 1010,
@@ -1456,6 +2178,7 @@
   },
   {
     "name": "Firefly Specimen",
+    "plural": "Firefly Specimens",
     "category": "Special",
     "series": "Specimens",
     "index": 1010,
@@ -1466,6 +2189,7 @@
   },
   {
     "name": "Gazer Specimen",
+    "plural": "Gazer Specimens",
     "category": "Special",
     "series": "Specimens",
     "index": 1010,
@@ -1477,6 +2201,7 @@
   {
     "name": "Nightmare Fuel License",
     "displayName": "Nightmare Fuel",
+    "plural": "Nightmare Fuel",
     "category": "Unique",
     "series": "Conditions",
     "index": 1000,
@@ -1512,6 +2237,7 @@
   },
   {
     "name": "Light Scrap Plating",
+    "plural": "Light Scrap Plating",
     "category": "Systems",
     "series": "Special Systems",
     "index": 6010,
@@ -1533,6 +2259,7 @@
   },
   {
     "name": "Heavy Scrap Plating",
+    "plural": "Heavy Scrap Plating",
     "category": "Systems",
     "series": "Special Systems",
     "index": 6010,
@@ -1554,6 +2281,7 @@
   },
   {
     "name": "Thermal Scrap Plating",
+    "plural": "Thermal Scrap Plating",
     "category": "Systems",
     "thumbnail": "outfit/thermal scrap plating",
     "series": "Special Systems",
@@ -1577,6 +2305,7 @@
   },
   {
     "name": "Slag",
+    "plural": "Slag",
     "category": "Special",
     "thumbnail": "outfit/slag",
     "cost": 0,
@@ -1588,6 +2317,7 @@
   },
   {
     "name": "Aluminum Ingot",
+    "plural": "Aluminum Ingots",
     "category": "Special",
     "series": "Ingots",
     "index": 6010,
@@ -1597,10 +2327,11 @@
     "outfit space": -1,
     "aluminum ingot": 1,
     "unplunderable": 1,
-    "description": "Aluminum that has been processed for industrial use."
+    "description": "Aluminum that has been processed for industrial use. Each one should be stamped with a manufacturer's seal certifying the purity of its content. If the stamp is missing or damaged, the ingot's value plummets to it's spot price."
   },
   {
     "name": "Copper Ingot",
+    "plural": "Copper Ingots",
     "category": "Special",
     "series": "Ingots",
     "index": 6010,
@@ -1610,10 +2341,11 @@
     "outfit space": -1,
     "copper ingot": 1,
     "unplunderable": 1,
-    "description": "Copper that has been processed for industrial use."
+    "description": "Copper that has been processed for industrial use. Each one should be stamped with a manufacturer's seal certifying the purity of its content. If the stamp is missing or damaged, the ingot's value plummets to it's spot price."
   },
   {
     "name": "Gold Ingot",
+    "plural": "Gold Ingots",
     "category": "Special",
     "series": "Ingots",
     "index": 6010,
@@ -1623,10 +2355,11 @@
     "outfit space": -1,
     "gold ingot": 1,
     "unplunderable": 1,
-    "description": "Gold that has been processed for industrial use."
+    "description": "Gold that has been processed for industrial use. Each one should be stamped with a manufacturer's seal certifying the purity of its content. If the stamp is missing or damaged, the ingot's value plummets to it's spot price."
   },
   {
     "name": "Iron Ingot",
+    "plural": "Iron Ingots",
     "category": "Special",
     "series": "Ingots",
     "index": 6010,
@@ -1636,10 +2369,11 @@
     "outfit space": -1,
     "iron ingot": 1,
     "unplunderable": 1,
-    "description": "Iron that has been processed for industrial use."
+    "description": "Iron that has been processed for industrial use. Each one should be stamped with a manufacturer's seal certifying the purity of its content. If the stamp is missing or damaged, the ingot's value plummets to it's spot price."
   },
   {
     "name": "Lead Ingot",
+    "plural": "Lead Ingots",
     "category": "Special",
     "series": "Ingots",
     "index": 6010,
@@ -1649,23 +2383,25 @@
     "outfit space": -1,
     "lead ingot": 1,
     "unplunderable": 1,
-    "description": "Lead that has been processed for industrial use."
+    "description": "Lead that has been processed for industrial use. Each one should be stamped with a manufacturer's seal certifying the purity of its content. If the stamp is missing or damaged, the ingot's value plummets to it's spot price."
   },
   {
     "name": "Neodymium Ingot",
+    "plural": "Neodymium Ingots",
     "category": "Special",
     "series": "Ingots",
     "index": 6010,
-    "cost": 30400,
+    "cost": 27200,
     "thumbnail": "outfit/ingot neodymium",
     "mass": 2,
     "outfit space": -1,
     "neodymium ingot": 1,
     "unplunderable": 1,
-    "description": "Neodymium that has been processed for industrial use."
+    "description": "Neodymium that has been processed for industrial use. Each one should be stamped with a manufacturer's seal certifying the purity of its content. If the stamp is missing or damaged, the ingot's value plummets to it's spot price."
   },
   {
     "name": "Platinum Ingot",
+    "plural": "Platinum Ingots",
     "category": "Special",
     "series": "Ingots",
     "index": 6010,
@@ -1675,10 +2411,11 @@
     "outfit space": -1,
     "platinum ingot": 1,
     "unplunderable": 1,
-    "description": "Platinum that has been processed for industrial use."
+    "description": "Platinum that has been processed for industrial use. Each one should be stamped with a manufacturer's seal certifying the purity of its content. If the stamp is missing or damaged, the ingot's value plummets to it's spot price."
   },
   {
     "name": "Pyrite Ingot",
+    "plural": "Pyrite Ingots",
     "category": "Special",
     "series": "Ingots",
     "index": 6010,
@@ -1688,10 +2425,11 @@
     "outfit space": -1,
     "pyrite ingot": 1,
     "unplunderable": 1,
-    "description": "Pyrite that has been processed for industrial use."
+    "description": "Pyrite that has been processed for industrial use. Each one should be stamped with a manufacturer's seal certifying the purity of its content. If the stamp is missing or damaged, the ingot's value plummets to it's spot price."
   },
   {
     "name": "Silicon Ingot",
+    "plural": "Silicon Ingots",
     "category": "Special",
     "series": "Ingots",
     "index": 6010,
@@ -1701,10 +2439,11 @@
     "outfit space": -1,
     "silicon ingot": 1,
     "unplunderable": 1,
-    "description": "Silicon that has been processed for industrial use."
+    "description": "Silicon that has been processed for industrial use. Each one should be stamped with a manufacturer's seal certifying the purity of its content. If the stamp is missing or damaged, the ingot's value plummets to it's spot price."
   },
   {
     "name": "Silver Ingot",
+    "plural": "Silver Ingots",
     "category": "Special",
     "series": "Ingots",
     "index": 6010,
@@ -1714,10 +2453,11 @@
     "outfit space": -1,
     "silver ingot": 1,
     "unplunderable": 1,
-    "description": "Silver that has been processed for industrial use."
+    "description": "Silver that has been processed for industrial use. Each one should be stamped with a manufacturer's seal certifying the purity of its content. If the stamp is missing or damaged, the ingot's value plummets to it's spot price."
   },
   {
     "name": "Titanium Ingot",
+    "plural": "Titanium Ingots",
     "category": "Special",
     "series": "Ingots",
     "index": 6010,
@@ -1727,10 +2467,11 @@
     "outfit space": -1,
     "titanium ingot": 1,
     "unplunderable": 1,
-    "description": "Titanium that has been processed for industrial use."
+    "description": "Titanium that has been processed for industrial use. Each one should be stamped with a manufacturer's seal certifying the purity of its content. If the stamp is missing or damaged, the ingot's value plummets to it's spot price."
   },
   {
     "name": "Tungsten Ingot",
+    "plural": "Tungsten Ingots",
     "category": "Special",
     "series": "Ingots",
     "index": 6010,
@@ -1740,10 +2481,11 @@
     "outfit space": -1,
     "tungsten ingot": 1,
     "unplunderable": 1,
-    "description": "Tungsten that has been processed for industrial use."
+    "description": "Tungsten that has been processed for industrial use. Each one should be stamped with a manufacturer's seal certifying the purity of its content. If the stamp is missing or damaged, the ingot's value plummets to it's spot price."
   },
   {
     "name": "Uranium Ingot",
+    "plural": "Uranium Ingots",
     "category": "Special",
     "series": "Ingots",
     "index": 6010,
@@ -1753,17 +2495,19 @@
     "outfit space": -1,
     "uranium ingot": 1,
     "unplunderable": 1,
-    "description": "Uranium that has been processed for industrial use."
+    "description": "Uranium that has been processed for industrial use. Each one should be stamped with a manufacturer's seal certifying the purity of its content. If the stamp is missing or damaged, the ingot's value plummets to it's spot price."
   },
   {
     "name": "Genesis License",
+    "plural": "Genesis Licenses",
     "category": "Licenses",
     "thumbnail": "outfit/unknown",
     "description": "..."
   },
   {
-    "name": "Genesis Flak Shell Access Temporary License",
+    "name": "Genesis Flak Shell Access Temporary",
     "displayName": "Genesis Flak Shell Tech",
+    "plural": "Genesis Flak Shell Tech",
     "category": "Ammunition",
     "series": "Ammunition",
     "index": 99999,
@@ -1784,6 +2528,7 @@
   {
     "name": "Genesis Flak Shell Tech License",
     "displayName": "Genesis Flak Shell Tech",
+    "plural": "Genesis Flak Shell Tech",
     "category": "Licenses",
     "series": "Technology",
     "index": 99999,
@@ -1801,8 +2546,65 @@
     "description": "This technical manual details how to manufacture Genesis Flak Shells. Having this makes it possible for any outfitter to offer Genesis Flak Shells even if it is normally not stocked there."
   },
   {
+    "name": "High Calibur Ammo Access Temporary",
+    "displayName": "High Caliber Ammo Tech",
+    "plural": "High Caliber Ammo Tech",
+    "category": "Ammunition",
+    "series": "Ammunition",
+    "index": 99999,
+    "licenses": {
+      "description": "\"Genesis\""
+    },
+    "cost": 0,
+    "thumbnail": "outfit/tech high calibur",
+    "base research rate": 0.05,
+    "requires Gatling Ammo Tech": 1,
+    "requires High Caliber Ammo": 1,
+    "requires Ammo Basics": 1,
+    "description": "\tAfter this is acquired it can be found in the Licenses area in future visits to the outfitter."
+  },
+  {
+    "name": "High Calibur Ammo Tech License",
+    "displayName": "High Caliber Ammo Tech",
+    "plural": "High Caliber Ammo Tech",
+    "category": "Licenses",
+    "series": "Technology",
+    "index": 99999,
+    "licenses": {
+      "description": "\"Genesis\""
+    },
+    "thumbnail": "outfit/tech high calibur",
+    "base research rate": 0.05,
+    "requires Gatling Ammo Tech": 1,
+    "requires High Caliber Ammo": 1,
+    "requires Ammo Basics": 1,
+    "description": "This technical manual details how to manufacture High Calibur Ammo. Having this makes it possible for any outfitter to offer High Calibur Ammo even if it is normally not stocked there."
+  },
+  {
+    "name": "Genesis Flak Shell Access Temporary License",
+    "displayName": "Genesis Flak Shell Tech",
+    "plural": "Genesis Flak Shell Tech",
+    "category": "Ammunition",
+    "series": "Ammunition",
+    "index": 99999,
+    "licenses": {
+      "description": "\"Genesis\""
+    },
+    "cost": 0,
+    "thumbnail": "outfit/tech genesis flak shell",
+    "base research rate": 0.05,
+    "requires Heavy Rocket Tech": 1,
+    "requires Genesis Flak Shell": 1,
+    "requires Ammo Basics": 1,
+    "requires Research Data": 1,
+    "requires Research Data (Chem)": 1,
+    "requires Research Data (Phys)": 1,
+    "description": "\tAfter this is acquired it can be found in the Licenses area in future visits to the outfitter."
+  },
+  {
     "name": "High Calibur Ammo Access Temporary License",
     "displayName": "High Calibur Ammo Tech",
+    "plural": "High Calibur Ammo Tech",
     "category": "Ammunition",
     "series": "Ammunition",
     "index": 99999,
@@ -1816,22 +2618,6 @@
     "requires High Calibur Ammo": 1,
     "requires Ammo Basics": 1,
     "description": "\tAfter this is acquired it can be found in the Licenses area in future visits to the outfitter."
-  },
-  {
-    "name": "High Calibur Ammo Tech License",
-    "displayName": "High Caliber Ammo Tech",
-    "category": "Licenses",
-    "series": "Technology",
-    "index": 99999,
-    "licenses": {
-      "description": "\"Genesis\""
-    },
-    "thumbnail": "outfit/tech high calibur",
-    "base research rate": 0.05,
-    "requires Gatling Ammo Tech": 1,
-    "requires High Caliber Ammo": 1,
-    "requires Ammo Basics": 1,
-    "description": "This technical manual details how to manufacture High Calibur Ammo. Having this makes it possible for any outfitter to offer High Calibur Ammo even if it is normally not stocked there."
   },
   {
     "name": "Genesis Mining Laser",
@@ -1888,6 +2674,26 @@
       "firing heat": 4
     },
     "description": "Genesis Anti-Missile turrets require a crew member to operate and have some other minor differences from the similarly sized Anti-Missile Turrets used by humans."
+  },
+  {
+    "name": "Genesis Repair Bot",
+    "category": "Turrets",
+    "series": "Repair",
+    "index": 99999,
+    "cost": 612000,
+    "thumbnail": "outfit/genesis repair bot",
+    "mass": 24,
+    "outfit space": -24,
+    "repair delay": 60,
+    "delayed hull repair rate": 0.36,
+    "delayed hull energy": 0.36,
+    "delayed hull heat": 0.3,
+    "turret mounts": -1,
+    "weapon": {
+      "hardpoint sprite": "hardpoint/genesis repair bot",
+      "turret turn": 5
+    },
+    "description": "This large robot is able to patch holes in the hull of a ship that is still in flight. When not in use, it occupies a turret mount to recharge."
   },
   {
     "name": "Genesis Flak Shell",
@@ -2143,7 +2949,7 @@
       "hull damage": 5600,
       "hit force": 4800,
       "missile strength": 200,
-      "description": "stream"
+      "description": "stream \"triggers nuke alert\""
     },
     "description": "\t[Hydrogen Missiles are a one-shot weapon: each missile occupies a gun slot, and after it is fired, the slot it was in is left empty.]"
   },
@@ -2226,25 +3032,6 @@
     "active cooling": 0.0001,
     "unplunderable": 1,
     "description": "\tA Cryostasis Pod continuously draws on a modest amount of power to maintain a temperature controlled environment within. If the external temperature becomes excessive, it will pull on additional power to compensate."
-  },
-  {
-    "name": "Genesis Repair Bot",
-    "category": "Turrets",
-    "series": "Repair",
-    "index": 99999,
-    "cost": 612000,
-    "thumbnail": "outfit/genesis repair bot",
-    "mass": 24,
-    "outfit space": -24,
-    "hull repair rate": 0.72,
-    "hull energy": 0.72,
-    "hull heat": 0.6,
-    "turret mounts": -1,
-    "weapon": {
-      "hardpoint sprite": "hardpoint/genesis repair bot/genesis repair bot",
-      "turret turn": 5
-    },
-    "description": "This large robot is able to patch holes in the hull of a ship that is still in flight. When not in use, it occupies a turret mount to recharge."
   },
   {
     "name": "Genesis Narrowband Scanner",
@@ -2340,20 +3127,6 @@
     "description": "The inhabitants of Genesis have solar collection technology that is less developed than other space faring species."
   },
   {
-    "name": "Genesis Thermionic",
-    "category": "Power",
-    "series": "Generators",
-    "index": 99999,
-    "cost": 396000,
-    "thumbnail": "outfit/genesis thermionic",
-    "mass": 55,
-    "outfit space": -55,
-    "energy generation": 5.5,
-    "heat generation": 12,
-    "ion protection": -0.2,
-    "description": "Thermionic radioisotopic generators used by the inhabitants of Genesis are very efficient at generating energy, but the methods used to make this possible leave them vulnerable against ionization."
-  },
-  {
     "name": "Genesis Fuel Cell",
     "category": "Power",
     "series": "Generators",
@@ -2413,7 +3186,7 @@
     "name": "Anti-Missile",
     "category": "Turrets",
     "cost": 60000,
-    "thumbnail": "outfit/genesis anti-missile",
+    "thumbnail": "outfit/unknown",
     "mass": 16,
     "outfit space": -16,
     "weapon capacity": -16,
@@ -2429,13 +3202,13 @@
       "firing energy": 5,
       "firing heat": 3
     },
-    "description": "This is similar to the Anti-Missile Turret you're familiar with."
+    "description": "\tThis deprecated outfit may be removed from the plugin in a future update."
   },
   {
     "name": "Laser",
     "category": "Guns",
     "cost": 29000,
-    "thumbnail": "outfit/laser",
+    "thumbnail": "outfit/unknown",
     "mass": 8,
     "outfit space": -8,
     "weapon capacity": -8,
@@ -2456,13 +3229,13 @@
       "shield damage": 1,
       "hull damage": 1.3
     },
-    "description": "This is similar to the Beam Laser you're familiar with."
+    "description": "\tThis deprecated outfit may be removed from the plugin in a future update."
   },
   {
     "name": "Gat",
     "category": "Secondary Weapons",
     "cost": 20000,
-    "thumbnail": "outfit/gat",
+    "thumbnail": "outfit/unknown",
     "mass": 2,
     "outfit space": -8,
     "weapon capacity": -8,
@@ -2488,44 +3261,44 @@
       "hit effect": "bullet impact",
       "description": "\"cluster\""
     },
-    "description": "This is similar to the Gatling Gun you're familiar with."
+    "description": "\tThis deprecated outfit may be removed from the plugin in a future update."
   },
   {
     "name": "Tiny Battery",
     "category": "Power",
     "cost": 12000,
-    "thumbnail": "outfit/tiny battery",
+    "thumbnail": "outfit/unknown",
     "mass": 10,
     "outfit space": -10,
     "energy capacity": 1000,
-    "description": "This is a tiny battery."
+    "description": "\tThis deprecated outfit may be removed from the plugin in a future update."
   },
   {
     "name": "Small Battery",
     "category": "Power",
     "cost": 30000,
-    "thumbnail": "outfit/small battery",
+    "thumbnail": "outfit/unknown",
     "mass": 20,
     "outfit space": -20,
     "energy capacity": 2200,
-    "description": "This is a small battery."
+    "description": "\tThis deprecated outfit may be removed from the plugin in a future update."
   },
   {
     "name": "Medium Battery",
     "category": "Power",
     "cost": 67000,
-    "thumbnail": "outfit/medium battery",
+    "thumbnail": "outfit/unknown",
     "mass": 40,
     "outfit space": -40,
     "energy capacity": 4800,
-    "description": "This is a medium battery."
+    "description": "\tThis deprecated outfit may be removed from the plugin in a future update."
   },
   {
     "name": "Engines",
     "plural": "Engines",
     "category": "Engines",
     "cost": 20000,
-    "thumbnail": "outfit/tiny ion engines",
+    "thumbnail": "outfit/unknown",
     "mass": 20,
     "outfit space": -20,
     "engine capacity": -20,
@@ -2541,84 +3314,98 @@
     "flare sound": "ion tiny",
     "steering flare sprite": "effect/ion flare/tiny",
     "steering flare sound": "ion tiny",
-    "description": "This is a compact steering and thrusting engine."
+    "description": "\tThis deprecated outfit may be removed from the plugin in a future update."
   },
   {
     "name": "Battery",
     "category": "Power",
     "cost": 6000,
-    "thumbnail": "outfit/genesis battery",
+    "thumbnail": "outfit/unknown",
     "mass": 10,
     "outfit space": -10,
     "energy capacity": 4000,
-    "description": "This is a battery."
+    "description": "\tThis deprecated outfit may be removed from the plugin in a future update."
   },
   {
     "name": "Fusion",
     "category": "Power",
     "cost": 5000000,
-    "thumbnail": "outfit/genesis fusion",
+    "thumbnail": "outfit/unknown",
     "mass": 100,
     "outfit space": -100,
     "energy generation": 18.2,
     "heat generation": 40,
-    "description": "This is a fusion reactor."
+    "description": "\tThis deprecated outfit may be removed from the plugin in a future update."
   },
   {
     "name": "Radiothermal",
     "category": "Power",
     "cost": 300000,
-    "thumbnail": "outfit/genesis radiothermal",
+    "thumbnail": "outfit/unknown",
     "mass": 45,
     "outfit space": -45,
     "energy generation": 4.4,
     "heat generation": 18,
-    "description": "Radiothermal generators harvest heat from radioactive isotopes and convert it into electricity."
+    "description": "\tThis deprecated outfit may be removed from the plugin in a future update."
   },
   {
     "name": "Scanner",
     "category": "Systems",
     "cost": 24000,
-    "thumbnail": "outfit/genesis scanner",
+    "thumbnail": "outfit/unknown",
     "mass": 3,
     "outfit space": -3,
     "cargo scan power": 9,
     "cargo scan efficiency": 5,
     "outfit scan power": 25,
     "outfit scan efficiency": 15,
-    "description": "This scanner allows you to determine what outfits are installed in the ship you are currently targeting, as well as scan the cargo holds. Installing more than one increases the scan range and speed."
+    "description": "\tThis deprecated outfit may be removed from the plugin in a future update."
   },
   {
     "name": "Small Photovoltaic",
     "category": "Power",
     "cost": 60000,
-    "thumbnail": "outfit/genesis photovoltaic panel",
+    "thumbnail": "outfit/unknown",
     "mass": 24,
     "outfit space": -16,
     "solar collection": 1.1,
-    "description": "This generates power when near a star."
+    "description": "\tThis deprecated outfit may be removed from the plugin in a future update."
   },
   {
     "name": "Thermionic",
     "category": "Power",
     "cost": 360000,
-    "thumbnail": "outfit/genesis thermionic",
+    "thumbnail": "outfit/unknown",
     "mass": 55,
     "outfit space": -55,
     "energy generation": 5,
     "heat generation": 12,
-    "description": "Thermionic radioisotopic generators are a cooler-running alternative to other generators."
+    "description": "\tThis deprecated outfit may be removed from the plugin in a future update."
   },
   {
     "name": "Tiny Fuel Cell",
     "category": "Power",
     "cost": 40000,
-    "thumbnail": "outfit/genesis fuel cell",
+    "thumbnail": "outfit/unknown",
     "mass": 20,
     "outfit space": -20,
     "energy generation": 1.2,
     "heat generation": 1.9,
-    "description": "This tiny fuel cell generates power when installed on a ship."
+    "description": "\tThis deprecated outfit may be removed from the plugin in a future update."
+  },
+  {
+    "name": "Genesis Thermionic",
+    "category": "Power",
+    "series": "Generators",
+    "index": 99999,
+    "cost": 396000,
+    "thumbnail": "outfit/unknown",
+    "mass": 55,
+    "outfit space": -55,
+    "energy generation": 5.5,
+    "heat generation": 12,
+    "ion protection": -0.2,
+    "description": "\tThis deprecated outfit may be removed from the plugin in a future update."
   },
   {
     "name": "Heavy Pulse Cannon",
@@ -2647,6 +3434,31 @@
       "hull damage": 306
     },
     "description": "An antique rarely seen on modern Hai ships, many consider Heavy Pulse Cannons obsolete. However this weapon would be a valid alternative as a substitute for an Ion Cannon. It lacks the ability to disrupt an enemy ship's energy systems, but the power of its shots should not be underestimated."
+  },
+  {
+    "name": "Hoarder Beam",
+    "category": "Turrets",
+    "series": "Tractor Beams",
+    "index": 3010,
+    "cost": 84000,
+    "thumbnail": "outfit/hoarder beam",
+    "mass": 23,
+    "outfit space": -23,
+    "weapon capacity": -23,
+    "turret mounts": -1,
+    "weapon": {
+      "hardpoint sprite": "hardpoint/hoarder beam",
+      "hardpoint offset": 4,
+      "sound": "tractor beam",
+      "hit effect": "scavenger tractor beam",
+      "tractor beam": 8,
+      "velocity": 350,
+      "lifetime": 1,
+      "reload": 1,
+      "firing energy": 2.8,
+      "firing heat": 1.2
+    },
+    "description": "Hai tractor technology has greater range than human Tractor Beams. It was more common in the ancient Hai empire. Among modern Hai, only the Unfettered still utilize it."
   },
   {
     "name": "Ion Pulse Cannon",
@@ -2813,80 +3625,6 @@
     "description": "\tThe Displacer only generates holographic decoys after it launches. Managing ammunition inventory would be unnecessarily difficult otherwise."
   },
   {
-    "name": "Displacer Storage Pod",
-    "category": "Ammunition",
-    "series": "Ammunition",
-    "index": 2006,
-    "cost": 28000,
-    "thumbnail": "outfit/hai displacer storage",
-    "mass": 4.4,
-    "outfit space": -10,
-    "displacer capacity": 28,
-    "ammo": "Hai Displacer",
-    "description": "\tThe Unfettered now have a new hazing ritual to torture fresh recruits: They are instructed to double check the inventory and confirm that none of the stored Displacers are holographic."
-  },
-  {
-    "name": "Displacer Storage Depot",
-    "category": "Ammunition",
-    "series": "Ammunition",
-    "index": 2007,
-    "cost": 56000,
-    "thumbnail": "outfit/hai displacer depot",
-    "mass": 8.8,
-    "cargo space": -30,
-    "displacer capacity": 56,
-    "ammo": "Hai Displacer",
-    "required crew": 1,
-    "description": "The Displacer Storage Depot stages extra ammunition in your cargo bay for weapons that use Hai Displacers. The ammunition is ready to be withdrawn for use. Storing it this way uses more cargo space than if it were packed away in sealed crates. An extra crewmember is required to maintain inventory."
-  },
-  {
-    "name": "Hai Displacer Pod",
-    "category": "Secondary Weapons",
-    "series": "Secondary Weapons",
-    "index": 2005,
-    "cost": 450000,
-    "thumbnail": "outfit/hai displacer pod",
-    "mass": 8,
-    "outfit space": -19,
-    "weapon capacity": -19,
-    "gun ports": -1,
-    "displacer capacity": 56,
-    "weapon": {
-      "sprite": "projectile/displacer",
-      "spriteData": {
-        "frame rate": 10,
-        "description": "rewind"
-      },
-      "sound": "tracker",
-      "ammo": "Hai Displacer",
-      "icon": "icon/displacer",
-      "fire effect": "tracker fire",
-      "hit effect": [
-        "tracker impact",
-        "tracker cloud"
-      ],
-      "die effect": "tracker impact",
-      "inaccuracy": 20,
-      "velocity": 14,
-      "lifetime": 475,
-      "reload": 60,
-      "firing energy": 45,
-      "firing heat": 5,
-      "acceleration": 0.7,
-      "drag": 0.05,
-      "turn": 1.2,
-      "homing": {
-        "description": "\"leading\" \"throttle control\""
-      },
-      "infrared tracking": 0.4,
-      "shield damage": 200,
-      "hull damage": 160,
-      "hit force": 525,
-      "missile strength": 48
-    },
-    "description": "Displacers are Trackers that have had their optical tracking hardware replaced with holographic projectors. These create phantom missiles that escort the Displacer towards its target, helping it to slip through the enemy's anti-missile defenses."
-  },
-  {
     "name": "Hai Nutcracker",
     "category": "Secondary Weapons",
     "series": "Secondary Weapons",
@@ -2925,12 +3663,12 @@
       "firing heat": 400,
       "acceleration": 0.7,
       "drag": 0.1,
-      "turn": 4,
+      "turn": 1.2,
       "homing": {
         "description": "\"leading\" \"throttle control\""
       },
       "optical tracking": 1,
-      "infrared tracking": 0.5,
+      "infrared tracking": 0.4,
       "trigger radius": 30,
       "blast radius": 200,
       "shield damage": 11000,
@@ -2939,7 +3677,7 @@
       "ion damage": 480,
       "scrambling damage": 480,
       "missile strength": 200,
-      "description": "stream"
+      "description": "stream \"triggers nuke alert\""
     },
     "description": "\t[Nutcracker missiles are a one-shot weapon: each missile occupies a gun slot, and after it is fired, the slot it was in is left empty.]"
   },
@@ -2997,6 +3735,8 @@
         "description": "\"random start frame\""
       },
       "icon": "icon/tracker",
+      "arc": 0.001,
+      "turret turn": 0.001,
       "inaccuracy": 10,
       "velocity": 15,
       "lifetime": 235,
@@ -3094,7 +3834,7 @@
     "mass": 30,
     "outfit space": -30,
     "jump speed": 0.2,
-    "jump fuel": 75,
+    "jump fuel": 60,
     "hyperdrive": 1,
     "description": "At its height, the Hai empire stretched across an expanse almost double the size of human space. Fluctuator Drives are a relic of this bygone age. They are the result of research into making a fuel efficient Hyperdrive for facilitating travel from one end of the empire to the other."
   },
@@ -3109,7 +3849,7 @@
     "outfit space": -5,
     "outfit scan power": 25,
     "outfit scan efficiency": 15,
-    "asteroid scan power": 40,
+    "asteroid scan power": 35,
     "atmosphere scan": 100,
     "heat generation": 2,
     "description": "As its name suggests, the Nugget Finder was originally used by the ancient Hai to mine asteroids and harvest gas giants. However, the Unfettered discovered that a few subtle adjustments allow it to target a ship and identify the outfits it has installed."
@@ -3268,8 +4008,9 @@
     "description": "The Unfettered Militia license exists in both verbal and physical form: Simply claim that you have one. If anyone objects, physically convince them of their error in judgement. It's the Unfettered way."
   },
   {
-    "name": "Tracker Access Temporary License",
+    "name": "Tracker Access Temporary",
     "displayName": "Tracker Tech",
+    "plural": "Tracker Techs",
     "category": "Ammunition",
     "series": "Ammunition",
     "index": 2013,
@@ -3284,6 +4025,7 @@
   {
     "name": "Tracker Tech License",
     "displayName": "Tracker Tech",
+    "plural": "Tracker Techs",
     "category": "Licenses",
     "series": "Technology",
     "index": 2013,
@@ -3295,8 +4037,9 @@
     "description": "This technical manual details how to manufacture Hai Trackers. Having this makes it possible for any outfitter to offer Hai Trackers even if it is normally not stocked there."
   },
   {
-    "name": "Railgun Access Temporary License",
+    "name": "Railgun Access Temporary",
     "displayName": "Railgun Tech",
+    "plural": "Railgun Techs",
     "category": "Ammunition",
     "series": "Ammunition",
     "index": 2023,
@@ -3311,6 +4054,7 @@
   {
     "name": "Railgun Tech License",
     "displayName": "Railgun Tech",
+    "plural": "Railgun Techs",
     "category": "Licenses",
     "series": "Technology",
     "index": 2023,
@@ -3322,8 +4066,9 @@
     "description": "This technical manual details how to manufacture Railgun Slugs. Having this makes it possible for any outfitter to offer Railgun Slugs even if it is normally not stocked there."
   },
   {
-    "name": "Displacer Access Temporary License",
+    "name": "Displacer Access Temporary",
     "displayName": "Displacer Tech",
+    "plural": "Displacer Techs",
     "category": "Ammunition",
     "series": "Ammunition",
     "index": 2008,
@@ -3341,6 +4086,7 @@
   {
     "name": "Displacer Tech License",
     "displayName": "Displacer Tech",
+    "plural": "Displacer Techs",
     "category": "Licenses",
     "series": "Technology",
     "index": 2008,
@@ -3353,6 +4099,54 @@
     "requires Ammo Basics": 1,
     "requires Research Data": 1,
     "description": "This technical manual details how to manufacture Hai Displacers. Having this makes it possible for any outfitter to offer Hai Displacers even if it is normally not stocked there."
+  },
+  {
+    "name": "Tracker Access Temporary License",
+    "displayName": "Tracker Tech",
+    "plural": "Tracker Techs",
+    "category": "Ammunition",
+    "series": "Ammunition",
+    "index": 2013,
+    "cost": 1000000,
+    "thumbnail": "outfit/tech hai tracker",
+    "base research rate": 0.05,
+    "requires Hai Tracker": 1,
+    "requires Ammo Basics": 1,
+    "requires Research Data": 1,
+    "description": "\tAfter this is acquired it can be found in the Licenses area in future visits to the outfitter."
+  },
+  {
+    "name": "Railgun Access Temporary License",
+    "displayName": "Railgun Tech",
+    "plural": "Railgun Techs",
+    "category": "Ammunition",
+    "series": "Ammunition",
+    "index": 2023,
+    "cost": 13000,
+    "thumbnail": "outfit/tech railslug",
+    "base research rate": 0.06,
+    "requires Gatling Ammo Tech": 1,
+    "requires Railgun Slug": 1,
+    "requires Ammo Basics": 1,
+    "description": "\tAfter this is acquired it can be found in the Licenses area in future visits to the outfitter."
+  },
+  {
+    "name": "Displacer Access Temporary License",
+    "displayName": "Displacer Tech",
+    "plural": "Displacer Techs",
+    "category": "Ammunition",
+    "series": "Ammunition",
+    "index": 2008,
+    "licenses": {
+      "description": "\"Unfettered Militia\""
+    },
+    "cost": 1000000,
+    "thumbnail": "outfit/tech hai displacer",
+    "base research rate": 0.05,
+    "requires Hai Displacer": 1,
+    "requires Ammo Basics": 1,
+    "requires Research Data": 1,
+    "description": "\tAfter this is acquired it can be found in the Licenses area in future visits to the outfitter."
   },
   {
     "name": "Prototype Ramscoop FCX",
@@ -3414,7 +4208,7 @@
   {
     "name": "Secret Prototype",
     "category": "Special",
-    "cost": 0,
+    "cost": 2000000,
     "thumbnail": "outfit/unknown",
     "mass": 1,
     "description": "A secret prototype stolen from a merchant vessel. You have no idea how it works."
@@ -3644,6 +4438,7 @@
   },
   {
     "name": "Infiltrator Tech",
+    "plural": "Infiltrator Techs",
     "category": "Systems",
     "series": "Jammers",
     "index": 1025,
@@ -3651,7 +4446,7 @@
     "description": "The Infiltrator has this specialized scan interference and radar jamming technology integrated into the hull. It also features an optical jamming feature that causes the shields to shimmer in a way that helps the ship blend in with starry backgrounds. Data on its inner workings is classified information not available to the general public.",
     "scan interference": 5.5,
     "radar jamming": 10,
-    "optical jamming": 10,
+    "optical jamming": 1,
     "mass": 30,
     "outfit space": -30,
     "integrated systems": 1,
@@ -3771,7 +4566,7 @@
     "mass": 30,
     "outfit space": -30,
     "jump speed": 0.2,
-    "jump fuel": 75,
+    "jump fuel": 60,
     "hyperdrive": 1,
     "description": "\tRumors speculate that these Modified Hyperdrives are artifacts discovered in alien ruins on a planet in the Northern Frontier. There's no evidence to support such claims, but the list of humans who understand the inner workings of the hyperdrive is short and none of them have stepped forward to take credit for creating this."
   },
@@ -3784,8 +4579,9 @@
     "thumbnail": "outfit/modified jammer",
     "mass": 14,
     "outfit space": -14,
-    "scan interference": 2.5,
-    "description": "This device has been altered to interfere with scanners instead of radar. A professional smuggler's tool, most security inspectors lack the technical expertise to distinguish between this and a normal radar jammer."
+    "scan interference": 2,
+    "radar jamming": 2,
+    "description": "This device has been altered to interfere with scanners. While less effective at jamming radar tracking systems, this is primarily used as a professional smuggler's tool. Most security inspectors lack the technical expertise to distinguish between this and a normal radar jammer."
   },
   {
     "name": "North Wind Cooling",
@@ -3880,14 +4676,14 @@
     "thumbnail": "outfit/spycraft pod",
     "mass": 2,
     "outfit space": -2,
+    "outfit scan efficiency": 5,
     "outfit scan power": 9,
-    "outfit scan efficiency": -1,
-    "cargo scan power": 5,
-    "cargo scan efficiency": -1,
+    "cargo scan power": 21,
+    "cargo scan efficiency": 10,
     "atmosphere scan": -10,
     "tactical scan power": 23,
     "unique": 1,
-    "description": "This is Navy technology, designed to plug into an expansion port hidden underneath a standard Navy Surveillance Pod. This boosts the power of the pod while incurring only a minor reduction in efficiency."
+    "description": "This is Navy technology, designed to plug into an expansion port hidden underneath a standard Navy Surveillance Pod. This boosts the power and efficiency of the pod while incurring only a minor reduction in atmostpheric scanning range."
   },
   {
     "name": "Gnome Core",
@@ -4158,7 +4954,7 @@
     "outfit space": -14,
     "engine capacity": -14,
     "afterburner thrust": 49.05,
-    "afterburner fuel": 0.1,
+    "afterburner fuel": 0.2,
     "afterburner energy": 2.2,
     "afterburner heat": 9,
     "afterburner effect": "hybrid afterburner",
@@ -4193,7 +4989,7 @@
     "outfit space": -12,
     "engine capacity": -12,
     "afterburner thrust": 42.15,
-    "afterburner fuel": 0.086,
+    "afterburner fuel": 0.172,
     "afterburner energy": 1.9,
     "afterburner heat": 8,
     "afterburner effect": "sunracer afterburner",
@@ -4879,7 +5675,7 @@
     "capture defense": 3.7,
     "operating costs": 1600,
     "energy consumption": 0.01,
-    "illegal": 600000,
+    "illegal": 750000,
     "scan brightness": 1,
     "unplunderable": 1,
     "unique": 1,
@@ -5010,6 +5806,24 @@
     "description": "That's classified."
   },
   {
+    "name": "Covert Mining License",
+    "category": "Licenses",
+    "cost": 0,
+    "thumbnail": "outfit/unknown",
+    "description": "This proves that you've been granted permission to purchase ships and outfits exclusively reserved for members of the Covert Mining Cartel and their esteemed associates."
+  },
+  {
+    "name": "Fake Pilot's License",
+    "category": "Licenses",
+    "series": "Licenses",
+    "index": 1010,
+    "cost": 2400,
+    "thumbnail": "outfit/license fake",
+    "illegal (Republic)": 120000,
+    "scan brightness": 1,
+    "description": "\tIf you ever acquire a real Pilot's License, you'll automatically dispose of this one the next time you fly."
+  },
+  {
     "name": "Inferno Dragon License",
     "category": "Licenses",
     "series": "Licenses",
@@ -5050,11 +5864,12 @@
     "description": "\tTertio Champions are sometimes offered jobs and opportunities not available to other racing pilots."
   },
   {
-    "name": "Solus Token",
+    "name": "Fake Pilot's License Token",
     "category": "Hidden",
-    "thumbnail": "outfit/checkpoint token",
-    "solus token": 1,
-    "description": "Grants access to Checkpoint Solus."
+    "thumbnail": "outfit/license fake",
+    "scan brightness": 1,
+    "illegal (Republic)": 120000,
+    "description": "The Fake Pilot's License is a proxy for this outfit because the game does not include licenses in outfit scans."
   },
   {
     "name": "Geminae Token",
@@ -5062,6 +5877,13 @@
     "thumbnail": "outfit/checkpoint token",
     "geminae token": 1,
     "description": "Grants access to Checkpoint Geminae."
+  },
+  {
+    "name": "Solus Token",
+    "category": "Hidden",
+    "thumbnail": "outfit/checkpoint token",
+    "solus token": 1,
+    "description": "Grants access to Checkpoint Solus."
   },
   {
     "name": "Tertio Token",
@@ -5107,12 +5929,12 @@
     "gun ports": -1,
     "weapon": {
       "sprite": "projectile/energy cannon",
-      "sound": "torpedo-ver8",
+      "sound": "energy_cannon",
       "hit effect": "energy cannon impact",
       "inaccuracy": 4,
       "velocity": 10,
-      "lifetime": 6,
-      "range override": 720,
+      "lifetime": 1,
+      "range override": 510,
       "reload": 13,
       "firing energy": 13,
       "firing heat": 50.4,
@@ -5121,7 +5943,7 @@
       "submunition": "Energy Cannon Blast",
       "description": "\"cluster\""
     },
-    "description": "A relic from the Alpha War, Energy Cannons fell into disuse once the war ended. Occasionally they can still be found outfitted on older ships. They are more powerful than Energy Blasters and cover a longer range. But their rate of fire is slower and the effectiveness of the projectiles diminishes the more distant the target."
+    "description": "A relic from the Alpha War, Energy Cannons fell into disuse once the war ended. Occasionally they can still be found outfitted on older ships. They are more powerful than Energy Blasters, but their rate of fire is slower and the effectiveness of the projectiles diminishes the more distant the target."
   },
   {
     "name": "Energy Cannon Turret",
@@ -5139,12 +5961,12 @@
       "sprite": "projectile/energy cannon",
       "hardpoint sprite": "hardpoint/energy cannon turret",
       "hardpoint offset": 9,
-      "sound": "torpedo-ver8",
+      "sound": "energy_cannon",
       "hit effect": "energy cannon impact",
       "inaccuracy": 4,
       "turret turn": 1.2,
       "velocity": 10,
-      "lifetime": 6,
+      "lifetime": 1,
       "range override": 720,
       "reload": 13,
       "firing energy": 13,
@@ -5170,12 +5992,13 @@
     "weapon": {
       "sprite": "projectile/isochronal laser",
       "spriteData": {
-        "frame rate": 1
+        "frame rate": 1,
+        "description": "\"random start frame\""
       },
       "sound": "modified heavy_laser-ver8",
       "hit effect": "isochronal impact",
       "inaccuracy": 0.4,
-      "velocity": 350,
+      "velocity": 500,
       "lifetime": 1,
       "reload": 2,
       "firing energy": 1.995,
@@ -5201,7 +6024,8 @@
     "weapon": {
       "sprite": "projectile/2x isochronal laser",
       "spriteData": {
-        "frame rate": 1
+        "frame rate": 1,
+        "description": "\"random start frame\""
       },
       "hardpoint sprite": "hardpoint/heavy laser turret",
       "hardpoint offset": 8,
@@ -5209,7 +6033,7 @@
       "hit effect": "isochronal impact",
       "inaccuracy": 0.4,
       "turret turn": 3.1,
-      "velocity": 350,
+      "velocity": 500,
       "lifetime": 1,
       "reload": 2,
       "firing energy": 3.99,
@@ -5219,6 +6043,31 @@
       "description": "\"cluster\""
     },
     "description": "\tThis turreted version of the Isochronal Laser appeals to a very niche market of pilots who want an upgrade to Deep Sky's Laser Turret, but lack the space for Heavy Lasers on their ships."
+  },
+  {
+    "name": "Junk Tractor",
+    "category": "Turrets",
+    "series": "Tractor Beams",
+    "index": 10,
+    "cost": 50000,
+    "thumbnail": "outfit/junk tractor",
+    "mass": 20,
+    "outfit space": -20,
+    "weapon capacity": -20,
+    "turret mounts": -1,
+    "weapon": {
+      "hardpoint sprite": "hardpoint/tractor beam",
+      "hardpoint offset": 4,
+      "sound": "tractor beam",
+      "hit effect": "junk tractor",
+      "tractor beam": 6,
+      "velocity": 250,
+      "lifetime": 1,
+      "reload": 1,
+      "firing energy": 3.15,
+      "firing heat": 1.6
+    },
+    "description": "Junk Tractors provide worse performance in just about every aspect than other Tractor Beams, but that's probably because they're made from salvaged parts or are missing a few components. The latter might explain why they require less space..."
   },
   {
     "name": "Kludge Blaster",
@@ -5454,6 +6303,34 @@
     "description": "This Plasma Turret only has a single Plasma Cannon mounted on it. While not as fearsome as Kraz's Plasma Turret, it is far more accessible."
   },
   {
+    "name": "Plunder Beam",
+    "category": "Turrets",
+    "series": "Tractor Beams",
+    "index": 11,
+    "cost": 75000,
+    "thumbnail": "outfit/plunder beam",
+    "licenses": {
+      "description": "\"Covert Mining\""
+    },
+    "mass": 22,
+    "outfit space": -22,
+    "weapon capacity": -22,
+    "turret mounts": -1,
+    "weapon": {
+      "hardpoint sprite": "hardpoint/tractor beam",
+      "hardpoint offset": 4,
+      "sound": "tractor beam",
+      "hit effect": "plunder beam",
+      "tractor beam": 8,
+      "velocity": 250,
+      "lifetime": 1,
+      "reload": 1,
+      "firing energy": 2.1,
+      "firing heat": 1.2
+    },
+    "description": "The Plunder Beam is favored by the Covert Mining Cartel for its superiority in a tug of war against other miners. It has a few quirks, such as a shorter range than regular Tractor Beams and high heat output."
+  },
+  {
     "name": "Twin Particle Cannon",
     "category": "Guns",
     "series": "Guns",
@@ -5519,8 +6396,7 @@
     "description": "\tThis weapon is still in development and is unavailable to the general public. A few lucky pilots with connections within the company have been given access to prototypes for field testing."
   },
   {
-    "name": "Plasma Cluster Cannon",
-    "displayName": "Plasma Charge Cannon",
+    "name": "Plasma Charge Cannon",
     "series": "Guns",
     "index": 1110,
     "category": "Guns",
@@ -5983,10 +6859,7 @@
       "sound": "nuke",
       "ammo": "Hyperspace Nuke",
       "icon": "icon/hypernuke",
-      "live effect": [
-        "hypernuke trail",
-        "hypernuke smoke"
-      ],
+      "live effect": "hypernuke smoke",
       "hit effect": [
         "nuke explosion",
         "nuke residue fast",
@@ -6016,7 +6889,7 @@
       "hull damage": 7000,
       "hit force": 6000,
       "missile strength": 220,
-      "description": "stream"
+      "description": "stream \"triggers nuke alert\""
     },
     "description": "\t[Hyperspace nukes are a one-shot weapon: each missile occupies a gun slot, and after it is fired, the slot it was in is left empty.]"
   },
@@ -6028,7 +6901,7 @@
     "licenses": {
       "description": "\"Inferno Dragon\""
     },
-    "cost": 2000,
+    "cost": 3000,
     "thumbnail": "outfit/inferno rocket",
     "mass": 0.5,
     "inferno rocket capacity": -1,
@@ -6068,56 +6941,6 @@
     "description": "The Inferno Rocket Depot stages extra ammunition in your cargo bay for weapons that use Inferno Rockets. The ammunition is ready to be withdrawn for use. Storing it this way uses more cargo space than if it were packed away in sealed crates. An extra crewmember is required to maintain inventory."
   },
   {
-    "name": "Inferno Rocket Launcher",
-    "category": "Secondary Weapons",
-    "series": "Secondary Weapons",
-    "index": 1096,
-    "licenses": {
-      "description": "\"Inferno Dragon\""
-    },
-    "cost": 40000,
-    "thumbnail": "outfit/inferno rocket launcher",
-    "mass": 15,
-    "outfit space": -25,
-    "weapon capacity": -25,
-    "gun ports": -1,
-    "inferno rocket capacity": 20,
-    "weapon": {
-      "sprite": "projectile/inferno rocket",
-      "spriteData": {
-        "frame rate": 4
-      },
-      "sound": "rocket",
-      "ammo": "Inferno Rocket",
-      "icon": "icon/inferno rocket",
-      "hit effect": [
-        "inferno rocket hit",
-        "inferno rocket burn large",
-        "inferno rocket burn medium",
-        "inferno rocket burn small"
-      ],
-      "target effect": "flame",
-      "die effect": "medium explosion",
-      "inaccuracy": 1,
-      "velocity": 8,
-      "lifetime": 125,
-      "reload": 240,
-      "firing energy": 1,
-      "firing heat": 250,
-      "acceleration": 0.8,
-      "drag": 0.1,
-      "trigger radius": 20,
-      "blast radius": 60,
-      "shield damage": 192,
-      "hull damage": 168,
-      "hit force": 90,
-      "missile strength": 8,
-      "heat damage": 18000,
-      "burn damage": 300
-    },
-    "description": "A weapon secretly developed through cooperation between different pirate factions, Inferno Rockets splatter their targets with a highly flammable substance."
-  },
-  {
     "name": "Inferno Rocket Pod",
     "category": "Secondary Weapons",
     "series": "Secondary Weapons",
@@ -6125,7 +6948,7 @@
     "licenses": {
       "description": "\"Inferno Dragon\""
     },
-    "cost": 15000,
+    "cost": 23000,
     "thumbnail": "outfit/inferno rocket pod",
     "mass": 3,
     "outfit space": -6,
@@ -6163,11 +6986,143 @@
       "shield damage": 192,
       "hull damage": 168,
       "hit force": 90,
-      "missile strength": 8,
+      "missile strength": 12,
       "heat damage": 18000,
       "burn damage": 300
     },
     "description": "\tPods enable fighters and other light craft to carry small quantities of rockets into battle while retaining enough space for other weapons. Large ships are better off with full-size launchers."
+  },
+  {
+    "name": "Plasma Missile",
+    "category": "Ammunition",
+    "series": "Ammunition",
+    "index": 1024,
+    "cost": 750,
+    "thumbnail": "outfit/plasma missile",
+    "mass": 0.2,
+    "plasma missile capacity": -1,
+    "description": "A Plasma Missile serves as ammunition for the Plasma Missile Launcher. Each missile launcher has its own capacity; you cannot install missiles if you have not first purchased a pod, launcher, or storage to store them in."
+  },
+  {
+    "name": "Plasma Missile Box",
+    "plural": "Plasma Missile Boxes",
+    "series": "Ammunition",
+    "index": 1025,
+    "category": "Ammunition",
+    "cost": 9000,
+    "thumbnail": "outfit/plasma missile storage",
+    "mass": 2,
+    "outfit space": -5,
+    "plasma missile capacity": 15,
+    "ammo": "Plasma Missile",
+    "description": "The Plasma Missile Box is used to store extra ammunition for Plasma Missile Launchers."
+  },
+  {
+    "name": "Plasma Missile Depot",
+    "plural": "Plasma Missile Depot",
+    "category": "Ammunition",
+    "series": "Ammunition",
+    "index": 1025,
+    "cost": 54000,
+    "thumbnail": "outfit/plasma missile depot",
+    "mass": 12,
+    "cargo space": -40,
+    "plasma missile capacity": 90,
+    "ammo": "Plasma Missile",
+    "required crew": 1,
+    "description": "The Plasma Missile Depot stages extra ammunition in your cargo bay for weapons that use Plasma Missiles. The ammunition is ready to be withdrawn for use. Storing it this way uses more cargo space than if it were packed away in sealed crates. An extra crewmember is required to maintain inventory."
+  },
+  {
+    "name": "Plasma Missile Launcher",
+    "category": "Secondary Weapons",
+    "series": "Secondary Weapons",
+    "index": 1050,
+    "cost": 23000,
+    "thumbnail": "outfit/plasma missile launcher",
+    "mass": 8,
+    "outfit space": -14,
+    "weapon capacity": -14,
+    "gun ports": -1,
+    "plasma missile capacity": 30,
+    "weapon": {
+      "sprite": "projectile/plasma missile",
+      "spriteData": {
+        "frame rate": 0.25,
+        "description": "\"no repeat\""
+      },
+      "sound": "meteor",
+      "ammo": "Plasma Missile",
+      "icon": "icon/plasma missile",
+      "fire effect": "meteor fire",
+      "die effect": "missile death",
+      "hit effect": "plasma cluster explosion",
+      "inaccuracy": 5,
+      "velocity": 11,
+      "lifetime": 350,
+      "reload": 80,
+      "firing energy": 1,
+      "firing heat": 20,
+      "acceleration": 1,
+      "drag": 0.1,
+      "turn": 1.8,
+      "homing": {
+        "description": "\"blindspot\""
+      },
+      "infrared tracking": 0.65,
+      "shield damage": 280,
+      "hull damage": 111.111,
+      "heat damage": 1511.111,
+      "hit force": 200,
+      "missile strength": 6
+    },
+    "description": "Kraz Cybernetics' Plasma Missile is an update to the ubiquitous Meteor. While still vulnerable to anti-missile systems, their infrared tracking is able to home in on targets that have already had their heat levels raised by previous strikes from Plasma Cannons, other Plasma Missiles, or similar weaponry."
+  },
+  {
+    "name": "Plasma Missile Pod",
+    "category": "Secondary Weapons",
+    "series": "Secondary Weapons",
+    "index": 1040,
+    "cost": 7500,
+    "thumbnail": "outfit/plasma missile pod",
+    "mass": 1,
+    "outfit space": -3,
+    "weapon capacity": -3,
+    "gun ports": -1,
+    "plasma missile capacity": 7,
+    "weapon": {
+      "sprite": "projectile/plasma missile",
+      "spriteData": {
+        "frame rate": 0.25,
+        "description": "\"no repeat\""
+      },
+      "sound": "meteor",
+      "ammo": "Plasma Missile",
+      "icon": "icon/plasma missile",
+      "fire effect": "meteor fire",
+      "die effect": "missile death",
+      "hit effect": "plasma cluster explosion",
+      "inaccuracy": 5,
+      "velocity": 11,
+      "lifetime": 350,
+      "reload": 200,
+      "burst count": 7,
+      "burst reload": 80,
+      "firing energy": 1,
+      "firing heat": 20,
+      "acceleration": 1,
+      "drag": 0.1,
+      "turn": 1.8,
+      "homing": {
+        "description": "\"blindspot\""
+      },
+      "infrared tracking": 0.65,
+      "shield damage": 280,
+      "hull damage": 111.111,
+      "heat damage": 1511.111,
+      "hit force": 200,
+      "missile strength": 6
+    },
+    "description": "\tPods enable fighters and other light craft to carry small quantities of missiles into battle while retaining enough space for other weapons. Large ships are better off with full-size launchers."
   },
   {
     "name": "Plunder Mine",
@@ -6236,7 +7191,7 @@
     "name": "Stinger Missile",
     "category": "Ammunition",
     "series": "Ammunition",
-    "index": 1025,
+    "index": 1027,
     "cost": 1000,
     "thumbnail": "outfit/stinger missile",
     "mass": 0.4,
@@ -6247,7 +7202,7 @@
     "name": "Stinger Missile Rack",
     "category": "Ammunition",
     "series": "Ammunition",
-    "index": 1026,
+    "index": 1027,
     "cost": 18000,
     "thumbnail": "outfit/stinger storage",
     "mass": 2,
@@ -6260,8 +7215,8 @@
     "name": "Stinger Missile Depot",
     "category": "Ammunition",
     "series": "Ammunition",
-    "index": 1027,
-    "cost": 90000,
+    "index": 1028,
+    "cost": 72000,
     "thumbnail": "outfit/stinger depot",
     "mass": 8,
     "cargo space": -40,
@@ -6341,7 +7296,7 @@
       "inaccuracy": 5,
       "velocity": 11,
       "lifetime": 350,
-      "reload": 250,
+      "reload": 300,
       "burst count": 2,
       "burst reload": 120,
       "firing energy": 1,
@@ -6378,7 +7333,7 @@
     "category": "Ammunition",
     "series": "Ammunition",
     "index": 1036,
-    "cost": 22000,
+    "cost": 21000,
     "thumbnail": "outfit/swingfire storage",
     "mass": 2.4,
     "outfit space": -7,
@@ -6391,7 +7346,7 @@
     "category": "Ammunition",
     "series": "Ammunition",
     "index": 1037,
-    "cost": 110000,
+    "cost": 84000,
     "thumbnail": "outfit/swingfire depot",
     "mass": 9.6,
     "cargo space": -40,
@@ -6524,7 +7479,7 @@
     "plural": "Meteor Missile Depot",
     "category": "Ammunition",
     "series": "Ammunition",
-    "index": 1022,
+    "index": 1021,
     "cost": 54000,
     "thumbnail": "outfit/meteor depot",
     "mass": 12,
@@ -6609,7 +7564,8 @@
       "hit effect": "torpedo hit",
       "inaccuracy": 5,
       "lifetime": 0,
-      "velocity": 7,
+      "velocity": 0,
+      "velocity override": 6,
       "range override": 6300,
       "reload": 320,
       "burst count": 3,
@@ -6696,6 +7652,39 @@
     "description": "The Bullet Box Depot stages extra ammunition in your cargo bay for weapons that use Gatling Gun Ammo. The ammunition is ready to be withdrawn for use. Storing it this way uses more cargo space than if it were packed away in sealed crates. An extra crewmember is required to maintain inventory."
   },
   {
+    "name": "Plasma Cluster Cannon",
+    "series": "Guns",
+    "index": 1110,
+    "category": "Guns",
+    "cost": 209000,
+    "thumbnail": "outfit/plasma cluster cannon",
+    "mass": 25,
+    "outfit space": -25,
+    "weapon capacity": -25,
+    "gun ports": -1,
+    "weapon": {
+      "sprite": "projectile/plasma cluster",
+      "spriteData": {
+        "frame rate": 3
+      },
+      "sound": "plasma",
+      "hit effect": "plasma cluster explosion",
+      "inaccuracy": 1,
+      "velocity": 12,
+      "lifetime": 45,
+      "reload": 36,
+      "firing energy": 60,
+      "firing heat": 360,
+      "hit force": 90,
+      "shield damage": 126,
+      "hull damage": 50,
+      "heat damage": 680,
+      "description": "\"cluster\""
+    },
+    "description": "The Plasma Charge Cannon has been modified to take advantage of concentrated firing mounts. The power and range of each shot has increased at the expense of increasing the weapon's charge up time.",
+    "cluster": "mode, synchronizing its rate of fire when multiple copies are installed together."
+  },
+  {
     "name": "Ammo Basics",
     "plural": "Ammo Basics",
     "category": "Special",
@@ -6706,6 +7695,7 @@
   {
     "name": "Ammo Expertise License",
     "displayName": "Ammo Expertise",
+    "plural": "Ammo Expertises",
     "category": "Licenses",
     "series": "Technology",
     "index": 1000,
@@ -6721,11 +7711,12 @@
     "description": "\tYou must still carry a copy of Ammo Basics if you want to research new ammunition technologies."
   },
   {
-    "name": "Meteor Access Temporary License",
+    "name": "Meteor Access Temporary",
     "displayName": "Meteor Tech",
+    "plural": "Meteor Techs",
     "category": "Ammunition",
     "series": "Ammunition",
-    "index": 1023,
+    "index": 1022,
     "cost": 500000,
     "thumbnail": "outfit/tech meteor",
     "base research rate": 0.11,
@@ -6737,9 +7728,10 @@
   {
     "name": "Meteor Tech License",
     "displayName": "Meteor Tech",
+    "plural": "Meteor Techs",
     "category": "Licenses",
     "series": "Technology",
-    "index": 1023,
+    "index": 1022,
     "thumbnail": "outfit/tech meteor",
     "base research rate": 0.11,
     "requires Meteor Missile": 1,
@@ -6748,8 +7740,9 @@
     "description": "This technical manual details how to manufacture Meteor Missiles. Having this makes it possible for any outfitter to offer Meteor Missiles even if it is normally not stocked there."
   },
   {
-    "name": "Sidewinder Access Temporary License",
+    "name": "Sidewinder Access Temporary",
     "displayName": "Sidewinder Tech",
+    "plural": "Sidewinder Techs",
     "category": "Ammunition",
     "series": "Ammunition",
     "index": 1033,
@@ -6764,6 +7757,7 @@
   {
     "name": "Sidewinder Tech License",
     "displayName": "Sidewinder Tech",
+    "plural": "Sidewinder Techs",
     "category": "Licenses",
     "series": "Technology",
     "index": 1033,
@@ -6775,8 +7769,9 @@
     "description": "This technical manual details how to manufacture Sidewinder Missiles. Having this makes it possible for any outfitter to offer Sidewinder Missiles even if it is normally not stocked there."
   },
   {
-    "name": "Javelin Access Temporary License",
+    "name": "Javelin Access Temporary",
     "displayName": "Javelin Tech",
+    "plural": "Javelin Techs",
     "category": "Ammunition",
     "series": "Ammunition",
     "index": 1013,
@@ -6791,6 +7786,7 @@
   {
     "name": "Javelin Tech License",
     "displayName": "Javelin Tech",
+    "plural": "Javelin Techs",
     "category": "Licenses",
     "series": "Technology",
     "index": 1013,
@@ -6802,8 +7798,9 @@
     "description": "This technical manual details how to manufacture Javelins. Having this makes it possible for any outfitter to offer Javelins even if it is normally not stocked there."
   },
   {
-    "name": "Torpedo Access Temporary License",
+    "name": "Torpedo Access Temporary",
     "displayName": "Torpedo Tech",
+    "plural": "Torpedo Techs",
     "category": "Ammunition",
     "series": "Ammunition",
     "index": 1053,
@@ -6818,6 +7815,7 @@
   {
     "name": "Torpedo Tech License",
     "displayName": "Torpedo Tech",
+    "plural": "Torpedo Techs",
     "category": "Licenses",
     "series": "Technology",
     "index": 1053,
@@ -6829,8 +7827,9 @@
     "description": "This technical manual details how to manufacture Torpedo Missiles. Having this makes it possible for any outfitter to offer Torpedo Missiles even if it is normally not stocked there."
   },
   {
-    "name": "Typhoon Access Temporary License",
+    "name": "Typhoon Access Temporary",
     "displayName": "Typhoon Tech",
+    "plural": "Typhoon Techs",
     "category": "Ammunition",
     "series": "Ammunition",
     "index": 1063,
@@ -6850,6 +7849,7 @@
   {
     "name": "Typhoon Tech License",
     "displayName": "Typhoon Tech",
+    "plural": "Typhoon Techs",
     "category": "Licenses",
     "series": "Technology",
     "index": 1063,
@@ -6863,8 +7863,9 @@
     "description": "This technical manual details how to manufacture Typhoon Missiles. Having this makes it possible for any outfitter to offer Typhoon Torpedos even if it is normally not stocked there."
   },
   {
-    "name": "Heavy Rocket Access Temporary License",
+    "name": "Heavy Rocket Access Temporary",
     "displayName": "Heavy Rocket Tech",
+    "plural": "Heavy Rocket Techs",
     "category": "Ammunition",
     "series": "Ammunition",
     "index": 1043,
@@ -6879,6 +7880,7 @@
   {
     "name": "Heavy Rocket Tech License",
     "displayName": "Heavy Rocket Tech",
+    "plural": "Heavy Rocket Techs",
     "category": "Licenses",
     "series": "Technology",
     "index": 1043,
@@ -6890,8 +7892,9 @@
     "description": "This technical manual details how to manufacture Heavy Rockets. Having this makes it possible for any outfitter to offer Heavy Rockets even if it is normally not stocked there."
   },
   {
-    "name": "Gatling Gun Ammo Access Temporary License",
+    "name": "Gatling Gun Ammo Access Temporary",
     "displayName": "Gatling Ammo Tech",
+    "plural": "Gatling Ammo Techs",
     "category": "Ammunition",
     "series": "Ammunition",
     "index": 1073,
@@ -6906,6 +7909,7 @@
   {
     "name": "Gatling Ammo Tech License",
     "displayName": "Gatling Ammo Tech",
+    "plural": "Gatling Ammo Techs",
     "category": "Licenses",
     "series": "Technology",
     "index": 1073,
@@ -6916,15 +7920,16 @@
     "description": "This technical manual details how to manufacture Gatling Gun Ammo. Having this makes it possible for any outfitter to offer Gatling Gun Ammo even if it is normally not stocked there."
   },
   {
-    "name": "Inferno Rocket Access Temporary License",
+    "name": "Inferno Rocket Access Temporary",
     "displayName": "Inferno Rocket Tech",
+    "plural": "Inferno Rocket Techs",
     "category": "Ammunition",
     "series": "Ammunition",
     "index": 1048,
     "licenses": {
       "description": "\"Inferno Dragon\""
     },
-    "cost": 20000000,
+    "cost": 30000000,
     "thumbnail": "outfit/tech inferno rocket",
     "base research rate": 0.05,
     "requires Heavy Rocket Tech": 1,
@@ -6937,6 +7942,7 @@
   {
     "name": "Inferno Rocket Tech License",
     "displayName": "Inferno Rocket Tech",
+    "plural": "Inferno Rocket Techs",
     "category": "Licenses",
     "series": "Technology",
     "index": 1048,
@@ -6953,8 +7959,48 @@
     "description": "This technical manual details how to manufacture Inferno Rockets. Having this makes it possible for any outfitter to offer Inferno Rockets even if it is normally not stocked there."
   },
   {
-    "name": "Plunder Mine Access Temporary License",
+    "name": "Plasma Missile Access Temporary",
+    "displayName": "Plasma Missile Tech",
+    "plural": "Plasma Missile Techs",
+    "category": "Ammunition",
+    "series": "Ammunition",
+    "index": 1026,
+    "licenses": {
+      "description": "\"Militia\""
+    },
+    "cost": 750000,
+    "thumbnail": "outfit/tech plasma missile",
+    "base research rate": 0.06,
+    "requires Meteor Tech": 1,
+    "requires Plasma Missile": 1,
+    "requires Ammo Basics": 1,
+    "requires Research Data": 1,
+    "requires Research Data (Chem)": 1,
+    "description": "\tAfter this is acquired it can be found in the Licenses area in future visits to the outfitter."
+  },
+  {
+    "name": "Plasma Missile Tech License",
+    "displayName": "Plasma Missile Tech",
+    "plural": "Plasma Missile Techs",
+    "category": "Licenses",
+    "series": "Technology",
+    "index": 1026,
+    "licenses": {
+      "description": "\"Militia\""
+    },
+    "thumbnail": "outfit/tech plasma missile",
+    "base research rate": 0.06,
+    "requires Meteor Tech": 1,
+    "requires Plasma Missile": 1,
+    "requires Ammo Basics": 1,
+    "requires Research Data": 1,
+    "requires Research Data (Chem)": 1,
+    "description": "This technical manual details how to manufacture Plasma Missiles. Having this makes it possible for any outfitter to offer Plasma Missiles even if it is normally not stocked there."
+  },
+  {
+    "name": "Plunder Mine Access Temporary",
     "displayName": "Plunder Mine Tech",
+    "plural": "Plunder Mine Techs",
     "category": "Ammunition",
     "series": "Ammunition",
     "index": 1007,
@@ -6969,6 +8015,7 @@
   {
     "name": "Plunder Mine Tech License",
     "displayName": "Plunder Mine Tech",
+    "plural": "Plunder Mine Techs",
     "category": "Licenses",
     "series": "Technology",
     "index": 1007,
@@ -6980,11 +8027,12 @@
     "description": "This technical manual details how to manufacture Plunder Mines. Having this makes it possible for any outfitter to offer Plunder Mines even if it is normally not stocked there."
   },
   {
-    "name": "Stinger Missile Access Temporary License",
+    "name": "Stinger Missile Access Temporary",
     "displayName": "Stinger Missile Tech",
+    "plural": "Stinger Missile Techs",
     "category": "Ammunition",
     "series": "Ammunition",
-    "index": 1028,
+    "index": 1029,
     "cost": 1000000,
     "thumbnail": "outfit/tech stinger missile",
     "base research rate": 0.09,
@@ -6999,9 +8047,10 @@
   {
     "name": "Stinger Missile Tech License",
     "displayName": "Stinger Missile Tech",
+    "plural": "Stinger Missile Techs",
     "category": "Licenses",
     "series": "Technology",
-    "index": 1028,
+    "index": 1029,
     "thumbnail": "outfit/tech stinger missile",
     "base research rate": 0.09,
     "requires Sidewinder Tech": 1,
@@ -7018,8 +8067,9 @@
     "description": "The technology used in Lovelace Labs products are a corporate secret not meant to be shared outside of the company."
   },
   {
-    "name": "Swingfire Missile Access Temporary License",
+    "name": "Swingfire Missile Access Temporary",
     "displayName": "Swingfire Missile Tech",
+    "plural": "Swingfire Missile Techs",
     "category": "Ammunition",
     "series": "Ammunition",
     "index": 1038,
@@ -7040,6 +8090,7 @@
   {
     "name": "Swingfire Missile Tech License",
     "displayName": "Swingfire Missile Tech",
+    "plural": "Swingfire Missile Techs",
     "category": "Licenses",
     "series": "Technology",
     "index": 1038,
@@ -7057,14 +8108,199 @@
     "description": "This technical manual details how to manufacture Swingfire Missiles. Having this makes it possible for any outfitter to offer Swingfire Missiles even if it is normally not stocked there."
   },
   {
+    "name": "Meteor Access Temporary License",
+    "displayName": "Meteor Tech",
+    "plural": "Meteor Techs",
+    "category": "Ammunition",
+    "series": "Ammunition",
+    "index": 1022,
+    "cost": 500000,
+    "thumbnail": "outfit/tech meteor",
+    "base research rate": 0.11,
+    "requires Meteor Missile": 1,
+    "requires Ammo Basics": 1,
+    "requires Research Data": 1,
+    "description": "\tAfter this is acquired it can be found in the Licenses area in future visits to the outfitter."
+  },
+  {
+    "name": "Sidewinder Access Temporary License",
+    "displayName": "Sidewinder Tech",
+    "plural": "Sidewinder Techs",
+    "category": "Ammunition",
+    "series": "Ammunition",
+    "index": 1033,
+    "cost": 900000,
+    "thumbnail": "outfit/tech sidewinder",
+    "base research rate": 0.06,
+    "requires Sidewinder Missile": 1,
+    "requires Ammo Basics": 1,
+    "requires Research Data": 1,
+    "description": "\tAfter this is acquired it can be found in the Licenses area in future visits to the outfitter."
+  },
+  {
+    "name": "Javelin Access Temporary License",
+    "displayName": "Javelin Tech",
+    "plural": "Javelin Techs",
+    "category": "Ammunition",
+    "series": "Ammunition",
+    "index": 1013,
+    "cost": 50000,
+    "thumbnail": "outfit/tech javelin",
+    "base research rate": 0.06,
+    "requires Javelin": 1,
+    "requires Ammo Basics": 1,
+    "requires Research Data": 1,
+    "description": "\tAfter this is acquired it can be found in the Licenses area in future visits to the outfitter."
+  },
+  {
+    "name": "Torpedo Access Temporary License",
+    "displayName": "Torpedo Tech",
+    "plural": "Torpedo Techs",
+    "category": "Ammunition",
+    "series": "Ammunition",
+    "index": 1053,
+    "cost": 1400000,
+    "thumbnail": "outfit/tech torpedo",
+    "base research rate": 0.06,
+    "requires Torpedo": 1,
+    "requires Ammo Basics": 1,
+    "requires Research Data": 1,
+    "description": "\tAfter this is acquired it can be found in the Licenses area in future visits to the outfitter."
+  },
+  {
+    "name": "Typhoon Access Temporary License",
+    "displayName": "Typhoon Tech",
+    "plural": "Typhoon Techs",
+    "category": "Ammunition",
+    "series": "Ammunition",
+    "index": 1063,
+    "licenses": {
+      "description": "\"Deep Security\""
+    },
+    "cost": 2700000,
+    "thumbnail": "outfit/tech typhoon",
+    "base research rate": 0.05,
+    "requires Torpedo Tech": 1,
+    "requires Typhoon Torpedo": 1,
+    "requires Ammo Basics": 1,
+    "requires Research Data": 1,
+    "requires Research Data (Chem)": 1,
+    "description": "\tAfter this is acquired it can be found in the Licenses area in future visits to the outfitter."
+  },
+  {
+    "name": "Heavy Rocket Access Temporary License",
+    "displayName": "Heavy Rocket Tech",
+    "plural": "Heavy Rocket Techs",
+    "category": "Ammunition",
+    "series": "Ammunition",
+    "index": 1043,
+    "cost": 2000000,
+    "thumbnail": "outfit/tech rocket",
+    "base research rate": 0.06,
+    "requires Heavy Rocket": 1,
+    "requires Ammo Basics": 1,
+    "requires Research Data": 1,
+    "description": "\tAfter this is acquired it can be found in the Licenses area in future visits to the outfitter."
+  },
+  {
+    "name": "Gatling Gun Ammo Access Temporary License",
+    "displayName": "Gatling Ammo Tech",
+    "plural": "Gatling Ammo Techs",
+    "category": "Ammunition",
+    "series": "Ammunition",
+    "index": 1073,
+    "cost": 4000,
+    "thumbnail": "outfit/tech bullet",
+    "base research rate": 0.11,
+    "requires Gatling Gun Ammo": 1,
+    "requires Ammo Basics": 1,
+    "requires Research Data": 1,
+    "description": "\tAfter this is acquired it can be found in the Licenses area in future visits to the outfitter."
+  },
+  {
+    "name": "Inferno Rocket Access Temporary License",
+    "displayName": "Inferno Rocket Tech",
+    "plural": "Inferno Rocket Techs",
+    "category": "Ammunition",
+    "series": "Ammunition",
+    "index": 1048,
+    "licenses": {
+      "description": "\"Inferno Dragon\""
+    },
+    "cost": 20000000,
+    "thumbnail": "outfit/tech inferno rocket",
+    "base research rate": 0.05,
+    "requires Heavy Rocket Tech": 1,
+    "requires Inferno Rocket": 1,
+    "requires Ammo Basics": 1,
+    "requires Research Data": 1,
+    "requires Research Data (Chem)": 1,
+    "description": "\tAfter this is acquired it can be found in the Licenses area in future visits to the outfitter."
+  },
+  {
+    "name": "Plunder Mine Access Temporary License",
+    "displayName": "Plunder Mine Tech",
+    "plural": "Plunder Mine Techs",
+    "category": "Ammunition",
+    "series": "Ammunition",
+    "index": 1007,
+    "cost": 1000000,
+    "thumbnail": "outfit/tech plunder mine",
+    "base research rate": 0.11,
+    "requires Plunder Mine": 1,
+    "requires Ammo Basics": 1,
+    "requires Research Data": 1,
+    "description": "\tAfter this is acquired it can be found in the Licenses area in future visits to the outfitter."
+  },
+  {
+    "name": "Stinger Missile Access Temporary License",
+    "displayName": "Stinger Missile Tech",
+    "plural": "Stinger Missile Techs",
+    "category": "Ammunition",
+    "series": "Ammunition",
+    "index": 1028,
+    "cost": 1000000,
+    "thumbnail": "outfit/tech stinger missile",
+    "base research rate": 0.09,
+    "requires Sidewinder Tech": 1,
+    "requires Stinger Missile": 1,
+    "requires Ammo Basics": 1,
+    "requires Research Data": 1,
+    "requires Research Data (Bio)": 1,
+    "requires Research Data (Chem)": 1,
+    "description": "\tAfter this is acquired it can be found in the Licenses area in future visits to the outfitter."
+  },
+  {
+    "name": "Swingfire Missile Access Temporary License",
+    "displayName": "Swingfire Missile Tech",
+    "plural": "Swingfire Missile Techs",
+    "category": "Ammunition",
+    "series": "Ammunition",
+    "index": 1038,
+    "licenses": {
+      "description": "\"Lovelace Labs\""
+    },
+    "cost": 0,
+    "thumbnail": "outfit/tech swingfire missile",
+    "base research rate": 0.05,
+    "requires Sidewinder Tech": 1,
+    "requires Swingfire Missile": 1,
+    "requires Ammo Basics": 1,
+    "requires Research Data": 1,
+    "requires Research Data (Chem)": 1,
+    "requires Research Data (Phys)": 1,
+    "description": "\tAfter this is acquired it can be found in the Licenses area in future visits to the outfitter."
+  },
+  {
     "name": "Hicemus Logic License",
     "category": "Licenses",
     "thumbnail": "outfit/unknown",
     "description": "The alien intellect behind Incipias science and technology is difficult to articulate in your own language. You'll have to reverse engineer their tech using your own foundational knowledge as a guide."
   },
   {
-    "name": "Star Tail Access Temporary License",
+    "name": "Star Tail Access Temporary",
     "displayName": "Star Tail Tech",
+    "plural": "Star Tail Techs",
     "category": "Ammunition",
     "series": "Ammunition",
     "licenses": {
@@ -7085,6 +8321,7 @@
   {
     "name": "Star Tail Tech License",
     "displayName": "Star Tail Tech",
+    "plural": "Star Tail Techs",
     "category": "Licenses",
     "series": "Technology",
     "licenses": {
@@ -7100,6 +8337,73 @@
     "requires Research Data (Chem)": 1,
     "requires Research Data (Phys)": 1,
     "description": "This technical manual details how to manufacture Star Tail Cells. Having this makes it possible for any outfitter to offer Star Tail Cells even if it is normally not stocked there."
+  },
+  {
+    "name": "Star Tail Access Temporary License",
+    "displayName": "Star Tail Tech",
+    "plural": "Star Tail Techs",
+    "category": "Ammunition",
+    "series": "Ammunition",
+    "licenses": {
+      "description": "\"Hicemus Logic\""
+    },
+    "cost": 1500000,
+    "thumbnail": "outfit/tech star tail cell",
+    "base research rate": 0.01,
+    "requires Star Tail Cell": 1,
+    "requires Ammo Basics": 1,
+    "requires Ammo Expertise": 1,
+    "requires Research Data": 1,
+    "requires Research Data (Bio)": 1,
+    "requires Research Data (Chem)": 1,
+    "requires Research Data (Phys)": 1,
+    "description": "\tAfter this is acquired it can be found in the Licenses area in future visits to the outfitter."
+  },
+  {
+    "name": "Deflection Beam",
+    "category": "Turrets",
+    "series": "Turrets",
+    "index": 12010,
+    "cost": 180000,
+    "mass": 35,
+    "outfit space": -35,
+    "weapon capacity": -35,
+    "turret mounts": -1,
+    "thumbnail": "outfit/deflection beam",
+    "licenses": {
+      "description": "\"Hicemus Conflict\""
+    },
+    "weapon": {
+      "sprite": "projectile/deflection beam",
+      "spriteData": {
+        "frame rate": 6,
+        "description": "\"random start frame\""
+      },
+      "hardpoint sprite": "hardpoint/deflection beam",
+      "sound": "stagnation beam",
+      "hit effect": "stagnation beam impact",
+      "inaccuracy": 0.5,
+      "turret turn": 3.8,
+      "velocity": 600,
+      "lifetime": 1,
+      "reload": 1,
+      "firing energy": 0.5,
+      "firing heat": 3.2,
+      "#": "Deal damage to provoke ships.",
+      "shield damage": 0.1,
+      "hull damage": 0.1,
+      "hit force": 40,
+      "slowing damage": 0.1
+    },
+    "description": "\tThe secret of how these beams work is only known to a few scientists of the Incipias who are under the control of the state. Such knowledge, if made public, could have disastrous consequences for the Hicemus and their grip on power."
+  },
+  {
+    "name": "Midnight FTL Prototype",
+    "displayName": "FTL Prototype",
+    "category": "Systems",
+    "thumbnail": "outfit/unknown",
+    "outfit space": 15,
+    "description": "An experimental FTL drive. It is not clear how this is activated..."
   },
   {
     "name": "Builder Anti-Missile",
@@ -7702,8 +9006,9 @@
     "description": "Far'en lai ko forei lak'far."
   },
   {
-    "name": "Piercer Access Temporary License",
+    "name": "Piercer Access Temporary",
     "displayName": "Piercer Tech",
+    "plural": "Piercer Techs",
     "category": "Ammunition",
     "series": "Ammunition",
     "index": 4034,
@@ -7724,6 +9029,7 @@
   {
     "name": "Piercer Tech License",
     "displayName": "Piercer Tech",
+    "plural": "Piercer Techs",
     "category": "Licenses",
     "series": "Technology",
     "index": 4034,
@@ -7741,8 +9047,9 @@
     "description": "This technical manual details how to manufacture Piercer Missiles. Having this makes it possible for any outfitter to offer Piercer Missiles even if it is normally not stocked there."
   },
   {
-    "name": "Cluster Mine Access Temporary License",
+    "name": "Cluster Mine Access Temporary",
     "displayName": "Cluster Mine Tech",
+    "plural": "Cluster Mine Techs",
     "category": "Ammunition",
     "series": "Ammunition",
     "index": 4044,
@@ -7763,6 +9070,7 @@
   {
     "name": "Cluster Mine Tech License",
     "displayName": "Cluster Mine Tech",
+    "plural": "Cluster Mine Techs",
     "category": "Licenses",
     "series": "Technology",
     "index": 4044,
@@ -7780,8 +9088,9 @@
     "description": "This technical manual details how to manufacture Cluster Mines. Having this makes it possible for any outfitter to offer Cluster Mines even if it is normally not stocked there."
   },
   {
-    "name": "Firelight Access Temporary License",
+    "name": "Firelight Access Temporary",
     "displayName": "Firelight Tech",
+    "plural": "Firelight Techs",
     "category": "Ammunition",
     "series": "Ammunition",
     "index": 4014,
@@ -7802,6 +9111,7 @@
   {
     "name": "Firelight Tech License",
     "displayName": "Firelight Tech",
+    "plural": "Firelight Techs",
     "category": "Licenses",
     "series": "Technology",
     "index": 4014,
@@ -7819,8 +9129,9 @@
     "description": "This technical manual details how to manufacture Firelight Missiles. Having this makes it possible for any outfitter to offer Firelight Missiles even if it is normally not stocked there."
   },
   {
-    "name": "Firestorm Access Temporary License",
+    "name": "Firestorm Access Temporary",
     "displayName": "Firestorm Tech",
+    "plural": "Firestorm Techs",
     "category": "Ammunition",
     "series": "Ammunition",
     "index": 4024,
@@ -7841,6 +9152,7 @@
   {
     "name": "Firestorm Tech License",
     "displayName": "Firestorm Tech",
+    "plural": "Firestorm Techs",
     "category": "Licenses",
     "series": "Technology",
     "index": 4024,
@@ -7858,8 +9170,9 @@
     "description": "This technical manual details how to manufacture Firestorm Torpedos. Having this makes it possible for any outfitter to offer Firestorm Torpedos even if it is normally not stocked there."
   },
   {
-    "name": "Magnetic Mine Access Temporary License",
+    "name": "Magnetic Mine Access Temporary",
     "displayName": "Magnetic Mine Tech",
+    "plural": "Magnetic Mine Techs",
     "category": "Ammunition",
     "series": "Ammunition",
     "index": 4048,
@@ -7880,6 +9193,7 @@
   {
     "name": "Magnetic Mine Tech License",
     "displayName": "Magnetic Mine Tech",
+    "plural": "Magnetic Mine Techs",
     "category": "Licenses",
     "series": "Technology",
     "index": 4048,
@@ -7895,6 +9209,111 @@
     "requires Research Data (Chem)": 1,
     "requires Research Data (Phys)": 1,
     "description": "This technical manual details how to manufacture Magnetic Mines. Having this makes it possible for any outfitter to offer Magnetic Mines even if it is normally not stocked there."
+  },
+  {
+    "name": "Piercer Access Temporary License",
+    "displayName": "Piercer Tech",
+    "plural": "Piercer Techs",
+    "category": "Ammunition",
+    "series": "Ammunition",
+    "index": 4034,
+    "licenses": {
+      "description": "Navarch"
+    },
+    "cost": 3500000,
+    "thumbnail": "outfit/tech piercer",
+    "base research rate": 0.05,
+    "requires Javelin Tech": 1,
+    "requires Piercer Missile": 1,
+    "requires Ammo Basics": 1,
+    "requires Research Data": 1,
+    "requires Research Data (Chem)": 1,
+    "requires Research Data (Phys)": 1,
+    "description": "\tAfter this is acquired it can be found in the Licenses area in future visits to the outfitter."
+  },
+  {
+    "name": "Cluster Mine Access Temporary License",
+    "displayName": "Cluster Mine Tech",
+    "plural": "Cluster Mine Techs",
+    "category": "Ammunition",
+    "series": "Ammunition",
+    "index": 4044,
+    "licenses": {
+      "description": "Navarch"
+    },
+    "cost": 3500000,
+    "thumbnail": "outfit/tech korath mine",
+    "base research rate": 0.05,
+    "requires Plunder Mine Tech": 1,
+    "requires Cluster Mine": 1,
+    "requires Ammo Basics": 1,
+    "requires Research Data": 1,
+    "requires Research Data (Chem)": 1,
+    "requires Research Data (Phys)": 1,
+    "description": "\tAfter this is acquired it can be found in the Licenses area in future visits to the outfitter."
+  },
+  {
+    "name": "Firelight Access Temporary License",
+    "displayName": "Firelight Tech",
+    "plural": "Firelight Techs",
+    "category": "Ammunition",
+    "series": "Ammunition",
+    "index": 4014,
+    "licenses": {
+      "description": "Navarch"
+    },
+    "cost": 7600000,
+    "thumbnail": "outfit/tech firelight",
+    "base research rate": 0.05,
+    "requires Torpedo Tech": 1,
+    "requires Firelight Missile": 1,
+    "requires Ammo Basics": 1,
+    "requires Research Data": 1,
+    "requires Research Data (Chem)": 1,
+    "requires Research Data (Phys)": 1,
+    "description": "\tAfter this is acquired it can be found in the Licenses area in future visits to the outfitter."
+  },
+  {
+    "name": "Firestorm Access Temporary License",
+    "displayName": "Firestorm Tech",
+    "plural": "Firestorm Techs",
+    "category": "Ammunition",
+    "series": "Ammunition",
+    "index": 4024,
+    "licenses": {
+      "description": "Navarch"
+    },
+    "cost": 19800000,
+    "thumbnail": "outfit/tech firestorm torpedo",
+    "base research rate": 0.03,
+    "requires Firelight Tech": 1,
+    "requires Firestorm Torpedo": 1,
+    "requires Ammo Basics": 1,
+    "requires Research Data": 1,
+    "requires Research Data (Chem)": 1,
+    "requires Research Data (Phys)": 1,
+    "description": "\tAfter this is acquired it can be found in the Licenses area in future visits to the outfitter."
+  },
+  {
+    "name": "Magnetic Mine Access Temporary License",
+    "displayName": "Magnetic Mine Tech",
+    "plural": "Magnetic Mine Techs",
+    "category": "Ammunition",
+    "series": "Ammunition",
+    "index": 4048,
+    "licenses": {
+      "description": "Navarch"
+    },
+    "cost": 3500000,
+    "thumbnail": "outfit/tech magnetic mine",
+    "base research rate": 0.03,
+    "requires Cluster Mine Tech": 1,
+    "requires Magnetic Mine": 1,
+    "requires Ammo Basics": 1,
+    "requires Research Data": 1,
+    "requires Research Data (Chem)": 1,
+    "requires Research Data (Phys)": 1,
+    "description": "\tAfter this is acquired it can be found in the Licenses area in future visits to the outfitter."
   },
   {
     "name": "Blaze-Pike",
@@ -7974,14 +9393,14 @@
       "hardpoint offset": 6,
       "sound": "tractor beam",
       "hit effect": "scavenger tractor beam",
-      "tractor beam": 8,
+      "tractor beam": 9,
       "velocity": 350,
       "lifetime": 1,
       "reload": 1,
       "firing energy": 1.2,
       "firing heat": 2.1
     },
-    "description": "Some Korath Exiles still use these antiquated devices in their efforts to scavenge for raw materials. An early implementation of Korath grav-ray technology, the power of the beam generated by this turret is not strong enough to move anything larger than cargo crates or other flotsam."
+    "description": "Some Korath Exiles still use these antiquated devices in their efforts to scavenge for raw materials. An early implementation of Korath grav-ray technology, the power of the beam is greater than human equivalents, but is still not strong enough to move anything larger than cargo crates or similar flotsam."
   },
   {
     "name": "Shock-Strike Turret",
@@ -8023,10 +9442,10 @@
       "shield damage": 113,
       "hull damage": 41,
       "hit force": -240,
-      "ion damage": 0.4,
-      "scrambling damage": 0.4
+      "ion damage": 0.5,
+      "scrambling damage": 0.5
     },
-    "description": "\tThis weapon adds an ionic charge to Grab-Strike projectiles, further incapacitating the targeted ship."
+    "description": "\tThis weapon adds an ionic charge to the Grab-Strike projectiles, further incapacitating the targeted ship."
   },
   {
     "name": "Thermal Obliterator",
@@ -8159,7 +9578,7 @@
     "index": 4045,
     "cost": 3800,
     "thumbnail": "outfit/magnetic mine",
-    "mass": 0.7,
+    "mass": 0.4,
     "magnetic mine capacity": -1,
     "description": "\tDevelopment of this weapon was rushed to deployment at the request of Navarchs who have explored the Ember Wastes."
   },
@@ -8170,138 +9589,11 @@
     "index": 4046,
     "cost": 34600,
     "thumbnail": "outfit/magnetic mine storage",
-    "mass": 2.7,
+    "mass": 0.8,
     "outfit space": -9,
-    "magnetic mine capacity": 9,
+    "magnetic mine capacity": 20,
     "ammo": "Cluster Mine",
     "description": "\tThese storage racks also act as a faraday cage to prevent the stored mines from accidentally interfering with the generators of the ship while carrying them."
-  },
-  {
-    "name": "Magnetic Mine Depot",
-    "category": "Ammunition",
-    "series": "Ammunition",
-    "index": 4047,
-    "cost": 103800,
-    "thumbnail": "outfit/magnetic mine depot",
-    "mass": 8.1,
-    "cargo space": -40,
-    "magnetic mine capacity": 27,
-    "ammo": "Magnetic Mine",
-    "required crew": 1,
-    "description": "The Magnetic Mine Depot stages extra ammunition in your cargo bay for weapons that use Magnetic Mines. The ammunition is ready to be withdrawn for use. Storing it this way uses more cargo space than if it were packed away in sealed crates. An extra crewmember is required to maintain inventory."
-  },
-  {
-    "name": "Magnetic Mine Deployer",
-    "category": "Secondary Weapons",
-    "series": "Secondary Weapons",
-    "index": 4040,
-    "cost": 589000,
-    "thumbnail": "outfit/magnetic mine deployer",
-    "mass": 18,
-    "outfit space": -24,
-    "weapon capacity": -24,
-    "energy capacity": 25,
-    "gun ports": -1,
-    "magnetic mine capacity": 8,
-    "weapon": {
-      "sprite": "projectile/magnetic mine",
-      "spriteData": {
-        "frame rate": 1
-      },
-      "sound": "minelayer",
-      "ammo": "Magnetic Mine",
-      "icon": "icon/magnetic mine",
-      "fire effect": "magnetic mine fire",
-      "hit effect": [
-        "ionball ring",
-        "ionball impact",
-        "ionball fragment"
-      ],
-      "live effect": "magnetic mine spark",
-      "die effect": "ion impact",
-      "inaccuracy": 10,
-      "velocity": 2,
-      "random velocity": 1,
-      "lifetime": 1000,
-      "random lifetime": 160,
-      "reload": 180,
-      "firing energy": 18,
-      "firing heat": 9,
-      "acceleration": 0.01,
-      "drag": 0.04,
-      "turn": 3,
-      "homing": {
-        "description": "\"leading\" \"throttle control\""
-      },
-      "tracking": 0.7,
-      "trigger radius": 15,
-      "blast radius": 20,
-      "shield damage": 350,
-      "hull damage": 280,
-      "ion damage": 110,
-      "scrambling damage": 110,
-      "energy damage": 1600,
-      "hit force": 135,
-      "missile strength": 57,
-      "description": "safe"
-    },
-    "description": "\tThis new mine does less damage overall than the old Cluster Mines, but also emits electromagnetic pulses which interferes with the generators of enemy ships caught within its blast radius."
-  },
-  {
-    "name": "Piercer Missile Depot",
-    "category": "Ammunition",
-    "series": "Ammunition",
-    "index": 4031,
-    "cost": 224000,
-    "thumbnail": "outfit/korath piercer depot",
-    "mass": 4.4,
-    "cargo space": -40,
-    "piercer capacity": 64,
-    "ammo": "Piercer Missile",
-    "required crew": 1,
-    "description": "The Piercer Missile Depot stages extra ammunition in your cargo bay for weapons that use Piercer Missiles. The ammunition is ready to be withdrawn for use. Storing it this way uses more cargo space than if it were packed away in sealed crates. An extra crewmember is required to maintain inventory."
-  },
-  {
-    "name": "Cluster Mine Depot",
-    "category": "Ammunition",
-    "series": "Ammunition",
-    "index": 4041,
-    "cost": 94500,
-    "thumbnail": "outfit/korath mine depot",
-    "mass": 8.1,
-    "cargo space": -40,
-    "minelayer capacity": 27,
-    "ammo": "Cluster Mine",
-    "required crew": 1,
-    "description": "The Cluster Mine Depot stages extra ammunition in your cargo bay for weapons that use Cluster Mines. The ammunition is ready to be withdrawn for use. Storing it this way uses more cargo space than if it were packed away in sealed crates. An extra crewmember is required to maintain inventory."
-  },
-  {
-    "name": "Firelight Storage Depot",
-    "category": "Ammunition",
-    "series": "Ammunition",
-    "index": 4011,
-    "cost": 137000,
-    "thumbnail": "outfit/firelight depot",
-    "mass": 15,
-    "cargo space": -40,
-    "firelight missile capacity": 50,
-    "ammo": "Firelight Missile",
-    "required crew": 1,
-    "description": "The Firelight Storage Depot stages extra ammunition in your cargo bay for weapons that use Firelight Missiles. The ammunition is ready to be withdrawn for use. Storing it this way uses more cargo space than if it were packed away in sealed crates. An extra crewmember is required to maintain inventory."
-  },
-  {
-    "name": "Firestorm Torpedo Depot",
-    "category": "Ammunition",
-    "series": "Ammunition",
-    "index": 4021,
-    "cost": "270000",
-    "thumbnail": "outfit/firestorm depot",
-    "mass": 14,
-    "cargo space": -60,
-    "firestorm torpedo capacity": 26,
-    "ammo": "Firestorm Torpedo",
-    "required crew": 1,
-    "description": "The Firestorm Torpedo Depot stages extra ammunition in your cargo bay for weapons that use Firestorm Torpedoes. The ammunition is ready to be withdrawn for use. Storing it this way uses more cargo space than if it were packed away in sealed crates. An extra crewmember is required to maintain inventory."
   },
   {
     "name": "Microbot Corroder",
@@ -8602,6 +9894,164 @@
     "description": "\tSpores infesting flesh processed into Nutrigel by a microbot fabricator do not survive the process, leaving a product that is safe to consume. Nutrigel made from meat infused with Seleptra Bloom spores are also more flavorful to Korath tastebuds."
   },
   {
+    "name": "Pug Corroder",
+    "category": "Guns",
+    "cost": 310000,
+    "thumbnail": "outfit/pug corroder",
+    "mass": 27,
+    "outfit space": -27,
+    "weapon capacity": -27,
+    "gun ports": -1,
+    "weapon": {
+      "sprite": "projectile/lightning green",
+      "spriteData": {
+        "frame rate": 60,
+        "description": "\"random start frame\""
+      },
+      "sound": "zapper",
+      "hit effect": "zapper impact",
+      "inaccuracy": 0.3,
+      "velocity": 640,
+      "lifetime": 1,
+      "reload": 1,
+      "firing energy": 2.7,
+      "firing heat": 1.4,
+      "shield damage": 3.7,
+      "discharge damage": 0.0185,
+      "hull damage": 2.9,
+      "corrosion damage": 0.0145
+    },
+    "description": "The Pug Corroder creates powerful energy bolts that disrupts the polarity of electrons that bind atoms together. This effect continues to damage the target after they strike."
+  },
+  {
+    "name": "Pug Corroder Turret",
+    "category": "Turrets",
+    "cost": 940000,
+    "thumbnail": "outfit/pug corroder turret",
+    "mass": 72,
+    "outfit space": -72,
+    "weapon capacity": -72,
+    "turret mounts": -1,
+    "required crew": 1,
+    "weapon": {
+      "sprite": "projectile/lightning green",
+      "spriteData": {
+        "frame rate": 60,
+        "description": "\"random start frame\""
+      },
+      "hardpoint sprite": "hardpoint/pug zapper turret",
+      "hardpoint offset": 7,
+      "sound": "zapper",
+      "hit effect": "zapper impact",
+      "inaccuracy": 0.3,
+      "turret turn": 2.5,
+      "velocity": 640,
+      "lifetime": [
+        1,
+        1
+      ],
+      "reload": 1,
+      "firing energy": 5.4,
+      "firing heat": 2.8,
+      "shield damage": 7.4,
+      "discharge damage": 0.037,
+      "hull damage": 5.8,
+      "corrosion damage": 0.029
+    },
+    "description": "The Pug Corroder Turret creates powerful energy bolts that disrupts the polarity of electrons that bind atoms together. This effect continues to damage the target after they strike."
+  },
+  {
+    "name": "Pug Ghost Seeker",
+    "category": "Guns",
+    "cost": 590000,
+    "thumbnail": "outfit/pug ghost seeker",
+    "mass": 37,
+    "outfit space": -37,
+    "weapon capacity": -37,
+    "gun ports": -1,
+    "weapon": {
+      "sprite": "projectile/ghost seeker",
+      "spriteData": {
+        "frame rate": 10,
+        "description": "\"random start frame\""
+      },
+      "sound": "seeker",
+      "hit effect": "seeker impact",
+      "die effect": "seeker impact",
+      "inaccuracy": 2,
+      "velocity": 6.5,
+      "lifetime": 400,
+      "reload": 20,
+      "firing energy": 50,
+      "firing heat": 40,
+      "acceleration": 0.65,
+      "drag": 0.1,
+      "turn": 4,
+      "homing": {
+        "description": "\"leading\" \"throttle control\""
+      },
+      "tracking": 0.5,
+      "shield damage": 24,
+      "hull damage": 13,
+      "hit force": 1,
+      "piercing": 0.3,
+      "description": "\"phasing\""
+    },
+    "description": "The Pug Ghost Seeker has a lower rate of fire than their regular Seeker. However, its slower projectiles have the ability to phase through obstacles and are unaffected by Anti-missiles. Even shields are less effective at stopping them."
+  },
+  {
+    "name": "Pug Ghost Zapper",
+    "category": "Guns",
+    "cost": 310000,
+    "thumbnail": "outfit/pug ghost zapper",
+    "mass": 27,
+    "outfit space": -27,
+    "weapon capacity": -27,
+    "gun ports": -1,
+    "weapon": {
+      "sound": "zapper",
+      "hit effect": "zapper impact",
+      "inaccuracy": 0.3,
+      "velocity": 320,
+      "lifetime": 1,
+      "reload": 1,
+      "firing energy": 2.7,
+      "firing heat": 1.4,
+      "shield damage": 3.7,
+      "hull damage": 2.9,
+      "hit force": 30
+    },
+    "description": "The Pug Ghost Zapper fires an invisible beam that exerts force against whatever it hits."
+  },
+  {
+    "name": "Pug Ghost Zapper Turret",
+    "category": "Turrets",
+    "cost": 940000,
+    "thumbnail": "outfit/pug ghost zapper turret",
+    "mass": 72,
+    "outfit space": -72,
+    "weapon capacity": -72,
+    "turret mounts": -1,
+    "required crew": 1,
+    "weapon": {
+      "hardpoint sprite": "hardpoint/pug ghost zapper turret",
+      "hardpoint offset": 7,
+      "sound": "zapper",
+      "hit effect": "zapper impact",
+      "inaccuracy": 0.3,
+      "turret turn": 2.5,
+      "velocity": 320,
+      "lifetime": 1,
+      "reload": 1,
+      "firing energy": 54,
+      "firing heat": 28,
+      "shield damage": 74,
+      "hull damage": 58,
+      "hit force": 60
+    },
+    "description": "The Pug Ghost Zapper Turret fires invisible beams that exert force against whatever they hit."
+  },
+  {
     "name": "Pug Ion Zapper",
     "category": "Guns",
     "series": "Guns",
@@ -8798,6 +10248,35 @@
     "description": "Damage to this Jump Drive has doubled the amount of fuel it consumes with each jump."
   },
   {
+    "name": "Pug Biobooster",
+    "category": "Systems",
+    "series": "Shields",
+    "index": 90030,
+    "thumbnail": "outfit/pug biobooster",
+    "integrated systems": 1,
+    "reinstall": -1,
+    "heat protection": 0.1,
+    "ion protection": 0.1,
+    "burn resistance": 0.1,
+    "corrosion resistance": 0.1,
+    "ion resistance": 0.1,
+    "scramble resistance": 0.1,
+    "quantum bloodstone": 1,
+    "description": "This component produces the secretions that allow the Savage Pug's bio-regenerative hulls to repair themselves while providing protection and resistance against various dangerous elements present in harsh environments."
+  },
+  {
+    "name": "Pug Displacer",
+    "category": "Systems",
+    "cost": 48000,
+    "thumbnail": "outfit/pug displacer",
+    "mass": 14,
+    "outfit space": -14,
+    "radar jamming": 15,
+    "optical jamming": 20,
+    "energy consumption": 0.8,
+    "description": "This strange obelisk creates a displacement field that makes it difficult for radar and optical tracking systems to target the ship it is installed on."
+  },
+  {
     "name": "Pug Prognosticator",
     "category": "Systems",
     "series": "Scanners",
@@ -8928,10 +10407,10 @@
     "thumbnail": "outfit/dream crystal",
     "capture attack": 2.3,
     "capture defense": 0.3,
-    "illegal": 1500000,
+    "illegal": 500000,
     "scan brightness": 1,
     "unplunderable": 1,
-    "description": "Pirates have found a variety of uses for these Crystals. Some use them to control slaves while others sell them as mind altering stimulators."
+    "description": "Pirates have found a variety of uses for these Crystals. Some use them to control slaves while others sell them as mind altering stimulators. Due to a brief delay in the time it takes to activate, it can be tossed like a grenade as well."
   },
   {
     "name": "Pug Supplemental Shielding",
@@ -9039,12 +10518,13 @@
     "thumbnail": "outfit/jump drive (damaged)",
     "mass": 20,
     "outfit space": -20,
+    "hyperdrive fuel": 150,
+    "jump fuel": 200,
     "jump speed": 0.3,
-    "jump fuel": 100,
     "jump drive": 1,
     "jump range": 1,
     "unplunderable": 1,
-    "description": "Damage to this Jump Drive has limited its ability to travel without the aid of a hyperspace lane. Fortunately, its consumption of fuel has also been reduced by half."
+    "description": "Damage to this Jump Drive has limited its ability to travel without the aid of a hyperspace lane. Fortunately, its consumption of fuel has also been reduced."
   },
   {
     "name": "Threat Analyzer",
@@ -9335,8 +10815,7 @@
     "description": "\tBecause a reverse thruster must be facing forwards, it must be installed in the weapon section of your ship instead of the engine section."
   },
   {
-    "name": "Inhibitor Blaster",
-    "displayName": "Modified Inhibitor",
+    "name": "Modified Inhibitor",
     "plural": "Modified Inhibitors",
     "category": "Guns",
     "series": "Guns",
@@ -9491,24 +10970,6 @@
     "description": "A weapon inspired by the prickly Star Gazers. There is a slight delay while it regenerates the quills used as ammunition."
   },
   {
-    "name": "EMP Torpedo Storage Depot",
-    "category": "Ammunition",
-    "series": "Ammunition",
-    "index": 3013,
-    "licenses": {
-      "description": "Remnant"
-    },
-    "cost": 196000,
-    "thumbnail": "outfit/emp depot",
-    "mass": 10,
-    "cargo space": -40,
-    "energy capacity": 800,
-    "emp torpedo capacity": 14,
-    "ammo": "EMP Torpedo",
-    "required crew": 1,
-    "description": "The EMP Torpedo Storage Depot stages extra ammunition in your cargo bay for weapons that use EMP torpedoes. The ammunition is ready to be withdrawn for use. Storing it this way uses more cargo space than if it were packed away in sealed crates. An extra crewmember is required to maintain inventory."
-  },
-  {
     "name": "Teciimach Canister Depot",
     "category": "Ammunition",
     "series": "Ammunition",
@@ -9550,7 +11011,7 @@
     "mass": 10,
     "outfit space": 10,
     "radar jamming": 30,
-    "optical jamming": 20,
+    "optical jamming": 2,
     "energy capacity": 100,
     "energy generation": 1,
     "heat generation": 0.5,
@@ -9573,13 +11034,68 @@
     "unique": 1
   },
   {
+    "name": "Void Rifle Display",
+    "category": "Unique",
+    "series": "Functional Unique",
+    "index": 50,
+    "licenses": {
+      "description": "Remnant"
+    },
+    "cost": 500000,
+    "thumbnail": "outfit/void rifle display",
+    "capture attack": 0.2,
+    "capture defense": 0.2,
+    "unique": 1,
+    "unplunderable": 1,
+    "description": "This Void Rifle is a museuam quality display piece dating back several centuries. While the internal components no longer function, it has been well maintained by its previous owner. However as a weapon it is nothing more than a fancy club."
+  },
+  {
+    "name": "Inhibitor Blaster",
+    "plural": "Inhibitor Blasters",
+    "category": "Guns",
+    "series": "Guns",
+    "index": 3010,
+    "licenses": {
+      "description": "Remnant"
+    },
+    "cost": 471000,
+    "thumbnail": "outfit/inhibitor blaster",
+    "mass": 16,
+    "outfit space": -16,
+    "weapon capacity": -16,
+    "gun ports": -1,
+    "weapon": {
+      "sprite": "projectile/inhibitor",
+      "spriteData": {
+        "frame rate": 10,
+        "description": "\"no repeat\""
+      },
+      "sound": "inhibitor",
+      "hit effect": "inhibitor impact",
+      "inaccuracy": 0.5,
+      "velocity": 36,
+      "random velocity": 0.5,
+      "lifetime": 24,
+      "reload": 13,
+      "firing energy": 26,
+      "firing heat": 45.5,
+      "firing force": 19.5,
+      "shield damage": 26,
+      "hull damage": 19.5,
+      "hit force": 58.5,
+      "slowing damage": 0.5
+    },
+    "description": "This modified version of the Inhibitor Cannon lacks the firing synchronization of the standard Remnant version. The result is that instead of firing a volley of inhibitor projectiles, a group of these weapons will produce a steady stream. Intimate knowledge of how the weapon works is necessary to make this sort of modification while leaving the weapon's other attributes unchanged."
+  },
+  {
     "name": "Remnant Fabricator License",
     "thumbnail": "outfit/unknown",
     "description": "The underlying secrets of Remnant technology are a closely guarded secret known only to those with the responsibility to produce it. Compartmentalization is key to safeguarding critical information."
   },
   {
-    "name": "EMP Torpedo Access Temporary License",
+    "name": "EMP Torpedo Access Temporary",
     "displayName": "EMP Torpedo Tech",
+    "plural": "EMP Torpedo Techs",
     "category": "Ammunition",
     "series": "Ammunition",
     "index": 3014,
@@ -9600,6 +11116,7 @@
   {
     "name": "EMP Torpedo Tech License",
     "displayName": "EMP Torpedo Tech",
+    "plural": "EMP Torpedo Techs",
     "category": "Licenses",
     "series": "Technology",
     "index": 3014,
@@ -9617,8 +11134,9 @@
     "description": "This technical manual details how to manufacture EMP Torpedos. Having this makes it possible for any outfitter to offer EMP Torpedos even if it is normally not stocked there."
   },
   {
-    "name": "Teciimach Canister Access Temporary License",
+    "name": "Teciimach Canister Access Temporary",
     "displayName": "Teciimach Canister Tech",
+    "plural": "Teciimach Canister Techs",
     "category": "Ammunition",
     "series": "Ammunition",
     "index": 3024,
@@ -9638,6 +11156,7 @@
   {
     "name": "Teciimach Canister Tech License",
     "displayName": "Teciimach Canister Tech",
+    "plural": "Teciimach Canister Techs",
     "category": "Licenses",
     "series": "Technology",
     "index": 3024,
@@ -9652,6 +11171,192 @@
     "requires Research Data": 1,
     "requires Research Data (Phys)": 1,
     "description": "This technical manual details how to manufacture Teciimach Canisters. Having this makes it possible for any outfitter to offer Teciimach Canisters even if it is normally not stocked there."
+  },
+  {
+    "name": "EMP Torpedo Access Temporary License",
+    "displayName": "EMP Torpedo Tech",
+    "plural": "EMP Torpedo Techs",
+    "category": "Ammunition",
+    "series": "Ammunition",
+    "index": 3014,
+    "licenses": {
+      "description": "\"Remnant Fabricator\""
+    },
+    "cost": 4400000,
+    "thumbnail": "outfit/tech emp torpedo",
+    "base research rate": 0.04,
+    "requires Heavy Rocket Tech": 1,
+    "requires Torpedo Tech": 1,
+    "requires EMP Torpedo": 1,
+    "requires Ammo Basics": 1,
+    "requires Research Data": 1,
+    "requires Research Data (Phys)": 1,
+    "description": "\tAfter this is acquired it can be found in the Licenses area in future visits to the outfitter."
+  },
+  {
+    "name": "Teciimach Canister Access Temporary License",
+    "displayName": "Teciimach Canister Tech",
+    "plural": "Teciimach Canister Techs",
+    "category": "Ammunition",
+    "series": "Ammunition",
+    "index": 3024,
+    "licenses": {
+      "description": "\"Remnant Fabricator\""
+    },
+    "cost": 35500000,
+    "thumbnail": "outfit/tech emp torpedo",
+    "base research rate": 0.03,
+    "requires EMP Torpedo Tech": 1,
+    "requires Teciimach Canister": 1,
+    "requires Ammo Basics": 1,
+    "requires Research Data": 1,
+    "requires Research Data (Phys)": 1,
+    "description": "\tAfter this is acquired it can be found in the Licenses area in future visits to the outfitter."
+  },
+  {
+    "name": "vyu-Ira Wound",
+    "category": "Unique",
+    "thumbnail": "outfit/bloody guts",
+    "shield generation": -7,
+    "hull repair rate": -1.9,
+    "automaton": -1,
+    "wound": 1,
+    "scar": -1,
+    "unplunderable": 1,
+    "description": "This wound has severed the consciousness of the vyu-Ira from it's body. Any sentient being who enters it can interface with the ship and gain a modicum of control over it."
+  },
+  {
+    "name": "Abyssal Composer?",
+    "category": "Guns",
+    "series": "Guns",
+    "index": 99040,
+    "cost": 170000000,
+    "thumbnail": "outfit/unknown",
+    "mass": 121,
+    "outfit space": -121,
+    "weapon capacity": -121,
+    "gun ports": -1,
+    "unplunderable": 1,
+    "weapon": {
+      "sound": "composer",
+      "Abyssal Composer": 0,
+      "hit effect": [
+        "composed",
+        "drained"
+      ],
+      "inaccuracy": 45,
+      "velocity": 660,
+      "lifetime": 1,
+      "range override": 600,
+      "reload": 1,
+      "hardpoint offset": 20,
+      "firing energy": -8,
+      "firing force": 37.5,
+      "firing heat": 25,
+      "firing shields": -30,
+      "firing hull": -8,
+      "shield damage": 180,
+      "hull damage": 180,
+      "hit force": -187.5,
+      "slowing damage": 10,
+      "energy damage": 100,
+      "piercing": 0.3
+    },
+    "description": "This is an extremely dangerous device that uses graviton technology to pull a target's mass and energy apart, and then feeds the materials to the firing ship's systems."
+  },
+  {
+    "name": "Fate Sealer?",
+    "category": "Guns",
+    "series": "Guns",
+    "cost": 77777777,
+    "index": 99020,
+    "thumbnail": "outfit/unknown",
+    "mass": 31,
+    "outfit space": -31,
+    "weapon capacity": -31,
+    "gun ports": -1,
+    "unplunderable": 1,
+    "weapon": {
+      "sound": "fate fire",
+      "fire effect": "fate fire",
+      "velocity": 0,
+      "lifetime": 60,
+      "velocity override": 1400,
+      "range override": 4800,
+      "reload": 100,
+      "firing energy": 800,
+      "firing heat": 400,
+      "turn": 180,
+      "infrared tracking": 1,
+      "radar tracking": 1,
+      "optical tracking": 1,
+      "firing scramble": 3,
+      "submunition": "Fate Sealer Activated",
+      "description": "\"homing\" \"cluster\" \"safe\""
+    },
+    "description": "An energy particle weapon that intensifies a blast to a single location after a brief duration. The after-effect of the explosion pulls the target closer to the origin of the blast."
+  },
+  {
+    "name": "Fate Divider?",
+    "category": "Guns",
+    "series": "Guns",
+    "index": 99030,
+    "cost": 77777777,
+    "thumbnail": "outfit/unknown",
+    "mass": 31,
+    "outfit space": -31,
+    "weapon capacity": -31,
+    "gun ports": -1,
+    "unplunderable": 1,
+    "weapon": {
+      "sound": "fate fire",
+      "fire effect": "fate fire",
+      "velocity": 0,
+      "lifetime": 60,
+      "velocity override": 1400,
+      "range override": 600,
+      "reload": 100,
+      "firing energy": 800,
+      "firing heat": 400,
+      "turn": 180,
+      "infrared tracking": 1,
+      "radar tracking": 1,
+      "optical tracking": 1,
+      "firing scramble": 3,
+      "submunition": "Fate Divider Activated",
+      "description": "\"homing\" \"cluster\" \"safe\""
+    },
+    "description": "An energy particle weapon that intensifies a blast to a single location after a brief duration. The after-effect of the explosion pushes the target farther from the origin of the blast."
+  },
+  {
+    "name": "Manifold Drive",
+    "category": "Systems",
+    "cost": 25000000,
+    "thumbnail": "outfit/midnight manifold drive",
+    "mass": 83,
+    "outfit space": -83,
+    "turret mounts": -1,
+    "jump speed": 0.03,
+    "jump fuel": 200,
+    "jump drive": 1,
+    "unique": 1,
+    "weapon": {
+      "sound": "jump_drive-ver8",
+      "icon": "icon/manifold matrix",
+      "fire effect": "manifold drive fire",
+      "hit effect": "manifold drive hit",
+      "target effect": "manifold drive hit",
+      "velocity": 1440,
+      "lifetime": 1,
+      "reload": 20,
+      "turret turn": 20,
+      "firing fuel": 200,
+      "shield damage": 3000,
+      "hull damage": 3000,
+      "piercing": 0.9,
+      "description": "\"phasing\""
+    },
+    "description": "The Manifold Drive folds space so that the point of origin and point of destination intersect. Then it unfolds the space. This effect can also be redirected at another ship with devastating results."
   },
   {
     "name": "Fake Sheragi Anti-Missile",
@@ -9974,8 +11679,9 @@
     "description": "A smaller version of the Fusion Drive, the Reactor Drive still includes a hyperdrive, a reactor core, and powerful plasma engines."
   },
   {
-    "name": "High-Velocity Spike Access Temporary License",
+    "name": "High-Velocity Spike Access Temporary",
     "displayName": "High-Velocity Spike Tech",
+    "plural": "High-Velocity Spike Techs",
     "category": "Ammunition",
     "series": "Ammunition",
     "index": 11022,
@@ -9996,6 +11702,7 @@
   {
     "name": "High-Velocity Spike Tech License",
     "displayName": "High-Velocity Spike Tech",
+    "plural": "High-Velocity Spike Techs",
     "category": "Licenses",
     "series": "Technology",
     "index": 11022,
@@ -10013,6 +11720,27 @@
     "description": "This technical manual details how to manufacture High-Velocity Spikes. Having this makes it possible for any outfitter to offer High-Velocity Spikes even if it is normally not stocked there."
   },
   {
+    "name": "High-Velocity Spike Access Temporary License",
+    "displayName": "High-Velocity Spike Tech",
+    "plural": "High-Velocity Spike Techs",
+    "category": "Ammunition",
+    "series": "Ammunition",
+    "index": 11022,
+    "licenses": {
+      "description": "\"High Houses\""
+    },
+    "cost": 35000000,
+    "thumbnail": "outfit/tech hv spike",
+    "base research rate": 0.04,
+    "requires Javelin Tech": 1,
+    "requires High-Velocity Spike": 1,
+    "requires Ammo Basics": 1,
+    "requires Research Data": 1,
+    "requires Research Data (Chem)": 1,
+    "requires Research Data (Phys)": 1,
+    "description": "\tAfter this is acquired it can be found in the Licenses area in future visits to the outfitter."
+  },
+  {
     "name": "Old House Secrets",
     "plural": "Old House Secrets",
     "category": "Special",
@@ -10027,12 +11755,6 @@
     "thumbnail": "outfit/attention",
     "scan brightness": 1,
     "description": "The data collected from scanning the mission target. The New Houses will execute you if you are caught in posession of this."
-  },
-  {
-    "name": "Shadow House License",
-    "category": "Licenses",
-    "thumbnail": "outfit/license shadow house",
-    "description": "House Sado, a relic from an antediluvian age, still operates in the shadows of a once great civilization. As their willing pawn, you can receive certain services and missions from them."
   },
   {
     "name": "\"Myiara\" Fire Spout",
@@ -10079,7 +11801,7 @@
     "category": "Ammunition",
     "series": "Ammunition",
     "index": 11021,
-    "cost": 700000,
+    "cost": 100000,
     "licenses": {
       "description": "\"High Houses\""
     },
@@ -10091,23 +11813,6 @@
     "ammo": "High-Velocity Spike",
     "required crew": 1,
     "description": "The High-Velocity Spike Depot stages extra ammunition in your cargo bay for weapons that use High-Velocity Spikes. The ammunition is ready to be withdrawn for use. Storing it this way uses more cargo space than if it were packed away in sealed crates. An extra crewmember is required to maintain inventory."
-  },
-  {
-    "name": "\"Ej-Byiaa\" Shield Pallium",
-    "category": "Systems",
-    "series": "Shields",
-    "index": 11030,
-    "licenses": {
-      "description": "\"Shadow House\""
-    },
-    "cost": 790000,
-    "thumbnail": "outfit/small predecessor shield",
-    "mass": 34,
-    "outfit space": -34,
-    "shield generation": 4.9,
-    "shield protection": -0.33,
-    "shield energy": 7.62,
-    "description": "Predecessor shield generators are designed to function independently, making them incompatible with a Cortex Interface."
   },
   {
     "name": "Multimode Armor: Adaptor",
@@ -10240,7 +11945,7 @@
     "cost": 5000000,
     "scan interference": 6,
     "radar jamming": 9,
-    "optical jamming": 12,
+    "optical jamming": 1.2,
     "multimode armor": -1,
     "unplunderable": 1,
     "description": "\tThis material results in a configuration that causes the armor to interfere with certain hostile scanning and tracking methods."
@@ -10298,69 +12003,10 @@
     "description": "\tGiven enough time, this weapon can probably cut through stone. Avoid striking shiny surfaces like the Successor's liquid metal armor. The reflection of the blade could prove fatal."
   },
   {
-    "name": "Thunderhead Pod",
-    "category": "Secondary Weapons",
-    "series": "Secondary Weapons",
-    "index": 9015,
-    "licenses": {
-      "description": "\"Wanderer Outfits\""
-    },
-    "cost": 150000,
-    "thumbnail": "outfit/thunderhead pod",
-    "mass": 7,
-    "outfit space": -13,
-    "weapon capacity": -13,
-    "gun ports": -1,
-    "thunderhead capacity": 1,
-    "weapon": {
-      "sprite": "projectile/thunderhead",
-      "spriteData": {
-        "frame rate": 0.1,
-        "description": "\"no repeat\""
-      },
-      "sound": "thunderhead",
-      "ammo": "Thunderhead Missile",
-      "icon": "icon/thunderhead",
-      "submunition": "Thunderhead",
-      "split range": 600,
-      "fire effect": "meteor fire",
-      "die effect": "missile death",
-      "hit effect": "medium explosion",
-      "inaccuracy": 10,
-      "velocity": 4,
-      "lifetime": 400,
-      "reload": 95,
-      "firing energy": 18,
-      "firing heat": 36,
-      "acceleration": 1.1,
-      "drag": 0.1,
-      "turn": 2,
-      "homing": {
-        "description": "\"leading\" \"throttle control\""
-      },
-      "infrared tracking": 0.9,
-      "radar tracking": 0.6,
-      "missile strength": 12,
-      "description": "\"stream\""
-    },
-    "description": "A primitive version of the modern Thunderhead Launcher. The Thunderhead Pod is almost entirely dependent on external ammunition storage, resulting in a slower rate of fire. Unlike the modern launchers, these pods do not fire simultaneously when multiples are installed on a ship."
-  },
-  {
-    "name": "Thunderhead Storage Depot",
-    "category": "Ammunition",
-    "series": "Ammunition",
-    "index": 9012,
-    "licenses": {
-      "description": "\"Wanderer Outfits\""
-    },
-    "cost": 108000,
-    "thumbnail": "outfit/thunderhead depot",
-    "mass": 6,
-    "cargo space": -40,
-    "thunderhead capacity": 60,
-    "ammo": "Thunderhead Missile",
-    "required crew": 1,
-    "description": "The Thunderhead Storage Depot stages extra ammunition in your cargo bay for weapons that use Thunderhead Missiles. The ammunition is ready to be withdrawn for use. Storing it this way uses more cargo space than if it were packed away in sealed crates. An extra crewmember is required to oversee maintenance of the ammunition."
+    "name": "Shadow House License",
+    "category": "Licenses",
+    "thumbnail": "outfit/license shadow house",
+    "description": "House Sado, a relic from an antediluvian age, still operates in the shadows of a once great civilization. As their willing pawn, you can receive certain services and missions from them."
   },
   {
     "name": "Anti-Ionic Plating",
@@ -10415,8 +12061,9 @@
     "description": "The Wanderers view their weapons of war as [shameful, a necessary evil]. They are averse to allowing the secrets of crafting them to [proliferate, propagate] across the galaxy."
   },
   {
-    "name": "Thunderhead Access Temporary License",
+    "name": "Thunderhead Access Temporary",
     "displayName": "Thunderhead Tech",
+    "plural": "Thunderhead Techs",
     "category": "Ammunition",
     "series": "Ammunition",
     "index": 9013,
@@ -10440,6 +12087,7 @@
   {
     "name": "Thunderhead Tech License",
     "displayName": "Thunderhead Tech",
+    "plural": "Thunderhead Techs",
     "category": "Licenses",
     "series": "Technology",
     "index": 9010,
@@ -10458,5 +12106,29 @@
     "requires Research Data (Chem)": 1,
     "requires Research Data (Phys)": 1,
     "description": "\tThe Wanderers view their weapons of war as [shameful, a necessary evil]. They are averse to allowing the secrets of crafting them to [proliferate, propagate] across the galaxy."
+  },
+  {
+    "name": "Thunderhead Access Temporary License",
+    "displayName": "Thunderhead Tech",
+    "plural": "Thunderhead Techs",
+    "category": "Ammunition",
+    "series": "Ammunition",
+    "index": 9013,
+    "licenses": {
+      "description": "\"Wanderer Crafter\""
+    },
+    "cost": 1800000,
+    "thumbnail": "outfit/tech thunderhead",
+    "base research rate": 0.03,
+    "requires Meteor Tech": 1,
+    "requires Sidewinder Tech": 1,
+    "requires Javelin Tech": 1,
+    "requires Thunderhead Missile": 1,
+    "requires Ammo Basics": 1,
+    "requires Research Data": 1,
+    "requires Research Data (Bio)": 1,
+    "requires Research Data (Chem)": 1,
+    "requires Research Data (Phys)": 1,
+    "description": "\tAfter this is acquired it can be found in the Licenses area in future visits to the outfitter."
   }
 ]

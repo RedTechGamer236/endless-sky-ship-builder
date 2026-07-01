@@ -449,7 +449,7 @@
     "large explosion": "70",
     "huge explosion": "20",
     "final explode": "\"final explosion large\"",
-    "description": "Some Korath scrappers are more interested in harvesting raw materials rather than technology. The Devar'ur is their attempt to streamline the collection process. The Korath Incinerator is integrated into the ship and cannot be removed.",
+    "description": "Some Korath scrappers are more interested in harvesting raw materials rather than technology. The Devar'ur is their attempt to streamline the collection process. The Scrap Incinerator is integrated into the ship and cannot be removed.",
     "variant": "Korath Devourer (Infested)",
     "baseShip": "Korath Devourer"
   },
@@ -510,7 +510,7 @@
     "baseShip": "Grakerat 572"
   },
   {
-    "name": "Palavret Tek (Korath Scrapper (shields))",
+    "name": "Palavret Tek (Palavret Tek (shields))",
     "engines": [
       {
         "x": -20,
@@ -624,11 +624,11 @@
     "huge explosion": "10",
     "final explode": "\"final explosion large\"",
     "description": "Korath Scrappers who scavenge in the Scrapyard are using the technology they find to customize their ships.",
-    "variant": "Korath Scrapper (shields)",
+    "variant": "Palavret Tek (shields)",
     "baseShip": "Palavret Tek"
   },
   {
-    "name": "Palavret Tek (Korath Scrapper (weapons))",
+    "name": "Palavret Tek (Palavret Tek (weapons))",
     "engines": [
       {
         "x": -20,
@@ -752,11 +752,11 @@
     "huge explosion": "10",
     "final explode": "\"final explosion large\"",
     "description": "Korath Scrappers who scavenge in the Scrapyard are using the technology they find to customize their ships.",
-    "variant": "Korath Scrapper (weapons)",
+    "variant": "Palavret Tek (weapons)",
     "baseShip": "Palavret Tek"
   },
   {
-    "name": "Palavret Tek (Korath Scrapper (engines))",
+    "name": "Palavret Tek (Palavret Tek (engines))",
     "engines": [
       {
         "x": -26,
@@ -870,11 +870,11 @@
     "huge explosion": "10",
     "final explode": "\"final explosion large\"",
     "description": "Korath Scrappers who scavenge in the Scrapyard are using the technology they find to customize their ships.",
-    "variant": "Korath Scrapper (engines)",
+    "variant": "Palavret Tek (engines)",
     "baseShip": "Palavret Tek"
   },
   {
-    "name": "Palavret Tek (Korath Scrapper (carrier))",
+    "name": "Palavret Tek (Palavret Tek (carrier))",
     "engines": [
       {
         "x": -20,
@@ -998,7 +998,7 @@
     "huge explosion": "10",
     "final explode": "\"final explosion large\"",
     "description": "Korath Scrappers who scavenge in the Scrapyard are using the technology they find to customize their ships.",
-    "variant": "Korath Scrapper (carrier)",
+    "variant": "Palavret Tek (carrier)",
     "baseShip": "Palavret Tek"
   },
   {

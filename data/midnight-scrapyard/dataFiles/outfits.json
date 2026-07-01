@@ -59,6 +59,7 @@
   {
     "name": "Korath Fireswarm Access Temporary License",
     "displayName": "Fireswarm Missile Tech",
+    "plural": "Fireswarm Missile Techs",
     "category": "Ammunition",
     "series": "Ammunition",
     "index": 4015,
@@ -74,11 +75,12 @@
     "requires Research Data": 1,
     "requires Research Data (Chem)": 1,
     "requires Research Data (Phys)": 1,
-    "description": "\tAfter this is acquired it can be found in the Licenses area when at the outfitter."
+    "description": "\tAfter this is acquired it can be found in the Licenses area in future visits to the outfitter."
   },
   {
     "name": "Korath Fireswarm Tech License",
     "displayName": "Fireswarm Missile Tech",
+    "plural": "Fireswarm Missile Techs",
     "category": "Licenses",
     "series": "Technology",
     "index": 4015,
@@ -227,7 +229,7 @@
     "ammo": "Korath Fireswarm",
     "energy generation": 0.2,
     "heat generation": 1,
-    "description": "\tEach Fireswarm Nest includes a power charger to keep stored Fireswarms ready for launch. They also plug into your ships power systems, allowing surplus energy to be used elsewhere."
+    "description": "\tEach Fireswarm Nest includes a power charger to keep stored Fireswarms ready for launch. They also plug into your ship's power systems, allowing surplus energy to be used elsewhere."
   },
   {
     "name": "Korath Fireswarm Depot",
@@ -396,7 +398,7 @@
       "minable damage": 1200,
       "prospecting": 4200
     },
-    "description": "A giant smelter. Ships and asteroids go in. Melted metal comes out."
+    "description": "A giant smelter built into the Devar'ur's forward section. Ships and asteroids go in. Melted metal comes out. The inner surface of the chamber reflects and concentrates the heat, magnifying it to be more intense than it would be if allowed to disperse outside."
   },
   {
     "name": "Korath Scattermine",
@@ -572,10 +574,10 @@
     "engine capacity": -12,
     "fuel capacity": 250,
     "ramscoop": 0.63,
-    "afterburner thrust": 57.75,
+    "afterburner thrust": 51.975,
     "afterburner energy": 1.5,
     "afterburner heat": 15.63,
-    "afterburner fuel": 0.0938,
+    "afterburner fuel": 0.1876,
     "afterburner effect": "korath afterburner small",
     "description": "\tKorath afterburners pump super-heated hyperspace fuel directly into a thruster's plasma stream, resulting in a phenomenal explosion that nearly melts the thruster."
   },
@@ -678,10 +680,11 @@
     "outfit space": -2,
     "capture defense": 9.6,
     "unplunderable": 1,
-    "description": "A semi autonomous robot made with Sestor technology, these defense droids patrol high security areas on the ships of experienced Kor scrapper crews."
+    "description": "A semi autonomous robot assembled with Sestor technology, these defense droids patrol high security areas on the ships of Kor scrapper crews."
   },
   {
     "name": "Slicer Torch",
+    "plural": "Slicer Torches",
     "category": "Hand to Hand",
     "series": "H2H",
     "index": 4000,

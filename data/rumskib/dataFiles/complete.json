@@ -1410,6 +1410,7 @@
         }
       ],
       "sprite": "ship/za'lek sting",
+      "never disabled": true,
       "attributes": {
         "category": "Medium Warship",
         "cost": 2100000,
@@ -2465,5 +2466,5 @@
       "description": "\tAmmunition for this weapon can be restocked at any outfitter."
     }
   ],
-  "parsedAt": "2026-06-01T03:01:53.863Z"
+  "parsedAt": "2026-07-01T02:54:29.249Z"
 }

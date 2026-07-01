@@ -1526,6 +1526,310 @@
     "description": "The Trailblazer is the ancient warship Coalition shipyards are referring to during their sales pitch for the Sojourner. These relics of war are no longer in production. Of the few known to still exist, most are kept as display pieces in private collections. It is a rare sight to see one in actual use."
   },
   {
+    "name": "Fulgur",
+    "engines": [
+      {
+        "x": -23,
+        "y": 27
+      },
+      {
+        "x": 23,
+        "y": 27
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -23,
+        "y": -24,
+        "gun": ""
+      },
+      {
+        "x": 23,
+        "y": -24,
+        "gun": ""
+      },
+      {
+        "x": -23,
+        "y": -24,
+        "gun": ""
+      },
+      {
+        "x": 23,
+        "y": -24,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [],
+    "sprite": "ship/fulgur",
+    "uncapturable": true,
+    "attributes": {
+      "category": "Light Warship",
+      "cost": 1900000,
+      "hull": 5000,
+      "required crew": 4,
+      "bunks": 6,
+      "mass": 260,
+      "drag": 3.4,
+      "heat dissipation": 0.8,
+      "fuel capacity": 300,
+      "cargo space": 30,
+      "outfit space": 278,
+      "weapon capacity": 88,
+      "engine capacity": 76,
+      "heat protection": 1,
+      "magma diver": 1,
+      "weapon": {
+        "blast radius": 150,
+        "burn damage": 9000,
+        "shield damage": 7000,
+        "hull damage": 6000,
+        "hit force": 5000
+      }
+    },
+    "explode": "\"nuke residue slow\" 10",
+    "final explode": "\"final explosion large\"",
+    "description": "The Fulgur is the most advanced ship produced by the Ignitia. It features the most heat resistant hull their shipyards are capable of constructing, a necessity for ships constructed on Ignus.  This ship can land on the super heated environments of lava planets. Of course, this protection does not extend to any crew or passengers who disembark after landing..."
+  },
+  {
+    "name": "Judgement",
+    "engines": [
+      {
+        "x": -48,
+        "y": 82
+      },
+      {
+        "x": 48,
+        "y": 82
+      },
+      {
+        "x": -37,
+        "y": 94
+      },
+      {
+        "x": 37,
+        "y": 94
+      },
+      {
+        "x": -26,
+        "y": 107
+      },
+      {
+        "x": 26,
+        "y": 107
+      }
+    ],
+    "reverseEngines": [
+      {
+        "x": -37,
+        "y": -45
+      },
+      {
+        "x": 37,
+        "y": -45
+      },
+      {
+        "x": -51,
+        "y": -17
+      },
+      {
+        "x": 51,
+        "y": -17
+      },
+      {
+        "x": -64,
+        "y": 10.5
+      },
+      {
+        "x": 64,
+        "y": 10.5
+      }
+    ],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -14.5,
+        "y": -65.5,
+        "gun": ""
+      },
+      {
+        "x": 14.5,
+        "y": -65.5,
+        "gun": ""
+      },
+      {
+        "x": -28.5,
+        "y": -17,
+        "gun": ""
+      },
+      {
+        "x": 28.5,
+        "y": -17,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": 0,
+        "y": -26,
+        "turret": ""
+      },
+      {
+        "x": -21,
+        "y": 38,
+        "turret": ""
+      },
+      {
+        "x": 21,
+        "y": 38,
+        "turret": ""
+      }
+    ],
+    "bays": [
+      {
+        "type": "Drone",
+        "x": -21,
+        "y": 38,
+        "launch effect": "human internal"
+      },
+      {
+        "type": "Drone",
+        "x": 21,
+        "y": -38,
+        "launch effect": "human internal"
+      }
+    ],
+    "sprite": "ship/judgement",
+    "attributes": {
+      "category": "Medium Warship",
+      "licenses": {
+        "description": "\"Justicar Executar\""
+      },
+      "cost": 9600000,
+      "shields": 5300,
+      "hull": 8600,
+      "required crew": 16,
+      "bunks": 40,
+      "mass": 1000,
+      "drag": 14,
+      "heat dissipation": 0.37,
+      "fuel capacity": 300,
+      "cargo space": 90,
+      "outfit space": 483,
+      "weapon capacity": 179,
+      "engine capacity": 121,
+      "weapon": {
+        "blast radius": 190,
+        "shield damage": 1900,
+        "hull damage": 900,
+        "hit force": 1800
+      }
+    },
+    "leak": "40 50",
+    "flame": "40 80",
+    "big leak": "70 30",
+    "tiny explosion": "5",
+    "small explosion": "15",
+    "medium explosion": "30",
+    "large explosion": "20",
+    "final explode": "\"final explosion medium\"",
+    "description": "Judgement enforces the will of the Justicar Court beyond Jurisprudence."
+  },
+  {
+    "name": "Witness Drone",
+    "engines": [
+      {
+        "x": -3,
+        "y": 29
+      },
+      {
+        "x": 3,
+        "y": 29
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [],
+    "turrets": [],
+    "bays": [],
+    "sprite": "ship/witness drone",
+    "attributes": {
+      "category": "Drone",
+      "licenses": {
+        "description": "\"Justicar Executar\""
+      },
+      "cost": 60000,
+      "shields": 100,
+      "hull": 400,
+      "automaton": 1,
+      "mass": 30,
+      "drag": 0.53,
+      "heat dissipation": 0.9,
+      "outfit space": 66,
+      "weapon capacity": 0,
+      "engine capacity": 48,
+      "weapon": {
+        "blast radius": 4,
+        "shield damage": 40,
+        "hull damage": 20,
+        "hit force": 60
+      }
+    },
+    "tiny explosion": "15",
+    "description": "Witnesses provide testimony of the suspect's crimes. \tDrones do not come equipped with a hyperdrive. You cannot carry a drone unless you have a ship in your fleet with a drone bay."
+  },
+  {
+    "name": "Bailiff Drone",
+    "engines": [
+      {
+        "x": -3,
+        "y": 29
+      },
+      {
+        "x": 3,
+        "y": 29
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": 0,
+        "y": -16.5,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [],
+    "sprite": "ship/bailiff drone",
+    "attributes": {
+      "category": "Drone",
+      "licenses": {
+        "description": "\"Justicar Executar\""
+      },
+      "cost": 66000,
+      "shields": 200,
+      "hull": 300,
+      "automaton": 1,
+      "mass": 27,
+      "drag": 0.48,
+      "heat dissipation": 0.9,
+      "outfit space": 87,
+      "weapon capacity": 18,
+      "engine capacity": 48,
+      "weapon": {
+        "blast radius": 4,
+        "shield damage": 40,
+        "hull damage": 20,
+        "hit force": 60
+      }
+    },
+    "tiny explosion": "15",
+    "description": "Bailiffs facilitate enforcement of the court's judgement. \tDrones do not come equipped with a hyperdrive. You cannot carry a drone unless you have a ship in your fleet with a drone bay."
+  },
+  {
     "name": "Worldcrusher",
     "engines": [
       {
@@ -1844,7 +2148,7 @@
       "inscrutable": 1,
       "gaslining": 1,
       "ramscoop": 1,
-      "optical jamming": 40
+      "optical jamming": 4
     },
     "blood": "25",
     "final explode": "\"blood\"",
@@ -1974,7 +2278,7 @@
     },
     "blood": "45",
     "final explode": "\"subsidurial death\"",
-    "description": "Gray Eyes are very old Subsidurials that have developed thicker hides. They have also learned how to make a powerful slap with their tails. While they still retain the peaceful disposition of their younger siblings, Gray Eyes are often vindictive when attacked."
+    "description": "Gray Eyes are very old Subsidurials that have developed thicker hides. They have also learned how to make a powerful slap with their tails. While they still retain the peaceful disposition of their younger siblings, Gray Eyes are often vindictive when provoked."
   },
   {
     "name": "Ionic Leech",
@@ -2503,6 +2807,7 @@
         "hit force": 1500
       }
     },
+    "glow blood": "50",
     "description": "This fungal colony lurks within the dark waters of Murk. The danger of the spores it sprays out isn't immediately obvious."
   },
   {
@@ -2667,10 +2972,65 @@
       }
     },
     "flame": "15 25",
-    "medium explosion": "5",
-    "large explosion": "15",
+    "green medium explosion": "5",
+    "green large explosion": "15",
     "final explode": "\"final explosion large\"",
     "description": "While these creatures are neither aggressive nor malicious, the Heliarchs consider them a nuisance. They are attracted to the exhaust emissions of starship engines and will swarm over a ship. Unfortunately 90% of their bodies consist of volatile plasma, causing them to explode violently when exposed to weapons fire."
+  },
+  {
+    "name": "Pincer Beast",
+    "engines": [],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -41,
+        "y": -45,
+        "gun": ""
+      },
+      {
+        "x": 41,
+        "y": -45,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [],
+    "creature": true,
+    "sprite": "ship/pincer beast",
+    "thumbnail": "thumbnail/pincer beast",
+    "attributes": {
+      "category": "Unclassified",
+      "hull": 14300,
+      "self destruct": 1,
+      "automaton": 1,
+      "mass": 1275,
+      "drag": 14.4,
+      "heat dissipation": 0.47,
+      "cargo space": 75,
+      "cooling": 13,
+      "thrust": 37.5,
+      "turn": 1650,
+      "hull repair rate": 5,
+      "energy capacity": 1000,
+      "energy generation": 5,
+      "jump speed": 0.2,
+      "jump fuel": 100,
+      "hyperdrive": 1,
+      "ramscoop": 0.5,
+      "fuel capacity": 300,
+      "inscrutable": 1,
+      "gaslining": 1,
+      "weapon": {
+        "blast radius": 60,
+        "shield damage": 800,
+        "hull damage": 900,
+        "hit force": 3600
+      }
+    },
+    "blood": "45",
+    "final explode": "\"pincer beast shatter\"",
+    "description": "This creature appears to have an outer shell made of small asteroids held together by strands of carbon nanotubes. It pulls rocks through arms into its main cavity where it processes them to make more shell. The multi-colored hairs pointing back seem to be a drive system of sorts, manipulating the gravity field around the creature to accelerate it. There is no apparent hyperdrive mechanism, but somehow it is able to open a hyperspace window."
   },
   {
     "name": "Nova Firefly",
@@ -3003,7 +3363,7 @@
     },
     "gray blood": "145",
     "final explode": "\"gray blood\"",
-    "description": "While this is technically an artificial life form, it is indigenous to our galaxy."
+    "description": "While this is technically an artificial lifeform, it is indigenous to our galaxy."
   },
   {
     "name": "Subsidurial Titan",
@@ -3835,7 +4195,7 @@
     "medium explosion": "35",
     "large explosion": "15",
     "final explode": "\"final explosion large\"",
-    "description": "During the ancient Hai empire, Millipedes operated as troop transports. When the empire fell into decline, Millipedes transported refugees from the ruined Hai worlds to the Hai civilizations current location. Once the Hai settled down, there was no longer a need for such a massive transport ship. Few Millipedes remain today. The ones still in operation are mostly used by the Unfettered as boarding vessels."
+    "description": "During the ancient Hai empire, Millipedes operated as troop transports. When the empire fell into decline, Millipedes transported refugees from the ruined Hai worlds to the Hai civilization's current location. Once the Hai settled down, there was no longer a need for such a massive transport ship. Few Millipedes remain today."
   },
   {
     "name": "Megalocoleus",
@@ -6031,7 +6391,7 @@
     "leak": "50 40",
     "tiny explosion": "10",
     "small explosion": "5",
-    "description": "Shuttle Pods were multipurpose light spacecraft that early exploration ships could carry in their fighter bays. While it is no longer in production, a multitude were made. Many are still in use throughout the galaxy despite their antiquated design. \tThis particular Shuttle Pod configuration was the standard for transporting cargo and mining, but other configurations were used as well."
+    "description": "Shuttle Pods were multipurpose light spacecraft that early exploration ships could carry in their fighter bays. While it is no longer in production, a multitude were made. Many are still in use throughout the galaxy despite their antiquated design. \tFighters do not come equipped with a hyperdrive. You cannot carry a fighter unless you have a ship in your fleet with a fighter bay."
   },
   {
     "name": "Star King",
@@ -6200,147 +6560,126 @@
     "description": "A major component to their Hauler freighters, Southbound's Starbus heavy shuttle can sacrifice mobility for increased armaments. \tWhen tensions arose between the Free Worlds and Republic, Southbound Shipyards brought the Starbus heavy shuttle back into production."
   },
   {
-    "name": "Starcadia",
+    "name": "Volary",
     "engines": [
       {
-        "x": -41,
-        "y": 97
+        "x": -9,
+        "y": 108.5
       },
       {
-        "x": 41,
-        "y": 97
-      },
-      {
-        "x": -31,
-        "y": 103
-      },
-      {
-        "x": 31,
-        "y": 103
-      },
-      {
-        "x": -21,
-        "y": 111
-      },
-      {
-        "x": 21,
-        "y": 111
+        "x": 9,
+        "y": 108.5
       }
     ],
-    "reverseEngines": [
-      {
-        "x": -27,
-        "y": -50,
-        "position": "angle 335"
-      },
-      {
-        "x": 27,
-        "y": -50,
-        "position": "angle 25"
-      }
-    ],
-    "steeringEngines": [
-      {
-        "x": -27,
-        "y": -50,
-        "position": "right"
-      },
-      {
-        "x": 27,
-        "y": -50,
-        "position": "left"
-      },
-      {
-        "x": -52,
-        "y": 34,
-        "position": "left"
-      },
-      {
-        "x": 52,
-        "y": 34,
-        "position": "right"
-      }
-    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
     "guns": [
       {
-        "x": -14,
-        "y": -103,
+        "x": -12.5,
+        "y": -90,
         "gun": ""
       },
       {
-        "x": 14,
-        "y": -103,
+        "x": 12.5,
+        "y": -90,
         "gun": ""
       },
       {
-        "x": -25,
-        "y": -73,
+        "x": -69.5,
+        "y": -4,
         "gun": ""
       },
       {
-        "x": 25,
-        "y": -73,
+        "x": 69.5,
+        "y": -4,
         "gun": ""
       }
     ],
     "turrets": [
       {
-        "x": -20,
-        "y": -7,
+        "x": -17,
+        "y": 1,
         "turret": ""
       },
       {
-        "x": 20,
-        "y": -7,
+        "x": 17,
+        "y": 1,
         "turret": ""
       },
       {
-        "x": -30,
-        "y": 17.5,
+        "x": -17,
+        "y": 34,
         "turret": ""
       },
       {
-        "x": 30,
-        "y": 17.5,
-        "turret": ""
-      },
-      {
-        "x": -20,
-        "y": 42.5,
-        "turret": ""
-      },
-      {
-        "x": 20,
-        "y": 42.5,
+        "x": 17,
+        "y": 34,
         "turret": ""
       }
     ],
-    "bays": [],
-    "sprite": "ship/starcadia",
-    "thumbnail": "thumbnail/starcadia-thumb",
+    "bays": [
+      {
+        "type": "Fighter",
+        "x": -43,
+        "y": 10,
+        "launch effect": "human internal"
+      },
+      {
+        "type": "Fighter",
+        "x": -43,
+        "y": 10,
+        "launch effect": "human internal"
+      },
+      {
+        "type": "Fighter",
+        "x": -43,
+        "y": 10,
+        "launch effect": "human internal"
+      },
+      {
+        "type": "Fighter",
+        "x": 43,
+        "y": 10,
+        "launch effect": "human internal"
+      },
+      {
+        "type": "Fighter",
+        "x": 43,
+        "y": 10,
+        "launch effect": "human internal"
+      },
+      {
+        "type": "Fighter",
+        "x": 43,
+        "y": 10,
+        "launch effect": "human internal"
+      }
+    ],
+    "sprite": "ship/volary",
+    "thumbnail": "thumbnail/volary-thumb",
     "attributes": {
       "category": "Heavy Warship",
       "licenses": {
         "description": "\"Deep Security\""
       },
-      "cost": 10400000,
-      "shields": 16000,
-      "hull": 5000,
-      "required crew": 42,
-      "bunks": 88,
-      "mass": 955,
-      "drag": 9.3,
-      "heat dissipation": 0.45,
+      "cost": 7000000,
+      "shields": 11400,
+      "hull": 3800,
+      "required crew": 20,
+      "bunks": 42,
+      "mass": 780,
+      "drag": 7,
+      "heat dissipation": 0.4,
       "fuel capacity": 500,
-      "cargo space": 40,
-      "outfit space": 510,
-      "weapon capacity": 250,
-      "engine capacity": 110,
+      "cargo space": 50,
+      "outfit space": 447,
+      "weapon capacity": 220,
+      "engine capacity": 101,
       "weapon": {
-        "blast radius": 200,
-        "shield damage": 2000,
-        "hull damage": 1000,
-        "hit force": 3000
+        "blast radius": 150,
+        "shield damage": 1500,
+        "hull damage": 750,
+        "hit force": 2200
       }
     },
     "leak": "40 50",
@@ -6351,7 +6690,7 @@
     "medium explosion": "24",
     "large explosion": "8",
     "final explode": "\"final explosion medium\"",
-    "description": "The technology on the Starcadia, while in line with other modern ships, is surprisingly mundane for a newly deployed ship from the Deep. This has caused some to speculate that the Deep has lost their edge in technological advancement. Alternatively, conspiracy theorists suggest that the Deep has been sitting on this design for some time and is only releasing it now in preparation for some threat unknown to the general public. Deep Security, for its part, has no comment on these rumors."
+    "description": "The technology on the Volary, while in line with other modern ships, is surprisingly mundane for a newly constructed ship from Lionheart. This has caused some to speculate that the Deep has lost their edge in technological advancement. Alternatively, conspiracy theorists suggest that the Deep has been sitting on this design for some time and has only revealed it now in preparation for some threat unknown to the general public. Deep Security, for its part, has no comment on these rumors."
   },
   {
     "name": "Stingray",
@@ -6391,21 +6730,21 @@
     "attributes": {
       "category": "Interceptor",
       "cost": 650000,
-      "shields": 2200,
+      "shields": 2300,
       "hull": 700,
       "required crew": 2,
       "bunks": 4,
       "mass": 180,
       "drag": 2.7,
-      "heat dissipation": 0.67,
-      "fuel capacity": 400,
-      "cargo space": 20,
+      "heat dissipation": 0.63,
+      "fuel capacity": 300,
+      "cargo space": 22,
       "outfit space": 200,
       "weapon capacity": 50,
       "engine capacity": 60,
       "weapon": {
-        "blast radius": 29,
-        "shield damage": 290,
+        "blast radius": 30,
+        "shield damage": 300,
         "hull damage": 150,
         "hit force": 450
       }
@@ -6751,32 +7090,38 @@
       {
         "type": "Drone",
         "x": -8,
-        "y": -115
+        "y": -115,
+        "launch effect": "human internal"
       },
       {
         "type": "Drone",
         "x": 31,
-        "y": -95
+        "y": -95,
+        "launch effect": "human internal"
       },
       {
         "type": "Drone",
         "x": -43,
-        "y": -37
+        "y": -37,
+        "launch effect": "human internal"
       },
       {
         "type": "Drone",
         "x": -34,
-        "y": -8
+        "y": -8,
+        "launch effect": "human internal"
       },
       {
         "type": "Drone",
         "x": -30,
-        "y": 83
+        "y": 83,
+        "launch effect": "human internal"
       },
       {
         "type": "Drone",
         "x": 20,
-        "y": 97
+        "y": 97,
+        "launch effect": "human internal"
       }
     ],
     "sprite": "ship/carabao",
@@ -6909,37 +7254,43 @@
         "type": "Fighter",
         "x": -39,
         "y": -18,
-        "position": "under left"
+        "position": "under left",
+        "launch effect": "human internal"
       },
       {
         "type": "Fighter",
         "x": 39,
         "y": -18,
-        "position": "under right"
+        "position": "under right",
+        "launch effect": "human internal"
       },
       {
         "type": "Fighter",
         "x": -39,
         "y": 43,
-        "position": "under left"
+        "position": "under left",
+        "launch effect": "human internal"
       },
       {
         "type": "Fighter",
         "x": 39,
         "y": 43,
-        "position": "under right"
+        "position": "under right",
+        "launch effect": "human internal"
       },
       {
         "type": "Fighter",
         "x": -39,
         "y": 104,
-        "position": "under left"
+        "position": "under left",
+        "launch effect": "human internal"
       },
       {
         "type": "Fighter",
         "x": 39,
         "y": 104,
-        "position": "under right"
+        "position": "under right",
+        "launch effect": "human internal"
       }
     ],
     "sprite": "ship/executive guard/executive guard",
@@ -7045,18 +7396,18 @@
       {
         "type": "Fighter",
         "x": -16,
-        "y": -9
+        "y": -9,
+        "launch effect": "human internal"
       },
       {
         "type": "Fighter",
         "x": -16,
-        "y": -9
+        "y": -9,
+        "launch effect": "human internal"
       }
     ],
     "sprite": "ship/hipparion",
-    "spriteData": {
-      "delay": 2
-    },
+    "thumbnail": "thumbnail/hipparion-thumb",
     "attributes": {
       "category": "Utility",
       "cost": 6120000,
@@ -7161,6 +7512,85 @@
     "description": "Featuring integrated scanning interference and jamming technologies, this is a specialized Scout used by Republic Intelligence operatives for espionage missions. They have rarely been seen in public, leading some to speculate that this ship doesn't actually exist and is nothing more than an urban legend."
   },
   {
+    "name": "Ironbird",
+    "engines": [
+      {
+        "x": -32.5,
+        "y": 60
+      },
+      {
+        "x": 32.5,
+        "y": 60
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -26.5,
+        "y": -32,
+        "gun": ""
+      },
+      {
+        "x": 26.5,
+        "y": -32,
+        "gun": ""
+      },
+      {
+        "x": -39,
+        "y": -18,
+        "gun": ""
+      },
+      {
+        "x": 39,
+        "y": -18,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": 0,
+        "y": 1.5,
+        "turret": ""
+      }
+    ],
+    "bays": [],
+    "sprite": "ship/ironbird",
+    "thumbnail": "thumbnail/ironbird-thumb",
+    "attributes": {
+      "category": "Heavy Freighter",
+      "cost": 2970000,
+      "shields": 6300,
+      "hull": 3700,
+      "required crew": 5,
+      "bunks": 14,
+      "mass": 690,
+      "drag": 6.75,
+      "heat dissipation": 0.4,
+      "fuel capacity": 400,
+      "cargo space": 150,
+      "outfit space": 320,
+      "weapon capacity": 100,
+      "engine capacity": 100,
+      "cargo scan opacity": 60,
+      "scan interference": 0.5,
+      "weapon": {
+        "blast radius": 100,
+        "shield damage": 1000,
+        "hull damage": 500,
+        "hit force": 1500
+      }
+    },
+    "leak": "50 50",
+    "flame": "30 80",
+    "tiny explosion": "18",
+    "small explosion": "36",
+    "medium explosion": "24",
+    "large explosion": "8",
+    "final explode": "\"final explosion medium\"",
+    "description": "The Ironbird is the result of centuries of modifications to adapt the Firebird into an ideal smuggler ship. The thick hull plating has been specifically designed to interfere with scanners."
+  },
+  {
     "name": "Kestrel Prototype",
     "engines": [
       {
@@ -7233,13 +7663,13 @@
         "type": "Fighter",
         "x": -46,
         "y": 106,
-        "position": "under"
+        "launch effect": "human internal"
       },
       {
         "type": "Fighter",
         "x": 46,
         "y": 106,
-        "position": "under"
+        "launch effect": "human internal"
       }
     ],
     "sprite": "ship/gravedigger/gravedigger",
@@ -7492,32 +7922,38 @@
       {
         "type": "Fighter",
         "x": -53,
-        "y": -57
+        "y": -57,
+        "launch effect": "human internal"
       },
       {
         "type": "Fighter",
         "x": 61,
-        "y": -57
+        "y": -57,
+        "launch effect": "human internal"
       },
       {
         "type": "Fighter",
         "x": -53,
-        "y": 37
+        "y": 37,
+        "launch effect": "human internal"
       },
       {
         "type": "Fighter",
         "x": 61,
-        "y": 37
+        "y": 37,
+        "launch effect": "human internal"
       },
       {
         "type": "Fighter",
         "x": -53,
-        "y": 135
+        "y": 135,
+        "launch effect": "human internal"
       },
       {
         "type": "Fighter",
         "x": 61,
-        "y": 135
+        "y": 135,
+        "launch effect": "human internal"
       }
     ],
     "sprite": "ship/mastodon",
@@ -7644,22 +8080,26 @@
       {
         "type": "Fighter",
         "x": 0,
-        "y": -145
+        "y": -145,
+        "launch effect": "human internal"
       },
       {
         "type": "Fighter",
         "x": 0,
-        "y": -145
+        "y": -145,
+        "launch effect": "human internal"
       },
       {
         "type": "Fighter",
         "x": 0,
-        "y": -145
+        "y": -145,
+        "launch effect": "human internal"
       },
       {
         "type": "Fighter",
         "x": 0,
-        "y": -145
+        "y": -145,
+        "launch effect": "human internal"
       }
     ],
     "Plexuses": true,
@@ -7935,32 +8375,50 @@
       {
         "type": "Fighter",
         "x": -100,
-        "y": 78
+        "y": 78,
+        "launch effect": "human internal"
       },
       {
         "type": "Fighter",
         "x": 100,
-        "y": 78
+        "y": 78,
+        "launch effect": "human internal"
+      },
+      {
+        "type": "Fighter",
+        "x": -100,
+        "y": 78,
+        "launch effect": "human internal"
+      },
+      {
+        "type": "Fighter",
+        "x": 100,
+        "y": 78,
+        "launch effect": "human internal"
       },
       {
         "type": "Drone",
         "x": -160,
-        "y": 80
+        "y": 80,
+        "launch effect": "human internal"
       },
       {
         "type": "Drone",
         "x": -135,
-        "y": 80
+        "y": 80,
+        "launch effect": "human internal"
       },
       {
         "type": "Drone",
         "x": 135,
-        "y": 80
+        "y": 80,
+        "launch effect": "human internal"
       },
       {
         "type": "Drone",
         "x": 160,
-        "y": 80
+        "y": 80,
+        "launch effect": "human internal"
       }
     ],
     "Shield Fortresses": true,
@@ -8015,33 +8473,35 @@
     "reverseEngines": [
       {
         "x": -36,
-        "y": 52
+        "y": 52,
+        "position": "zoom 0.7"
       },
       {
         "x": 36,
-        "y": 52
+        "y": 52,
+        "position": "zoom 0.7"
       }
     ],
     "steeringEngines": [
       {
         "x": -36,
         "y": 151,
-        "position": "\"right\""
+        "position": "zoom 0.5"
       },
       {
         "x": 36,
         "y": 52,
-        "position": "\"right\""
+        "position": "zoom 0.5"
       },
       {
         "x": 36,
         "y": 151,
-        "position": "\"left\""
+        "position": "zoom 0.5"
       },
       {
         "x": -36,
         "y": 52,
-        "position": "\"left\""
+        "position": "zoom 0.5"
       }
     ],
     "guns": [
@@ -8054,32 +8514,32 @@
     "turrets": [
       {
         "x": -20,
-        "y": -110,
+        "y": -90,
         "turret": ""
       },
       {
         "x": 20,
-        "y": -110,
+        "y": -90,
         "turret": ""
       },
       {
         "x": -20,
-        "y": -75,
+        "y": -55,
         "turret": ""
       },
       {
         "x": 20,
-        "y": -75,
+        "y": -55,
         "turret": ""
       },
       {
         "x": -20,
-        "y": -39,
+        "y": -19,
         "turret": ""
       },
       {
         "x": 20,
-        "y": -39,
+        "y": -19,
         "turret": ""
       }
     ],
@@ -8087,12 +8547,14 @@
       {
         "type": "Fighter",
         "x": 0,
-        "y": -86
+        "y": -86,
+        "launch effect": "human internal"
       },
       {
         "type": "Drone",
         "x": 0,
-        "y": -15
+        "y": -15,
+        "launch effect": "human internal"
       }
     ],
     "sprite": "ship/star explorer",
@@ -8100,6 +8562,7 @@
       "frame rate": 2,
       "delay": 4
     },
+    "thumbnail": "thumbnail/star explorer-thumb",
     "attributes": {
       "category": "Utility",
       "cost": 11000000,
@@ -8781,37 +9244,43 @@
         "type": "Fighter",
         "x": 6,
         "y": -197.5,
-        "position": "under"
+        "position": "under",
+        "launch effect": "human internal"
       },
       {
         "type": "Fighter",
         "x": -66.5,
         "y": -12.5,
-        "position": "under"
+        "position": "under",
+        "launch effect": "human internal"
       },
       {
         "type": "Fighter",
         "x": 34,
         "y": -57,
-        "position": "under"
+        "position": "under",
+        "launch effect": "human internal"
       },
       {
         "type": "Fighter",
         "x": 6,
         "y": 222,
-        "position": "over"
+        "position": "over",
+        "launch effect": "human internal"
       },
       {
         "type": "Drone",
         "x": -49,
         "y": -182,
-        "position": "under"
+        "position": "under",
+        "launch effect": "human internal"
       },
       {
         "type": "Drone",
         "x": -49.5,
         "y": -155,
-        "position": "under"
+        "position": "under",
+        "launch effect": "human internal"
       }
     ],
     "Metropolises": true,
@@ -8978,12 +9447,14 @@
       {
         "type": "Fighter",
         "x": -64,
-        "y": -2
+        "y": -2,
+        "launch effect": "human internal"
       },
       {
         "type": "Fighter",
         "x": 34,
-        "y": -51
+        "y": -51,
+        "launch effect": "human internal"
       }
     ],
     "sprite": "ship/metro prefecture",
@@ -9062,17 +9533,20 @@
       {
         "type": "Fighter",
         "x": 8,
-        "y": 41
+        "y": 41,
+        "launch effect": "human internal"
       },
       {
         "type": "Drone",
         "x": -42,
-        "y": 56
+        "y": 56,
+        "launch effect": "human internal"
       },
       {
         "type": "Drone",
         "x": -47,
-        "y": 56
+        "y": 56,
+        "launch effect": "human internal"
       }
     ],
     "sprite": "ship/metro municipality",
@@ -9109,6 +9583,160 @@
     "huge explosion": "30",
     "final explode": "\"final explosion large\"",
     "description": "The Municipality comprises the forward section of a Metropolis ship. It is the only section with forward firing gun ports. However, it has the least cargo and outfit space of the three sections. Special sensor equipment was integrated into the foremost part of the ship to aid in planetary exploration and mapping. One of its two fighter bays was modified to host a pair of drones."
+  },
+  {
+    "name": "Starcadia",
+    "engines": [
+      {
+        "x": -41,
+        "y": 97
+      },
+      {
+        "x": 41,
+        "y": 97
+      },
+      {
+        "x": -31,
+        "y": 103
+      },
+      {
+        "x": 31,
+        "y": 103
+      },
+      {
+        "x": -21,
+        "y": 111
+      },
+      {
+        "x": 21,
+        "y": 111
+      }
+    ],
+    "reverseEngines": [
+      {
+        "x": -27,
+        "y": -50,
+        "position": "angle 335"
+      },
+      {
+        "x": 27,
+        "y": -50,
+        "position": "angle 25"
+      }
+    ],
+    "steeringEngines": [
+      {
+        "x": -27,
+        "y": -50,
+        "position": "right"
+      },
+      {
+        "x": 27,
+        "y": -50,
+        "position": "left"
+      },
+      {
+        "x": -52,
+        "y": 34,
+        "position": "left"
+      },
+      {
+        "x": 52,
+        "y": 34,
+        "position": "right"
+      }
+    ],
+    "guns": [
+      {
+        "x": -14,
+        "y": -103,
+        "gun": ""
+      },
+      {
+        "x": 14,
+        "y": -103,
+        "gun": ""
+      },
+      {
+        "x": -25,
+        "y": -73,
+        "gun": ""
+      },
+      {
+        "x": 25,
+        "y": -73,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": -20,
+        "y": -7,
+        "turret": ""
+      },
+      {
+        "x": 20,
+        "y": -7,
+        "turret": ""
+      },
+      {
+        "x": -30,
+        "y": 17.5,
+        "turret": ""
+      },
+      {
+        "x": 30,
+        "y": 17.5,
+        "turret": ""
+      },
+      {
+        "x": -20,
+        "y": 42.5,
+        "turret": ""
+      },
+      {
+        "x": 20,
+        "y": 42.5,
+        "turret": ""
+      }
+    ],
+    "bays": [],
+    "sprite": "ship/starcadia",
+    "thumbnail": "thumbnail/starcadia-thumb",
+    "attributes": {
+      "category": "Heavy Warship",
+      "licenses": {
+        "description": "\"Deep Security\""
+      },
+      "cost": 10400000,
+      "shields": 16000,
+      "hull": 5000,
+      "required crew": 42,
+      "bunks": 88,
+      "mass": 955,
+      "drag": 9.3,
+      "heat dissipation": 0.45,
+      "fuel capacity": 500,
+      "cargo space": 40,
+      "outfit space": 510,
+      "weapon capacity": 250,
+      "engine capacity": 110,
+      "weapon": {
+        "blast radius": 200,
+        "shield damage": 2000,
+        "hull damage": 1000,
+        "hit force": 3000
+      }
+    },
+    "leak": "40 50",
+    "flame": "50 80",
+    "big leak": "90 30",
+    "tiny explosion": "18",
+    "small explosion": "36",
+    "medium explosion": "24",
+    "large explosion": "8",
+    "final explode": "\"final explosion medium\"",
+    "description": "The technology on the Starcadia, while in line with other modern ships, is surprisingly mundane for a newly deployed ship from the Deep. This has caused some to speculate that the Deep has lost their edge in technological advancement. Alternatively, conspiracy theorists suggest that the Deep has been sitting on this design for some time and is only releasing it now in preparation for some threat unknown to the general public. Deep Security, for its part, has no comment on these rumors."
   },
   {
     "name": "Marauder Argosy",
@@ -9220,7 +9848,7 @@
     "medium explosion": "30",
     "large explosion": "15",
     "final explode": "\"final explosion medium\"",
-    "description": "What was once a simple Argosy is buried beneath thick plates of additional armored hull plating and shield emitters. Reconfigured gun ports, expanded engine space, and a drone bay leave little room for cargo in this medium warship."
+    "description": "What was once a simple Argosy is buried beneath thick plates of additional hull armor and shield emitters. Reconfigured gun ports, expanded engine space, and a drone bay leave little room for cargo in this medium warship."
   },
   {
     "name": "Marauder Barb",
@@ -9962,8 +10590,8 @@
       "required crew": 12,
       "bunks": 32,
       "mass": 640,
-      "drag": 5.9,
-      "heat dissipation": 0.8,
+      "drag": 8.9,
+      "heat dissipation": 0.54,
       "fuel capacity": 600,
       "cargo space": 20,
       "outfit space": 490,
@@ -10665,7 +11293,7 @@
     },
     "tiny explosion": "20",
     "small explosion": "10",
-    "description": "Modified Bucklers are short range interceptors that have had much of their fuel capacity removed to make room for some light weaponry. These ships aren't recommended for first time pilots. All the technical and maintenance documentation has been deleted from the on-board computer to make room for weapon system targeting software."
+    "description": "Modified Bucklers are short range interceptors that have had much of their fuel capacity removed to make room for some light weaponry. These ships aren't recommended for first time pilots. All the technical and maintenance documentation has been deleted from the on-board computer and replaced with weapon system targeting software."
   },
   {
     "name": "Modified Clipper",
@@ -11160,6 +11788,64 @@
     "huge explosion": "5",
     "final explode": "\"final explosion large\"",
     "description": "All the cargo containers on this Modified Hauler III have been reconfigured to carry fighters. Unwary Merchants can be caught off-guard by pirates using a ship like this."
+  },
+  {
+    "name": "Modified Hawk",
+    "engines": [
+      {
+        "x": -24,
+        "y": 41
+      },
+      {
+        "x": 24,
+        "y": 41
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -9,
+        "y": -17,
+        "gun": ""
+      },
+      {
+        "x": 9,
+        "y": -17,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [],
+    "sprite": "ship/modified hawk",
+    "thumbnail": "thumbnail/modified hawk-thumb",
+    "attributes": {
+      "category": "Interceptor",
+      "cost": 660000,
+      "shields": 2400,
+      "hull": 600,
+      "required crew": 2,
+      "bunks": 4,
+      "mass": 175,
+      "drag": 2.6,
+      "heat dissipation": 0.65,
+      "fuel capacity": 300,
+      "cargo space": 21,
+      "outfit space": 200,
+      "weapon capacity": 40,
+      "engine capacity": 70,
+      "weapon": {
+        "blast radius": 30,
+        "shield damage": 300,
+        "hull damage": 150,
+        "hit force": 450
+      }
+    },
+    "leak": "60 50",
+    "tiny explosion": "15",
+    "small explosion": "5",
+    "final explode": "\"final explosion small\"",
+    "description": "Most, if not all, of these ships are counterfeits, made to cash in on the Hawk's popularity among pirates. Perhaps a legitimate Modified Hawk exists somewhere. If one does, it wouldn't require a co-pilot to emulate the high combat performance of Tarazed's original design."
   },
   {
     "name": "Modified Hogshead",
@@ -11794,7 +12480,7 @@
       "cost": 3500000,
       "shields": 3300,
       "hull": 6700,
-      "required crew": 14,
+      "required crew": 11,
       "bunks": 18,
       "mass": 860,
       "drag": 11.8,
@@ -14366,6 +15052,226 @@
     "description": "Charybdis Station is a massive deuterium refinery in the Core privately owned by the Syndicate."
   },
   {
+    "name": "Arcus",
+    "engines": [
+      {
+        "x": -32,
+        "y": 89
+      },
+      {
+        "x": 32,
+        "y": 89
+      },
+      {
+        "x": 0,
+        "y": 89
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [],
+    "turrets": [],
+    "bays": [],
+    "plural": "\"Arcuses\"",
+    "thumbnail": "\"thumbnail/arcus-thumb\"",
+    "swizzle": "0",
+    "attributes": {
+      "category": "Utility",
+      "cost": 1315000,
+      "hull": 1200,
+      "shields": 1500,
+      "required crew": 10,
+      "bunks": 72,
+      "mass": 1100,
+      "drag": 8.7,
+      "heat dissipation": 0.58,
+      "cargo space": 200,
+      "outfit space": 160,
+      "engine capacity": 60,
+      "gaslining": 1,
+      "fuel capacity": 200,
+      "weapon": {
+        "blast radius": 27,
+        "shield damage": 270,
+        "hull damage": 135,
+        "hit force": 405
+      }
+    },
+    "medium explosion": "20",
+    "large explosion": "30",
+    "final explode": "\"final explosion medium\"",
+    "description": "The Arcus is a hybrid transport-freighter designed for deep space exploration. It is intended to serve as the core upon which a colony station can be established and expanded upon. \tMerchant captains willing to pay the exhorbitant cost can employ this ship in mundane transport-freight operations."
+  },
+  {
+    "name": "Castellanus",
+    "engines": [
+      {
+        "x": 0,
+        "y": 180.5
+      },
+      {
+        "x": 0,
+        "y": 180.5
+      },
+      {
+        "x": -30.5,
+        "y": 180.5
+      },
+      {
+        "x": 30.5,
+        "y": 180.5
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -15,
+        "y": -179,
+        "gun": ""
+      },
+      {
+        "x": 15,
+        "y": -179,
+        "gun": ""
+      },
+      {
+        "x": 0,
+        "y": -179,
+        "gun": ""
+      },
+      {
+        "x": 0,
+        "y": -179,
+        "gun": ""
+      },
+      {
+        "x": 0,
+        "y": -179,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": 0,
+        "y": -31,
+        "turret": ""
+      },
+      {
+        "x": 0,
+        "y": 89.5,
+        "turret": ""
+      }
+    ],
+    "bays": [],
+    "plural": "\"Castellani\"",
+    "thumbnail": "\"thumbnail/castellanus-thumb\"",
+    "swizzle": "0",
+    "attributes": {
+      "category": "Heavy Warship",
+      "licenses": {
+        "description": "\"Hicemus Conflict\""
+      },
+      "cost": 26000000,
+      "hull": 10000,
+      "shields": 13200,
+      "required crew": 45,
+      "bunks": 70,
+      "mass": 2870,
+      "drag": 11.2,
+      "heat dissipation": 0.38,
+      "cargo space": 75,
+      "outfit space": 579,
+      "weapon capacity": 200,
+      "engine capacity": 109,
+      "gaslining": 1,
+      "fuel capacity": 200,
+      "weapon": {
+        "blast radius": 250,
+        "shield damage": 2500,
+        "hull damage": 1250,
+        "hit force": 3750
+      }
+    },
+    "medium explosion": "75",
+    "large explosion": "60",
+    "huge explosion": "15",
+    "final explode": "\"final explosion large\"",
+    "description": "The Castillanus heavy warship expands upon the design principles exhibited by the Nimbus. While it cannot match the raw offensive power of the Venta, the turret mounts make it a more versatile weapons platform."
+  },
+  {
+    "name": "Nimbo Cumulus",
+    "engines": [
+      {
+        "x": 0,
+        "y": 27
+      },
+      {
+        "x": -28,
+        "y": 27
+      },
+      {
+        "x": 28,
+        "y": 27
+      },
+      {
+        "x": 0,
+        "y": 61.5
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": 0,
+        "y": -58.5,
+        "gun": ""
+      },
+      {
+        "x": -13,
+        "y": -48.5,
+        "gun": ""
+      },
+      {
+        "x": 13,
+        "y": -48.5,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [],
+    "plural": "\"Nimbo Strati\"",
+    "thumbnail": "\"thumbnail/nimbo cumulus-thumb\"",
+    "swizzle": "0",
+    "attributes": {
+      "category": "Light Warship",
+      "cost": 690000,
+      "hull": 800,
+      "shields": 1000,
+      "required crew": 6,
+      "bunks": 8,
+      "mass": 647,
+      "drag": 8.4,
+      "heat dissipation": 0.67,
+      "cargo space": 40,
+      "outfit space": 290,
+      "weapon capacity": 60,
+      "engine capacity": 81,
+      "gaslining": 1,
+      "fuel capacity": 200,
+      "weapon": {
+        "blast radius": 16,
+        "shield damage": 160,
+        "hull damage": 80,
+        "hit force": 240
+      }
+    },
+    "medium explosion": "10",
+    "large explosion": "20",
+    "final explode": "\"final explosion medium\"",
+    "description": "A recently developed upgrade to the Nimbo Stratus. With it's extra gun port and weapon capacity, some regard the Cumulus as a light warship. The Hicemus are closely monitoring how the ship performs to determine whether or not it needs to be placed under their licensing restrictions."
+  },
+  {
     "name": "Veliante'ixis",
     "engines": [
       {
@@ -14719,7 +15625,7 @@
       "heat dissipation": 0.31,
       "fuel capacity": 600,
       "ramscoop": 0.58,
-      "cargo space": 34,
+      "cargo space": 50,
       "outfit space": 339,
       "weapon capacity": 245,
       "engine capacity": 86,
@@ -14742,7 +15648,7 @@
     "medium explosion": "25",
     "large explosion": "15",
     "final explode": "\"final explosion medium\"",
-    "description": "A deep space mining vessel, the Rao'xeris was used to transport materials harvested in the northern reaches of Builder space to processing facilities in the southern region. When the Ka'het invasion began, many found that it could easily be converted into a capable warship. \tThis ship is capable of diving into the harsh atmosphere of a gas giant."
+    "description": "A deep space mining vessel, the Rao'xeris was used to transport materials harvested in the northern reaches of Builder space to processing facilities in the southern region. When the Ka'het invasion began, many found that it could easily be converted into a combat warship. \tThis ship is capable of diving into the harsh atmosphere of a gas giant."
   },
   {
     "name": "Ool'mar",
@@ -15728,7 +16634,7 @@
     "description": "The Karot is a small escort fighter for Pug ships that have the bays to carry them."
   },
   {
-    "name": "Pug Paragon Zibruka",
+    "name": "Paragon Zibruka",
     "engines": [
       {
         "x": -8.5,
@@ -15761,7 +16667,6 @@
       }
     ],
     "bays": [],
-    "display name": "\"Paragon Zibruka\"",
     "sprite": "ship/pug paragon zibruka",
     "thumbnail": "thumbnail/pug paragon zibruka-thumb",
     "attributes": {
@@ -15799,7 +16704,7 @@
     "description": "The Zibruka is the smallest Pug warship that you know of. It is a fearsome ship to face off against, especially in swarms. \tThe Paragon variant of the Zibruka is intended for battles rated tier 2 and above. It has increased shielding and a reinforced hull. It also adds a turret mount and the additional space to use it."
   },
   {
-    "name": "Pug Paragon Enfolta",
+    "name": "Paragon Enfolta",
     "engines": [
       {
         "x": -10,
@@ -15847,7 +16752,6 @@
       }
     ],
     "bays": [],
-    "display name": "\"Paragon Enfolta\"",
     "sprite": "ship/pug paragon enfolta",
     "thumbnail": "thumbnail/pug paragon enfolta-thumb",
     "attributes": {
@@ -15885,7 +16789,7 @@
     "description": "The Enfolta is a medium-sized Pug warship. A single Enfolta can take on multiple smaller human ships. \tThe Paragon variant of the Enfolta is intended for battles rated tier 2 and above. It has increased shielding and a reinforced hull. It also adds one more turret mount with the additional space to use it."
   },
   {
-    "name": "Pug Paragon Maboro",
+    "name": "Paragon Maboro",
     "engines": [
       {
         "x": -21,
@@ -15959,7 +16863,6 @@
         "y": 46
       }
     ],
-    "display name": "\"Paragon Maboro\"",
     "sprite": "ship/pug paragon maboro",
     "thumbnail": "thumbnail/pug paragon maboro-thumb",
     "attributes": {
@@ -15997,104 +16900,608 @@
     "description": "The Maboro appears to be the Pug's capital warship. It is a ship that only the strongest human capital ships are able to oppose. \tThe Paragon variant of the Marboro is intended for battles rated tier 2 and above. It has increased shielding and a reinforced hull. It also adds two more turret mounts with the additional space to use them."
   },
   {
-    "name": "Marauder Kestrel",
+    "name": "Savage Zibruka",
     "engines": [
       {
-        "x": -14,
-        "y": 177
+        "x": -8.5,
+        "y": 43
       },
       {
-        "x": 0,
-        "y": 177
-      },
-      {
-        "x": 14,
-        "y": 177
+        "x": 8.5,
+        "y": 43
       }
     ],
     "reverseEngines": [],
     "steeringEngines": [],
     "guns": [
       {
-        "x": -31,
-        "y": 66,
+        "x": -19,
+        "y": -54,
         "gun": ""
       },
       {
-        "x": 31,
-        "y": 66,
+        "x": 19,
+        "y": -54,
         "gun": ""
       },
       {
-        "x": -31,
-        "y": 66,
+        "x": 0,
+        "y": -34,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [],
+    "sprite": "ship/pug savage zibruka",
+    "thumbnail": "thumbnail/pug savage zibruka-thumb",
+    "attributes": {
+      "category": "Light Warship",
+      "cost": 2000000,
+      "shields": 4000,
+      "hull": 1000,
+      "required crew": 4,
+      "bunks": 6,
+      "mass": 260,
+      "drag": 3.1,
+      "heat dissipation": 0.8,
+      "fuel capacity": 600,
+      "cargo space": 20,
+      "outfit space": 244,
+      "weapon capacity": 126,
+      "engine capacity": 98,
+      "energy capacity": 1500,
+      "energy generation": 10,
+      "heat generation": 20,
+      "shield generation": 6,
+      "shield energy": 6,
+      "hull repair rate": 3,
+      "hull energy": 3,
+      "integrated systems": -1,
+      "weapon": {
+        "blast radius": 100,
+        "shield damage": 400,
+        "hull damage": 200,
+        "hit force": 600
+      }
+    },
+    "pug tiny explosion": "10",
+    "pug small explosion": "15",
+    "pug medium explosion": "20",
+    "pug large explosion": "10",
+    "final explode": "\"final explosion small\"",
+    "description": "The Zibruka is the smallest Pug warship that you know of. Despite having only two gun ports, its two advanced guns combined with its fast and efficient engine systems make it a fearsome ship to face off against, especially in swarms. \tThe Savage variant of the Zibruka was originally designed to withstand harsh environments. The bio regenerative hull is resistant to corrosion, heat, and ion damage."
+  },
+  {
+    "name": "Savage Enfolta",
+    "engines": [
+      {
+        "x": -10,
+        "y": 63.5
+      },
+      {
+        "x": 10,
+        "y": 63.5
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -12.5,
+        "y": -94,
         "gun": ""
       },
       {
-        "x": 31,
-        "y": 66,
+        "x": 12.5,
+        "y": -94,
         "gun": ""
       },
       {
-        "x": -53,
-        "y": 61,
+        "x": -12.5,
+        "y": -94,
         "gun": ""
       },
       {
-        "x": 53,
-        "y": 61,
+        "x": 12.5,
+        "y": -94,
         "gun": ""
       },
       {
-        "x": -53,
-        "y": 61,
-        "gun": ""
-      },
-      {
-        "x": 53,
-        "y": 61,
-        "gun": ""
-      },
-      {
-        "x": -75,
-        "y": 57,
-        "gun": ""
-      },
-      {
-        "x": 75,
-        "y": 57,
-        "gun": ""
-      },
-      {
-        "x": -75,
-        "y": 57,
-        "gun": ""
-      },
-      {
-        "x": 75,
-        "y": 57,
+        "x": 0,
+        "y": -74,
         "gun": ""
       }
     ],
     "turrets": [
       {
-        "x": -7,
-        "y": -4,
+        "x": 0,
+        "y": 11,
+        "turret": ""
+      }
+    ],
+    "bays": [],
+    "sprite": "ship/pug savage enfolta",
+    "thumbnail": "thumbnail/pug savage enfolta-thumb",
+    "attributes": {
+      "category": "Medium Warship",
+      "cost": 6900000,
+      "shields": 6800,
+      "hull": 1700,
+      "required crew": 19,
+      "bunks": 27,
+      "mass": 450,
+      "drag": 5.9,
+      "heat dissipation": 0.7,
+      "fuel capacity": 600,
+      "cargo space": 40,
+      "outfit space": 393,
+      "weapon capacity": 245,
+      "engine capacity": 128,
+      "energy capacity": 3000,
+      "energy generation": 22,
+      "heat generation": 32,
+      "shield generation": 8,
+      "shield energy": 8,
+      "hull repair rate": 4,
+      "hull energy": 4,
+      "integrated systems": -1,
+      "weapon": {
+        "blast radius": 180,
+        "shield damage": 720,
+        "hull damage": 360,
+        "hit force": 1080
+      }
+    },
+    "pug tiny explosion": "5",
+    "pug small explosion": "20",
+    "pug medium explosion": "25",
+    "pug large explosion": "15",
+    "final explode": "\"final explosion medium\"",
+    "description": "The Enfolta is a medium-sized Pug warship. It has a formidable armament of advanced weaponry supported by powerful integrated energy generation. A single Enfolta can take on multiple smaller human ships. \tThe Savage variant of the Enfolta was originally designed to withstand harsh environments. The bio regenerative hull is resistant to corrosion, heat, and ion damage."
+  },
+  {
+    "name": "Savage Maboro",
+    "engines": [
+      {
+        "x": -21,
+        "y": 134.5
+      },
+      {
+        "x": 21,
+        "y": 134.5
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -33.5,
+        "y": -142.5,
+        "gun": ""
+      },
+      {
+        "x": 33.5,
+        "y": -142.5,
+        "gun": ""
+      },
+      {
+        "x": -24.5,
+        "y": -165,
+        "gun": ""
+      },
+      {
+        "x": 24.5,
+        "y": -165,
+        "gun": ""
+      },
+      {
+        "x": 0,
+        "y": -122.5,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": 0,
+        "y": -68,
         "turret": ""
       },
       {
-        "x": 7,
-        "y": -4,
+        "x": -13.5,
+        "y": -11.5,
         "turret": ""
       },
       {
-        "x": -23,
-        "y": 14,
+        "x": 13.5,
+        "y": -11.5,
+        "turret": ""
+      }
+    ],
+    "bays": [],
+    "sprite": "ship/pug savage maboro",
+    "thumbnail": "thumbnail/pug savage maboro-thumb",
+    "attributes": {
+      "category": "Heavy Warship",
+      "cost": 10400000,
+      "shields": 12600,
+      "hull": 2700,
+      "required crew": 54,
+      "bunks": 87,
+      "mass": 1030,
+      "drag": 9.8,
+      "heat dissipation": 0.6,
+      "fuel capacity": 600,
+      "cargo space": 70,
+      "outfit space": 620,
+      "weapon capacity": 430,
+      "engine capacity": 170,
+      "energy capacity": 6000,
+      "energy generation": 32,
+      "heat generation": 48,
+      "shield generation": 10,
+      "shield energy": 10,
+      "hull repair rate": 5,
+      "hull energy": 5,
+      "integrated systems": -1,
+      "weapon": {
+        "blast radius": 300,
+        "shield damage": 1200,
+        "hull damage": 600,
+        "hit force": 1800
+      }
+    },
+    "pug small explosion": "25",
+    "pug medium explosion": "30",
+    "pug large explosion": "20",
+    "pug huge explosion": "5",
+    "final explode": "\"final explosion large\"",
+    "description": "The Maboro appears to be the Pug's capital warship. Its shield matrix and hull are much weaker than human capital ships; however, it is able to regenerate its shields quickly. Its fearsome ordnance and advanced anti-missile defenses make it a ship that only the strongest human capital ships are able to oppose. \tThe Savage variant of the Maboro was originally designed to withstand harsh environments. The bio regenerative hull is resistant to corrosion, heat, and ion damage."
+  },
+  {
+    "name": "Ghost Zibruka",
+    "engines": [
+      {
+        "x": -8.5,
+        "y": 43
+      },
+      {
+        "x": 8.5,
+        "y": 43
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -19,
+        "y": -54,
+        "gun": ""
+      },
+      {
+        "x": 19,
+        "y": -54,
+        "gun": ""
+      }
+    ],
+    "turrets": [],
+    "bays": [],
+    "sprite": "ship/pug zibruka",
+    "thumbnail": "thumbnail/pug zibruka",
+    "attributes": {
+      "category": "Light Warship",
+      "cost": 2000000,
+      "shields": 4000,
+      "hull": 1000,
+      "required crew": 5,
+      "bunks": 6,
+      "mass": 250,
+      "drag": 3.1,
+      "heat dissipation": 0.8,
+      "fuel capacity": 600,
+      "cargo space": 20,
+      "outfit space": 244,
+      "weapon capacity": 126,
+      "engine capacity": 98,
+      "energy capacity": 1500,
+      "energy generation": 10,
+      "heat generation": 20,
+      "shield generation": 6,
+      "shield energy": 6,
+      "cloak": 0.01,
+      "cloaking energy": 1,
+      "weapon": {
+        "blast radius": 100,
+        "shield damage": 400,
+        "hull damage": 200,
+        "hit force": 600
+      }
+    },
+    "pug tiny explosion": "10",
+    "pug small explosion": "15",
+    "pug medium explosion": "20",
+    "pug large explosion": "10",
+    "final explode": "\"final explosion small\"",
+    "description": "The Zibruka is the smallest Pug warship that you know of. Despite having only two gun ports, its two advanced guns combined with its fast and efficient engine systems make it a fearsome ship to face off against, especially in swarms. \tThe Ghost variant of the Zibruka is intended for covert observation and surveillance. It has cloaking integrated into the hull."
+  },
+  {
+    "name": "Ghost Enfolta",
+    "engines": [
+      {
+        "x": -10,
+        "y": 63.5
+      },
+      {
+        "x": 10,
+        "y": 63.5
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -12.5,
+        "y": -94,
+        "gun": ""
+      },
+      {
+        "x": 12.5,
+        "y": -94,
+        "gun": ""
+      },
+      {
+        "x": -12.5,
+        "y": -94,
+        "gun": ""
+      },
+      {
+        "x": 12.5,
+        "y": -94,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": 0,
+        "y": 11,
+        "turret": ""
+      }
+    ],
+    "bays": [],
+    "sprite": "ship/pug enfolta",
+    "thumbnail": "thumbnail/pug enfolta",
+    "attributes": {
+      "category": "Medium Warship",
+      "cost": 6900000,
+      "shields": 6800,
+      "hull": 1700,
+      "required crew": 20,
+      "bunks": 27,
+      "mass": 420,
+      "drag": 5.9,
+      "heat dissipation": 0.7,
+      "fuel capacity": 600,
+      "cargo space": 40,
+      "outfit space": 393,
+      "weapon capacity": 245,
+      "engine capacity": 128,
+      "energy capacity": 3000,
+      "energy generation": 22,
+      "heat generation": 32,
+      "shield generation": 8,
+      "shield energy": 8,
+      "cloak": 0.01,
+      "cloaking energy": 1,
+      "weapon": {
+        "blast radius": 180,
+        "shield damage": 720,
+        "hull damage": 360,
+        "hit force": 1080
+      }
+    },
+    "pug tiny explosion": "5",
+    "pug small explosion": "20",
+    "pug medium explosion": "25",
+    "pug large explosion": "15",
+    "final explode": "\"final explosion medium\"",
+    "description": "The Enfolta is a medium-sized Pug warship. It has a formidable armament of advanced weaponry supported by powerful integrated energy generation. A single Enfolta can take on multiple smaller human ships. \tThe Ghost variant of the Enfolta is intended for covert observation and surveillance. It has cloaking integrated into the hull."
+  },
+  {
+    "name": "Ghost Maboro",
+    "engines": [
+      {
+        "x": -21,
+        "y": 134.5
+      },
+      {
+        "x": 21,
+        "y": 134.5
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -33.5,
+        "y": -142.5,
+        "gun": ""
+      },
+      {
+        "x": 33.5,
+        "y": -142.5,
+        "gun": ""
+      },
+      {
+        "x": -24.5,
+        "y": -165,
+        "gun": ""
+      },
+      {
+        "x": 24.5,
+        "y": -165,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": 0,
+        "y": -68,
         "turret": ""
       },
       {
-        "x": 23,
-        "y": 14,
+        "x": -13.5,
+        "y": -11.5,
+        "turret": ""
+      },
+      {
+        "x": 13.5,
+        "y": -11.5,
+        "turret": ""
+      }
+    ],
+    "bays": [],
+    "sprite": "ship/pug maboro",
+    "thumbnail": "thumbnail/pug maboro",
+    "attributes": {
+      "category": "Heavy Warship",
+      "cost": 10400000,
+      "shields": 12600,
+      "hull": 2700,
+      "required crew": 55,
+      "bunks": 87,
+      "mass": 950,
+      "drag": 9.8,
+      "heat dissipation": 0.6,
+      "fuel capacity": 600,
+      "cargo space": 70,
+      "outfit space": 620,
+      "weapon capacity": 430,
+      "engine capacity": 170,
+      "energy capacity": 6000,
+      "energy generation": 32,
+      "heat generation": 48,
+      "shield generation": 10,
+      "shield energy": 10,
+      "cloak": 0.01,
+      "cloaking energy": 1,
+      "weapon": {
+        "blast radius": 300,
+        "shield damage": 1200,
+        "hull damage": 600,
+        "hit force": 1800
+      }
+    },
+    "pug small explosion": "25",
+    "pug medium explosion": "30",
+    "pug large explosion": "20",
+    "pug huge explosion": "5",
+    "final explode": "\"final explosion large\"",
+    "description": "The Maboro appears to be the Pug's capital warship. Its shield matrix and hull are much weaker than human capital ships; however, it is able to regenerate its shields quickly. Its fearsome ordnance and advanced anti-missile defenses make it a ship that only the strongest human capital ships are able to oppose. \tThe Ghost variant of the Maboro is intended for observation and surveillance. It has cloaking integrated into the hull."
+  },
+  {
+    "name": "Marauder Kestrel",
+    "engines": [
+      {
+        "x": 13,
+        "y": 170
+      },
+      {
+        "x": -13,
+        "y": 170
+      },
+      {
+        "x": 24.5,
+        "y": 160,
+        "zoom": 0.4
+      },
+      {
+        "x": -24.5,
+        "y": 160,
+        "zoom": 0.4
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [
+      {
+        "x": -76.5,
+        "y": 49,
+        "gun": ""
+      },
+      {
+        "x": 76.5,
+        "y": 49,
+        "gun": ""
+      },
+      {
+        "x": -73.5,
+        "y": 46,
+        "gun": ""
+      },
+      {
+        "x": 73.5,
+        "y": 46,
+        "gun": ""
+      },
+      {
+        "x": -55.5,
+        "y": 52.5,
+        "gun": ""
+      },
+      {
+        "x": 55.5,
+        "y": 52.5,
+        "gun": ""
+      },
+      {
+        "x": -51,
+        "y": 49.5,
+        "gun": ""
+      },
+      {
+        "x": 51,
+        "y": 49.5,
+        "gun": ""
+      },
+      {
+        "x": -33,
+        "y": 55,
+        "gun": ""
+      },
+      {
+        "x": 33,
+        "y": 55,
+        "gun": ""
+      },
+      {
+        "x": -29.5,
+        "y": 52,
+        "gun": ""
+      },
+      {
+        "x": 29.5,
+        "y": 52,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": -8,
+        "y": -10.5,
+        "turret": ""
+      },
+      {
+        "x": 8,
+        "y": -10.5,
+        "turret": ""
+      },
+      {
+        "x": -20.5,
+        "y": 9,
+        "turret": ""
+      },
+      {
+        "x": 20.5,
+        "y": 9,
         "turret": ""
       }
     ],
@@ -16103,17 +17510,41 @@
         "type": "Fighter",
         "x": -46,
         "y": 106,
-        "position": "under"
+        "launch effect": "human internal"
       },
       {
         "type": "Fighter",
         "x": 46,
         "y": 106,
-        "position": "under"
+        "launch effect": "human internal"
+      },
+      {
+        "type": "Fighter",
+        "x": -62,
+        "y": 78,
+        "launch effect": "human internal"
+      },
+      {
+        "type": "Fighter",
+        "x": 62,
+        "y": 78,
+        "launch effect": "human internal"
+      },
+      {
+        "type": "Fighter",
+        "x": -56,
+        "y": 70,
+        "launch effect": "human internal"
+      },
+      {
+        "type": "Fighter",
+        "x": 56,
+        "y": 70,
+        "launch effect": "human internal"
       }
     ],
-    "sprite": "ship/kestrel",
-    "thumbnail": "thumbnail/kestrel",
+    "sprite": "ship/kestrelm",
+    "thumbnail": "thumbnail/kestrelm-thumb",
     "attributes": {
       "category": "Heavy Warship",
       "cost": 14700000,
@@ -16121,14 +17552,15 @@
       "hull": 8700,
       "required crew": 64,
       "bunks": 128,
-      "mass": 740,
-      "drag": 10,
-      "heat dissipation": 0.66,
+      "mass": 2195,
+      "drag": 19,
+      "heat dissipation": 0.352,
       "fuel capacity": 600,
       "cargo space": 120,
       "outfit space": 810,
-      "weapon capacity": 430,
+      "weapon capacity": 410,
       "engine capacity": 240,
+      "self destruct": 0.15,
       "weapon": {
         "blast radius": 260,
         "shield damage": 2600,
@@ -16226,10 +17658,10 @@
         "hit force": 2500
       }
     },
-    "small explosion": "40",
-    "medium explosion": "55",
-    "large explosion": "25",
-    "huge explosion": "10",
+    "quarg small explosion": "40",
+    "quarg medium explosion": "55",
+    "quarg large explosion": "25",
+    "quarg huge explosion": "10",
     "final explode": "\"final explosion large\"",
     "description": "The Ouroboros is a long haul freighter for carrying supplies between Quarg ring worlds and their more distant planets. Ouroboros crews tend to serve on the same ship for centuries and are the Quarg most likely to have visited every region of the galaxy."
   },
@@ -16305,15 +17737,15 @@
       "weapon capacity": 180,
       "engine capacity": 120,
       "weapon": {
-        "blast radius": 200,
-        "shield damage": 20000,
+        "blast radius": 210,
+        "shield damage": 21000,
         "hull damage": 10000,
         "hit force": 3000
       }
     },
-    "small explosion": "35",
-    "medium explosion": "50",
-    "large explosion": "25",
+    "quarg small explosion": "35",
+    "quarg medium explosion": "50",
+    "quarg large explosion": "25",
     "final explode": "\"final explosion medium\"",
     "description": "A heavy freighter with expanded capabilities, the Tiamat fulfills the role of a utility ship that can perform a variety of missions. On deep space excursions they often serve as a core support ship for more specialized vessels that might have difficulty operating far from Quarg territory."
   },
@@ -16375,9 +17807,9 @@
       }
     },
     "tiny explosion": "5",
-    "small explosion": "10",
-    "medium explosion": "15",
-    "large explosion": "5",
+    "quarg small explosion": "10",
+    "quarg medium explosion": "15",
+    "quarg large explosion": "5",
     "final explode": "\"final explosion small\"",
     "description": "The Basilisk was a blockade runner during a time when the Quarg's ringworlds were under siege from an unexpected threat. Over a thousand years have passed since then. During that time, the ship has been repurposed into a scouting vessel. \tThe cloaking technology is built into the Basilisk's hull; it cannot be removed or transferred to another ship."
   },
@@ -16433,10 +17865,10 @@
         "hit force": 2025
       }
     },
-    "tiny explosion": "10",
-    "small explosion": "15",
-    "medium explosion": "20",
-    "large explosion": "10",
+    "quarg tiny explosion": "10",
+    "quarg small explosion": "15",
+    "quarg medium explosion": "20",
+    "quarg large explosion": "10",
     "final explode": "\"final explosion medium\"",
     "description": "The Zilant is a fast assault ship used to harass and break enemy fleet formations or make quick strikes on targets behind enemy lines. In more peaceful regions of the galaxy, they are relegated to simple patrol and escort duties."
   },
@@ -16533,10 +17965,10 @@
         "hit force": 5850
       }
     },
-    "small explosion": "20",
-    "medium explosion": "35",
-    "large explosion": "25",
-    "huge explosion": "15",
+    "quarg small explosion": "20",
+    "quarg medium explosion": "35",
+    "quarg large explosion": "25",
+    "quarg huge explosion": "15",
     "final explode": "\"final explosion large\"",
     "description": "The mythical Orochi was defeated by enticing it to drink itself into a stupor. These powerful ships are slow to deploy due to their low fuel capacity. Rarely are they seen outside of Quarg planetary defense fleets."
   },
@@ -16582,8 +18014,8 @@
         "hit force": 900
       }
     },
-    "tiny explosion": "5",
-    "small explosion": "10",
+    "quarg tiny explosion": "5",
+    "quarg small explosion": "10",
     "final explode": "\"final explosion small\"",
     "description": "The Cockatrice is a small fighter that can provide supplementary defense to their planets or Quarg ships with the bays to carry them."
   },
@@ -16639,7 +18071,7 @@
       "heat dissipation": 0.8,
       "fuel capacity": 1000,
       "cargo space": 120,
-      "outfit space": 510,
+      "outfit space": 515,
       "weapon capacity": 180,
       "engine capacity": 100,
       "weapon": {
@@ -16649,13 +18081,237 @@
         "hit force": 1830
       }
     },
-    "tiny explosion": "12",
-    "small explosion": "16",
-    "medium explosion": "30",
-    "large explosion": "40",
-    "huge explosion": "20",
+    "quarg tiny explosion": "12",
+    "quarg small explosion": "16",
+    "quarg medium explosion": "30",
+    "quarg large explosion": "40",
+    "quarg huge explosion": "20",
     "final explode": "\"final explosion medium\"",
     "description": "The Gorgon was used by the Quarg as a freighter. It is an older design from a bygone era, bearing heavy armaments for its role while lacking some of the structural support developments found in more modern Quarg freighters."
+  },
+  {
+    "name": "Quarg Typhon",
+    "engines": [
+      {
+        "x": -15,
+        "y": 117
+      },
+      {
+        "x": 15,
+        "y": 117
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [],
+    "turrets": [
+      {
+        "x": -12,
+        "y": -80,
+        "turret": ""
+      },
+      {
+        "x": 12,
+        "y": -80,
+        "turret": ""
+      },
+      {
+        "x": -34,
+        "y": 24,
+        "turret": ""
+      },
+      {
+        "x": 34,
+        "y": 24,
+        "turret": ""
+      }
+    ],
+    "bays": [],
+    "sprite": "ship/Midnight quarg skyswift",
+    "thumbnail": "thumbnail/Midnight quarg skyswift",
+    "attributes": {
+      "category": "Heavy Freighter",
+      "cost": 18000000,
+      "shields": 86000,
+      "hull": 46000,
+      "required crew": 25,
+      "bunks": 30,
+      "mass": 780,
+      "drag": 11.8,
+      "heat dissipation": 0.7,
+      "fuel capacity": 1000,
+      "cargo space": 360,
+      "outfit space": 455,
+      "weapon capacity": 130,
+      "engine capacity": 120,
+      "weapon": {
+        "blast radius": 130,
+        "shield damage": 13000,
+        "hull damage": 6500,
+        "hit force": 1950
+      }
+    },
+    "quarg tiny explosion": "12",
+    "quarg small explosion": "16",
+    "quarg medium explosion": "30",
+    "quarg large explosion": "40",
+    "quarg huge explosion": "20",
+    "final explode": "\"final explosion medium\"",
+    "description": "Typhons are old freighters the Quarg use mostly to transport materials in bulk."
+  },
+  {
+    "name": "Quarg Zahhak",
+    "engines": [
+      {
+        "x": -12,
+        "y": 140
+      },
+      {
+        "x": 12,
+        "y": 140
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [],
+    "turrets": [
+      {
+        "x": -13,
+        "y": -107,
+        "turret": ""
+      },
+      {
+        "x": 13,
+        "y": -107,
+        "turret": ""
+      },
+      {
+        "x": 34,
+        "y": -4,
+        "turret": ""
+      },
+      {
+        "x": -34,
+        "y": -4,
+        "turret": ""
+      },
+      {
+        "x": 34,
+        "y": 54,
+        "turret": ""
+      },
+      {
+        "x": -34,
+        "y": 54,
+        "turret": ""
+      }
+    ],
+    "bays": [
+      {
+        "type": "Fighter",
+        "x": -30,
+        "y": 140
+      },
+      {
+        "type": "Fighter",
+        "x": 30,
+        "y": 140
+      }
+    ],
+    "sprite": "ship/skycrane",
+    "thumbnail": "thumbnail/skycrane-thumb",
+    "attributes": {
+      "category": "Utility",
+      "cost": 25000000,
+      "shields": 140000,
+      "hull": 50000,
+      "required crew": 69,
+      "bunks": 90,
+      "mass": 830,
+      "drag": 12.3,
+      "heat dissipation": 0.7,
+      "fuel capacity": 1200,
+      "cargo space": 175,
+      "outfit space": 540,
+      "weapon capacity": 180,
+      "engine capacity": 120,
+      "weapon": {
+        "blast radius": 190,
+        "shield damage": 19000,
+        "hull damage": 9500,
+        "hit force": 2850
+      }
+    },
+    "quarg tiny explosion": "12",
+    "quarg small explosion": "16",
+    "quarg medium explosion": "30",
+    "quarg large explosion": "40",
+    "quarg huge explosion": "20",
+    "final explode": "\"final explosion medium\"",
+    "description": "The Zahhak is a Quarg utility support ship for extended deep space operations."
+  },
+  {
+    "name": "Quarg Naga",
+    "engines": [
+      {
+        "x": 0,
+        "y": 99
+      },
+      {
+        "x": -10,
+        "y": 100
+      },
+      {
+        "x": 10,
+        "y": 100
+      }
+    ],
+    "reverseEngines": [],
+    "steeringEngines": [],
+    "guns": [],
+    "turrets": [
+      {
+        "x": -11,
+        "y": -49,
+        "turret": ""
+      },
+      {
+        "x": 11,
+        "y": -49,
+        "turret": ""
+      }
+    ],
+    "bays": [],
+    "sprite": "ship/skythrush",
+    "thumbnail": "thumbnail/skythrush-thumb",
+    "attributes": {
+      "category": "Light Freighter",
+      "cost": 9900000,
+      "shields": 32000,
+      "hull": 18000,
+      "required crew": 12,
+      "bunks": 20,
+      "mass": 420,
+      "drag": 10.1,
+      "heat dissipation": 0.9,
+      "fuel capacity": 800,
+      "cargo space": 80,
+      "outfit space": 335,
+      "weapon capacity": 50,
+      "engine capacity": 80,
+      "weapon": {
+        "blast radius": 50,
+        "shield damage": 5000,
+        "hull damage": 2500,
+        "hit force": 750
+      }
+    },
+    "quarg tiny explosion": "12",
+    "quarg small explosion": "16",
+    "quarg medium explosion": "30",
+    "quarg large explosion": "40",
+    "final explode": "\"final explosion medium\"",
+    "description": "The Naga was a mining vessel dating back to the pre-ringworld era."
   },
   {
     "name": "Quarg Skycrane",
@@ -16744,10 +18400,10 @@
       }
     },
     "tiny explosion": "12",
-    "small explosion": "16",
-    "medium explosion": "30",
-    "large explosion": "40",
-    "huge explosion": "20",
+    "quarg small explosion": "16",
+    "quarg medium explosion": "30",
+    "quarg large explosion": "40",
+    "quarg huge explosion": "20",
     "final explode": "\"final explosion medium\"",
     "description": "Based on a heavy freighter frame with expanded capabilities, the Skycrane is a utility ship used by the Quarg for a variety of purposes."
   },
@@ -16811,9 +18467,9 @@
       }
     },
     "tiny explosion": "12",
-    "small explosion": "16",
-    "medium explosion": "30",
-    "large explosion": "40",
+    "quarg small explosion": "16",
+    "quarg medium explosion": "30",
+    "quarg large explosion": "40",
     "final explode": "\"final explosion medium\"",
     "description": "The Skythrush was designed to be used as a blockade runner. Over a thousand years have passed since anyone has dared lay siege to the Quarg, shifting their role towards cargo support and scouting."
   },
@@ -16873,9 +18529,9 @@
       }
     },
     "tiny explosion": "12",
-    "small explosion": "16",
-    "medium explosion": "30",
-    "large explosion": "40",
+    "quarg small explosion": "16",
+    "quarg medium explosion": "30",
+    "quarg large explosion": "40",
     "final explode": "\"final explosion medium\"",
     "description": "The Warkite is a nimble assault ship used by the Quarg to harass and break enemy fleet formations or make quick surgical strikes against targets behind enemy lines."
   },
@@ -16966,10 +18622,10 @@
       }
     },
     "tiny explosion": "12",
-    "small explosion": "16",
-    "medium explosion": "30",
-    "large explosion": "40",
-    "huge explosion": "20",
+    "quarg small explosion": "16",
+    "quarg medium explosion": "30",
+    "quarg large explosion": "40",
+    "quarg huge explosion": "20",
     "final explode": "\"final explosion medium\"",
     "description": "The Warwyrm is used by the Quarg as a heavy warship. Slow to deploy due to their low fuel capacity, they are rarely seen outside of their planetary defense fleets."
   },
@@ -17032,8 +18688,8 @@
       }
     },
     "tiny explosion": "12",
-    "small explosion": "16",
-    "medium explosion": "30",
+    "quarg small explosion": "16",
+    "quarg medium explosion": "30",
     "final explode": "\"final explosion medium\"",
     "description": "The Skyshrew is a fighter that can provide fire support to Quarg ships with the bays to carry them. An array of essential non-weapon systems are built into the hull."
   },
@@ -17341,10 +18997,6 @@
     "name": "Nightingale",
     "engines": [
       {
-        "x": -5,
-        "y": 20.5
-      },
-      {
         "x": 5,
         "y": 20.5
       }
@@ -17538,12 +19190,12 @@
     "name": "Raptor Prototype",
     "engines": [
       {
-        "x": -19.5,
+        "x": -18.5,
         "y": 138
       },
       {
-        "x": 18,
-        "y": 138.5
+        "x": 18.5,
+        "y": 138
       }
     ],
     "reverseEngines": [],
@@ -17562,17 +19214,17 @@
     ],
     "turrets": [
       {
-        "x": -33,
-        "y": 10,
+        "x": -34,
+        "y": 12,
         "turret": ""
       },
       {
-        "x": 34.5,
-        "y": 14,
+        "x": 34,
+        "y": 12,
         "turret": ""
       },
       {
-        "x": 1.5,
+        "x": 0,
         "y": 63,
         "turret": ""
       }
@@ -17880,12 +19532,14 @@
       "drag": 11.4,
       "heat dissipation": 0.7,
       "fuel capacity": 600,
-      "cargo space": 130,
-      "outfit space": 560,
+      "cargo space": 80,
+      "outfit space": 620,
       "weapon capacity": 250,
       "engine capacity": 150,
-      "radar jamming": 12,
-      "scan interference": 3,
+      "optical jamming": 0.8,
+      "radar jamming": 8,
+      "scan interference": 2,
+      "self destruct": 0.15,
       "weapon": {
         "blast radius": 160,
         "shield damage": 1600,
@@ -17901,7 +19555,7 @@
     "medium explosion": "60",
     "large explosion": "40",
     "final explode": "\"final explosion medium\"",
-    "description": "This Tarazed Falcon has had some modifications done. The hull has no enhancements to shields, engines, or weapons. But it does have built in radar jamming, scan interference, and enhanced heat dissipation. Whoever designed this seemed to be intent on creating a stealth warship."
+    "description": "This Tarazed Falcon has had some modifications done. The hull has built in jamming, scan interference, and enhanced heat dissipation. Whoever designed this seemed to be intent on creating a stealth warship."
   },
   {
     "name": "Shadow Hawk",
@@ -17944,12 +19598,14 @@
       "drag": 2.5,
       "heat dissipation": 0.8,
       "fuel capacity": 300,
-      "cargo space": 20,
-      "outfit space": 200,
+      "cargo space": 10,
+      "outfit space": 220,
       "weapon capacity": 50,
       "engine capacity": 70,
+      "optical jamming": 0.2,
       "radar jamming": 2,
-      "scan interference": 1,
+      "scan interference": 0.5,
+      "self destruct": 0.25,
       "weapon": {
         "blast radius": 30,
         "shield damage": 300,
@@ -17961,7 +19617,7 @@
     "tiny explosion": "15",
     "small explosion": "5",
     "final explode": "\"final explosion small\"",
-    "description": "This Tarazed Hawk has had some modifications done. The hull has no enhancements to shields, engines, or weapons. But it does have built in radar jamming, scan interference, and enhanced heat dissipation. Whoever designed this seemed to be intent on creating a stealth warship."
+    "description": "This Tarazed Hawk has had some modifications done. The hull has built in jamming, scan interference, and enhanced heat dissipation. Whoever designed this seemed to be intent on creating a stealth warship."
   },
   {
     "name": "Shadow Osprey",
@@ -18037,12 +19693,14 @@
       "drag": 8.9,
       "heat dissipation": 0.8,
       "fuel capacity": 600,
-      "cargo space": 40,
-      "outfit space": 450,
+      "cargo space": 20,
+      "outfit space": 490,
       "weapon capacity": 180,
       "engine capacity": 130,
-      "radar jamming": 10,
-      "scan interference": 2,
+      "optical jamming": 0.6,
+      "radar jamming": 6,
+      "scan interference": 1.5,
+      "self destruct": 0.25,
       "weapon": {
         "blast radius": 80,
         "shield damage": 800,
@@ -18058,7 +19716,7 @@
     "small explosion": "40",
     "tiny explosion": "28",
     "final explode": "\"final explosion medium\"",
-    "description": "This Tarazed Osprey has had some modifications done. The hull has no enhancements to shields, engines, or weapons. But it does have built in radar jamming, scan interference, and enhanced heat dissipation. Whoever designed this seemed to be intent on creating a stealth interceptor."
+    "description": "This Tarazed Osprey has had some modifications done. The hull has built in jamming, scan interference, and enhanced heat dissipation. Whoever designed this seemed to be intent on creating a stealth interceptor."
   },
   {
     "name": "Shadow Raven",
@@ -18111,12 +19769,14 @@
       "drag": 4.8,
       "heat dissipation": 0.8,
       "fuel capacity": 500,
-      "cargo space": 30,
-      "outfit space": 280,
+      "cargo space": 20,
+      "outfit space": 310,
       "weapon capacity": 100,
       "engine capacity": 100,
+      "optical jamming": 0.4,
       "radar jamming": 4,
-      "scan interference": 2,
+      "scan interference": 1,
+      "self destruct": 0.25,
       "weapon": {
         "blast radius": 60,
         "shield damage": 600,
@@ -18131,7 +19791,7 @@
     "tiny explosion": "28",
     "small explosion": "40",
     "final explode": "\"final explosion small\"",
-    "description": "This Lionheart Raven has had some modifications done. The hull has no enhancements to shields, engines, or weapons. But it does have built in radar jamming, scan interference, and enhanced heat dissipation. Whoever designed this seemed to be intent on creating a stealth warship."
+    "description": "This Lionheart Raven has had some modifications done. The hull has built in jamming, scan interference, and enhanced heat dissipation. Whoever designed this seemed to be intent on creating a stealth warship."
   },
   {
     "name": "Sapphire Shield",
@@ -18552,123 +20212,6 @@
     "large explosion": "8",
     "final explode": "\"final explosion medium\"",
     "description": "This Kvelqde variant is designed to optimize the use of \"Myiara\" Fire Spouts. There are whispers that those who pilot such vessels are patron servants of a secret House that manipulates events from the shadows. Within the respectable echelons of Successor society such tales are dismissed as mere superstition, no more real than the monster from a children's poem. \tThis ship can install Predecessor Multimode Armor materials."
-  },
-  {
-    "name": "Stolsaqra-Sosrue",
-    "engines": [
-      {
-        "x": -8,
-        "y": 35
-      },
-      {
-        "x": 8,
-        "y": 35
-      }
-    ],
-    "reverseEngines": [
-      {
-        "x": 15,
-        "y": -3,
-        "position": "over"
-      },
-      {
-        "x": -15,
-        "y": -3,
-        "position": "over"
-      }
-    ],
-    "steeringEngines": [
-      {
-        "x": 4,
-        "y": -41,
-        "position": "angle 270"
-      },
-      {
-        "x": -4,
-        "y": -41,
-        "position": "angle 90"
-      },
-      {
-        "x": 12,
-        "y": 33,
-        "position": "angle 270"
-      },
-      {
-        "x": -12,
-        "y": 33,
-        "position": "angle 90"
-      }
-    ],
-    "guns": [
-      {
-        "x": 0,
-        "y": -40,
-        "gun": ""
-      },
-      {
-        "x": -10.5,
-        "y": -20,
-        "gun": ""
-      },
-      {
-        "x": 10.5,
-        "y": -20,
-        "gun": ""
-      },
-      {
-        "x": -15,
-        "y": -3,
-        "gun": ""
-      },
-      {
-        "x": 15,
-        "y": -3,
-        "gun": ""
-      }
-    ],
-    "turrets": [],
-    "bays": [],
-    "Stolsaqran-Sosrue": true,
-    "sprite": "ship/stolsaqra-sosrue",
-    "thumbnail": "thumbnail/stolsaqra-sosrue-thumb",
-    "attributes": {
-      "licenses": {
-        "description": "\"Successor\""
-      },
-      "category": "Interceptor",
-      "cost": 450000,
-      "shields": 850,
-      "hull": 6100,
-      "required crew": 1,
-      "bunks": 2,
-      "mass": 120,
-      "drag": 2.75,
-      "heat dissipation": 0.79,
-      "fuel capacity": 300,
-      "cargo space": 5,
-      "outfit space": 212,
-      "weapon capacity": 90,
-      "engine capacity": 80,
-      "multimodal armor": 1,
-      "hull repair rate": 0.3,
-      "hull energy": 0.4,
-      "hull heat": 0.4,
-      "multimode armor": 1,
-      "weapon": {
-        "blast radius": 100,
-        "shield damage": 1000,
-        "hull damage": 500,
-        "hit force": 1500
-      }
-    },
-    "leak": "50 50",
-    "flame": "30 80",
-    "tiny explosion": "18",
-    "small explosion": "36",
-    "medium explosion": "24",
-    "large explosion": "8",
-    "final explode": "\"final explosion medium\"",
-    "description": "This variant Stolsaqra is a test model developed by Shadow House. Like the Kvelqde-Sosrue, it is designed to accomodate a pair of \"Myiara\" Fire Spouts into its arsenal. \tThis ship can install Predecessor Multimode Armor materials."
   },
   {
     "name": "Ojde-Sado",

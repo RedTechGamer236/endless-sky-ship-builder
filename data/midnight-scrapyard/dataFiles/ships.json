@@ -722,7 +722,7 @@
     "large explosion": "50",
     "huge explosion": "15",
     "final explode": "\"final explosion large\"",
-    "description": "Korath Scrappers who scavenge in the Scrapyard are using the technology they find to customize their ships. \tThis Rano'erek Tek has enhanced shield strength and hull durability. Upgraded automation in its operations keeps the ships crew requirements low."
+    "description": "Korath Scrappers who scavenge in the Scrapyard are using the technology they find to customize their ships. \tThis Rano'erek Tek has enhanced shield strength and hull durability. Upgraded automation in its operations keeps the ship's crew requirements low."
   },
   {
     "name": "Rano'erek Ik",
@@ -1941,7 +1941,7 @@
     "large explosion": "70",
     "huge explosion": "20",
     "final explode": "\"final explosion large\"",
-    "description": "Some Korath scrappers are more interested in harvesting raw materials rather than technology. The Devar'ur is their attempt to streamline the collection process. The Korath Incinerator is integrated into the ship and cannot be removed."
+    "description": "Some Korath scrappers are more interested in harvesting raw materials rather than technology. The Devar'ur is their attempt to streamline the collection process. The Scrap Incinerator is integrated into the ship and cannot be removed."
   },
   {
     "name": "Korath Explorer",

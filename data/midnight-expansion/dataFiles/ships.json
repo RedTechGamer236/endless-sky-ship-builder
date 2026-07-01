@@ -1,5 +1,172 @@
 [
   {
+    "name": "Anachronism",
+    "engines": [
+      {
+        "x": 0,
+        "y": 198
+      },
+      {
+        "x": -66,
+        "y": 190
+      },
+      {
+        "x": 66,
+        "y": 190
+      }
+    ],
+    "reverseEngines": [
+      {
+        "x": -117,
+        "y": 152,
+        "position": "zoom .5"
+      },
+      {
+        "x": 117,
+        "y": 152,
+        "position": "zoom .5"
+      }
+    ],
+    "steeringEngines": [
+      {
+        "x": -110,
+        "y": 170,
+        "position": "left"
+      },
+      {
+        "x": 110,
+        "y": 170,
+        "position": "right"
+      },
+      {
+        "x": -15,
+        "y": -112,
+        "position": "right"
+      },
+      {
+        "x": 15,
+        "y": -112,
+        "position": "left"
+      },
+      {
+        "x": -11,
+        "y": -132,
+        "position": "right"
+      },
+      {
+        "x": 11,
+        "y": -132,
+        "position": "left"
+      },
+      {
+        "x": -9,
+        "y": -152,
+        "position": "right"
+      },
+      {
+        "x": 9,
+        "y": -152,
+        "position": "left"
+      }
+    ],
+    "guns": [
+      {
+        "x": -0.5,
+        "y": -190,
+        "gun": ""
+      },
+      {
+        "x": 0.5,
+        "y": -190,
+        "gun": ""
+      },
+      {
+        "x": -1,
+        "y": -190,
+        "gun": ""
+      },
+      {
+        "x": 0,
+        "y": -190,
+        "gun": ""
+      },
+      {
+        "x": 1,
+        "y": -190,
+        "gun": ""
+      },
+      {
+        "x": -0.5,
+        "y": -190,
+        "gun": ""
+      },
+      {
+        "x": 0.5,
+        "y": -190,
+        "gun": ""
+      }
+    ],
+    "turrets": [
+      {
+        "x": 0,
+        "y": 115,
+        "turret": ""
+      },
+      {
+        "x": -72,
+        "y": 156,
+        "turret": ""
+      },
+      {
+        "x": 72,
+        "y": 156,
+        "turret": ""
+      },
+      {
+        "x": 0,
+        "y": 171,
+        "turret": ""
+      }
+    ],
+    "bays": [],
+    "sprite": "ship/AESmisc caster",
+    "thumbnail": "thumbnail/AESmisc caster",
+    "attributes": {
+      "category": "Heavy Warship",
+      "cost": 3000000,
+      "shields": 60000,
+      "hull": 25000,
+      "required crew": 60,
+      "bunks": 90,
+      "mass": 360,
+      "drag": 9.3,
+      "heat dissipation": 0.5,
+      "fuel capacity": 800,
+      "cargo space": 50,
+      "outfit space": 985,
+      "weapon capacity": 501,
+      "engine capacity": 158,
+      "fused circuits": -1,
+      "spinal mount": 1,
+      "cloak": 0.01,
+      "cloaking energy": 2,
+      "cloaking fuel": 0.4,
+      "cloak phasing": 1,
+      "weapon": {
+        "blast radius": 250,
+        "shield damage": 1000,
+        "hull damage": 500,
+        "hit force": 1500
+      }
+    },
+    "blue tiny explosion": "24",
+    "blue small explosion": "32",
+    "blue medium explosion": "60",
+    "blue large explosion": "120",
+    "final explode": "\"final explosion large\"",
+    "description": "Constructed by an unknown manufacturer, the Anachronism is an enigma from the future."
+  },
+  {
     "name": "Korath Warlord",
     "engines": [
       {
