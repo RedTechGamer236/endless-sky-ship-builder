@@ -45262,7 +45262,7 @@
         "shield damage": 22,
         "hull damage": 25
       },
-      "description": "The Bombardment Cannon was designed during the original war with the Quarg, in order to give Heliarch civilian ships a way to strike Quarg warships from a safe distance. But now, as with all their weapons, its use is limited to Heliarch warships."
+      "description": "The Bombardment Cannon was designed during the original war with the Quarg, in order to give Coalition civilian ships a way to strike Quarg warships from a safe distance. But now, as with all their weapons, its use is limited to Heliarch warships."
     },
     {
       "name": "Bombardment Turret",
@@ -57788,5 +57788,5 @@
       "description": "The history of the Wanderers is not without hardship and failure. Immortalized in a bronze mold, this withered branch recalls the time the Wanderers could not save a world, for skilled as they may be, they cannot stop destruction when it is actively sought after by others mightier than them. The fall of the Noble Watchwood, their cherished emblem, now stands as a solemn vow: when peace fails, they too must prepare to fight. To stand and fight with the Wanderers, this license grants access to their greatest warships."
     }
   ],
-  "parsedAt": "2026-07-01T02:47:04.489Z"
+  "parsedAt": "2026-08-01T02:06:29.893Z"
 }
