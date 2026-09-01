@@ -985,6 +985,7 @@
     },
     "thumbnail": "thumbnail/archon",
     "never disabled": true,
+    "administrative cost": "38",
     "attributes": {
       "category": "Unclassified",
       "cost": 1000000000,
@@ -1136,6 +1137,7 @@
     },
     "thumbnail": "thumbnail/archon",
     "never disabled": true,
+    "administrative cost": "38",
     "attributes": {
       "category": "Unclassified",
       "cost": 1000000000,
@@ -1287,6 +1289,7 @@
     },
     "thumbnail": "thumbnail/archon",
     "never disabled": true,
+    "administrative cost": "38",
     "attributes": {
       "category": "Unclassified",
       "cost": 1000000000,
@@ -1442,6 +1445,7 @@
     },
     "thumbnail": "thumbnail/archon",
     "never disabled": true,
+    "administrative cost": "38",
     "attributes": {
       "category": "Unclassified",
       "cost": 1000000000,
@@ -1594,6 +1598,7 @@
     "bays": [],
     "sprite": "ship/gegno schist b",
     "thumbnail": "thumbnail/gegno schist b",
+    "administrative cost": "4",
     "attributes": {
       "category": "Heavy Freighter",
       "licenses": {
@@ -1682,6 +1687,7 @@
     "bays": [],
     "sprite": "ship/gegno schist c",
     "thumbnail": "thumbnail/gegno schist c",
+    "administrative cost": "4",
     "attributes": {
       "category": "Heavy Freighter",
       "licenses": {
@@ -1799,6 +1805,7 @@
     "bays": [],
     "sprite": "ship/gegno hornfel b",
     "thumbnail": "thumbnail/gegno hornfel b",
+    "administrative cost": "5",
     "attributes": {
       "category": "Medium Warship",
       "licenses": {
@@ -1916,6 +1923,7 @@
     "bays": [],
     "sprite": "ship/gegno hornfel c",
     "thumbnail": "thumbnail/gegno hornfel c",
+    "administrative cost": "5",
     "attributes": {
       "category": "Medium Warship",
       "licenses": {
@@ -2038,6 +2046,7 @@
     "bays": [],
     "sprite": "ship/gegno hornfel d",
     "thumbnail": "thumbnail/gegno hornfel d",
+    "administrative cost": "5",
     "attributes": {
       "category": "Medium Warship",
       "licenses": {
@@ -2137,6 +2146,7 @@
     "Anomalocarises": true,
     "sprite": "ship/hai anomalocaris",
     "thumbnail": "thumbnail/hai anomalocaris",
+    "administrative cost": "5",
     "attributes": {
       "category": "Medium Warship",
       "cost": 7400000,
@@ -2242,6 +2252,7 @@
     ],
     "sprite": "ship/aerie",
     "thumbnail": "thumbnail/aerie",
+    "administrative cost": "2",
     "attributes": {
       "category": "Medium Warship",
       "cost": 3500000,
@@ -2341,6 +2352,7 @@
     "Argosies": true,
     "sprite": "ship/argosy",
     "thumbnail": "thumbnail/argosy",
+    "administrative cost": "2",
     "attributes": {
       "category": "Light Freighter",
       "cost": 1960000,
@@ -2431,6 +2443,7 @@
     "bays": [],
     "sprite": "ship/bastion",
     "thumbnail": "thumbnail/bastion",
+    "administrative cost": "4",
     "attributes": {
       "category": "Medium Warship",
       "cost": 3860000,
@@ -2506,6 +2519,7 @@
     "bays": [],
     "sprite": "ship/berserker",
     "thumbnail": "thumbnail/berserker",
+    "administrative cost": "1",
     "attributes": {
       "category": "Interceptor",
       "cost": 520000,
@@ -2568,6 +2582,7 @@
     "bays": [],
     "sprite": "ship/bounder",
     "thumbnail": "thumbnail/bounder",
+    "administrative cost": "1",
     "attributes": {
       "category": "Transport",
       "cost": 1140000,
@@ -2656,6 +2671,7 @@
     "bays": [],
     "sprite": "ship/bulk freighter",
     "thumbnail": "thumbnail/bulk freighter",
+    "administrative cost": "4",
     "attributes": {
       "category": "Heavy Freighter",
       "cost": 11100000,
@@ -2731,6 +2747,7 @@
     "bays": [],
     "sprite": "ship/clipper",
     "thumbnail": "thumbnail/clipper",
+    "administrative cost": "1",
     "attributes": {
       "category": "Light Freighter",
       "cost": 900000,
@@ -2825,6 +2842,7 @@
     "bays": [],
     "sprite": "ship/falcon",
     "thumbnail": "thumbnail/falcon",
+    "administrative cost": "5",
     "attributes": {
       "category": "Heavy Warship",
       "cost": 10900000,
@@ -2911,6 +2929,7 @@
     "bays": [],
     "sprite": "ship/firebird",
     "thumbnail": "thumbnail/firebird",
+    "administrative cost": "3",
     "attributes": {
       "category": "Medium Warship",
       "cost": 3700000,
@@ -2980,6 +2999,7 @@
     "bays": [],
     "sprite": "ship/freighter",
     "thumbnail": "thumbnail/freighter",
+    "administrative cost": "1",
     "attributes": {
       "category": "Light Freighter",
       "cost": 730000,
@@ -3076,6 +3096,7 @@
     "Furies": true,
     "sprite": "ship/fury",
     "thumbnail": "thumbnail/fury",
+    "administrative cost": "1",
     "attributes": {
       "category": "Interceptor",
       "cost": 490000,
@@ -3157,6 +3178,7 @@
     "bays": [],
     "sprite": "ship/hauler i",
     "thumbnail": "thumbnail/hauler i",
+    "administrative cost": "1",
     "attributes": {
       "category": "Light Freighter",
       "cost": 1430000,
@@ -3243,6 +3265,7 @@
     "bays": [],
     "sprite": "ship/hauler ii",
     "thumbnail": "thumbnail/hauler ii",
+    "administrative cost": "2",
     "attributes": {
       "category": "Heavy Freighter",
       "cost": 2340000,
@@ -3308,6 +3331,7 @@
     "bays": [],
     "sprite": "ship/hawk",
     "thumbnail": "thumbnail/hawk",
+    "administrative cost": "1",
     "attributes": {
       "category": "Interceptor",
       "cost": 670000,
@@ -3380,6 +3404,7 @@
     "bays": [],
     "sprite": "ship/hogshead",
     "thumbnail": "thumbnail/hogshead",
+    "administrative cost": "2",
     "attributes": {
       "category": "Space Liner",
       "cost": 3150000,
@@ -3475,6 +3500,7 @@
     "bays": [],
     "sprite": "ship/leviathan",
     "thumbnail": "thumbnail/leviathan",
+    "administrative cost": "5",
     "attributes": {
       "category": "Heavy Warship",
       "cost": 9800000,
@@ -3573,6 +3599,7 @@
     "bays": [],
     "sprite": "ship/osprey",
     "thumbnail": "thumbnail/osprey",
+    "administrative cost": "3",
     "attributes": {
       "category": "Medium Warship",
       "cost": 4200000,
@@ -3679,6 +3706,7 @@
     "bays": [],
     "sprite": "ship/protector",
     "thumbnail": "thumbnail/protector",
+    "administrative cost": "5",
     "attributes": {
       "category": "Heavy Warship",
       "cost": 5500000,
@@ -3743,6 +3771,7 @@
     "bays": [],
     "sprite": "ship/quicksilver",
     "thumbnail": "thumbnail/quicksilver",
+    "administrative cost": "1",
     "attributes": {
       "category": "Light Warship",
       "cost": 836000,
@@ -3810,6 +3839,7 @@
     "bays": [],
     "sprite": "ship/scout",
     "thumbnail": "thumbnail/scout",
+    "administrative cost": "1",
     "attributes": {
       "category": "Transport",
       "cost": 850000,
@@ -3868,6 +3898,7 @@
     "bays": [],
     "sprite": "ship/pirate scrapper",
     "thumbnail": "thumbnail/pirate scrapper",
+    "administrative cost": "1",
     "attributes": {
       "category": "Interceptor",
       "cost": 60000,
@@ -3944,6 +3975,7 @@
     "bays": [],
     "sprite": "ship/splinter",
     "thumbnail": "thumbnail/splinter",
+    "administrative cost": "2",
     "attributes": {
       "category": "Medium Warship",
       "cost": 3100000,
@@ -4036,6 +4068,7 @@
     "bays": [],
     "sprite": "ship/star queen",
     "thumbnail": "thumbnail/star queen",
+    "administrative cost": "3",
     "attributes": {
       "category": "Space Liner",
       "cost": 4200000,
@@ -4119,6 +4152,7 @@
     ],
     "sprite": "ship/sunder",
     "thumbnail": "thumbnail/sunder",
+    "administrative cost": "1",
     "attributes": {
       "category": "Utility",
       "cost": 1000000,
@@ -4215,6 +4249,7 @@
     "Furies": true,
     "sprite": "ship/fury",
     "thumbnail": "thumbnail/fury",
+    "administrative cost": "1",
     "attributes": {
       "category": "Interceptor",
       "cost": 490000,
@@ -4341,6 +4376,7 @@
     ],
     "sprite": "ship/kestrele",
     "thumbnail": "thumbnail/kestrele",
+    "administrative cost": "7",
     "attributes": {
       "category": "Heavy Warship",
       "cost": 14700000,
@@ -4458,6 +4494,7 @@
     ],
     "sprite": "ship/kestrels",
     "thumbnail": "thumbnail/kestrels",
+    "administrative cost": "7",
     "attributes": {
       "category": "Heavy Warship",
       "cost": 14700000,
@@ -4605,6 +4642,7 @@
     ],
     "sprite": "ship/kestrelw",
     "thumbnail": "thumbnail/kestrelw",
+    "administrative cost": "7",
     "attributes": {
       "category": "Heavy Warship",
       "cost": 14700000,
@@ -4734,6 +4772,7 @@
     ],
     "sprite": "ship/kestrelc",
     "thumbnail": "thumbnail/kestrelc",
+    "administrative cost": "7",
     "attributes": {
       "category": "Heavy Warship",
       "cost": 14700000,
@@ -4801,6 +4840,7 @@
     "bays": [],
     "sprite": "ship/marrowe",
     "thumbnail": "thumbnail/marrowe",
+    "administrative cost": "1",
     "attributes": {
       "category": "Interceptor",
       "cost": 1320000,
@@ -4878,6 +4918,7 @@
     "bays": [],
     "sprite": "ship/marroww",
     "thumbnail": "thumbnail/marroww",
+    "administrative cost": "1",
     "attributes": {
       "category": "Interceptor",
       "cost": 1320000,
@@ -4951,6 +4992,7 @@
     "bays": [],
     "sprite": "ship/mboundere",
     "thumbnail": "thumbnail/mboundere",
+    "administrative cost": "1",
     "attributes": {
       "category": "Interceptor",
       "cost": 1250000,
@@ -5023,6 +5065,7 @@
     "bays": [],
     "sprite": "ship/mbounderw",
     "thumbnail": "thumbnail/mbounderw",
+    "administrative cost": "1",
     "attributes": {
       "category": "Interceptor",
       "cost": 1250000,
@@ -5121,6 +5164,7 @@
     "bays": [],
     "sprite": "ship/mfalcone",
     "thumbnail": "thumbnail/mfalcone",
+    "administrative cost": "5",
     "attributes": {
       "category": "Heavy Warship",
       "cost": 13900000,
@@ -5224,6 +5268,7 @@
     "bays": [],
     "sprite": "ship/mfalconw",
     "thumbnail": "thumbnail/mfalconw",
+    "administrative cost": "5",
     "attributes": {
       "category": "Heavy Warship",
       "cost": 13900000,
@@ -5311,6 +5356,7 @@
     "bays": [],
     "sprite": "ship/mfirebirde",
     "thumbnail": "thumbnail/mfirebirds",
+    "administrative cost": "3",
     "attributes": {
       "category": "Medium Warship",
       "cost": 4100000,
@@ -5394,6 +5440,7 @@
     "bays": [],
     "sprite": "ship/mfirebirdw",
     "thumbnail": "thumbnail/mfirebirdw",
+    "administrative cost": "3",
     "attributes": {
       "category": "Medium Warship",
       "cost": 4100000,
@@ -5499,6 +5546,7 @@
     "bays": [],
     "sprite": "ship/mleviathane",
     "thumbnail": "thumbnail/mleviathane",
+    "administrative cost": "6",
     "attributes": {
       "category": "Heavy Warship",
       "cost": 10800000,
@@ -5592,6 +5640,7 @@
     "bays": [],
     "sprite": "ship/mleviathanw",
     "thumbnail": "thumbnail/mleviathanw",
+    "administrative cost": "6",
     "attributes": {
       "category": "Heavy Warship",
       "cost": 10800000,
@@ -5685,6 +5734,7 @@
     "bays": [],
     "sprite": "ship/mmantae",
     "thumbnail": "thumbnail/mmantae",
+    "administrative cost": "2",
     "attributes": {
       "category": "Medium Warship",
       "cost": 3740000,
@@ -5772,6 +5822,7 @@
     "bays": [],
     "sprite": "ship/mmantaw",
     "thumbnail": "thumbnail/mmantaw",
+    "administrative cost": "2",
     "attributes": {
       "category": "Medium Warship",
       "cost": 3740000,
@@ -5839,6 +5890,7 @@
     "bays": [],
     "sprite": "ship/mquicksilvers",
     "thumbnail": "thumbnail/mquicksilvers",
+    "administrative cost": "1",
     "attributes": {
       "category": "Light Warship",
       "cost": 1200000,
@@ -5909,6 +5961,7 @@
     "bays": [],
     "sprite": "ship/mquicksilvere",
     "thumbnail": "thumbnail/mquicksilvere",
+    "administrative cost": "1",
     "attributes": {
       "category": "Light Warship",
       "cost": 1200000,
@@ -5979,6 +6032,7 @@
     "bays": [],
     "sprite": "ship/mquicksilvere",
     "thumbnail": "thumbnail/mquicksilvere",
+    "administrative cost": "1",
     "attributes": {
       "category": "Light Warship",
       "cost": 1200000,
@@ -6045,6 +6099,7 @@
     "bays": [],
     "sprite": "ship/mquicksilverw",
     "thumbnail": "thumbnail/mquicksilverw",
+    "administrative cost": "1",
     "attributes": {
       "category": "Light Warship",
       "cost": 1200000,
@@ -6111,6 +6166,7 @@
     "bays": [],
     "sprite": "ship/mquicksilverw",
     "thumbnail": "thumbnail/mquicksilverw",
+    "administrative cost": "1",
     "attributes": {
       "category": "Light Warship",
       "cost": 1200000,
@@ -6197,6 +6253,7 @@
     "bays": [],
     "sprite": "ship/mravene",
     "thumbnail": "thumbnail/mravene",
+    "administrative cost": "2",
     "attributes": {
       "category": "Light Warship",
       "cost": 2750000,
@@ -6275,6 +6332,7 @@
     "bays": [],
     "sprite": "ship/mravenw",
     "thumbnail": "thumbnail/mravenw",
+    "administrative cost": "2",
     "attributes": {
       "category": "Light Warship",
       "cost": 2750000,
@@ -6359,6 +6417,7 @@
     "bays": [],
     "sprite": "ship/msplintere",
     "thumbnail": "thumbnail/msplintere",
+    "administrative cost": "2",
     "attributes": {
       "category": "Medium Warship",
       "cost": 3400000,
@@ -6447,6 +6506,7 @@
     "bays": [],
     "sprite": "ship/msplinterw",
     "thumbnail": "thumbnail/msplinterw",
+    "administrative cost": "2",
     "attributes": {
       "category": "Medium Warship",
       "cost": 3400000,
@@ -6558,6 +6618,7 @@
     "Auxiliaries": true,
     "sprite": "ship/auxiliaryc",
     "thumbnail": "thumbnail/auxiliaryc",
+    "administrative cost": "6",
     "attributes": {
       "category": "Utility",
       "licenses": {
@@ -6675,6 +6736,7 @@
     "Auxiliaries": true,
     "sprite": "ship/auxiliaryt",
     "thumbnail": "thumbnail/auxiliaryt",
+    "administrative cost": "6",
     "attributes": {
       "category": "Utility",
       "licenses": {
@@ -6753,6 +6815,7 @@
     "bays": [],
     "sprite": "ship/berserker",
     "thumbnail": "thumbnail/berserker",
+    "administrative cost": "1",
     "attributes": {
       "category": "Interceptor",
       "cost": 520000,
@@ -6816,6 +6879,7 @@
     "bays": [],
     "sprite": "ship/quicksilver",
     "thumbnail": "thumbnail/quicksilver",
+    "administrative cost": "1",
     "attributes": {
       "category": "Light Warship",
       "cost": 836000,
@@ -6894,6 +6958,7 @@
     "bays": [],
     "sprite": "ship/splinter",
     "thumbnail": "thumbnail/splinter",
+    "administrative cost": "2",
     "attributes": {
       "category": "Medium Warship",
       "cost": 3100000,
@@ -6991,6 +7056,7 @@
     "bays": [],
     "sprite": "ship/vanguard",
     "thumbnail": "thumbnail/vanguard",
+    "administrative cost": "4",
     "attributes": {
       "category": "Heavy Warship",
       "cost": 7200000,
@@ -7105,6 +7171,7 @@
     "Auxiliaries": true,
     "sprite": "ship/auxiliaryc",
     "thumbnail": "thumbnail/auxiliaryc",
+    "administrative cost": "6",
     "attributes": {
       "category": "Utility",
       "licenses": {
@@ -7222,6 +7289,7 @@
     "Auxiliaries": true,
     "sprite": "ship/auxiliaryt",
     "thumbnail": "thumbnail/auxiliaryt",
+    "administrative cost": "6",
     "attributes": {
       "category": "Utility",
       "licenses": {
@@ -7335,6 +7403,7 @@
     "Auxiliaries": true,
     "sprite": "ship/auxiliaryt",
     "thumbnail": "thumbnail/auxiliaryt",
+    "administrative cost": "6",
     "attributes": {
       "category": "Utility",
       "licenses": {
@@ -7427,6 +7496,7 @@
     "bays": [],
     "plural": "\"Nimbi\"",
     "thumbnail": "thumbnail/nimbus",
+    "administrative cost": "4",
     "swizzle": "0",
     "attributes": {
       "category": "Medium Warship",
@@ -8876,6 +8946,7 @@
     "bays": [],
     "sprite": "ship/petrel",
     "thumbnail": "thumbnail/petrel",
+    "administrative cost": "0",
     "attributes": {
       "category": "Fighter",
       "licenses": {
@@ -8944,6 +9015,7 @@
     "'olofezes": true,
     "sprite": "ship/chaser",
     "thumbnail": "thumbnail/chaser",
+    "administrative cost": "0",
     "attributes": {
       "category": "Fighter",
       "cost": 671000,
@@ -9113,6 +9185,7 @@
     ],
     "sprite": "ship/tubfalet",
     "thumbnail": "thumbnail/tubfalet",
+    "administrative cost": "8",
     "attributes": {
       "category": "Utility",
       "cost": 22895000,
@@ -9193,6 +9266,7 @@
     "bays": [],
     "sprite": "ship/charm-shallop",
     "thumbnail": "thumbnail/charm-shallop",
+    "administrative cost": "6",
     "attributes": {
       "category": "Utility",
       "cost": 14070000,
@@ -9335,6 +9409,7 @@
     ],
     "sprite": "ship/dredger",
     "thumbnail": "thumbnail/dredger",
+    "administrative cost": "9",
     "attributes": {
       "category": "Utility",
       "cost": 29370000,
@@ -9475,6 +9550,7 @@
     ],
     "sprite": "ship/dredger",
     "thumbnail": "thumbnail/dredger",
+    "administrative cost": "9",
     "attributes": {
       "category": "Utility",
       "cost": 29370000,
@@ -9651,6 +9727,7 @@
     ],
     "sprite": "ship/tubfalet",
     "thumbnail": "thumbnail/tubfalet",
+    "administrative cost": "8",
     "attributes": {
       "category": "Utility",
       "cost": 22895000,
@@ -9711,6 +9788,7 @@
     "'olofezes": true,
     "sprite": "ship/chaser",
     "thumbnail": "thumbnail/chaser",
+    "administrative cost": "0",
     "attributes": {
       "category": "Fighter",
       "cost": 671000,
@@ -9847,6 +9925,7 @@
     "display name": "\"Spera A'awoj\"",
     "sprite": "ship/world-ship d",
     "thumbnail": "thumbnail/world-ship d",
+    "administrative cost": "12",
     "attributes": {
       "category": "Space Liner",
       "cost": 33640000,
@@ -9990,6 +10069,7 @@
     "display name": "\"Spera A'awoj\"",
     "sprite": "ship/world-ship d",
     "thumbnail": "thumbnail/world-ship d",
+    "administrative cost": "12",
     "attributes": {
       "category": "Space Liner",
       "cost": 33640000,
@@ -10229,6 +10309,7 @@
     "display name": "\"Ikfar A'awoj\"",
     "sprite": "ship/world-ship e",
     "thumbnail": "thumbnail/world-ship e",
+    "administrative cost": "12",
     "attributes": {
       "category": "Heavy Warship",
       "cost": 43590000,
@@ -10427,6 +10508,7 @@
     "display name": "\"Ikfar A'awoj\"",
     "sprite": "ship/world-ship e",
     "thumbnail": "thumbnail/world-ship e",
+    "administrative cost": "12",
     "attributes": {
       "category": "Heavy Warship",
       "cost": 43590000,
@@ -10495,6 +10577,7 @@
     "Finches": true,
     "sprite": "ship/finch",
     "thumbnail": "thumbnail/finch",
+    "administrative cost": "0",
     "attributes": {
       "category": "Fighter",
       "cost": 126000,
@@ -10608,6 +10691,7 @@
     "Modified Dromedaries": true,
     "sprite": "ship/modified dromedary ghost",
     "thumbnail": "thumbnail/modified dromedary wreck",
+    "administrative cost": "7",
     "attributes": {
       "licenses": {
         "description": "\"Remnant Capital\""
@@ -10754,6 +10838,7 @@
     "Modified Dromedaries": true,
     "sprite": "ship/modified dromedary specter",
     "thumbnail": "thumbnail/modified dromedary wreck",
+    "administrative cost": "7",
     "attributes": {
       "licenses": {
         "description": "\"Remnant Capital\""
@@ -10900,6 +10985,7 @@
     "Modified Dromedaries": true,
     "sprite": "ship/modified dromedary wreck",
     "thumbnail": "thumbnail/modified dromedary wreck",
+    "administrative cost": "7",
     "attributes": {
       "licenses": {
         "description": "\"Remnant Capital\""
@@ -10997,6 +11083,7 @@
     "bays": [],
     "sprite": "ship/merganser",
     "thumbnail": "thumbnail/merganser",
+    "administrative cost": "1",
     "attributes": {
       "category": "Interceptor",
       "licenses": {
@@ -11127,6 +11214,7 @@
       "description": "\"rewind\""
     },
     "thumbnail": "thumbnail/peregrine",
+    "administrative cost": "4",
     "attributes": {
       "category": "Medium Warship",
       "licenses": {
@@ -11343,6 +11431,7 @@
     "bays": [],
     "sprite": "ship/winter gale",
     "thumbnail": "thumbnail/winter gale",
+    "administrative cost": "5",
     "attributes": {
       "category": "Light Warship",
       "licenses": {
@@ -11432,6 +11521,7 @@
     "bays": [],
     "sprite": "ship/winter gale",
     "thumbnail": "thumbnail/winter gale",
+    "administrative cost": "5",
     "attributes": {
       "category": "Light Warship",
       "licenses": {
@@ -11521,6 +11611,7 @@
     "bays": [],
     "sprite": "ship/deep river 0",
     "thumbnail": "thumbnail/deep river",
+    "administrative cost": "7",
     "attributes": {
       "category": "Heavy Freighter",
       "licenses": {
@@ -11611,6 +11702,7 @@
     "bays": [],
     "sprite": "ship/deep river 1",
     "thumbnail": "thumbnail/deep river",
+    "administrative cost": "7",
     "attributes": {
       "category": "Heavy Freighter",
       "licenses": {
@@ -11701,6 +11793,7 @@
     "bays": [],
     "sprite": "ship/deep river 2",
     "thumbnail": "thumbnail/deep river",
+    "administrative cost": "7",
     "attributes": {
       "category": "Heavy Freighter",
       "licenses": {
@@ -11791,6 +11884,7 @@
     "bays": [],
     "sprite": "ship/deep river 3",
     "thumbnail": "thumbnail/deep river",
+    "administrative cost": "7",
     "attributes": {
       "category": "Heavy Freighter",
       "licenses": {
@@ -11881,6 +11975,7 @@
     "bays": [],
     "sprite": "ship/deep river 4",
     "thumbnail": "thumbnail/deep river",
+    "administrative cost": "7",
     "attributes": {
       "category": "Heavy Freighter",
       "licenses": {
@@ -12049,6 +12144,7 @@
     ],
     "sprite": "ship/modified carrier",
     "thumbnail": "thumbnail/modified carrier",
+    "administrative cost": "8",
     "attributes": {
       "category": "Heavy Warship",
       "licenses": {

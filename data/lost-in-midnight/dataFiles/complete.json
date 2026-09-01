@@ -16001,7 +16001,7 @@
       },
       "tiny explosion": "19",
       "small explosion": "16",
-      "description": "Featuring the Builders best ramscoop technology with integrated fuel stabilizers and storage tanks, the Ool'mar was specifically designed for the purpose of harvesting and transporting hyperspace fuel. With the collapse of the Builder civilization, there was no longer any need to harvest fuel. Most Ool'mar can be found wandering aimlessly, unable to off load the contents of their fuel tanks because Builder stations lack the capacity to accept their cargo. \tDrones do not come equipped with a hyperdrive. You cannot carry a drone unless you have a ship in your fleet with a drone bay. \tThis ship is capable of diving into the harsh atmosphere of a gas giant."
+      "description": "Featuring the Builders' best ramscoop technology with integrated fuel stabilizers and storage tanks, the Ool'mar was specifically designed for the purpose of harvesting and transporting hyperspace fuel. With the collapse of the Builder civilization, there was no longer any need to harvest fuel. Most Ool'mar can be found wandering aimlessly, unable to off load the contents of their fuel tanks because Builder stations lack the capacity to accept their cargo. \tDrones do not come equipped with a hyperdrive. You cannot carry a drone unless you have a ship in your fleet with a drone bay. \tThis ship is capable of diving into the harsh atmosphere of a gas giant."
     },
     {
       "name": "Veliante'exis",
@@ -33473,7 +33473,7 @@
       "category": "Special",
       "cost": 110000,
       "thumbnail": "outfit/research biology",
-      "description": "\tThis is biology data often associated with, but not limited to, argicultural, medical, and terraforming studies."
+      "description": "\tThis is biology data often associated with, but not limited to, agricultural, medical, and terraforming studies."
     },
     {
       "name": "Research Data (Chem)",
@@ -40285,5 +40285,5 @@
       "description": "\tAfter this is acquired it can be found in the Licenses area in future visits to the outfitter."
     }
   ],
-  "parsedAt": "2026-08-01T02:08:52.525Z"
+  "parsedAt": "2026-09-01T02:54:39.931Z"
 }
